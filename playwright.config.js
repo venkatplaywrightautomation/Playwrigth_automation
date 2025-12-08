@@ -42,6 +42,9 @@ path: process.env.TEST_ENV ? `./envfiles/.env.${process.env.TEST_ENV}` : `./envf
  */
 export default defineConfig({
   //globalSetup:'./globalsetup',
+
+ // globalSetup:'./pages/globalsetup.js',
+
   testDir: './tests',
   
   
@@ -53,6 +56,8 @@ export default defineConfig({
   //retries: process.env.CI ? 2 : 0,
   //retries: 2,
   
+
+
   
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
@@ -64,7 +69,10 @@ export default defineConfig({
 //testMatch: /.*(spec|test)\.(ts|js)/,
 
   
+//storageState: 'testdata/auth.json',
 
+  /* Set global timeout for each test */
+  timeout: 30 * 1000,
 
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   //reporter: 'html',
@@ -75,6 +83,10 @@ export default defineConfig({
    Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     
+
+   
+
+    /* Maximum time each action such as `click()` can take. Defaults to 0 (no limit). */
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://localhost:3000',
 
@@ -85,37 +97,50 @@ export default defineConfig({
     //storageState: './auth.json',
     //outputDir:'./test-results/',
     //channel: 'chrome',
+    //headless: false,
     
 
+    
+//storageState:'testdata/auth.json'
     
   },
 
   /* Configure projects for major browsers */
   projects: [
+
+
+    {
+name: 'setup',
+testMatch:'storagestate.spec.js',
+//testMatch:'/.*\.spec.js/',
+
+
+    },
     {
       name: 'chromium',
 
-    use: { ...devices['Desktop Chrome']   }
+      dependencies: ['setup'],
+    use: { ...devices['Desktop Chrome'] ,storageState:'testdata/auth.json'  }
       
    // use:{browserName:'chromium',channel:'chrome'}
 
-
+    
     },
 
   
 
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
+    // {
+    //   name: 'firefox',
+    //   use: { ...devices['Desktop Firefox'] },
    
-    },
+    // },
 
 
 
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
-    },
+    // {
+    //   name: 'webkit',
+    //   use: { ...devices['Desktop Safari'] },
+    // },
 
 
 

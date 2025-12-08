@@ -17,6 +17,7 @@ test("download a file",async ({browser})=>{
     const [download]= await Promise.all([
 
         page.waitForEvent('download'),
+         //  page.waitForEvent('filechooser');
 
         page.click("//*[@id='content']/div/a[36]")
     ])

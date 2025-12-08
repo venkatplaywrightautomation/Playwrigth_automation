@@ -1,0 +1,11 @@
+No of auto suggestions: 10
+playwright
+playwright automation
+playwright mcp
+playwright documentation
+playwright mcp server
+playwright interview questions
+playwright vs selenium
+playwright automation tool
+playwright tutorial
+playwright python

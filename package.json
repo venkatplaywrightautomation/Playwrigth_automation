@@ -8,6 +8,8 @@
 
    "test:qa":"cross-env TEST_ENV=qa npx playwright test pom.spec.js --headed",
     "test:stage":"cross-env TEST_ENV=qa npx playwright test pom.spec.js --headed"
+
+    
   },
   "keywords": [],
   "author": "",

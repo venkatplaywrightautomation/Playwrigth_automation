@@ -26,13 +26,17 @@ test("date picker", async ({ page }) => {
 
 
     const month = 'October'
-    const year = '2023'
+    const year = '2026'
     const date = '25'
 
     
     await page.goto("https://testautomationpractice.blogspot.com/")
 
+    await page.waitForTimeout(3000)
+
     await page.locator("//input[@id='datepicker']").click()
+
+    await page.waitForTimeout(3000)
     while (true) {
 
        
@@ -48,18 +52,6 @@ test("date picker", async ({ page }) => {
         //await page.locator("//span[@class='ui-icon ui-icon-circle-triangle-e']").click()
         await page.locator("//span[@class='ui-icon ui-icon-circle-triangle-w']").click()
     }
-
-    
-
-
-
-
-
-
-
-
-
-
     
 
     //  const d= await page.$$(".ui-state-default")
@@ -75,19 +67,46 @@ test("date picker", async ({ page }) => {
     //  }
 
 
-
-    
-    
-    await page.locator("//a[@class='ui-state-default'] [text()='${date}']")
+    await page.locator("//a[@class='ui-state-default'][text()=`${d}`]")
     await page.waitForTimeout(4000);
 
 
+})
+
+
+
+
+
+
+test.only("calendat Test case",async({page})=>{
+
+
+
+    await page.goto("https://testautomationpractice.blogspot.com/")
+    await page.waitForTimeout(3000)
+
+    await page.locator("//input[@id='datepicker']").click()
+    let y="2026"
+    let m="October"
+    let d="25"
+
+    while (true){
+
+        //span[@class='ui-datepicker-year']
+        let year= await page.locator("//span[@class='ui-datepicker-year']").textContent()
+        let month= await page.locator(".ui-datepicker-month").textContent()
+
+        if(year == y && month == m){
+            break
+
+        }
+        //await page.locator("//span[@class='ui-icon ui-icon-circle-triangle-w']").click()
+        await page.locator("//span[@class='ui-icon ui-icon-circle-triangle-e']").click()
     
+        
+    }
 
-
-
-
-    
-
+await page.locator("//a[@class='ui-state-default'][text()=`${d}`]")
+await page.waitForTimeout(3000)
 
 })

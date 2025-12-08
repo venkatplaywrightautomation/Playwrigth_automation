@@ -1,0 +1,870 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - generic [ref=e5]:
+        - link "Tools QA" [ref=e6] [cursor=pointer]:
+          - /url: /
+          - img "Tools QA" [ref=e7] [cursor=pointer]
+        - text:  
+        - generic [ref=e8]:
+          - textbox "Search" [ref=e9]
+          - generic [ref=e10] [cursor=pointer]: 
+        - generic [ref=e12]:
+          - list [ref=e14]:
+            - listitem [ref=e15]:
+              - link "Home" [ref=e16] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e17]:
+              - link "Selenium Training" [ref=e18] [cursor=pointer]:
+                - /url: /selenium-training?q=headers
+            - listitem [ref=e19]:
+              - link "Demo Site" [ref=e20] [cursor=pointer]:
+                - /url: https://demoqa.com
+            - listitem [ref=e21]:
+              - link "About" [ref=e22] [cursor=pointer]:
+                - /url: /about
+          - generic [ref=e24]:
+            - textbox "Search" [ref=e25]
+            - generic [ref=e26] [cursor=pointer]: 
+        - generic [ref=e33] [cursor=pointer]: Tutorials
+  - generic [ref=e34]:
+    - generic [ref=e35]:
+      - generic [ref=e36]:
+        - generic [ref=e37]:
+          - img "Certified Guy" [ref=e39]
+          - generic [ref=e40]:
+            - generic [ref=e41]: Selenium Certification Training | Enroll Now | Study Online
+            - link "Go To Registration" [ref=e42] [cursor=pointer]:
+              - /url: "#enroll-form"
+        - generic [ref=e44]:
+          - generic [ref=e45]: Instructor-Led Online Selenium Certification Training
+          - generic [ref=e46]:
+            - generic [ref=e47]: TOOLSQA’s
+            - text: Selenium Certification will help you in mastering the various concepts of Selenium from scratch.
+          - generic [ref=e48]:
+            - text: This Selenium Certification will help you master important concepts such as
+            - generic [ref=e49]: Selenium Commands, XPath Strategies, Waits, IFrames, Alerts, Windows in Selenium WebDriver, TestNG, Log4J, Apache POI, Framework Designing
+            - text: and so on. This Selenium Certification is also a gateway towards your Automation testing career. The course has been curated by industry experts.
+        - generic [ref=e51]:
+          - generic [ref=e52]:
+            - generic [ref=e54]: 
+            - generic [ref=e55]: 5K+ Taken the Course
+          - generic [ref=e56]:
+            - generic [ref=e58]: 
+            - generic [ref=e59]: 95% Student Completed
+      - img [ref=e61]
+    - generic [ref=e63]:
+      - generic [ref=e66]: What is included
+      - generic [ref=e67]:
+        - generic [ref=e68]:
+          - generic [ref=e69]: "8"
+          - generic [ref=e70]: Modules
+        - generic [ref=e71]:
+          - generic [ref=e72]: "32"
+          - generic [ref=e73]: Class Hours
+        - generic [ref=e74]:
+          - generic [ref=e75]: 50+
+          - generic [ref=e76]: Assignment Hours
+        - generic [ref=e77]:
+          - generic [ref=e78]: 14+
+          - generic [ref=e79]: Years Experienced Instructors
+    - generic [ref=e81]:
+      - generic [ref=e84]: You Will Get
+      - generic [ref=e85]:
+        - generic [ref=e86]:
+          - generic [ref=e87]: 
+          - generic [ref=e88]: Live Project
+        - generic [ref=e89]:
+          - generic [ref=e90]: 
+          - generic [ref=e91]: Weekend Classes
+        - generic [ref=e92]:
+          - generic [ref=e93]: 
+          - generic [ref=e94]: Live Online Classes
+        - generic [ref=e95]:
+          - generic [ref=e96]: 
+          - generic [ref=e97]: 24 * 7 Support
+        - generic [ref=e98]:
+          - generic [ref=e99]: 
+          - generic [ref=e100]: Access to Premium Courses
+        - generic [ref=e101]:
+          - generic [ref=e102]: 
+          - generic [ref=e103]: Lifetime Video Access
+        - generic [ref=e104]:
+          - generic [ref=e105]: 
+          - generic [ref=e106]: Pre-reading Material
+        - generic [ref=e107]:
+          - generic [ref=e108]: 
+          - generic [ref=e109]: 14 Days Money Back Guarantee*
+    - generic [ref=e111]:
+      - generic [ref=e112]:
+        - generic [ref=e113]:
+          - generic [ref=e114]: Certificate of Completion
+          - generic [ref=e115]: Start Learning Today
+          - generic [ref=e117]:
+            - generic [ref=e118]:
+              - generic [ref=e119]: 
+              - generic [ref=e120]: Shareable Specialization and Course Certificates
+            - generic [ref=e121]:
+              - generic [ref=e122]: 
+              - generic [ref=e123]: Self-Paced Learning Option
+            - generic [ref=e124]:
+              - generic [ref=e125]: 
+              - generic [ref=e126]: Course Videos & Readings
+            - generic [ref=e127]:
+              - generic [ref=e128]: 
+              - generic [ref=e129]: Practice Quizzes
+            - generic [ref=e130]:
+              - generic [ref=e131]: 
+              - generic [ref=e132]: Graded Assignments with Peer Feedback
+            - generic [ref=e133]:
+              - generic [ref=e134]: 
+              - generic [ref=e135]: Graded Quizzes with Feedback
+            - generic [ref=e136]:
+              - generic [ref=e137]: 
+              - generic [ref=e138]: Graded Programming Assignments
+          - link "Enroll Now" [ref=e141] [cursor=pointer]:
+            - /url: "#enroll-form"
+          - generic [ref=e143]:
+            - generic [ref=e145]: 34, 602
+            - generic [ref=e146]: already enrolled
+        - generic [ref=e147]:
+          - generic [ref=e148]:
+            - generic [ref=e149]: Shareable on
+            - generic [ref=e151]: 
+          - generic [ref=e154]:
+            - img "Tools QA certificate" [ref=e155]
+            - generic [ref=e156]: You can share your Course Certificates in the Certifications section of your Linkedin profile, on printed resumes, CVs, or other documents.
+      - generic [ref=e158]:
+        - generic [ref=e159]: "Along with Selenium Certificate, you will get access on following courses for free:"
+        - generic [ref=e160]:
+          - generic [ref=e161]:
+            - img "Java for QA - Basics" [ref=e162]
+            - generic [ref=e163]:
+              - generic [ref=e164]: Java For QA - Basics
+              - generic [ref=e165]:
+                - generic [ref=e166]: "Price: $25.00"
+                - generic [ref=e167]: Free
+          - generic [ref=e168]:
+            - img "Java for QA - Advance" [ref=e169]
+            - generic [ref=e170]:
+              - generic [ref=e171]: Java For QA - Advance
+              - generic [ref=e172]:
+                - generic [ref=e173]: "Price: $25.00"
+                - generic [ref=e174]: Free
+          - generic [ref=e175]:
+            - img "Selenium WebDriver in Java" [ref=e176]
+            - generic [ref=e177]:
+              - generic [ref=e178]: Selenium WebDriver in Java
+              - generic [ref=e179]:
+                - generic [ref=e180]: "Price: $100.00"
+                - generic [ref=e181]: Free
+          - generic [ref=e182]:
+            - img "Cucumber Basics" [ref=e183]
+            - generic [ref=e184]:
+              - generic [ref=e185]: Cucumber Basics
+              - generic [ref=e186]:
+                - generic [ref=e187]: "Price: $50.00"
+                - generic [ref=e188]: Free
+          - generic [ref=e189]:
+            - img "Designing Selenium Framework" [ref=e190]
+            - generic [ref=e191]:
+              - generic [ref=e192]: Designing Selenium Framework
+              - generic [ref=e193]:
+                - generic [ref=e194]: "Price: $49.99"
+                - generic [ref=e195]: Free
+          - generic [ref=e196]:
+            - img "TestNG"
+            - generic [ref=e197]:
+              - generic [ref=e198]: TestNG
+              - generic [ref=e199]:
+                - generic [ref=e200]: "Price: $10.00"
+                - generic [ref=e201]: Free
+    - generic [ref=e203]:
+      - generic [ref=e205]:
+        - generic [ref=e206]: Upcoming Selenium Certification Training
+        - generic [ref=e207]: "Next Batch Date: 04-Feb-2022"
+        - generic [ref=e208]:
+          - generic [ref=e209]:
+            - generic [ref=e210]: 8 Weeks
+            - generic [ref=e211]: Duration
+          - generic [ref=e212]:
+            - generic [ref=e213]: Every Sat & Sun
+            - generic [ref=e214]: Session days
+          - generic [ref=e215]:
+            - generic [ref=e216]: 2hr/each session
+            - generic [ref=e217]: Session Duration
+          - generic [ref=e218]:
+            - generic [ref=e219]: Online
+            - generic [ref=e220]: Location
+          - generic [ref=e221]:
+            - generic [ref=e222]: IST 9:30-11:30 PM
+            - generic [ref=e223]: Timings
+      - generic [ref=e226]:
+        - text: To register for
+        - generic [ref=e227]: Paid Training
+        - text: ", please fill out form below:"
+      - generic [ref=e229]:
+        - generic [ref=e230]:
+          - textbox "First Name (required)" [ref=e231]
+          - generic: First Name (required)
+        - generic [ref=e232]:
+          - textbox "Last Name" [ref=e233]
+          - generic: Last Name
+        - generic [ref=e234]:
+          - textbox "Email (required)" [ref=e235]
+          - generic: Email (required)
+        - generic [ref=e236]:
+          - textbox "Mobile (required)" [ref=e237]
+          - generic: Mobile (required)
+        - generic [ref=e238]:
+          - combobox "Country (required)" [ref=e239]:
+            - option "Please select a Country" [selected]
+            - option "Afghanistan"
+            - option "Albania"
+            - option "Algeria"
+            - option "American Samoa"
+            - option "Andorra"
+            - option "Angola"
+            - option "Antigua And Barbuda"
+            - option "Argentina"
+            - option "Armenia"
+            - option "Aruba"
+            - option "Australia"
+            - option "Austria"
+            - option "Azerbaijan"
+            - option "Bahamas, The"
+            - option "Bahrain"
+            - option "Bangladesh"
+            - option "Barbados"
+            - option "Belarus"
+            - option "Belgium"
+            - option "Belize"
+            - option "Benin"
+            - option "Bermuda"
+            - option "Bhutan"
+            - option "Bolivia"
+            - option "Bosnia And Herzegovina"
+            - option "Botswana"
+            - option "Brazil"
+            - option "Brunei"
+            - option "Bulgaria"
+            - option "Burkina Faso"
+            - option "Burma"
+            - option "Burundi"
+            - option "Cabo Verde"
+            - option "Cambodia"
+            - option "Cameroon"
+            - option "Canada"
+            - option "Cayman Islands"
+            - option "Central African Republic"
+            - option "Chad"
+            - option "Chile"
+            - option "China"
+            - option "Colombia"
+            - option "Comoros"
+            - option "Congo (Brazzaville)"
+            - option "Congo (Kinshasa)"
+            - option "Cook Islands"
+            - option "Costa Rica"
+            - option "Croatia"
+            - option "Cuba"
+            - option "Curaçao"
+            - option "Cyprus"
+            - option "Czechia"
+            - option "Côte D’Ivoire"
+            - option "Denmark"
+            - option "Djibouti"
+            - option "Dominica"
+            - option "Dominican Republic"
+            - option "Ecuador"
+            - option "Egypt"
+            - option "El Salvador"
+            - option "Equatorial Guinea"
+            - option "Eritrea"
+            - option "Estonia"
+            - option "Ethiopia"
+            - option "Falkland Islands (Islas Malvinas)"
+            - option "Faroe Islands"
+            - option "Fiji"
+            - option "Finland"
+            - option "France"
+            - option "French Guiana"
+            - option "French Polynesia"
+            - option "Gabon"
+            - option "Gambia, The"
+            - option "Georgia"
+            - option "Germany"
+            - option "Ghana"
+            - option "Gibraltar"
+            - option "Greece"
+            - option "Greenland"
+            - option "Grenada"
+            - option "Guadeloupe"
+            - option "Guam"
+            - option "Guatemala"
+            - option "Guinea"
+            - option "Guinea-Bissau"
+            - option "Guyana"
+            - option "Haiti"
+            - option "Honduras"
+            - option "Hong Kong"
+            - option "Hungary"
+            - option "Iceland"
+            - option "India"
+            - option "Indonesia"
+            - option "Iran"
+            - option "Iraq"
+            - option "Ireland"
+            - option "Isle Of Man"
+            - option "Israel"
+            - option "Italy"
+            - option "Jamaica"
+            - option "Japan"
+            - option "Jordan"
+            - option "Kazakhstan"
+            - option "Kenya"
+            - option "Kiribati"
+            - option "Korea, North"
+            - option "Korea, South"
+            - option "Kosovo"
+            - option "Kuwait"
+            - option "Kyrgyzstan"
+            - option "Laos"
+            - option "Latvia"
+            - option "Lebanon"
+            - option "Lesotho"
+            - option "Liberia"
+            - option "Libya"
+            - option "Liechtenstein"
+            - option "Lithuania"
+            - option "Luxembourg"
+            - option "Macau"
+            - option "Macedonia"
+            - option "Madagascar"
+            - option "Malawi"
+            - option "Malaysia"
+            - option "Maldives"
+            - option "Mali"
+            - option "Malta"
+            - option "Marshall Islands"
+            - option "Martinique"
+            - option "Mauritania"
+            - option "Mauritius"
+            - option "Mayotte"
+            - option "Mexico"
+            - option "Micronesia, Federated States Of"
+            - option "Moldova"
+            - option "Monaco"
+            - option "Mongolia"
+            - option "Montenegro"
+            - option "Morocco"
+            - option "Mozambique"
+            - option "Namibia"
+            - option "Nepal"
+            - option "Netherlands"
+            - option "New Caledonia"
+            - option "New Zealand"
+            - option "Nicaragua"
+            - option "Niger"
+            - option "Nigeria"
+            - option "Northern Mariana Islands"
+            - option "Norway"
+            - option "Oman"
+            - option "Pakistan"
+            - option "Palau"
+            - option "Panama"
+            - option "Papua New Guinea"
+            - option "Paraguay"
+            - option "Peru"
+            - option "Philippines"
+            - option "Poland"
+            - option "Portugal"
+            - option "Puerto Rico"
+            - option "Qatar"
+            - option "Reunion"
+            - option "Romania"
+            - option "Russia"
+            - option "Rwanda"
+            - option "Saint Helena, Ascension, And Tristan Da Cunha"
+            - option "Saint Kitts And Nevis"
+            - option "Saint Lucia"
+            - option "Saint Vincent And The Grenadines"
+            - option "Samoa"
+            - option "San Marino"
+            - option "Sao Tome And Principe"
+            - option "Saudi Arabia"
+            - option "Senegal"
+            - option "Serbia"
+            - option "Seychelles"
+            - option "Sierra Leone"
+            - option "Singapore"
+            - option "Sint Maarten"
+            - option "Slovakia"
+            - option "Slovenia"
+            - option "Solomon Islands"
+            - option "Somalia"
+            - option "South Africa"
+            - option "South Georgia And South Sandwich Islands"
+            - option "South Sudan"
+            - option "Spain"
+            - option "Sri Lanka"
+            - option "Sudan"
+            - option "Suriname"
+            - option "Swaziland"
+            - option "Sweden"
+            - option "Switzerland"
+            - option "Syria"
+            - option "Taiwan"
+            - option "Tajikistan"
+            - option "Tanzania"
+            - option "Thailand"
+            - option "Timor-Leste"
+            - option "Togo"
+            - option "Tonga"
+            - option "Trinidad And Tobago"
+            - option "Tunisia"
+            - option "Turkey"
+            - option "Turkmenistan"
+            - option "Turks And Caicos Islands"
+            - option "Tuvalu"
+            - option "Uganda"
+            - option "Ukraine"
+            - option "United Arab Emirates"
+            - option "United Kingdom"
+            - option "United States"
+            - option "Uruguay"
+            - option "Uzbekistan"
+            - option "Vanuatu"
+            - option "Venezuela"
+            - option "Vietnam"
+            - option "Wallis And Futuna"
+            - option "West Bank"
+            - option "Yemen"
+            - option "Zambia"
+            - option "Zimbabwe"
+          - generic: Country (required)
+        - generic [ref=e240]:
+          - textbox "City (required)" [ref=e241]
+          - generic: City (required)
+        - generic [ref=e242]:
+          - textbox "Your Message (required)" [ref=e243]
+          - generic: Your Message (required)
+        - generic [ref=e244]:
+          - textbox "Input this code" [ref=e245]
+          - img "Captcha for submitting form"
+          - generic: Input this code
+        - button "Send" [ref=e246] [cursor=pointer]
+      - generic [ref=e248]:
+        - generic [ref=e249]:
+          - text: Book your seat now and get
+          - generic [ref=e250]: 50 USD discount.
+        - generic [ref=e251]: 14 Day Money Back Guarantee
+    - generic [ref=e255]:
+      - generic [ref=e256]: Selenium Certification – Curriculum
+      - generic [ref=e257]:
+        - generic [ref=e258]:
+          - generic [ref=e259]: Selenium 4 Course
+          - generic [ref=e260]:
+            - generic [ref=e262] [cursor=pointer]:
+              - generic [ref=e263] [cursor=pointer]: Module 1
+              - generic [ref=e264] [cursor=pointer]: Java Introduction
+            - paragraph [ref=e268]: In this module, you will learn about the basic concepts of JAVA programming. Selenium Webdriver is a tool which can be used only with the programming language, which makes it very necessary for an individual to learn Java Programming language. Sound scary! Don’t worry, this is why we have designed this course such a way that first we teach you Java and once you get comfortable with it, we will move forward with Selenium WebDriver.
+          - generic [ref=e269]:
+            - generic [ref=e271] [cursor=pointer]:
+              - generic [ref=e272] [cursor=pointer]: Module 2
+              - generic [ref=e273] [cursor=pointer]: Selenium WebDriver - Basics
+            - generic:
+              - paragraph [ref=e277]:
+                - text: In this module, you will start learning about the
+                - strong [ref=e278]: Selenium WebDriver.
+              - paragraph [ref=e279]:
+                - strong [ref=e280]: Excited!
+                - text: By the end of this module, you will start using the Selenium and automating websites in your project. This module will cover all the basic element interactions, Browser commands, Navigation commands, operations on Checkbox or radio buttons and handling of Alerts.
+              - paragraph [ref=e281]: You will also learn about XPath. XPath is designed to allow the navigation of XML documents, with the purpose of selecting individual elements, attributes, or some other part of an XML document for specific processing.
+          - generic [ref=e282]:
+            - generic [ref=e284] [cursor=pointer]:
+              - generic [ref=e285] [cursor=pointer]: Module 3
+              - generic [ref=e286] [cursor=pointer]: Selenium WebDriver - Intermediate
+            - generic:
+              - paragraph [ref=e290]: At times the element is a bit tricky to locate on a webpage. To master the technique it is very much necessary to learn effective ways to find webelments. Here we cover the different Element Locator Dev tools which will make your life easy in automation testing.
+              - paragraph [ref=e291]: There are also few operations which are tricky to perform in Selenium like mouse double click or Drag & Drop. We will learn the use of Actions class to perform different actions.
+          - generic [ref=e292]:
+            - generic [ref=e294] [cursor=pointer]:
+              - generic [ref=e295] [cursor=pointer]: Module 4
+              - generic [ref=e296] [cursor=pointer]: Selenium & Java Advance
+            - generic:
+              - paragraph [ref=e300]: This module will be very exciting. Here we will learn about Waits in Selenium. Waits are used to hold the web application for a few seconds/minutes/hours. When web applications navigate from Page A to Page B then Selenium should wait till the browser loads Page B completely.
+              - paragraph [ref=e301]: Along with waits, we will also learn to Handle multiple windows and Alerts.
+        - generic [ref=e302]:
+          - generic [ref=e303]: Framework Designing – Live Project
+          - generic [ref=e304]:
+            - generic [ref=e306] [cursor=pointer]:
+              - generic [ref=e307] [cursor=pointer]: Module 5
+              - generic [ref=e308] [cursor=pointer]: Module 5 - TestNG Framework
+            - paragraph [ref=e312]: In this module, you will learn about TestNG. TestNG is an open-source testing framework that provides more flexible and powerful tests with the help of Annotations, Grouping, Sequencing, and Parametering. In TestNG, HTML reports can be produced, Parallel testing can be performed, Test cases can be prioritized, and data Parametrization is possible. You will also learn about Cross Browser Testing to enable you to work with different browsers.
+          - generic [ref=e313]:
+            - generic [ref=e315] [cursor=pointer]:
+              - generic [ref=e316] [cursor=pointer]: Module 6
+              - generic [ref=e317] [cursor=pointer]: Java OOPs Concepts
+            - paragraph [ref=e321]: With this, we will also develop our understanding on Java Advance topics like Interfaces, Abstract Classes, Inheritance.
+          - generic [ref=e322]:
+            - generic [ref=e324] [cursor=pointer]:
+              - generic [ref=e325] [cursor=pointer]: Module 7
+              - generic [ref=e326] [cursor=pointer]: Framework (POM, Data Driven and Factory Design Pattern)
+            - generic:
+              - paragraph [ref=e330]: In this module, you will learn about the Page Object Model and Page Factory. It is a design pattern that is used to create an Object Repository for Web UI Elements. Page Object Model includes Page classes, which finds the Web Elements of that Web Page and contains Page Methods that perform operations on those Web Elements. Page Factory is an optimized way to create Object Repository.
+              - paragraph [ref=e331]: TData-Driven is also the most basic requirement when it comes to Automation. This module also covers the same with the help of the Apache POI library..
+              - paragraph [ref=e332]: Not just this, you will also learn to make use of Factory Design Pattern to read the Project Configurations.
+          - generic [ref=e333]:
+            - generic [ref=e335] [cursor=pointer]:
+              - generic [ref=e336] [cursor=pointer]: Module 8
+              - generic [ref=e337] [cursor=pointer]: Framework (Logging, Reporting and Creating Utilities), Resume Preparation
+            - generic:
+              - paragraph [ref=e341]: The most important feature of testing is Reporting. Without reporting, there is not much sense of automation. This module will have all the details of reporting. You will be using the Log4J library to generate logs and Extent reports for publishing reports.
+              - paragraph [ref=e342]: There are multiple utilities created in any framework. We will learn to create helper utilities like taking Screenshot etc.
+        - generic [ref=e343]:
+          - generic [ref=e344]: Hands-On Selenium Online Assignment
+          - generic [ref=e345]: Successful completion of Selenium certification with these assignments makes you more effective.
+          - generic [ref=e346]:
+            - generic [ref=e349] [cursor=pointer]: Live E-Commerce Project
+            - paragraph [ref=e353]: Live examples and Live project help us to simulate real-time problems for our students. We have custom websites and webpages (shop.demoqa.com and demoqa.com) especially developed to teach key concepts required for a professional level understanding of Selenium Webdriver.
+          - generic [ref=e354]:
+            - generic [ref=e357] [cursor=pointer]: Home Assignments for Practice Automation
+            - paragraph [ref=e361]: Live examples and Live project help us to simulate real-time problems for our students. We have custom websites and webpages (shop.demoqa.com and demoqa.com) especially developed to teach key concepts required for a professional level understanding of Selenium Webdriver.
+          - generic [ref=e362]:
+            - generic [ref=e365] [cursor=pointer]: Bonus
+            - generic:
+              - paragraph [ref=e369]: We are also giving away the following session recordings so that you have an edge while climbing the success ladder:-
+              - list [ref=e370]:
+                - listitem [ref=e371]: Jenkins
+                - listitem [ref=e372]: Git
+                - listitem [ref=e373]: Selenium Grid
+    - generic [ref=e375]:
+      - generic [ref=e376]:
+        - generic [ref=e378]: Why Selenium certification?
+        - generic [ref=e384]:
+          - generic [ref=e385]: Jobs Comparison
+          - generic [ref=e387]: Manual Testing
+          - generic [ref=e389]: Automation Testing
+        - generic [ref=e393]:
+          - generic [ref=e394]: Testing Roles Comparison
+          - generic [ref=e395]:
+            - generic [ref=e396]: Mid-Level
+            - generic [ref=e397]: Junior
+          - generic [ref=e399]: Senior
+        - generic [ref=e402]:
+          - generic [ref=e403]: Automation Tools Comparison
+          - generic [ref=e405]: Selenium WebDriver
+          - generic [ref=e410]: Katalon Studio
+          - generic [ref=e415]: Appium
+          - generic [ref=e420]: Cucumber
+          - generic [ref=e425]: UFT
+        - generic [ref=e431]:
+          - generic [ref=e432]: Programming Language Comparison
+          - generic [ref=e434]: Java
+          - generic [ref=e439]: C#
+          - generic [ref=e444]: Python
+          - generic [ref=e449]: Ruby
+          - generic [ref=e454]: JavaScript
+      - generic [ref=e458]:
+        - paragraph [ref=e459]:
+          - strong [ref=e460]: Selenium WebDriver is a leading web testing tool in the QA industry.
+          - text: It is one of the most sought after skill. Selenium Webdriver jobs are on a rise and are highly paid and highly valued. The industry is shifting towards automation rapidly. With more and more applications becoming accessible through the browser it becomes very important to learn Selenium WebDriver.
+        - paragraph [ref=e461]: This Selenium certification course is designed to teach in-depth concepts of Selenium 4 and Java. We focus on the basics first and then move towards the advanced concepts of Selenium, Java and framework development.
+        - paragraph [ref=e462]:
+          - strong [ref=e463]: Live examples and Live project help us to simulate real-time problems for our students. We have custom websites and webpages (shop.demoqa.com and demoqa.com) especially developed to teach key concepts required for a professional level understanding of Selenium Webdriver.
+        - paragraph [ref=e464]:
+          - strong [ref=e465]: Most of our students have been able to successfully switch from Manual to Automation testing after ToolsQA Selenium Certification and had approximately doubled their salaries. QA managers have become more proficient in handling Automation teams. Overall this course will help you progress in your career as a Software Test Engineer.
+        - paragraph [ref=e466]: Please take a look at the Selenium Certification Course details and timings below.
+    - generic [ref=e469]:
+      - generic [ref=e471]: Selenium Course FAQs
+      - generic [ref=e473]:
+        - generic [ref=e474]:
+          - generic [ref=e476] [cursor=pointer]: Who should take up this course?
+          - generic:
+            - paragraph [ref=e480]: "This selenium certification can be taken by:"
+            - list [ref=e481]:
+              - listitem [ref=e482]: Test lead
+              - listitem [ref=e483]: Test Analyst
+              - listitem [ref=e484]: Test Engineers
+              - listitem [ref=e485]: Test Managers
+              - listitem [ref=e486]: Software Developers
+              - listitem [ref=e487]: QA Engineers
+        - generic [ref=e488]:
+          - generic [ref=e490] [cursor=pointer]: I have basic knowledge of programming; can I learn Selenium?
+          - generic:
+            - paragraph [ref=e494]: Majority of our participants are beginners or have very basic knowledge of programming so we designed our course in such a way that it caters to requirements of all participants irrespective of the fact whether you are at beginner level or at an intermediate level.
+            - paragraph [ref=e495]: If you refer to our Selenium Curriculum, our initial classes primarily focused on Java concepts which are very useful for people who are relatively new to the world of programming while it acts as a good refresher for rest of the participants.
+        - generic [ref=e496]:
+          - generic [ref=e498] [cursor=pointer]: Why learn online?
+          - list [ref=e502]:
+            - listitem [ref=e503]: Attend from anywhere
+            - listitem [ref=e504]: Best trainers
+            - listitem [ref=e505]: Class recordings
+            - listitem [ref=e506]: Lifetime updates
+            - listitem [ref=e507]: No traveling
+        - generic [ref=e508]:
+          - generic [ref=e510] [cursor=pointer]: Why should I take up this course from ToolsQA only?
+          - generic:
+            - paragraph [ref=e514]: We are pioneers in providing Selenium certification. We trained more than 10,000 professionals in the last 5+ years. You may also like to go through the testimonials of our students who vouch for our expertise in Selenium Certification training.
+            - paragraph [ref=e515]: We keep our content up-to-date with the latest market trends. Our training is accompanied by assignments as well as hands-on experience on a live project which ensures that you will work more as Selenium professional rather than a newbie to the world of Selenium.
+        - generic [ref=e516]:
+          - generic [ref=e518] [cursor=pointer]: Who delivers the training?
+          - paragraph [ref=e522]:
+            - text: All our
+            - link "TOOLSQA’s" [ref=e523] [cursor=pointer]:
+              - /url: https://www.toolsqa.com
+            - text: trainers are certified, highly qualified, carry the experience of 14+ years and works with an objective to create an awesome experience for all our participants.
+        - generic [ref=e524]:
+          - generic [ref=e526] [cursor=pointer]: Can I attend demo class without paying any registration fees?
+          - paragraph [ref=e530]: ToolsQA’s Selenium Certification is highly anticipated by the QA community. We always receive an overwhelming response for our training so, in order to keep the number of students in check for a given batch as well as to avoid any logistical/operational challenges, we charge nominal fees towards registration.
+        - generic [ref=e531]:
+          - generic [ref=e533] [cursor=pointer]: What is 14 days look out period?
+          - generic:
+            - paragraph [ref=e537]: It allows you to attend the initial 4 classes of Selenium Certification by just paying registration fees. Just in case, this course doesn’t live up to your expectations (which we believe will never ever be the case), you can drop us an email within 14 days of commencement of the course and we will refund you the amount which has been charged from you.
+            - paragraph [ref=e538]: We charge the rest of the fees after 4 classes only, isn’t it a great deal?
+        - generic [ref=e539]:
+          - generic [ref=e541] [cursor=pointer]: Am I going to watch pre-recorded videos or is this going to be a live training?
+          - paragraph [ref=e545]: All our classes are live, interactive and very engaging. During the class, you can participate in discussions as well as ask questions from the instructor. We provide access to recorded videos so just in case you would like to revisit certain concepts after course completion, you can refer to it.
+        - generic [ref=e546]:
+          - generic [ref=e548] [cursor=pointer]: What if I miss a Selenium certification class?
+          - generic:
+            - paragraph [ref=e552]: You have two options available with you-
+            - list [ref=e553]:
+              - listitem [ref=e554]: You can refer to the recorded session of the class which is available in your LMS
+              - listitem [ref=e555]: You can attend the missed session in any other live class
+        - generic [ref=e556]:
+          - generic [ref=e558] [cursor=pointer]: Why am I required to work on project?
+          - paragraph [ref=e562]: To strengthen the concepts which you learned during the class along with its practical implementation.
+        - generic [ref=e563]:
+          - generic [ref=e565] [cursor=pointer]: What project will I be working on?
+          - paragraph [ref=e569]:
+            - text: You are going to work on a fully loaded
+            - strong [ref=e570]: E-Commerce
+            - text: website (
+            - strong [ref=e572]:
+              - link "Shop.DemoQA.com" [ref=e573] [cursor=pointer]:
+                - /url: https://Shop.DemoQA.com
+            - text: ) where every individual develops the
+            - strong [ref=e574]: Framework from scratch.
+            - text: You will write tests based on given sets of requirements using
+            - strong [ref=e575]: TestNg, Log4J, ApachePOI, Jenkins, Maven, JSON and Page Object Model
+        - generic [ref=e576]:
+          - generic [ref=e578] [cursor=pointer]: What payment options are available?
+          - generic:
+            - paragraph [ref=e582]: You can use the below options to make payment.
+            - list [ref=e583]:
+              - listitem [ref=e584]:
+                - generic [ref=e585]:
+                  - strong [ref=e586]: For Indian nationals
+                  - text: – Debit Card, Transfer
+              - listitem [ref=e587]:
+                - generic [ref=e588]:
+                  - strong [ref=e589]: For foreign nationals
+                  - text: – Paypal
+            - paragraph [ref=e590]: We will share the receipt with you after payment has been made.
+        - generic [ref=e591]:
+          - generic [ref=e593] [cursor=pointer]: Are there any group discounts?
+          - generic:
+            - paragraph [ref=e597]:
+              - text: Yes, we do offer discounts for group/corporate bookings. Please drop an email to
+              - link "support@toolsqa.com" [ref=e598] [cursor=pointer]:
+                - /url: mailto:support@toolsqa.com
+              - text: "with the following information:"
+            - list [ref=e599]:
+              - listitem [ref=e600]: Name
+              - listitem [ref=e601]: Phone number
+              - listitem [ref=e602]: Country
+              - listitem [ref=e603]: Number of bookings required
+        - generic [ref=e604]:
+          - generic [ref=e606] [cursor=pointer]: I have more queries regarding Selenium certification, how should I contact you?
+          - paragraph [ref=e610]:
+            - text: You can drop us an email at
+            - link "support@toolsqa.com" [ref=e611] [cursor=pointer]:
+              - /url: mailto:support@toolsqa.com
+            - text: .
+  - generic [ref=e614]:
+    - generic [ref=e617]: Checkout what our Students say about us!
+    - generic [ref=e618]:
+      - generic [ref=e620]:
+        - generic [ref=e621]:
+          - img "Raveesh" [ref=e622]
+          - img "Seghei" [ref=e623]
+          - img "Jeremy" [ref=e624]
+        - generic [ref=e625]:
+          - img "Vitali" [ref=e626]
+          - img "Amit" [ref=e627]
+          - img "Sweta" [ref=e628]
+          - img "Vijay" [ref=e629]
+        - generic [ref=e630]:
+          - img "Linh" [ref=e631]
+          - img "Andrew" [ref=e632]
+          - img "Mihai" [ref=e633]
+      - generic [ref=e635]:
+        - generic [ref=e637]:
+          - generic [ref=e638]: Raveesh Rai – India (Exp- 8Yrs)
+          - generic [ref=e639]: It was an excellent training. The trainer had very in-depth knowledge and was able to handle any of the questions asked spontaneously at point of time during the complete training course. In depth coverage of Framework Design. And Yes, I am still learning to implement the framework by learning through the videos.
+        - generic [ref=e641]:
+          - button "" [ref=e643] [cursor=pointer]:
+            - generic [ref=e644] [cursor=pointer]: 
+          - button "" [ref=e646] [cursor=pointer]:
+            - generic [ref=e647] [cursor=pointer]: 
+  - contentinfo [ref=e649]:
+    - generic [ref=e651]:
+      - generic [ref=e653]:
+        - generic [ref=e654]:
+          - generic [ref=e655]: Have any question ?
+          - generic [ref=e656]: Contact us anytime.
+        - generic [ref=e660]:
+          - generic [ref=e661]: "Send us a message:"
+          - generic [ref=e662]: support@toolsqa.com
+      - generic [ref=e664]:
+        - generic [ref=e665]:
+          - generic [ref=e666]: SITE LINKS
+          - list [ref=e667]:
+            - listitem [ref=e668]:
+              - link "Tutorials" [ref=e669] [cursor=pointer]:
+                - /url: /categories
+            - listitem [ref=e670]:
+              - link "Training" [ref=e671] [cursor=pointer]:
+                - /url: /selenium-training?q=footer
+            - listitem [ref=e672]:
+              - link "Demo Website" [ref=e673] [cursor=pointer]:
+                - /url: https://demoqa.com
+            - listitem [ref=e674]:
+              - link "Team" [ref=e675] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/9458062/
+            - listitem [ref=e676]:
+              - link "Sitemap" [ref=e677] [cursor=pointer]:
+                - /url: /sitemap.xml
+        - generic [ref=e678]:
+          - generic [ref=e679]: Popular Tutorials
+          - list [ref=e680]:
+            - listitem [ref=e681]:
+              - link "Selenium" [ref=e682] [cursor=pointer]:
+                - /url: /selenium-webdriver/selenium-tutorial/
+            - listitem [ref=e683]:
+              - link "Rest Assured" [ref=e684] [cursor=pointer]:
+                - /url: /rest-assured-tutorial
+            - listitem [ref=e685]:
+              - link "Postman" [ref=e686] [cursor=pointer]:
+                - /url: /postman/postman-tutorial/
+            - listitem [ref=e687]:
+              - link "Cucumber" [ref=e688] [cursor=pointer]:
+                - /url: /cucumber-tutorial
+            - listitem [ref=e689]:
+              - link "ISTQB" [ref=e690] [cursor=pointer]:
+                - /url: /software-testing/istqb-foundation-level/
+            - listitem [ref=e691]:
+              - link "Scrum" [ref=e692] [cursor=pointer]:
+                - /url: /agile/agile-scrum-tutorial/
+            - listitem [ref=e693]:
+              - link "Git" [ref=e694] [cursor=pointer]:
+                - /url: /git/git-tutorial/
+        - generic [ref=e695]:
+          - generic [ref=e696]: Recent Tutorials
+          - list [ref=e697]:
+            - listitem [ref=e698]:
+              - link "Test Project" [ref=e699] [cursor=pointer]:
+                - /url: /testproject-tutorial
+            - listitem [ref=e700]:
+              - link "Katalon" [ref=e701] [cursor=pointer]:
+                - /url: /katalon-studio-tutorial
+            - listitem [ref=e702]:
+              - link "Cypress" [ref=e703] [cursor=pointer]:
+                - /url: /cypress-tutorial
+            - listitem [ref=e704]:
+              - link "Protractor" [ref=e705] [cursor=pointer]:
+                - /url: /protractor-tutorial
+            - listitem [ref=e706]:
+              - link "Python" [ref=e707] [cursor=pointer]:
+                - /url: /python-tutorial
+            - listitem [ref=e708]:
+              - link "JavaScript" [ref=e709] [cursor=pointer]:
+                - /url: /javascript/javascript-tutorial/
+        - generic [ref=e710]:
+          - generic [ref=e711]: Other Articles
+          - list [ref=e712]:
+            - listitem [ref=e713]:
+              - link "Software Testing" [ref=e714] [cursor=pointer]:
+                - /url: /software-testing/software-testing-tutorial/
+            - listitem [ref=e715]:
+              - link "Appium" [ref=e716] [cursor=pointer]:
+                - /url: /appium-studio/appium-studio-tutorial/
+            - listitem [ref=e717]:
+              - link "JUnit" [ref=e718] [cursor=pointer]:
+                - /url: /java/junit-framework/junit-introduction/
+            - listitem [ref=e719]:
+              - link "Maven" [ref=e720] [cursor=pointer]:
+                - /url: /maven/maven-introduction/
+            - listitem [ref=e721]:
+              - link "Java" [ref=e722] [cursor=pointer]:
+                - /url: /java/java-tutorial/
+            - listitem [ref=e723]:
+              - link "Katalon" [ref=e724] [cursor=pointer]:
+                - /url: /katalon-studio-tutorial
+      - generic [ref=e725]:
+        - generic [ref=e726]: "Find Us:"
+        - link " Facebook" [ref=e728] [cursor=pointer]:
+          - /url: https://www.facebook.com/tools.qa
+          - generic [ref=e729] [cursor=pointer]: 
+          - generic [ref=e730] [cursor=pointer]: Facebook
+        - link " Twitter" [ref=e732] [cursor=pointer]:
+          - /url: https://twitter.com/toolsqa
+          - generic [ref=e733] [cursor=pointer]: 
+          - generic [ref=e734] [cursor=pointer]: Twitter
+        - link " Linkedin" [ref=e736] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/toolsqa/
+          - generic [ref=e737] [cursor=pointer]: 
+          - generic [ref=e738] [cursor=pointer]: Linkedin
+        - link " Youtube" [ref=e740] [cursor=pointer]:
+          - /url: https://www.youtube.com/channel/UCSVljVzYbFphBtHvJgwMLsg/playlists
+          - generic [ref=e741] [cursor=pointer]: 
+          - generic [ref=e742] [cursor=pointer]: Youtube
+      - generic [ref=e744]: © 2013-2025 ToolsQA.com | All rights reserved
+  - navigation [ref=e746]:
+    - generic [ref=e748]:
+      - list [ref=e751]:
+        - listitem [ref=e752] [cursor=pointer]:
+          - generic [ref=e753] [cursor=pointer]:
+            - generic [ref=e754] [cursor=pointer]: QA Practices
+            - generic [ref=e755] [cursor=pointer]: 
+        - listitem [ref=e756] [cursor=pointer]:
+          - generic [ref=e757] [cursor=pointer]:
+            - generic [ref=e758] [cursor=pointer]: Front-End Testing Automation
+            - generic [ref=e759] [cursor=pointer]: 
+        - listitem [ref=e760] [cursor=pointer]:
+          - generic [ref=e761] [cursor=pointer]:
+            - generic [ref=e762] [cursor=pointer]: Back-End Testing Automation
+            - generic [ref=e763] [cursor=pointer]: 
+        - listitem [ref=e764] [cursor=pointer]:
+          - generic [ref=e765] [cursor=pointer]:
+            - generic [ref=e766] [cursor=pointer]: Mobile Testing Automation
+            - generic [ref=e767] [cursor=pointer]: 
+        - listitem [ref=e768] [cursor=pointer]:
+          - generic [ref=e769] [cursor=pointer]:
+            - generic [ref=e770] [cursor=pointer]: Frameworks & Libraries
+            - generic [ref=e771] [cursor=pointer]: 
+        - listitem [ref=e772] [cursor=pointer]:
+          - generic [ref=e773] [cursor=pointer]:
+            - generic [ref=e774] [cursor=pointer]: DevOps Tools
+            - generic [ref=e775] [cursor=pointer]: 
+        - listitem [ref=e776] [cursor=pointer]:
+          - generic [ref=e777] [cursor=pointer]:
+            - generic [ref=e778] [cursor=pointer]: Cross Browser Testing
+            - generic [ref=e779] [cursor=pointer]: 
+        - listitem [ref=e780] [cursor=pointer]:
+          - generic [ref=e781] [cursor=pointer]:
+            - generic [ref=e782] [cursor=pointer]: Non-Functional Testing
+            - generic [ref=e783] [cursor=pointer]: 
+        - listitem [ref=e784] [cursor=pointer]:
+          - generic [ref=e785] [cursor=pointer]:
+            - generic [ref=e786] [cursor=pointer]: Programming Language
+            - generic [ref=e787] [cursor=pointer]: 
+      - generic [ref=e789]:
+        - list
+  - text: ✕
+```

@@ -5,14 +5,24 @@ import { test, expect } from '@playwright/test'
 
 import dotenv from 'dotenv'
 import { Loginpage } from '../Pages/Login.js'
+
+
 import { log } from 'console'
+
+
 
 test("Valid username and password", async ({ page }) => {
 
     const login = new Loginpage(page)
+   
+
+   //await login.navigateToURL(process.env.URL)
+
+
 
     //await login.navigateToURL("https://www.saucedemo.com/")
     await login.navigateToURL(process.env.URL)
+    
 
     //   // "test:qa": "cross-env $env:TEST_ENV='qa' npx playwright test env.spec.js --project=chromium --headed"
 
@@ -38,6 +48,7 @@ test("inValid username and invalid password", async ({ page }) => {
 
     //await login.navigateToURL("https://www.saucedemo.com/")
     await login.navigateToURL(process.env.URL)
+    await login.waitForTime(page, 3000)
 
 
 

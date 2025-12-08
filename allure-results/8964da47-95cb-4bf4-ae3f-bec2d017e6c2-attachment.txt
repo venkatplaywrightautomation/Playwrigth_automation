@@ -1,0 +1,72 @@
+[
+  {
+    id: 8229689,
+    name: 'Msgr. Vasundhara Chopra',
+    email: 'msgr_vasundhara_chopra@quigley.example',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8229688,
+    name: 'Sanya Singh Sr.',
+    email: 'sanya_singh_sr@hackett-gottlieb.example',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8229687,
+    name: 'Trilochana Pillai',
+    email: 'pillai_trilochana@ritchie-ward.test',
+    gender: 'female',
+    status: 'inactive'
+  },
+  {
+    id: 8229686,
+    name: 'Kashyap Adiga VM',
+    email: 'adiga_vm_kashyap@cole.test',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8229685,
+    name: 'Amrita Tandon',
+    email: 'tandon_amrita@herzog-vandervort.test',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8229684,
+    name: 'Rohan Varrier',
+    email: 'rohan_varrier@kovacek.test',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8229682,
+    name: 'Bhasvan Kaul',
+    email: 'bhasvan_kaul@heidenreich.test',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8229681,
+    name: 'Rev. Anasuya Chopra',
+    email: 'chopra_rev_anasuya@schroeder-nikolaus.example',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8229680,
+    name: 'Shankar Johar',
+    email: 'shankar_johar@abernathy.test',
+    gender: 'male',
+    status: 'inactive'
+  },
+  {
+    id: 8229679,
+    name: 'Nanda Iyengar',
+    email: 'iyengar_nanda@deckow.example',
+    gender: 'female',
+    status: 'inactive'
+  }
+]

@@ -1,0 +1,60 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - navigation [ref=e5]:
+      - generic [ref=e7]:
+        - link "Automation Automation Practice":
+          - /url: ""
+          - generic [ref=e8] [cursor=pointer]:
+            - heading "Automation" [level=3] [ref=e9] [cursor=pointer]
+            - paragraph [ref=e10] [cursor=pointer]: Automation Practice
+      - text: 
+      - list [ref=e11]:
+        - listitem [ref=e12] [cursor=pointer]:
+          - button " HOME" [ref=e13] [cursor=pointer]:
+            - generic [ref=e14] [cursor=pointer]: 
+            - text: HOME
+        - listitem
+        - listitem [ref=e15] [cursor=pointer]:
+          - button " ORDERS" [ref=e16] [cursor=pointer]:
+            - generic [ref=e17] [cursor=pointer]: 
+            - text: ORDERS
+        - listitem [ref=e18] [cursor=pointer]:
+          - button " Cart" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20] [cursor=pointer]: 
+            - text: Cart
+        - listitem [ref=e21] [cursor=pointer]:
+          - button "Sign Out" [ref=e22] [cursor=pointer]:
+            - generic [ref=e23] [cursor=pointer]: 
+            - text: Sign Out
+    - generic [ref=e24]:
+      - generic [ref=e25]:
+        - heading "My Cart" [level=1] [ref=e26]
+        - button "Continue Shopping❯" [ref=e27] [cursor=pointer]
+      - list [ref=e29]:
+        - listitem [ref=e30] [cursor=pointer]:
+          - generic [ref=e31] [cursor=pointer]:
+            - generic [ref=e32] [cursor=pointer]:
+              - paragraph [ref=e33] [cursor=pointer]: "#68a961719320a140fe1ca57c"
+              - heading "ADIDAS ORIGINAL" [level=3] [ref=e34] [cursor=pointer]
+              - paragraph [ref=e35] [cursor=pointer]: MRP $ 11500
+              - paragraph [ref=e36] [cursor=pointer]: In Stock
+            - paragraph [ref=e38] [cursor=pointer]: $ 11500
+            - generic [ref=e39] [cursor=pointer]:
+              - button "Buy Now❯" [ref=e40] [cursor=pointer]
+              - button "❯" [ref=e41] [cursor=pointer]:
+                - generic [ref=e42] [cursor=pointer]: 
+                - text: ❯
+      - list [ref=e44]:
+        - listitem [ref=e45]:
+          - generic [ref=e46]: Subtotal
+          - generic [ref=e47]: $11500
+        - listitem [ref=e48]:
+          - generic [ref=e49]: Total
+          - generic [ref=e50]: $11500
+        - listitem [ref=e51]:
+          - button "Checkout❯" [ref=e52] [cursor=pointer]
+  - alert "Product Added To Cart" [ref=e54]
+```

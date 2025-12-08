@@ -1,0 +1,2 @@
+No of auto suggestions: 10
+playwright

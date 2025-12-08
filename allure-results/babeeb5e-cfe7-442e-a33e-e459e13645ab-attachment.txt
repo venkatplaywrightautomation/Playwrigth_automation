@@ -1,0 +1,13 @@
+all products text [ 'ZARA COAT 3', 'ADIDAS ORIGINAL', 'iphone 13 pro' ]
+Total no of products 3
+all product names ZARA COAT 3
+all product names ADIDAS ORIGINAL
+country values  British Indian Ocean Territory
+country values  India
+order id  | 690b2ea7f669d6cb0a4374e8 | 
+No of rows 5
+Ids 690b2ea7f669d6cb0a4374e8ADIDAS ORIGINAL$ 11500Wed Nov 05ViewDelete
+Ids 690b27b1f669d6cb0a43610fADIDAS ORIGINAL$ 11500Wed Nov 05ViewDelete
+Ids 690b2729f669d6cb0a435f5dADIDAS ORIGINAL$ 11500Wed Nov 05ViewDelete
+Ids 690b255ef669d6cb0a435b21ADIDAS ORIGINAL$ 11500Wed Nov 05ViewDelete
+Ids 64a3a2697244490f95743428zara coat 3$ 31500Tue Jul 04ViewDelete

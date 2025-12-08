@@ -1,5 +1,8 @@
 // let s="this is venkata reddy"
 
+const { count } = require("console");
+const { cpSync } = require("fs");
+
 
 // let rev=" "
 
@@ -107,20 +110,20 @@
 
 
 
-// let arr = [12, 45, 7, 89, 23, 56];
+let arr = [12, 45, 7, 89, 23, 56];
 
-// let largest = arr[0];
-// let secondLargest = arr[0];
+let largest = arr[0];
+let secondLargest = arr[0];
 
-// for (let i = 1; i < arr.length; i++) {
-//     if (arr[i] > largest) {
-//         secondLargest = largest;
-//         largest = arr[i];
-//     } else if (arr[i] < largest && arr[i] >secondLargest) {
-//         secondLargest = arr[i];
-//     }
-// }
-// console.log("Second largest number in array:", secondLargest);
+for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > largest) {
+        secondLargest = largest;
+        largest = arr[i];
+    } else if (arr[i] < largest && arr[i] >secondLargest) {
+        secondLargest = arr[i];
+    }
+}
+console.log("Second largest number in array:", secondLargest);
 
 
 // let arr = [12, 45, 7, 89, 23, 56];
@@ -225,10 +228,10 @@
 // let result = str.replace(/[^\w]/g, '');
 // console.log(result); // "Hello_ World"
 
-// let s="venkat 12345@#$$"
+let s="venkat 12345@#$$"
 
-// let r=s.replace(/\D/g,"")
-// console.log(r)
+let r=s.replace(/\D/g,"")
+console.log(r)
 
 
 
@@ -808,23 +811,23 @@
 
 
 
-// let day="1"
+let day="1"
 
-// switch(day){
-//     case "sunday":
-//     console.log("sunday")
+switch(day){
+    case "1":
+    console.log("sunday")
     
     
-//        case "monday":
-//     console.log("monday")
+       case "monday":
+    console.log("monday")
 
 
-//        case "tuesday":
-//     console.log("tuesday")
-//     // default:
-//     // console.log("invalid day")  
+       case "tuesday":
+    console.log("tuesday")
+    default:
+    console.log("invalid day")  
 
-// }
+}
 
 
 
@@ -1167,12 +1170,891 @@
 //   console.log(num.toUpperCase())
 // })
 
-let numbers = [1, 2, 3, 4];
-// let doubled = numbers.map(num => num * 2);
-// console.log(doubled)
-// console.log(numbers)
+// let numbers = [1, 2, 3, 4];
+// // let doubled = numbers.map(num => num * 2);
+// // console.log(doubled)
+// // console.log(numbers)
 
 
-// numbers.forEach(num => console.log( num * 2))
-let even=numbers.filter(num => num % 2===0)
-console.log(even)
+// // numbers.forEach(num => console.log( num * 2))
+// let even=numbers.filter(num => num % 2===0)
+// console.log(even)
+
+// let userdata={
+
+
+//     name:"venkat",
+//     age:30,
+//     city:"hyd"
+// }
+
+// for(const key in userdata){
+
+//     console.log(key)
+
+// console.log(userdata[key])
+
+
+// }
+
+
+// const arr = ["abc", "bd", "c"];
+
+// for (let i in arr) {
+//   console.log(i);        // 0, 1, 2   (indexes)
+// }
+
+// const arr = ["a", "b", "c"];
+// for (let val of arr) {
+//   console.log(val);      // a, b, c   (values)
+// }
+
+
+
+// const arr = ["apple", "banana", "cherry"];
+
+// // Add a custom property to array
+//  arr.hello = "extra property";
+
+// // for (let i in arr) {
+// //  // console.log(i);       // 0, 1, 2, custom   ❌ includes extra property
+// //   console.log(arr[i]);  // apple, banana, cherry, extra property
+// // }
+
+// for (let val of arr) {
+//   console.log(val);     // ✅ apple, banana, cherry (only values)
+// }
+
+//const arr= [1,2,3,4,5,6,1,2,3,4,7,8,9,6,5]
+
+// const uniques= [... new Set(arr)]
+
+// console.log(uniques)
+
+
+// const unique=arr.filter((ele,inde,array) =>array.indexOf(ele)=== inde)
+
+// console.log(unique)
+
+
+
+// const str="venkat@123"
+
+// let rev=" "
+// for(let i=0;i<str.length;i++){
+
+
+// rev=str[i] + rev
+// }
+
+// let  num=12345
+// let rev=0 
+// while(num>0){
+
+//     let digit= num % 10
+//     rev=rev * 10 + digit
+//     num= Math.floor(num / 10)
+// } 
+
+
+// console.log(rev)
+
+// let arr=[1,2,3,4,5,6,7,8,9]
+// let sum=0;
+// for(let i=0;i<arr.length;i++){
+
+//   sum=sum  + arr[i] 
+
+// }
+
+// console.log(sum)
+
+
+// let fact=1
+// for(let i=1;i<=5;i++){
+//   fact =fact * i
+// }
+// console.log(fact)
+
+
+// let arr=[1,2,3,4,5,6,7,8,9,0,-1]
+
+
+// let  max=arr[0]
+
+// for(let i=1;i<arr.length;i++){
+//   if(arr[i] < max){
+//     max=arr[i]  
+//   }
+// }
+// console.log(max)
+
+
+
+// let num=212
+
+// for(let i=2;i<=num;i++){
+
+//     let isprime=true
+//     for(let j=2;j<=Math.sqrt(i);j++){
+
+//         if(i % j ===0){
+//             isprime=false
+//             break
+//         }  
+//     }
+//     if(isprime){
+//         console.log(num + " is a prime number")
+//     }    
+
+// }   
+
+
+
+// for (let num = 2; num <= 100; num++) {  // start from 2, as 0 and 1 are not prime
+//     let isPrime = true;
+
+//     // Check if divisible by any number from 2 to √num
+//     for (let i = 2; i <= Math.sqrt(num); i++) {
+//         if (num % i === 0) {
+//             isPrime = false;
+//             break;  // not prime, exit loop
+//         }
+//     }
+
+//     if (isPrime) {
+//         console.log(num);
+//     }
+// }
+
+
+// let num = 17;  // Number to check
+// let isPrime = true;  // Assume it is prime
+
+// if (num <= 1) {
+//     isPrime = false;  // 0 and 1 are not prime
+// } else {
+//     for (let i = 2; i <= Math.sqrt(num); i++) {
+//         if (num % i === 0) {
+//             isPrime = false;  // Divisible, so not prime
+//             break;  // No need to check further
+//         }
+//     }
+// }
+
+// if (isPrime) {
+//     console.log(num + " is a prime number");
+// } else {
+//     console.log(num + " is not a prime number");
+// }
+
+
+// let num=2;
+// let isprime=true
+
+// if(num<=1){
+//     isprime=false
+// }
+// else
+// {
+
+
+//     for(let j=2;j<=Math.sqrt(num);j++){
+//         if(num % j===0){
+//             isprime=false
+//             break
+//         }
+//     }
+// }
+
+// if(isprime){
+//     console.log(num + " is a prime number")
+// }
+// else{
+//     console.log(num + " is not a prime number")
+// }
+
+
+// let num1= 0;
+// let num2= 1
+// let nmu3;
+
+// for(let i=2;i<=10;i++){
+
+//     console.log(num1)
+//     nmu3= num1 + num2
+//     num1=num2
+//     num2=nmu3
+// }   
+// //console.log(nmu3)
+
+
+// for (let i = 1; i <= 5; i++) {
+//   console.log("Number:", i);
+// }
+
+
+let arr1 = [10, 20, 30, 40];
+for (let i = arr1.length - 1; i >= 0; i--) {
+  console.log(arr1[i]);
+}
+
+for (let i = 1; i <= 5; i++) {
+  let line = '';
+  for (let j = 1; j <= i; j++) {
+    //line += '*';
+    line =line + "*"
+  }
+  console.log(line);
+}
+
+// for (var i = 0; i < 3; i++) {
+//   setTimeout(() => console.log(i), 1000);
+// }
+
+// const str = "VENKAT";
+// for (let c of str) {
+//   console.log(c);
+// }
+
+// const str = "VENKAT";
+// for (let i = 0; i < str.length; i++) {
+//   console.log(str[i]);
+// }
+
+
+// let a=[1,2,4,5,6,7,8]
+// let even= []
+// let odd= []
+
+// for(let c of a)
+// {
+// if(c  % 2 === 0){
+
+//     even.push(c)
+// }
+// else{
+//     odd.push(c)
+// }
+
+// }
+
+
+// console.log("Even:", even);
+// console.log("Odd:", odd);
+
+
+// let user= null
+// console.log(user)
+
+// console.log(typeof user)
+
+// let x;
+// console.log(x)
+// console.log( typeof x)
+
+// const emptyValue = null;
+// console.log(emptyValue)
+// console.log(typeof emptyValue)
+
+
+// let value = null;
+// console.log(value == null); // true
+// console.log(value == undefined); // true
+
+// console.log(value === undefined); // false
+
+// let data = null;
+
+// if (data) {
+//   console.log("Has value");
+// } else {
+//   console.log("No value"); // ✅ prints this
+// }
+
+
+// function isnull(value){
+//     return value === null
+
+    
+// }
+
+
+// //console.log(isnull(null))
+
+// console.log(isnull(undefined))
+
+
+// function isEven(num)
+// {
+
+//     return num % 2 === 0
+// }
+
+// console.log(isEven(5))
+
+
+// function checkcondition(condition)
+// {
+
+//     return condition ? true: false
+// }
+
+
+// console.log(5> 2)
+
+// function isPositive(num) {
+//   return num > 0;
+// }
+
+// console.log(isPositive(5));  // true
+// console.log(isPositive(-3)); // false
+
+// let a=false
+
+// console.log(typeof a)
+
+
+// function add(a,b){
+//     return a + b
+// }
+
+
+// console.log(add(1,2))
+
+
+
+
+// const user ={
+
+//     name:'venkat',
+//     age:30,
+//     isstudent:false
+// }
+// console.log(user.name)
+// console.log(user.age)
+// console.log(user.isstudent)
+
+// const user={
+
+//     name:'venkat',
+//     city:'Hyderabad'
+// }
+// console.log(user.name)
+// console.log(user.city)
+
+
+// user.country="India"
+// user.city="Bnagalroe"
+
+// console.log(user.name)
+// console.log(user.city)
+// console.log(user.country)
+// console.log(user.city)
+
+// delete user.name
+// console.log(user)
+
+
+// const person= new Object()
+// person.name="venkat"
+// person.age=25
+
+// console.log(person.name)
+
+
+// function person(name,age){
+//     this.name=name
+//     this.age=age
+// }
+// const p= new person("venkat",25)
+// console.log(p)
+
+
+// const student = { name: "Venkat", age: 25, city: "Chennai" };
+
+
+// for(let  key in student){
+
+
+//     //console.log(key + " :" + student[key])
+    
+//     console.log(student[key])
+
+    
+    
+// }
+
+
+// export const locators={
+
+//     username:"jjjf",
+//     password: 'ddd'
+// }
+
+
+
+// export const user={
+
+//     validuser:{
+//         username:'',
+//         password :''
+
+//     },
+//     invaliduser:{
+
+//         username:'ddd',
+//         password:''
+//     }
+// };
+
+
+// let a= null;
+// console.log(typeof a)
+
+
+// var b= null
+
+// console.log(typeof b)
+
+// const c=null
+// console.log( typeof c)
+// let a= null
+// if (a === null) {
+//   console.log("Value is null");
+// }
+
+
+// let name = "Venkat";
+// name = null; // reset or clear
+// conso
+
+
+
+// let data = { name: "Venkat" };
+// data = null;
+// console.log(data)
+
+// function findUser() {
+//   return null; // means user not found
+// }
+// console.log(findUser)
+
+// if (null) 
+//     { 
+//         console.log("true");
+//      }
+
+// let person={
+//     name:'venkat',
+//     middlename:'null',
+//     greet:function(){
+//         console.log('hello i am '+ this.name)
+//     }
+// }
+// person.greet()
+
+
+// let person={
+//     name:'venkat'
+
+// }
+// person.age=30
+// person['city']='hyd '
+
+
+// console.log(person.name)
+
+// console.log(person.age)
+
+
+// console.log(person.city)
+// person.name="reddy"
+// console.log(person.name)
+// delete person.city
+
+// console.log(person.city)
+
+// import { test ,expect} from "allure-playwright";
+// import { log } from "console";
+
+
+
+
+
+// console.log("First line")
+// setTimeout(()=>{
+//     console.log("second Line")
+// },0)
+// console.log("third lien")
+
+// function ispositive(number){
+//     if(number > 0){
+//         return true
+//     }
+//     else{
+//         return false
+//     }
+// }
+
+// console.log(ispositive(-7))
+
+
+//     function is(number){
+//         return number > 0
+//     }
+//     console.log(is(8))
+// const isEven = (number) => number % 2 === 0;
+
+// console.log(isEven(4));  // true
+// console.log(isEven(5));  // false
+
+
+// const person = {
+//     name: "John",
+//     age: 30
+// };
+
+// console.log(typeof person); 
+
+// This is a JSON string (text)
+// const personJSON = '{"name":"John","age":30}';
+
+// console.log(typeof personJSON);
+
+
+// const person = {
+//     name: "John",
+//     age: 30,
+//     city: "New York",
+//     hobbies: ["reading", "coding"]
+// };
+
+// // Convert object to JSON string
+// const jsonString = JSON.stringify(person)
+// console.log(jsonString);
+
+
+// JavaScript Object → typeof returns "object"
+// const obj = { name: "John" };
+// console.log(typeof obj);  // "object"
+
+// // JSON String → typeof returns "string"
+// const json = '{"name":"John"}';
+// console.log(typeof json);  // "string"
+
+// // After parsing JSON → typeof returns "object"
+// const parsed = JSON.parse(json);
+// console.log(typeof parsed);  // "object"
+
+
+// const a=[1,2,3]
+// // a.forEach(num=>
+
+// //     console.log(num)
+// // )
+
+// a.forEach((num,ind) =>{
+
+//     console.log(`index: ${ind}, value:${num}`)
+
+// })
+
+
+// let users = ["Venkat", "Ravi", "Kumar"];
+
+// users.forEach(name => console.log(name));
+
+// let students = [
+//   { name: "Venkat", marks: 80 },
+//   { name: "Ravi", marks: 90 }
+// ];
+
+// students.forEach(student => {
+//   console.log(student.name + " - " + student.marks);
+// });
+
+
+// numbers.forEach(num => {
+//   if (num === 20) 
+//     //break; // ❌ SyntaxError
+// });
+
+// let nums = [1, 2, 3];
+
+// let result1 = nums.forEach(n => n * 2);
+// console.log(result1); // undefined
+
+
+// function sumofarray(arr){
+
+//   return arr.reduce((sum,num) => sum +num,0)
+// }
+
+// console.log("sum of arry values",sumofarray([1,2,3,4]))
+
+
+// function large(num){
+
+//   return Math.min(...num)
+// }
+// let nums=[1,2,3,4,5]
+
+// console.log("largest value",large(nums))
+
+
+// function ispalindrum(num){
+//   let  rev=num.split("").reverse().join("")
+//   return rev === num
+
+// }
+
+// console.log("palindrum",ispalindrum("madam"))
+
+
+// function fact(n){
+
+//   if(n === 0 || n === 1) return 1
+
+//   return n * fact(n  - 1)
+// }
+
+// console.log(fact(5))
+
+// function even(num){
+//   return num % 2 === 0 ? "even" : "odd"
+// }
+
+
+// console.log(even(10))
+
+// let a ="venkat"
+
+// console.log("lentht is",a.split(""))
+// console.log("includes is",a.includes("en"))
+
+// let numbers=[1,2,3,4]
+// //numbers.forEach(num => console.log(num))
+// let double=numbers.map(num => num * 2)
+
+// console.log(double)
+
+
+// let even= numbers.filter( num => num % 2 === 0)
+
+// console.log("even",even)
+
+
+// let person={
+//   firstname: "venkat",
+//   lastname: "reddy",
+
+// fullname:function(){
+//   return this.firstname + " "+ this.lastname;
+// }
+// };
+
+
+// console.log("full name",person.fullname())
+
+// const square= (num) => num * num
+// console.log(square(5))
+
+// for(let i=1;i<=5;i++){
+
+//   console.log(i)
+// }
+
+// let count = 5
+// while(count > 0){
+//   console.log(count)
+//   count--;
+// }
+// let count1 = 5;
+// while (count1 > 0) {
+//     console.log(count1);
+//     count1--;
+// }
+// let name = "Alice";
+// let age = 25;
+// let isStudent = true;
+// let hobbies = ["reading", "coding", "gaming"];
+
+// console.log("Name:", name);
+// console.log("Age:", age);
+// console.log("Is Student:", isStudent);
+// console.log("Hobbies:", hobbies);
+
+// function average(arr) {
+//     return arr.reduce((sum, num) => sum + num, 0) / arr.length;
+// }
+
+// console.log("Average:", average([10, 20, 30, 40, 50]));
+// function capitalizeWords(str) {
+//     return str.split(' ')
+//               .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+//               .join(' ');
+// }
+
+// console.log(capitalizeWords("hello world from javascript"));
+
+// function capital(str){
+
+//   return str.split(" ").map(word => word.charAt(0).toUpperCase()+ word.slice(1)).join(" ")
+// }
+
+// console.log("capital",capital("hello venkat"))
+
+// function secondLargest1(arr) {
+//     let unique = [...new Set(arr)].sort((a, b) => b - a);
+//     return unique[1];
+// }
+
+// console.log("Second largest:", secondLargest1([10, 5, 8, 12, 3, 12]));
+
+
+// function sec(arr)
+
+
+// {
+
+//   let unoque = [...new Set(arr)].sort((a, b) => b - a );
+//   return unoque[2];
+// }
+// console.log(sec([1,2,3,4,5,6,7]))
+
+//console.log([1, 2] + [3, 4]);
+
+// for (var i = 0; i < 3; i++) {
+//     setTimeout(() => console.log(i), 0);
+// }
+
+
+// const nums = [1, 2, 3, 4, 5];
+
+// // Using for loop
+// const squaredLoop = [];
+// for (let i = 0; i < nums.length; i++) {
+//     squaredLoop.push(nums[i] ** 2);
+// }
+// console.log("For loop result:", squaredLoop);
+
+
+// var a=10
+// var a=34;
+// console.log(a)
+
+// let a=10;
+// let a=30
+// console.log(a)
+
+// var x = 10;
+// // Here x is 10
+// console.log(x)
+// {
+// var x = 2;
+// // Here x is 2
+// console.log(x)
+// }
+
+// // Here x is 2
+// console.log(x)
+
+// let x = 10;
+// // Here x is 10
+// console.log(x)
+
+// {
+// let x = 2;
+// // Here x is 2
+// console.log(x)
+// }
+
+// // Here x is 1
+// // 0
+// console.log(x)
+
+// let i = 5;
+
+// for (i = 0; i < 10; i++) {
+//   // some code
+//   console.log(i)
+// }
+// let day=new Date().getDay()
+// switch (day) {
+//   case 0:
+//     day = "Sunday";
+//     break;
+//   case 1:
+//     day = "Monday";
+//     break;
+//   case 2:
+//      day = "Tuesday";
+//     break;
+//   case 3:
+//     day = "Wednesday";
+//     break;
+//   case 4:
+//     day = "Thursday";
+//     break;
+//   case 5:
+//     day = "Friday";
+//     break;
+//   case 6:
+//     day = "Saturday";
+// }
+
+// let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+// let length = text.length;
+// console.log(length)
+
+
+//let text = "We are the so-called \'venkat\' from the north.";
+
+
+// let text= 'It\'s alright.';
+
+// console.log(text)
+
+// let x = "John";
+// let y = new String("John");
+// console.log(x===y)
+
+// let x = new String("John");
+// let y = new String("John");
+
+// console.log(x==y)
+
+
+// const cars = new Array("Saab", "Volvo", "BMW");
+
+// console.log(cars.toString())
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// fruits[6] = "Lemon";
+// let length = fruits.length;
+// //console.log(fruits[fruits.length-1])
+
+// for(let i=0;i<length;i++){
+
+//   console.log(fruits[i])
+// }
+// const points = [40];
+// //const points = new Array(40); 
+// console.log(points)
+
+//let x = 16 + "Volvo";
+
+// const d = new Date("2022-03-25");
+// console.log(d)
+
+// let arrayIntegersOriginal3 = [1, 2, 3, 4, 5];
+
+// let arrayIntegers3 = arrayIntegersOriginal3.splice(3, 1, "a", "b", "c");
+// console.log(arrayIntegers3);
+
+let numbers = [1, 2, 5, 3, 4];
+numbers.sort((a, b) => b - a);
+numbers.reverse();
+console.log(numbers); // [1, 2, 3, 4 ,5]
+

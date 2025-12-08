@@ -1,0 +1,2 @@
+all products text [ 'ZARA COAT 3', 'ADIDAS ORIGINAL', 'iphone 13 pro' ]
+Total no of products 3

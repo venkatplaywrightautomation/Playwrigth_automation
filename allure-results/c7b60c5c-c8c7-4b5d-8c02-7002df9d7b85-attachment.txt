@@ -1,0 +1,12 @@
+No of auto suggestions: 10
+playwright
+playwright automation
+playwright mcp
+playwright documentation
+playwright mcp server
+playwright interview questions
+playwright vs selenium
+playwright automation tool
+playwright tutorial
+playwright python
+Page title is: https://www.google.com/search?q=playwright&sca_esv=0b63397c303c3702&source=hp&ei=bh_uaMmhJ_rG4-EPkfuQ0Q4&iflsig=AOw8s4IAAAAAaO4tfjfe9vC7-3Ayhkud3b_EWTfCcSVA&oq=Playwright&gs_lp=Egdnd3Mtd2l6IgpQbGF5d3JpZ2h0KgIIADIIEAAYgAQYsQMyCBAAGIAEGLEDMggQABiABBixAzIIEAAYgAQYsQMyCBAAGIAEGLEDMggQABiABBixAzILEAAYgAQYsQMYgwEyCBAAGIAEGLEDMgsQABiABBixAxiDATIIEAAYgAQYsQNIrxpQAFgAcAB4AJABAJgBVqABVqoBATG4AQHIAQD4AQGYAgGgAl6YAwCSBwExoAemBbIHATG4B17CBwMyLTHIBwY&sclient=gws-wiz&sei=cx_uaKaoFPjpkPIPssrV-AY
