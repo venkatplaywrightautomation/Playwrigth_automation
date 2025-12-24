@@ -1,0 +1,6 @@
+total no of dropdown values are: 5
+dropdown values are:${i} Choose State
+dropdown values are:${i} NCR
+dropdown values are:${i} Uttar Pradesh
+dropdown values are:${i} Haryana
+dropdown values are:${i} Rajasthan

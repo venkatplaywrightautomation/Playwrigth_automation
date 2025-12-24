@@ -1,0 +1,6 @@
+all products text [ 'ZARA COAT 3', 'ADIDAS ORIGINAL', 'iphone 13 pro' ]
+Total no of products 3
+Total no of products length undefined
+all product names ZARA COAT 3
+all product names ADIDAS ORIGINAL
+all product names iphone 13 pro

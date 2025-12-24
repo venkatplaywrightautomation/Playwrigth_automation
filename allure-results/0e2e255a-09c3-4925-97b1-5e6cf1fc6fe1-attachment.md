@@ -1,0 +1,228 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - paragraph [ref=e3]:
+    - link "PMP Practice" [ref=e4] [cursor=pointer]:
+      - /url: https://pmp.expandtesting.com/
+    - text: "| Free PMP Certification Mock Exam Test +900 Questions & Quizzes"
+    - link "Software testing courses" [ref=e5] [cursor=pointer]:
+      - img [ref=e7] [cursor=pointer]
+      - generic [ref=e9] [cursor=pointer]: Software testing courses
+  - banner [ref=e11]:
+    - navigation "Main navigation" [ref=e12]:
+      - link "SUT" [ref=e13] [cursor=pointer]:
+        - /url: /
+        - 'img "Best Website for Practice Automation Testing: Free UI and REST API Examples and Apps. Using Cypress, Playwright, Selenium, WebdriverIO and Postman." [ref=e14] [cursor=pointer]'
+        - text: Practice
+      - generic [ref=e15]:
+        - list [ref=e16]:
+          - listitem [ref=e17]:
+            - button "Demos" [ref=e18] [cursor=pointer]
+          - listitem [ref=e19]:
+            - link "Tools" [ref=e20] [cursor=pointer]:
+              - /url: /#tools
+          - listitem [ref=e21]:
+            - link "Tips" [ref=e22] [cursor=pointer]:
+              - /url: /tips
+          - listitem [ref=e23]:
+            - link "Test Cases" [ref=e24] [cursor=pointer]:
+              - /url: /test-cases
+          - listitem [ref=e25]:
+            - link "API Testing" [ref=e26] [cursor=pointer]:
+              - /url: /notes/api/api-docs/
+          - listitem [ref=e27]:
+            - link "About" [ref=e28] [cursor=pointer]:
+              - /url: /about
+        - list
+        - link "Free ISTQB Mock Exams" [ref=e29] [cursor=pointer]:
+          - /url: https://istqb.expandtesting.com/
+  - main [ref=e30]:
+    - insertion [ref=e34]:
+      - generic [ref=e36]:
+        - generic "These are topics related to the article that might interest you" [ref=e37]: Discover more
+        - link "Software Testing" [ref=e38] [cursor=pointer]:
+          - img [ref=e40] [cursor=pointer]
+          - generic [ref=e42] [cursor=pointer]: Software Testing
+        - link "CPU load testing" [ref=e43] [cursor=pointer]:
+          - img [ref=e45] [cursor=pointer]
+          - generic [ref=e47] [cursor=pointer]: CPU load testing
+        - link "Playwright automation guide" [ref=e48] [cursor=pointer]:
+          - img [ref=e50] [cursor=pointer]
+          - generic [ref=e52] [cursor=pointer]: Playwright automation guide
+        - link "ISTQB mock exams" [ref=e53] [cursor=pointer]:
+          - img [ref=e55] [cursor=pointer]
+          - generic [ref=e57] [cursor=pointer]: ISTQB mock exams
+        - link "Application programming interface" [ref=e58] [cursor=pointer]:
+          - img [ref=e60] [cursor=pointer]
+          - generic [ref=e62] [cursor=pointer]: Application programming interface
+        - link "Task manager simulator" [ref=e63] [cursor=pointer]:
+          - img [ref=e65] [cursor=pointer]
+          - generic [ref=e67] [cursor=pointer]: Task manager simulator
+        - link "Browser automation frameworks" [ref=e68] [cursor=pointer]:
+          - img [ref=e70] [cursor=pointer]
+          - generic [ref=e72] [cursor=pointer]: Browser automation frameworks
+        - link "Automation Testing" [ref=e73] [cursor=pointer]:
+          - img [ref=e75] [cursor=pointer]
+          - generic [ref=e77] [cursor=pointer]: Automation Testing
+        - link "Test management systems" [ref=e78] [cursor=pointer]:
+          - img [ref=e80] [cursor=pointer]
+          - generic [ref=e82] [cursor=pointer]: Test management systems
+        - link "WebdriverIO automation examples" [ref=e83] [cursor=pointer]:
+          - img [ref=e85] [cursor=pointer]
+          - generic [ref=e87] [cursor=pointer]: WebdriverIO automation examples
+    - paragraph [ref=e89]:
+      - text: Do you enjoy this platform? ❤️
+      - link "Buy us a coffee" [ref=e90] [cursor=pointer]:
+        - /url: https://www.buymeacoffee.com/expandtesting
+    - generic [ref=e91]:
+      - insertion [ref=e93]:
+        - generic [ref=e95]:
+          - generic "These are topics related to the article that might interest you" [ref=e96]: Discover more
+          - link "Automation practice website" [ref=e97] [cursor=pointer]:
+            - img [ref=e99] [cursor=pointer]
+            - generic [ref=e101] [cursor=pointer]: Automation practice website
+          - link "Dynamic table examples" [ref=e102] [cursor=pointer]:
+            - img [ref=e104] [cursor=pointer]
+            - generic [ref=e106] [cursor=pointer]: Dynamic table examples
+          - link "Software testing services" [ref=e107] [cursor=pointer]:
+            - img [ref=e109] [cursor=pointer]
+            - generic [ref=e111] [cursor=pointer]: Software testing services
+          - link "REST API testing" [ref=e112] [cursor=pointer]:
+            - img [ref=e114] [cursor=pointer]
+            - generic [ref=e116] [cursor=pointer]: REST API testing
+          - link "Cypress testing tutorials" [ref=e117] [cursor=pointer]:
+            - img [ref=e119] [cursor=pointer]
+            - generic [ref=e121] [cursor=pointer]: Cypress testing tutorials
+          - link "Test management systems" [ref=e122] [cursor=pointer]:
+            - img [ref=e124] [cursor=pointer]
+            - generic [ref=e126] [cursor=pointer]: Test management systems
+          - link "Coffee subscriptions" [ref=e127] [cursor=pointer]:
+            - img [ref=e129] [cursor=pointer]
+            - generic [ref=e131] [cursor=pointer]: Coffee subscriptions
+          - link "PMP certification mock" [ref=e132] [cursor=pointer]:
+            - img [ref=e134] [cursor=pointer]
+            - generic [ref=e136] [cursor=pointer]: PMP certification mock
+          - link "Performance testing software" [ref=e137] [cursor=pointer]:
+            - img [ref=e139] [cursor=pointer]
+            - generic [ref=e141] [cursor=pointer]: Performance testing software
+          - link "Browser automation frameworks" [ref=e142] [cursor=pointer]:
+            - img [ref=e144] [cursor=pointer]
+            - generic [ref=e146] [cursor=pointer]: Browser automation frameworks
+      - generic [ref=e149]:
+        - navigation "breadcrumb mb-2" [ref=e150]:
+          - list [ref=e151]:
+            - listitem [ref=e152]:
+              - link "Home" [ref=e153] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e154]: / Dynamic Table
+        - heading "Dynamic Table page for Automation Testing Practice" [level=1] [ref=e155]
+        - generic [ref=e157]:
+          - paragraph [ref=e158]:
+            - text: Below you see a table where columns and rows change their position upon page reload.
+            - text: Values in cells are random.
+            - link "API testing resources" [ref=e159] [cursor=pointer]:
+              - img [ref=e161] [cursor=pointer]
+              - generic [ref=e163] [cursor=pointer]: API testing resources
+          - heading "Scenario" [level=2] [ref=e164]
+          - list [ref=e165]:
+            - listitem [ref=e166]: For Chrome process get value of CPU load.
+            - listitem [ref=e167]: Compare it with value in the yellow label.
+          - heading "Playground" [level=2] [ref=e168]
+        - generic [ref=e170]:
+          - generic [ref=e171]: Task Manager
+          - table [ref=e173]:
+            - rowgroup [ref=e174]:
+              - row "Name Disk CPU Network Memory" [ref=e175]:
+                - cell "Name" [ref=e176]
+                - cell "Disk" [ref=e177]
+                - cell "CPU" [ref=e178]
+                - cell "Network" [ref=e179]
+                - cell "Memory" [ref=e180]
+            - rowgroup [ref=e181]:
+              - row "Chrome 0.7 MB/s 5.2% 8.8 Mbps 59.7 MB" [ref=e182]:
+                - cell "Chrome" [ref=e183]
+                - cell "0.7 MB/s" [ref=e184]
+                - cell "5.2%" [ref=e185]
+                - cell "8.8 Mbps" [ref=e186]
+                - cell "59.7 MB" [ref=e187]
+              - row "Firefox 0.1 MB/s 6.8% 3.7 Mbps 21.9 MB" [ref=e188]:
+                - cell "Firefox" [ref=e189]
+                - cell "0.1 MB/s" [ref=e190]
+                - cell "6.8%" [ref=e191]
+                - cell "3.7 Mbps" [ref=e192]
+                - cell "21.9 MB" [ref=e193]
+              - row "System 0.2 MB/s 3.1% 6.6 Mbps 16.2 MB" [ref=e194]:
+                - cell "System" [ref=e195]
+                - cell "0.2 MB/s" [ref=e196]
+                - cell "3.1%" [ref=e197]
+                - cell "6.6 Mbps" [ref=e198]
+                - cell "16.2 MB" [ref=e199]
+              - row "Internet Explorer 0.4 MB/s 1.3% 9.7 Mbps 7.8 MB" [ref=e200]:
+                - cell "Internet Explorer" [ref=e201]
+                - cell "0.4 MB/s" [ref=e202]
+                - cell "1.3%" [ref=e203]
+                - cell "9.7 Mbps" [ref=e204]
+                - cell "7.8 MB" [ref=e205]
+          - paragraph [ref=e206]: "Chrome CPU: 5.2%"
+    - insertion [ref=e208]:
+      - generic [ref=e210]:
+        - generic "These are topics related to the article that might interest you" [ref=e211]: Discover more
+        - link "Test automation" [ref=e212] [cursor=pointer]:
+          - img [ref=e214] [cursor=pointer]
+          - generic [ref=e216] [cursor=pointer]: Test automation
+        - link "Postman API testing" [ref=e217] [cursor=pointer]:
+          - img [ref=e219] [cursor=pointer]
+          - generic [ref=e221] [cursor=pointer]: Postman API testing
+        - link "Performance testing software" [ref=e222] [cursor=pointer]:
+          - img [ref=e224] [cursor=pointer]
+          - generic [ref=e226] [cursor=pointer]: Performance testing software
+        - link "Testing" [ref=e227] [cursor=pointer]:
+          - img [ref=e229] [cursor=pointer]
+          - generic [ref=e231] [cursor=pointer]: Testing
+        - link "API testing tools" [ref=e232] [cursor=pointer]:
+          - img [ref=e234] [cursor=pointer]
+          - generic [ref=e236] [cursor=pointer]: API testing tools
+        - link "Automation testing courses" [ref=e237] [cursor=pointer]:
+          - img [ref=e239] [cursor=pointer]
+          - generic [ref=e241] [cursor=pointer]: Automation testing courses
+        - link "Task manager simulator" [ref=e242] [cursor=pointer]:
+          - img [ref=e244] [cursor=pointer]
+          - generic [ref=e246] [cursor=pointer]: Task manager simulator
+        - link "Database management tools" [ref=e247] [cursor=pointer]:
+          - img [ref=e249] [cursor=pointer]
+          - generic [ref=e251] [cursor=pointer]: Database management tools
+        - link "CPU load testing" [ref=e252] [cursor=pointer]:
+          - img [ref=e254] [cursor=pointer]
+          - generic [ref=e256] [cursor=pointer]: CPU load testing
+        - link "Online learning platforms" [ref=e257] [cursor=pointer]:
+          - img [ref=e259] [cursor=pointer]
+          - generic [ref=e261] [cursor=pointer]: Online learning platforms
+  - contentinfo [ref=e262]:
+    - generic [ref=e267]:
+      - heading "Practice Test Automation WebSite for Web UI and Rest API" [level=4] [ref=e268]
+      - paragraph [ref=e269]:
+        - text: "Version: 874f3178 | Copyright"
+        - link "Expand Testing" [ref=e270] [cursor=pointer]:
+          - /url: https://expandtesting.com/
+        - text: "2025"
+  - insertion [ref=e271]:
+    - iframe [ref=e274]:
+      - iframe [ref=f1e1]:
+        - generic [ref=f2e1]:
+          - generic [ref=f2e2]:
+            - generic:
+              - img [ref=f2e6] [cursor=pointer]
+              - button [ref=f2e8] [cursor=pointer]:
+                - img [ref=f2e9] [cursor=pointer]
+          - insertion [ref=f2e16]:
+            - link "Advertisement" [ref=f2e19] [cursor=pointer]:
+              - /url: https://ad.doubleclick.net/pcs/click?xai=AKAOjstU7cNYA1cZ2R7lC9radcuuZs7skVaRzGAR6aW_zVn-PtXJ8iOBwS00--UI1N-GMT9xktDX1KYEhn9Nx2tqF6ckahlE3xVxwZLN4yxkdG8y2mg-nSwQBL9tIotifSrW_JwqGX3D1jQfzeC5uO1krPVFIqJbIvtOr9m5rJ6K5U-vHVZfeSxllSOEZsj3FcP_PDig8OMsvxd8KwXh5zd_8fY9mxkLc_zP8X9olwD4ZOhwD5q87o-8_s77slD5eXzOMFCHPJxSk9DcFmsM_WpTqV139gFLltxIknBBcpBanSMFe6ZY9UKJvEczPCT8-KqprXUqqYY0pTtV5ERVncVne9UOTkn1sptFnVpu4kkFSc4302oGoja55NNxklw2WZJts-n5r1pfj_eQJkW795LpclHcWNXTHV6ZUZWTV-IyX-wsq7JQSpPSRABMdeU_EpSk02SXsSZykmvIm_Zf2oXQ7OtbOMqF6xLlJoKTFlktRXNG9d2ObUIp3jE0HKxalpTiUqbE7djAeFA7dKlOnyyJUFnk821OgDv56tiSgOCYDXcKl84r0qyOBXoUIA&sai=AMfl-YRQCEYC0pFWaTFE8o_9oqjps24cdZgYu22_uK68cVVXo42X9vp4dnPdoXRCgKpwsY6fvC2IHXU_nBG6jxDXd64bCMPkbT2ctATzTYyldiaTjozAJaZb0c5wS4O1OgliiIPuZgamB7Mtd7PoZqj6nBpZ9ri-N7intvahhrV60maExqm1qBzhwTNuAEXQe0P-JgFUgJudndB6Zvc9hegiIab5utiDRj2eO9kB1XGHBihQ3w&sig=Cg0ArKJSzBdGxjsDbE2-&cry=1&fbs_aeid=%5Bgw_fbsaeid%5D&crd=aHR0cHM6Ly91bml0ZWRoZWFsdGhncm91cC5jb20&urlfix=1&adurl=https://googleads.g.doubleclick.net/dbm/clk%3Fsa%3DL%26ai%3DCUVMHPQVBabbGJumNjMwPqNrE2ArJ8MWShAHMku_z6RTwLhABIJWUmaMBYOXq4wOgAe7l3uIByAEJqQLexdtuFatHPqgDAcgDmwSqBKcCT9DEcnE59hIprqYeR3vT7ulWgRjlTN-Qo9Y_wo3VCxrKYgCtqWjT302aya6u62BeAIX53st9apuyqIjucND-NgwlMNJbHzdi6lPnHbbiqYEMmPxMrPTG4JZJe-p2C4397rZBZ2v9RgGNwPjXYbY5Bww1Dda_34szeoFkMwO22r8R39OWGjknQQMLcLLBK1tlWgtnaYnQ8WSPpCL-Yx-7OoSN8vZjS4LUYzvJCq1nNwqbIaZuJg8rySfpvItucJz57zmbYgmfjPjfqUVyp4ZzwJfv9f7W2gSqB-NlsOqH2ZL-O4xN2clA_-qJPpkwTTtoBI1lZda97c0vp8Xbi05LVv0ZppR5roPSRg0lcJZgkq0jzSWGhmBols9Dp0JYDHpST_jKco6aWcAEu_nH65MF4AQDiAXqoPCqU5AGAaAGTYAH-pmhnQKoB6fMsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB9XJG6gH2baxAqgHmgaoB_-esQKoB9-fsQKoB_jCsQKoB_vCsQKoB-fXsQLYBwDSCC8IgGEQARifAzIIioKAgICAgAg6DYBAgMCAgICAqIACqANIvf3BOljcsd6RxsGRA4AKAZgLAcgLAYAMAaoNAklO6g0TCNrX9ZHGwZEDFekGgwMdKC0Rq_ANAYgOCbATuLjyH9gTDYgUAdgUAdAVAcoWAgoA-BYBgBcBshcCGAKyGAkSAvpTGE0iAQDQGQE%26ae%3D1%26num%3D1%26cid%3DCAQSsgEAwksa0WLkE0GsBihqeAUVr82O45aN2p2RSZ2e5OfA3zaJTsMB2pHdbcg5ccD-Z3Co-qNuvpS28ZU8M7jM6k97k5RsByCOfpuCWEHdif78ok_5daNLp4Mb0KBIPVITloqx4rGRPIC0gKuN6zDXct37ANzy9nJWvxYxuV3xIRsQI7Yto5wm8d0g2xrS103RnuP-ZWkcVYVvg5_LfSNUBlSUuSSr7L2kSrMa4GBHunstIGdtGAE%26sig%3DAOD64_2kHZq_TBZj9Q37PDo9BFNGy_IyhQ%26client%3Dca-pub-1056034821646296%26dbm_c%3DAKAmf-Bw98qlOCxfoxoD1gpUC-xCD2Kmx289bDCZXM2zmZC3ZmtvZRSMM3FCwaqkNnRlSzToIQFDkZ9bXX_YkcPBAIBIHHRHICspf78xfBeH8KkSpwpb86TQNlAvWlNj4Dm7j2DfNXP6Kp3kcI2BjOaCYEGo9FIsAKLPgRc6JG4B_9pyR4dlt45ERxF_10ew7D2Fd_uIc9Bejq7IaHYlpX8Qm2e7MPmnv38Wcj9_v5lZi0cww_E3BOIPrPQNbkZll0cWIzJqXgOubH-4oR9AVLoXL011_h7VBTu0GZmS9bdoIcYmyReLFLY%26cry%3D1%26dbm_d%3DAKAmf-DnzAes21LWSKNhXFUETBZD23kkMGK9tEg4L-YKrzikqjj2IswPqKxPykCpvRkRKXe7POOtxcuZeC6v-RmgV8NJon1rNwRHUv1wR6iYa0fdPbjcFW5GyO_qWem9BfokOE9NO6dKRAGUy2UCjCa6YReCR_HxMQcQYgGY68eeSPrbdFR4wFwDdxR-Kq-eaEZvYpear5W4BSe4rcjYb0Gsv15q7FsnCxdjxSUWfVUyFta2lnBBWTi7OYGCXVqliDnzK0fJEVKJ3V1SBbLHI1Gjf1cYATD-3Ipu_Sz2bJ5RZB6zn7pK0oLj8-PY02blyVhuFnpqjuQ_9-uJpFPhn4zeMKLzM-9Dp6tGSqbfGUl-93-4jfTNvat8RNMRYnwKuvw3LYogG35i7jEx-8DXxviqqSG1cbpSaBhE1yV0SRzCxbwequajeoC2TnXZ7YGe46BWkhnnSNvl1tthYRIrl54DEi0G6EQEZscyou_Vx7-o9AUoKPmVvRpah2E6hyxFo9JA-Rve7K2ZqiHqBV4Szaem64idoI1p5aIr3Bh4sBk3CpPITeuY4cGKt9Nj74TUXe_6B_DgDW__zk-xyNwE0Qoe-buf-e-bH2kRkbqahW2ocL7095yYCpnYC78Swxwkkk_CwkukPEKhUWQ8Zq0uJoUcjgUZ3gdy_nQCLgpFTU0nSaepzi54ka-WDur7BNARtb9VjhpfP_FJ8SSe4mlc_Xb_1X-xEw-KWvF6MMO6BITbjsPXQvRpREs%26adurl%3Dhttps://careers.unitedhealthgroup.com/job-search-results/%253Fkeyword%253D%252523gen%2526location%253DIndia%2526country%253DIN%2526radius%253D25%2526src%253DUNS-19965%2526utm_source%253Dyoptima.com%2526utm_medium%253Ddisplay%2526utm_campaign%253DIndia%2526utm_content%253Dniche_site%2526utm_term%253D419097523%2526ss%253Dpaid%2526dclid%253D%2525edclid!%2526gad_source%253D7
+              - img "Advertisement" [ref=f2e20] [cursor=pointer]
+  - img [ref=e276] [cursor=pointer]
+  - generic [ref=e278]:
+    - generic [ref=e279] [cursor=pointer]:
+      - img [ref=e281] [cursor=pointer]
+      - link "Go to shopping options for Web development bootcamps" [ref=e283] [cursor=pointer]: Web development bootcamps
+    - button "Close shopping anchor" [ref=e284]
+```

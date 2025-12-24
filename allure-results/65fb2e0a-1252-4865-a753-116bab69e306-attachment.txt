@@ -1,0 +1,8 @@
+all products text [ 'ZARA COAT 3', 'ADIDAS ORIGINAL', 'iphone 13 pro' ]
+all product names ZARA COAT 3
+all product names ADIDAS ORIGINAL
+country dropdown values count 3
+country values  British Indian Ocean Territory
+country values  India
+order id  | 693a816b32ed8658712c3e26 | 
+total no of rows in orders table 7

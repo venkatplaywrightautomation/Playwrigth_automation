@@ -1,29 +1,16 @@
-
-
 {
-
-
-
-
-"users":[
+  "users": [
     {
-
-  "fname": "John",
-    "lname": "Doe",
-    "middleName": "A",
-"email": "venakt@gmail.com"
-},
-
-{
-
-  "fname": "John 1",
-    "lname": "Doe 1",
-    "middleName": "Aa",
-"email": "venakt@gmail.com"
-
-}
-
-]
-
-
+      "fname": "John",
+      "lname": "Doe",
+      "middleName": "A",
+      "email": "venakt@gmail.com"
+    },
+    {
+      "fname": "John 1",
+      "lname": "Doe 1",
+      "middleName": "Aa",
+      "email": "venakt@gmail.com"
+    }
+  ]
 }

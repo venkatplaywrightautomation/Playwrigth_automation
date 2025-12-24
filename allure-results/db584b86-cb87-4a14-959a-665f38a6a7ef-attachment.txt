@@ -1,0 +1,6 @@
+all products text [
+  locator('div.card-body').locator('b').first(),
+  locator('div.card-body').locator('b').nth(1),
+  locator('div.card-body').locator('b').nth(2)
+]
+Total no of products 3

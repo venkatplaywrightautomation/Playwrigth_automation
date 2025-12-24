@@ -1,0 +1,2 @@
+row text after search is:Shou Itou	Regional Marketing	Tokyo	20	2011-08-14	$163,000
+record found matching the search criteria:Shou Itou	Regional Marketing	Tokyo	20	2011-08-14	$163,000

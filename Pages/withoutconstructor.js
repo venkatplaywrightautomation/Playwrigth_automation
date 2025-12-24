@@ -37,7 +37,7 @@
 
 class withoutconstructor{
 
-static async  userinput(page){
+static  async  userinput(page){
     return  page.locator("#email")
     
   }

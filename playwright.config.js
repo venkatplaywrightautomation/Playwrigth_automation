@@ -99,8 +99,12 @@ export default defineConfig({
     //channel: 'chrome',
     //headless: false,
     
-
-    
+// trace:process.env.CI ? 'retain-on-failure' : 'off',
+//     viewport: { width: 1280, height: 720 },
+//     actionTimeout: 0,
+//     ignoreHTTPSErrors: true,
+    //trace: 'on-first-retry',
+    //timezoneId: 'UTC',
 //storageState:'testdata/auth.json'
     
   },
@@ -110,17 +114,20 @@ export default defineConfig({
 
 
     {
-name: 'setup',
-testMatch:'storagestate.spec.js',
-//testMatch:'/.*\.spec.js/',
-
-
-    },
-    {
       name: 'chromium',
+    
 
-      dependencies: ['setup'],
-    use: { ...devices['Desktop Chrome'] ,storageState:'testdata/auth.json'  }
+     // dependencies: ['setup'],
+    use: { ...devices['Desktop Chrome'] ,
+      deviceScaleFactor:undefined,
+      viewport: null,
+      //headless: false,
+    launchOptions:{
+      args:[`--start-maximized`]
+    },
+     
+      },
+
       
    // use:{browserName:'chromium',channel:'chrome'}
 

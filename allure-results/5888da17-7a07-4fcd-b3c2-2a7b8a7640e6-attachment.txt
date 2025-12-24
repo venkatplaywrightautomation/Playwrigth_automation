@@ -1,0 +1,1 @@
+total no of checkboxes in the page are: [object Promise]

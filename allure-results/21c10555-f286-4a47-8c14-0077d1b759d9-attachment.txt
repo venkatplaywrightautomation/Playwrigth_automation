@@ -1,0 +1,14 @@
+total no of checkboxes in the page are: 13
+checkbox names are: sunday
+checkbox names are: monday
+checkbox names are: tuesday
+checkbox names are: wednesday
+checkbox names are: thursday
+checkbox names are: friday
+checkbox names are: saturday
+checkbox names are: null
+checkbox names are: null
+checkbox names are: null
+checkbox names are: null
+checkbox names are: null
+checkbox names are: null

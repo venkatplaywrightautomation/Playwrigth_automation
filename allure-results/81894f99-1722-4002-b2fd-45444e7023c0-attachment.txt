@@ -1,0 +1,32 @@
+Searching for: laptop
+Search results loaded
+all products text [
+  'ASUS Chromebook CX15 Intel Celeron Dual Core N4500 - (4 GB/64 GB EMMC Storage/Chrome OS) CX1505CKA-S70...',
+  'ASUS Chromebook CX14 Intel Celeron Dual Core N4500 - (4 GB/64 GB EMMC Storage/Chrome OS) CX1405CKA-NK0...',
+  'Acer Aspire 3 Intel Celeron Dual Core - (8 GB/256 GB SSD/Windows 11 Home) A311-45 Thin and Light Lapto...',
+  'DELL 15 AMD Ryzen 3 Quad Core 7320U - (8 GB/512 GB SSD/Windows 11 Home) Inspiron 3535 / 15 DC 15255 Th...',
+  'Acer Aspire 3 Backlit AMD Ryzen 7 Octa Core 7730U - (16 GB/512 GB SSD/Windows 11 Home) Aspire AS15 - 4...',
+  'MOTOROLA Motobook 60 Full Metal OLED (i5 14th Gen) Intel Core 5 (Series 2) 210H - (16 GB/512 GB SSD/Wi...',
+  'Lenovo 100e Chromebook Gen 4 MediaTek Kompanio 520 - (8 GB/64 GB EMMC Storage/Chrome OS) 100e Chromebo...',
+  'Lenovo IdeaPad Slim 5 Co-Pilot Next Gen AI PC Full Metal Snapdragon X Plus - (16 GB/1 TB SSD/Windows 1...',
+  'Lenovo Chromebook MediaTek Kompanio 520 - (4 GB/128 GB EMMC Storage/Chrome OS) 14M868 Chromebook',
+  'Acer Aspire 3 Intel Celeron Dual Core N4500 - (8 GB/512 GB SSD/Windows 11 Home) A325-45 Thin and Light...',
+  'Samsung Galaxy Book4 Edge Series Copilot AI-PC Full Metal Chasis Qualcomm Snapdragon X - (16 GB/512 GB...',
+  'MOTOROLA Motobook 60 Full Metal OLED (i5 14th Gen) Intel Core 5 (Series 2) 210H - (16 GB/512 GB SSD/Wi...',
+  'ASUS TUF Gaming A15 (2025) AMD Ryzen 7 Hexa Core 7445HS - (16 GB/512 GB SSD/Windows 11 Home/4 GB Graph...',
+  'Lenovo 100e Chromebook Gen 4 MediaTek Kompanio 520 - (4 GB/32 GB EMMC Storage/Chrome OS) 82W00004HA Ch...',
+  'Thomson Intel Celeron Dual Core N4020 - (4 GB/128 GB SSD/Windows 11 Home) IN-N14C Thin and Light Lapto...',
+  'HP AMD Ryzen 5 Hexa Core 7530U - (8 GB/512 GB SSD/Windows 11 Home) 15-fc0388AU Thin and Light Laptop',
+  'MOTOROLA Motobook 60 Full Metal OLED (i7 14th Gen) Intel Core 7 (Series 2) 240H - (16 GB/1 TB SSD/Wind...',
+  'MOTOROLA Motobook 60 Full Metal OLED (i7 14th Gen) Intel Core 7 (Series 2) 240H - (16 GB/1 TB SSD/Wind...',
+  'Acer Chromebook Intel Celeron Dual Core N4500 - (8 GB/64 GB EMMC Storage/Chrome OS) CB314-3H-C5QE/ CB3...',
+  'Acer Aspire 3 Intel Celeron Dual Core - (8 GB/512 GB SSD/Windows 11 Home) A311-45 Thin and Light Lapto...',
+  'MOTOROLA Motobook 60 Full Metal OLED (i7 14th Gen) Intel Core 7 (Series 2) 240H - (16 GB/512 GB SSD/Wi...',
+  'MOTOROLA Motobook 60 Full Metal OLED (i7 14th Gen) Intel Core 7 (Series 2) 240H - (16 GB/512 GB SSD/Wi...',
+  'ASUS Vivobook 15 (2025) with Office 2024 + M365 Basic*, Backlit Keyboard, Intel Core i3 13th Gen 1315U...',
+  'HP Pavilion Plus MSO 2024 Intel Core i5 13th Gen 1335U - (16 GB/512 GB SSD/Windows 11 Home) 14-ew0107T...'
+]
+Total no of products 24
+all product names ASUS Chromebook CX15 Intel Celeron Dual Core N4500 - (4 GB/64 GB EMMC Storage/Chrome OS) CX1505CKA-S70...
+all product names ASUS Chromebook CX14 Intel Celeron Dual Core N4500 - (4 GB/64 GB EMMC Storage/Chrome OS) CX1405CKA-NK0...
+number of pages 2

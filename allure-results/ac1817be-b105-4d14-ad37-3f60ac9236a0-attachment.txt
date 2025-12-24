@@ -1,0 +1,26 @@
+total no of links in google homepage:25
+link text is:About
+link text is:Store
+link text is:Gmail
+link text is:Images
+link text is:
+link text is:Sign in
+link text is:हिन्दी
+link text is:বাংলা
+link text is:తెలుగు
+link text is:मराठी
+link text is:தமிழ்
+link text is:ગુજરાતી
+link text is:ಕನ್ನಡ
+link text is:മലയാളം
+link text is:ਪੰਜਾਬੀ
+link text is:Advertising
+link text is:Business
+link text is:How Search works
+link text is:Privacy
+link text is:Terms
+link text is:Search settings
+link text is:Advanced search
+link text is:Your data in Search
+link text is:Search history
+link text is:Search help

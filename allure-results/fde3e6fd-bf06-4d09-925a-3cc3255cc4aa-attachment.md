@@ -1,0 +1,222 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - paragraph [ref=e3]:
+    - link "PMP Practice" [ref=e4] [cursor=pointer]:
+      - /url: https://pmp.expandtesting.com/
+    - text: "| Free PMP Certification Mock Exam Test +900 Questions & Quizzes"
+    - link "Software testing courses" [ref=e5] [cursor=pointer]:
+      - img [ref=e7] [cursor=pointer]
+      - generic [ref=e9] [cursor=pointer]: Software testing courses
+  - banner [ref=e11]:
+    - navigation "Main navigation" [ref=e12]:
+      - link "SUT" [ref=e13] [cursor=pointer]:
+        - /url: /
+        - 'img "Best Website for Practice Automation Testing: Free UI and REST API Examples and Apps. Using Cypress, Playwright, Selenium, WebdriverIO and Postman." [ref=e14] [cursor=pointer]'
+        - text: Practice
+      - generic [ref=e15]:
+        - list [ref=e16]:
+          - listitem [ref=e17]:
+            - button "Demos" [ref=e18] [cursor=pointer]
+          - listitem [ref=e19]:
+            - link "Tools" [ref=e20] [cursor=pointer]:
+              - /url: /#tools
+          - listitem [ref=e21]:
+            - link "Tips" [ref=e22] [cursor=pointer]:
+              - /url: /tips
+          - listitem [ref=e23]:
+            - link "Test Cases" [ref=e24] [cursor=pointer]:
+              - /url: /test-cases
+          - listitem [ref=e25]:
+            - link "API Testing" [ref=e26] [cursor=pointer]:
+              - /url: /notes/api/api-docs/
+          - listitem [ref=e27]:
+            - link "About" [ref=e28] [cursor=pointer]:
+              - /url: /about
+        - list
+        - link "Free ISTQB Mock Exams" [ref=e29] [cursor=pointer]:
+          - /url: https://istqb.expandtesting.com/
+  - main [ref=e30]:
+    - insertion [ref=e34]:
+      - generic [ref=e36]:
+        - generic "These are topics related to the article that might interest you" [ref=e37]: Discover more
+        - link "Browser automation frameworks" [ref=e38] [cursor=pointer]:
+          - img [ref=e40] [cursor=pointer]
+          - generic [ref=e42] [cursor=pointer]: Browser automation frameworks
+        - link "API" [ref=e43] [cursor=pointer]:
+          - img [ref=e45] [cursor=pointer]
+          - generic [ref=e47] [cursor=pointer]: API
+        - link "Postman API testing" [ref=e48] [cursor=pointer]:
+          - img [ref=e50] [cursor=pointer]
+          - generic [ref=e52] [cursor=pointer]: Postman API testing
+        - link "Data science courses" [ref=e53] [cursor=pointer]:
+          - img [ref=e55] [cursor=pointer]
+          - generic [ref=e57] [cursor=pointer]: Data science courses
+        - link "Testing" [ref=e58] [cursor=pointer]:
+          - img [ref=e60] [cursor=pointer]
+          - generic [ref=e62] [cursor=pointer]: Testing
+        - link "Laptops for developers" [ref=e63] [cursor=pointer]:
+          - img [ref=e65] [cursor=pointer]
+          - generic [ref=e67] [cursor=pointer]: Laptops for developers
+        - link "Mock exam study guides" [ref=e68] [cursor=pointer]:
+          - img [ref=e70] [cursor=pointer]
+          - generic [ref=e72] [cursor=pointer]: Mock exam study guides
+        - link "Application programming interface" [ref=e73] [cursor=pointer]:
+          - img [ref=e75] [cursor=pointer]
+          - generic [ref=e77] [cursor=pointer]: Application programming interface
+        - link "API testing tools" [ref=e78] [cursor=pointer]:
+          - img [ref=e80] [cursor=pointer]
+          - generic [ref=e82] [cursor=pointer]: API testing tools
+        - link "Online learning platforms" [ref=e83] [cursor=pointer]:
+          - img [ref=e85] [cursor=pointer]
+          - generic [ref=e87] [cursor=pointer]: Online learning platforms
+    - paragraph [ref=e89]:
+      - text: Do you enjoy this platform? ❤️
+      - link "Buy us a coffee" [ref=e90] [cursor=pointer]:
+        - /url: https://www.buymeacoffee.com/expandtesting
+    - generic [ref=e91]:
+      - insertion [ref=e93]:
+        - generic [ref=e95]:
+          - generic "These are topics related to the article that might interest you" [ref=e96]: Discover more
+          - link "Technical books and guides" [ref=e97] [cursor=pointer]:
+            - img [ref=e99] [cursor=pointer]
+            - generic [ref=e101] [cursor=pointer]: Technical books and guides
+          - link "ISTQB mock exams" [ref=e102] [cursor=pointer]:
+            - img [ref=e104] [cursor=pointer]
+            - generic [ref=e106] [cursor=pointer]: ISTQB mock exams
+          - link "Selenium automation framework" [ref=e107] [cursor=pointer]:
+            - img [ref=e109] [cursor=pointer]
+            - generic [ref=e111] [cursor=pointer]: Selenium automation framework
+          - link "Test Automation" [ref=e112] [cursor=pointer]:
+            - img [ref=e114] [cursor=pointer]
+            - generic [ref=e116] [cursor=pointer]: Test Automation
+          - link "Automation testing courses" [ref=e117] [cursor=pointer]:
+            - img [ref=e119] [cursor=pointer]
+            - generic [ref=e121] [cursor=pointer]: Automation testing courses
+          - link "Postman API testing" [ref=e122] [cursor=pointer]:
+            - img [ref=e124] [cursor=pointer]
+            - generic [ref=e126] [cursor=pointer]: Postman API testing
+          - link "Ergonomic office chairs" [ref=e127] [cursor=pointer]:
+            - img [ref=e129] [cursor=pointer]
+            - generic [ref=e131] [cursor=pointer]: Ergonomic office chairs
+          - link "Dynamic table examples" [ref=e132] [cursor=pointer]:
+            - img [ref=e134] [cursor=pointer]
+            - generic [ref=e136] [cursor=pointer]: Dynamic table examples
+          - link "Process" [ref=e137] [cursor=pointer]:
+            - img [ref=e139] [cursor=pointer]
+            - generic [ref=e141] [cursor=pointer]: Process
+          - link "Automation practice website" [ref=e142] [cursor=pointer]:
+            - img [ref=e144] [cursor=pointer]
+            - generic [ref=e146] [cursor=pointer]: Automation practice website
+      - generic [ref=e149]:
+        - navigation "breadcrumb mb-2" [ref=e150]:
+          - list [ref=e151]:
+            - listitem [ref=e152]:
+              - link "Home" [ref=e153] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e154]: / Dynamic Table
+        - heading "Dynamic Table page for Automation Testing Practice" [level=1] [ref=e155]
+        - generic [ref=e157]:
+          - paragraph [ref=e158]:
+            - text: Below you see a table where columns and rows change their position upon page reload.
+            - text: Values in cells are random.
+            - link "Test automation tools" [ref=e159] [cursor=pointer]:
+              - img [ref=e161] [cursor=pointer]
+              - generic [ref=e163] [cursor=pointer]: Test automation tools
+          - heading "Scenario" [level=2] [ref=e164]
+          - list [ref=e165]:
+            - listitem [ref=e166]: For Chrome process get value of CPU load.
+            - listitem [ref=e167]: Compare it with value in the yellow label.
+          - heading "Playground" [level=2] [ref=e168]
+        - generic [ref=e170]:
+          - generic [ref=e171]: Task Manager
+          - table [ref=e173]:
+            - rowgroup [ref=e174]:
+              - row "Name CPU Disk Memory Network" [ref=e175]:
+                - cell "Name" [ref=e176]
+                - cell "CPU" [ref=e177]
+                - cell "Disk" [ref=e178]
+                - cell "Memory" [ref=e179]
+                - cell "Network" [ref=e180]
+            - rowgroup [ref=e181]:
+              - row "Internet Explorer 0.6% 0.2 MB/s 33.1 MB 1.6 Mbps" [ref=e182]:
+                - cell "Internet Explorer" [ref=e183]
+                - cell "0.6%" [ref=e184]
+                - cell "0.2 MB/s" [ref=e185]
+                - cell "33.1 MB" [ref=e186]
+                - cell "1.6 Mbps" [ref=e187]
+              - row "Chrome 7.2% 0.9 MB/s 9.8 MB 1.5 Mbps" [ref=e188]:
+                - cell "Chrome" [ref=e189]
+                - cell "7.2%" [ref=e190]
+                - cell "0.9 MB/s" [ref=e191]
+                - cell "9.8 MB" [ref=e192]
+                - cell "1.5 Mbps" [ref=e193]
+              - row "Firefox 8.8% 0.7 MB/s 51.2 MB 3.5 Mbps" [ref=e194]:
+                - cell "Firefox" [ref=e195]
+                - cell "8.8%" [ref=e196]
+                - cell "0.7 MB/s" [ref=e197]
+                - cell "51.2 MB" [ref=e198]
+                - cell "3.5 Mbps" [ref=e199]
+              - row "System 1% 0.5 MB/s 10.6 MB 4.2 Mbps" [ref=e200]:
+                - cell "System" [ref=e201]
+                - cell "1%" [ref=e202]
+                - cell "0.5 MB/s" [ref=e203]
+                - cell "10.6 MB" [ref=e204]
+                - cell "4.2 Mbps" [ref=e205]
+          - paragraph [ref=e206]: "Chrome CPU: 7.2%"
+    - insertion [ref=e208]:
+      - generic [ref=e210]:
+        - generic "These are topics related to the article that might interest you" [ref=e211]: Discover more
+        - link "Playwright automation guide" [ref=e212] [cursor=pointer]:
+          - img [ref=e214] [cursor=pointer]
+          - generic [ref=e216] [cursor=pointer]: Playwright automation guide
+        - link "PMP certification mock" [ref=e217] [cursor=pointer]:
+          - img [ref=e219] [cursor=pointer]
+          - generic [ref=e221] [cursor=pointer]: PMP certification mock
+        - link "Online learning platforms" [ref=e222] [cursor=pointer]:
+          - img [ref=e224] [cursor=pointer]
+          - generic [ref=e226] [cursor=pointer]: Online learning platforms
+        - link "Web development bootcamps" [ref=e227] [cursor=pointer]:
+          - img [ref=e229] [cursor=pointer]
+          - generic [ref=e231] [cursor=pointer]: Web development bootcamps
+        - link "Ergonomic office chairs" [ref=e232] [cursor=pointer]:
+          - img [ref=e234] [cursor=pointer]
+          - generic [ref=e236] [cursor=pointer]: Ergonomic office chairs
+        - link "Cypress testing tutorials" [ref=e237] [cursor=pointer]:
+          - img [ref=e239] [cursor=pointer]
+          - generic [ref=e241] [cursor=pointer]: Cypress testing tutorials
+        - link "Mock exam study guides" [ref=e242] [cursor=pointer]:
+          - img [ref=e244] [cursor=pointer]
+          - generic [ref=e246] [cursor=pointer]: Mock exam study guides
+        - link "UI automation tutorials" [ref=e247] [cursor=pointer]:
+          - img [ref=e249] [cursor=pointer]
+          - generic [ref=e251] [cursor=pointer]: UI automation tutorials
+        - link "API" [ref=e252] [cursor=pointer]:
+          - img [ref=e254] [cursor=pointer]
+          - generic [ref=e256] [cursor=pointer]: API
+        - link "Application programming interface" [ref=e257] [cursor=pointer]:
+          - img [ref=e259] [cursor=pointer]
+          - generic [ref=e261] [cursor=pointer]: Application programming interface
+  - contentinfo [ref=e262]:
+    - generic [ref=e267]:
+      - heading "Practice Test Automation WebSite for Web UI and Rest API" [level=4] [ref=e268]
+      - paragraph [ref=e269]:
+        - text: "Version: 874f3178 | Copyright"
+        - link "Expand Testing" [ref=e270] [cursor=pointer]:
+          - /url: https://expandtesting.com/
+        - text: "2025"
+  - img [ref=e272] [cursor=pointer]
+  - insertion [ref=e274]:
+    - iframe [ref=e277]:
+      - iframe [ref=f1e1]:
+        - generic [ref=f2e2]:
+          - link "Advertisement" [ref=f2e4] [cursor=pointer]:
+            - /url: https://ad.doubleclick.net/pcs/click?xai=AKAOjstClo3N5bvcrLH_2Wn0ikcDph0FfW5tX7fKOV-MzDkyx1iRSFfaqVq_jnArA1994D4zLZdKAt-z14ctt1ekRInxnIptWzmUAFkjuXhvGG2mI1_PdnCmkY4Xz8rsAcHiBip5Y2VQ2ZCAHl3z2dFYvplwl3b1w1T4pFZUSHxWcFk3UkUMGONDdDTn_WZzuXTXCs1wWF_E1vsws0LLMDeYFtFXaQJT6y6QG4zXkA_IItAcPVfqk-JG89dNWNq7BTuXvJsZ1V7sPjMxYDicKvCb3ZnaHcOhUp_s7OkWyfFk7sacRbaXu9OrXRmBrDhPrOUsqLmhgRJE9U2hggCzGeJ_f4QYJNo-E5HM7I4d4IPxS4I6vz0PTaSbSTq5p9gl9evNPM3VcnzFJ4tcXJrc9wk3qI_BgK06nq0qbPMad7P6fs3_NYNVvqAEzFJwJqFG2KRZ9IrRwToRjaoPExJRdmdSH81jKtmZwn6KTU6ob-wDOUeMUORU9g-7gwevZlZhSWZuSp3l-tQQ1wdH2D668StKvf261neGp8hBAKwecHMeasZVcdcxw5FzuwwOdTeea_qDt2dwf-zOZUQGJugmDJyoanbT4usr6Xj1Vo2uI15MMNxxehxjjMN58cAVIUPEOOODIWYUDJEw04zGLjGNfeEQUkhx5SanFl3aOC_BCa5bdG2tipaMlgGVmfxn07BOMXRrsYNQF6JFkDQDt6T2Ah40IdL_FRcQ-qGqco_Qg37PHeRL-X2HJOhw1NBzMvHSO9_9ez7LK413R9_9qJoBSx1tV0V5y8O-LGebC-rN-VX4fiTreBJDR8t2Xgar5RxDjeHI2KoROiUNbBNTSwkYRBq7imOGwZvcgPrdJDrt5pRGsxTVv1WI7WlxXOhW3Y4wti1yixmPX_GHpiIRJhs8y_TEBlDyqUEN_G_ighBSOUHmL04uuWOF2pG-9h-fTQBhKrcAildkh5Ash9R2iJaklh56fQBj8vvbbBp4a41BFXOJ3WpJ2n-8RDx5lExGegHHv6k1s9dT1-iCSVV258VyPNwhtgUzamBFbXEEaHAVJASjaRWjGwjSQtH8t45pNqH4FIX1scPgRMRci03KMAYOaSJ1Y7bxt15VR3qXghGnTpOBCb_yT7WvbYVh4G3fjhhGrfb-FF62HB3dMukqtn1AFp9Kyd_2jw0DDCbHyzC0CX3YFPFDDNDzHG61ycUZI4qTpxc-aNR9-Ud7ei97p7aaKatqjHjKwNJuVGROLK7uHSHGRcSotFJWztDmNZIg5HwJf_HkiWSbq5yFPEGMBaYhr01oZ_Sm8YwbCIQMFL3J19i7eRWGaTvvpHpYAP64grA964-g2b8CFyblALwh_ReDRqA7uvg2tkqOZlABA8ZoUfAEa9B9iZJbvRPhVTO9D2GZCqNIwRafGr_F6ysm1b2mnfCExrmYurCBrwaNpBeJvLWcVm7GhWxTEi5OQYmuhypOR-N0k4dkkHb6jEmIxIDpzCkwdWVNUIPkYk6UFahv8LyNUnjY_6PgyFDlDnGIdRFT9BLwdL0pYrHbK-zpHwk73ln-8M5ZBs3XnCmIpZrUEUUjxvHIzsSJPxtP7K5Jl7COF8uJ0_upFZ1BaAZq9f7HVkSmYbDRbseemkyE-G5OtTzJYapo93S-PsE5Dp7Gc6MRVoymKbdIm4uSVr0wwilxiKexNEar2g4hgN-dXGUKxUUD6JsZj5MGF_8WFDl88gsimagBMhubHbxG8iAbOVhylKFHEkB5nUn-22iiZg3m2fYO0Hkardx5PrW9abuhmRb7wPEWHEU9y5uHMMX7-DI9fKTUkrPJAgq1qFHiANxBdg8ONedmsygNLkMir7fYtm_grehdZTtVOpcRBgoJO5yAoNtYmuKQmkmvMrqEtO6TmxJuw5k5_f0Akd0o6taenNiopyIROz3xPusDpFeicP7eU5XJeVt5Zx4LZNbXSh94Z1wiyKXQ2-4JkpE130-mSb_yQw1CgAIeVF2VFkHWc_PrA5acUIAReb0OfQMV6QbULYjfaCR1aOw-0Ii1ZrCz3iBbL27HyCniogRA7ladWKiOIsXtsBMqNfbgBWR4od6vfy5UVp8&sai=AMfl-YRbEnE1PocGpLgKgqBp1ym6rKfRYeUuL96247P84sZTfmUv-EulZ_s6y0mr1c2yLaVHkalwRoTFPkDffQKe4ihjaxjT0tCa9ekEOLjOb62I18C3V7jzz7jLsX02cG0zLI70ciA3LP7GMif5BTXxUMk80rETe8EIgVL7RwAsF6kAJwOmigyj7QlF30t1gm__YgD3iK8rTVzjP-9JQ_Rf9UKt7KpJJdgM8lDOA1aJdVpm0buKOT_AUHtCpQAPzYfII7Np8LirRubnOR7n8ZpEPSF_gWOvREaZZUPDbYeHPNkVMGM1zQ8tL0GA2Q8K1dp78lIRD_LHVeu1R3GIcLmUufeFpM0udZotUDFUe5rrhI0GC6tcfUsH281uocO2ItdR167Q_nVsJo6APQo2ujSphtcxQucbOSBin5uBYrIx_N__RZY-chJP_mn2caO5JOvSU9t07LHtgUZaS5n8reO6jLe_i0RXSk_cZEpIimyAu8yCXmGUrjw9bMA-V6kbJqOskejyxC9Pc4Wv7sDVv8UlA7L5g8bSUmRJnHAbdyH6WtEKXiOlTjHzLNupgV6JmaZjOqoC2yWblhSit6Cz934_bY6LRkevLGu7bpRBL9BrvN6hyo7bsCH5AkoGKWey6ZG3W0fHELEpZU4VgjVz9zI1QpkIWCl_dnlggf69vw&sig=Cg0ArKJSzE_SAmDjWD7-&fbs_aeid=%5Bgw_fbsaeid%5D&crd=aHR0cHM6Ly9pdGNob3RlbHMuY29t&urlfix=1&adurl=https://www.itchotels.com/in/en/clubitc/membership-benefits/enrol%3Futm_source%3Dprogrammatic%26utm_medium%3Ddv360%26utm_content%3Ddisplay%26utm_campaign%3DPFX_Google-HQ_DTL-CHN-NA-QO-DisplayDV360-NA-Tactical-Membership-NA-NA-Feeder-C0%26utm_adgroup%3DDisplayDV360-NA-INT_Feeder-C0-CITCBranding_DisplayDV360-NA-INT_Feeder-0-CombinedTargeting_FeelRewarded%26dclid%3D%25edclid!%26gad_source%3D7
+            - img "Advertisement" [ref=f2e5] [cursor=pointer]
+          - generic [ref=f2e6]:
+            - generic:
+              - img [ref=f2e10] [cursor=pointer]
+              - button [ref=f2e12] [cursor=pointer]:
+                - img [ref=f2e13] [cursor=pointer]
+```

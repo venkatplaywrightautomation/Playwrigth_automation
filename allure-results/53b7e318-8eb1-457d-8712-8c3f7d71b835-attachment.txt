@@ -1,0 +1,2 @@
+total no of checkboxes in the page are: 13
+checkbox names are: sunday

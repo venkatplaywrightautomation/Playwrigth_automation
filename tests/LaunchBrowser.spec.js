@@ -134,12 +134,29 @@ test("paallel",async() =>{
 })
 
 
+
+
+test.beforeEach(async({page,context})=>{
+await context.tracing.start({ screenshots: true, snapshots: true });  
+
+})
+test.afterEach(async({context,testinfo})=>{
+
+  if(testinfo.status !== testinfo.expectedStatus){
+    await context.tracing.stop({ path: `trace-${Date.now()}.zip` });
+
+})
+
+
+
 test("context",async ()=>{
 
 
    const browser = await chromium.launch({ headless: false });
 
   const contexts = [await browser.newContext(), await browser.newContext()];
+  await contexts.tracing.start({ screenshots: true, snapshots: true, sources: true });
+  await contexts.tracing.stop({ path: 'trace.zip' });
   const pages = await Promise.all(contexts.map(ctx => ctx.newPage()));
 
   await Promise.all([

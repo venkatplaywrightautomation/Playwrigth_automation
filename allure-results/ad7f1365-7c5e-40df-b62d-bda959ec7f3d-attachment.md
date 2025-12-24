@@ -1,0 +1,724 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - link "DataTables" [ref=e8] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e10] [cursor=pointer]: DataTables
+        - link "Editor" [ref=e12] [cursor=pointer]:
+          - /url: https://editor.datatables.net
+          - generic [ref=e14] [cursor=pointer]: Editor
+      - generic [ref=e15]:
+        - link "Manual" [ref=e17] [cursor=pointer]:
+          - /url: /manual
+        - link "Download" [ref=e19] [cursor=pointer]:
+          - /url: /download
+        - link "Login / Register" [ref=e21] [cursor=pointer]:
+          - /url: ""
+        - generic [ref=e23]:
+          - generic [ref=e24]: Search...
+          - textbox "Search..." [ref=e25]
+        - generic [ref=e26]:
+          - generic [ref=e28] [cursor=pointer]: Vanilla JS
+          - generic [ref=e30] [cursor=pointer]: DataTables
+    - list [ref=e36]:
+      - listitem [ref=e37]:
+        - text: Using DataTables
+        - link "Examples" [ref=e38] [cursor=pointer]:
+          - /url: /examples/index
+        - list [ref=e39]:
+          - listitem [ref=e40]:
+            - link "Basic initialisation" [ref=e41] [cursor=pointer]:
+              - /url: /examples/basic_init
+          - listitem [ref=e42]:
+            - link "Advanced initialisation" [ref=e43] [cursor=pointer]:
+              - /url: /examples/advanced_init
+          - listitem [ref=e44]:
+            - link "Data sources" [ref=e45] [cursor=pointer]:
+              - /url: /examples/data_sources
+          - listitem [ref=e46]:
+            - link "Internationalisation" [ref=e47] [cursor=pointer]:
+              - /url: /examples/i18n
+          - listitem [ref=e48]:
+            - link "Date and Time handling" [ref=e49] [cursor=pointer]:
+              - /url: /examples/datetime
+          - listitem [ref=e50]:
+            - link "Plug-ins" [ref=e51] [cursor=pointer]:
+              - /url: /examples/plug-ins
+          - listitem [ref=e52]:
+            - link "Styling" [ref=e53] [cursor=pointer]:
+              - /url: /examples/styling
+          - listitem [ref=e54]:
+            - link "Layout" [ref=e55] [cursor=pointer]:
+              - /url: /examples/layout
+          - listitem [ref=e56]:
+            - link "API" [ref=e57] [cursor=pointer]:
+              - /url: /examples/api
+          - listitem [ref=e58]:
+            - link "Ajax" [ref=e59] [cursor=pointer]:
+              - /url: /examples/ajax
+          - listitem [ref=e60]:
+            - link "Server-side" [ref=e61] [cursor=pointer]:
+              - /url: /examples/server_side
+      - listitem [ref=e62]:
+        - link "Manual" [ref=e63] [cursor=pointer]:
+          - /url: /manual/index
+      - listitem [ref=e64]:
+        - link "Reference" [ref=e65] [cursor=pointer]:
+          - /url: /reference/index
+      - listitem [ref=e66]:
+        - link "Extensions" [ref=e67] [cursor=pointer]:
+          - /url: /extensions/index
+      - listitem [ref=e68]:
+        - link "Plug-ins" [ref=e69] [cursor=pointer]:
+          - /url: /plug-ins/index
+      - listitem [ref=e70]:
+        - text: More Help
+        - link "Blog" [ref=e71] [cursor=pointer]:
+          - /url: /blog/index
+      - listitem [ref=e72]:
+        - link "Forums" [ref=e73] [cursor=pointer]:
+          - /url: /forums/index
+      - listitem [ref=e74]:
+        - link "Support" [ref=e75] [cursor=pointer]:
+          - /url: /support/index
+      - listitem [ref=e76]:
+        - link "FAQs" [ref=e77] [cursor=pointer]:
+          - /url: /faqs/index
+      - listitem [ref=e78]:
+        - text: Get DataTables
+        - link "Download" [ref=e79] [cursor=pointer]:
+          - /url: /download/index
+      - listitem [ref=e80]:
+        - link "Purchase" [ref=e81] [cursor=pointer]:
+          - /url: /purchase/index
+    - generic [ref=e83]:
+      - generic [ref=e85]:
+        - generic [ref=e86]:
+          - 'link "Sponsored: Filestack" [ref=e87] [cursor=pointer]':
+            - /url: https://server.ethicalads.io/proxy/click/9724/019b2b21-87b6-79b1-8c7c-daf230155a6a/
+            - 'img "Sponsored: Filestack" [ref=e88] [cursor=pointer]'
+          - link "All-in-one solution for upload. Process and transform files with AI capabilities. Get started." [ref=e90] [cursor=pointer]:
+            - /url: https://server.ethicalads.io/proxy/click/9724/019b2b21-87b6-79b1-8c7c-daf230155a6a/
+            - strong [ref=e91] [cursor=pointer]: All-in-one solution for upload.
+            - generic [ref=e92] [cursor=pointer]: Process and transform files with AI capabilities.
+            - strong [ref=e93] [cursor=pointer]: Get started.
+          - generic [ref=e94]: www.filestack.com
+        - link "Ads by EthicalAds" [ref=e96] [cursor=pointer]:
+          - /url: https://www.ethicalads.io/advertisers/topics/backend-web/?ref=ea-image
+      - heading "Zero configuration" [level=1] [ref=e97]
+      - generic [ref=e98]:
+        - paragraph [ref=e99]:
+          - text: "DataTables has most features enabled by default, so all you need to do to use it with your own tables is to call the construction function:"
+          - code [ref=e100]: new DataTable('#myTable')
+          - text: for plain JavaScript or
+          - code [ref=e101]: $('#myTable').DataTable();
+          - text: when using jQuery.
+        - paragraph [ref=e102]: Searching, ordering and paging goodness will be immediately added to the table, as shown in this example.
+      - generic [ref=e104]:
+        - generic [ref=e105]:
+          - generic [ref=e107]:
+            - combobox "entries per page" [ref=e108]:
+              - option "10" [selected]
+              - option "25"
+              - option "50"
+              - option "100"
+            - generic [ref=e109]: entries per page
+          - generic [ref=e111]:
+            - generic [ref=e112]: "Search:"
+            - searchbox "Search:" [ref=e113]
+        - table [ref=e116]:
+          - rowgroup [ref=e124]:
+            - 'row "Name Name: Activate to invert sorting Position Position: Activate to sort Office Office: Activate to sort Age Age: Activate to sort Start date Start date: Activate to sort Salary Salary: Activate to sort" [ref=e125]':
+              - 'cell "Name Name: Activate to invert sorting" [ref=e126] [cursor=pointer]':
+                - generic [ref=e127] [cursor=pointer]:
+                  - generic [ref=e128] [cursor=pointer]: Name
+                  - 'button "Name: Activate to invert sorting" [ref=e129] [cursor=pointer]'
+              - 'cell "Position Position: Activate to sort" [ref=e130] [cursor=pointer]':
+                - generic [ref=e131] [cursor=pointer]:
+                  - generic [ref=e132] [cursor=pointer]: Position
+                  - 'button "Position: Activate to sort" [ref=e133] [cursor=pointer]'
+              - 'cell "Office Office: Activate to sort" [ref=e134] [cursor=pointer]':
+                - generic [ref=e135] [cursor=pointer]:
+                  - generic [ref=e136] [cursor=pointer]: Office
+                  - 'button "Office: Activate to sort" [ref=e137] [cursor=pointer]'
+              - 'cell "Age Age: Activate to sort" [ref=e138] [cursor=pointer]':
+                - generic [ref=e139] [cursor=pointer]:
+                  - generic [ref=e140] [cursor=pointer]: Age
+                  - 'button "Age: Activate to sort" [ref=e141] [cursor=pointer]'
+              - 'cell "Start date Start date: Activate to sort" [ref=e142] [cursor=pointer]':
+                - generic [ref=e143] [cursor=pointer]:
+                  - generic [ref=e144] [cursor=pointer]: Start date
+                  - 'button "Start date: Activate to sort" [ref=e145] [cursor=pointer]'
+              - 'cell "Salary Salary: Activate to sort" [ref=e146] [cursor=pointer]':
+                - generic [ref=e147] [cursor=pointer]:
+                  - generic [ref=e148] [cursor=pointer]: Salary
+                  - 'button "Salary: Activate to sort" [ref=e149] [cursor=pointer]'
+          - rowgroup [ref=e150]:
+            - row "Airi Satou Accountant Tokyo 33 2008-11-28 $162,700" [ref=e151]:
+              - cell "Airi Satou" [ref=e152]
+              - cell "Accountant" [ref=e153]
+              - cell "Tokyo" [ref=e154]
+              - cell "33" [ref=e155]
+              - cell "2008-11-28" [ref=e156]
+              - cell "$162,700" [ref=e157]
+            - row "Angelica Ramos Chief Executive Officer (CEO) London 47 2009-10-09 $1,200,000" [ref=e158]:
+              - cell "Angelica Ramos" [ref=e159]
+              - cell "Chief Executive Officer (CEO)" [ref=e160]
+              - cell "London" [ref=e161]
+              - cell "47" [ref=e162]
+              - cell "2009-10-09" [ref=e163]
+              - cell "$1,200,000" [ref=e164]
+            - row "Ashton Cox Junior Technical Author San Francisco 66 2009-01-12 $86,000" [ref=e165]:
+              - cell "Ashton Cox" [ref=e166]
+              - cell "Junior Technical Author" [ref=e167]
+              - cell "San Francisco" [ref=e168]
+              - cell "66" [ref=e169]
+              - cell "2009-01-12" [ref=e170]
+              - cell "$86,000" [ref=e171]
+            - row "Bradley Greer Software Engineer London 41 2012-10-13 $132,000" [ref=e172]:
+              - cell "Bradley Greer" [ref=e173]
+              - cell "Software Engineer" [ref=e174]
+              - cell "London" [ref=e175]
+              - cell "41" [ref=e176]
+              - cell "2012-10-13" [ref=e177]
+              - cell "$132,000" [ref=e178]
+            - row "Brenden Wagner Software Engineer San Francisco 28 2011-06-07 $206,850" [ref=e179]:
+              - cell "Brenden Wagner" [ref=e180]
+              - cell "Software Engineer" [ref=e181]
+              - cell "San Francisco" [ref=e182]
+              - cell "28" [ref=e183]
+              - cell "2011-06-07" [ref=e184]
+              - cell "$206,850" [ref=e185]
+            - row "Brielle Williamson Integration Specialist New York 61 2012-12-02 $372,000" [ref=e186]:
+              - cell "Brielle Williamson" [ref=e187]
+              - cell "Integration Specialist" [ref=e188]
+              - cell "New York" [ref=e189]
+              - cell "61" [ref=e190]
+              - cell "2012-12-02" [ref=e191]
+              - cell "$372,000" [ref=e192]
+            - row "Bruno Nash Software Engineer London 38 2011-05-03 $163,500" [ref=e193]:
+              - cell "Bruno Nash" [ref=e194]
+              - cell "Software Engineer" [ref=e195]
+              - cell "London" [ref=e196]
+              - cell "38" [ref=e197]
+              - cell "2011-05-03" [ref=e198]
+              - cell "$163,500" [ref=e199]
+            - row "Caesar Vance Pre-Sales Support New York 21 2011-12-12 $106,450" [ref=e200]:
+              - cell "Caesar Vance" [ref=e201]
+              - cell "Pre-Sales Support" [ref=e202]
+              - cell "New York" [ref=e203]
+              - cell "21" [ref=e204]
+              - cell "2011-12-12" [ref=e205]
+              - cell "$106,450" [ref=e206]
+            - row "Cara Stevens Sales Assistant New York 46 2011-12-06 $145,600" [ref=e207]:
+              - cell "Cara Stevens" [ref=e208]
+              - cell "Sales Assistant" [ref=e209]
+              - cell "New York" [ref=e210]
+              - cell "46" [ref=e211]
+              - cell "2011-12-06" [ref=e212]
+              - cell "$145,600" [ref=e213]
+            - row "Cedric Kelly Senior JavaScript Developer Edinburgh 22 2012-03-29 $433,060" [ref=e214]:
+              - cell "Cedric Kelly" [ref=e215]
+              - cell "Senior JavaScript Developer" [ref=e216]
+              - cell "Edinburgh" [ref=e217]
+              - cell "22" [ref=e218]
+              - cell "2012-03-29" [ref=e219]
+              - cell "$433,060" [ref=e220]
+          - rowgroup [ref=e221]:
+            - row "Name Position Office Age Start date Salary" [ref=e222]:
+              - cell "Name" [ref=e223]:
+                - generic [ref=e225]: Name
+              - cell "Position" [ref=e226]:
+                - generic [ref=e228]: Position
+              - cell "Office" [ref=e229]:
+                - generic [ref=e231]: Office
+              - cell "Age" [ref=e232]:
+                - generic [ref=e234]: Age
+              - cell "Start date" [ref=e235]:
+                - generic [ref=e237]: Start date
+              - cell "Salary" [ref=e238]:
+                - generic [ref=e240]: Salary
+        - generic [ref=e241]:
+          - status [ref=e243]: Showing 1 to 10 of 57 entries
+          - navigation "pagination" [ref=e246]:
+            - link "First" [disabled] [ref=e247]: «
+            - link "Previous" [disabled] [ref=e248]: ‹
+            - link "1" [ref=e249] [cursor=pointer]
+            - link "2" [ref=e250] [cursor=pointer]
+            - link "3" [ref=e251] [cursor=pointer]
+            - link "4" [ref=e252] [cursor=pointer]
+            - link "5" [ref=e253] [cursor=pointer]
+            - link "6" [ref=e254] [cursor=pointer]
+            - link "Next" [ref=e255] [cursor=pointer]: ›
+            - link "Last" [ref=e256] [cursor=pointer]: »
+      - list [ref=e257]:
+        - listitem [ref=e258] [cursor=pointer]: Javascript
+        - listitem [ref=e259] [cursor=pointer]: HTML
+        - listitem [ref=e260] [cursor=pointer]: CSS
+        - listitem [ref=e261] [cursor=pointer]:
+          - text: Comments
+          - generic [ref=e262] [cursor=pointer]: (0)
+      - generic [ref=e264]:
+        - paragraph [ref=e265]: "The Javascript shown below is used to initialise the table shown in this example:"
+        - generic [ref=e268]:
+          - link "Javascript" [ref=e270] [cursor=pointer]:
+            - /url: "#"
+          - table [ref=e271]:
+            - rowgroup [ref=e272]:
+              - row "1 new DataTable('#example');" [ref=e273]:
+                - cell "1" [ref=e274]:
+                  - generic [ref=e275]: "1"
+                - cell "new DataTable('#example');" [ref=e276]:
+                  - generic [ref=e278]:
+                    - code [ref=e279]: new
+                    - code [ref=e280]: DataTable(
+                    - code [ref=e281]: "'#example'"
+                    - code [ref=e282]: );
+        - paragraph [ref=e283]: "In addition to the above code, the following Javascript library files are loaded for use in this example:"
+        - list [ref=e284]:
+          - listitem [ref=e285]:
+            - link "https://code.jquery.com/jquery-3.7.1.js" [ref=e286] [cursor=pointer]:
+              - /url: https://code.jquery.com/jquery-3.7.1.js
+          - listitem [ref=e287]:
+            - link "https://cdn.datatables.net/2.3.5/js/dataTables.js" [ref=e288] [cursor=pointer]:
+              - /url: https://cdn.datatables.net/2.3.5/js/dataTables.js
+      - heading "Other examples" [level=2] [ref=e289]
+      - generic [ref=e290]:
+        - generic [ref=e291]:
+          - heading "Basic initialisation" [level=3] [ref=e292]:
+            - link "Basic initialisation" [ref=e293] [cursor=pointer]:
+              - /url: ./index.html
+          - list [ref=e294]:
+            - listitem [ref=e295]:
+              - link "Zero configuration" [ref=e296] [cursor=pointer]:
+                - /url: ./zero_configuration.html
+            - listitem [ref=e297]:
+              - link "Feature enable / disable" [ref=e298] [cursor=pointer]:
+                - /url: ./filter_only.html
+            - listitem [ref=e299]:
+              - link "Default ordering (sorting)" [ref=e300] [cursor=pointer]:
+                - /url: ./table_sorting.html
+            - listitem [ref=e301]:
+              - link "Multi-column ordering" [ref=e302] [cursor=pointer]:
+                - /url: ./multi_col_sort.html
+            - listitem [ref=e303]:
+              - link "Multiple tables" [ref=e304] [cursor=pointer]:
+                - /url: ./multiple_tables.html
+            - listitem [ref=e305]:
+              - link "Hidden columns" [ref=e306] [cursor=pointer]:
+                - /url: ./hidden_columns.html
+            - listitem [ref=e307]:
+              - link "Complex headers (rowspan and colspan)" [ref=e308] [cursor=pointer]:
+                - /url: ./complex_header.html
+            - listitem [ref=e309]:
+              - link "Flexible table width" [ref=e310] [cursor=pointer]:
+                - /url: ./flexible_width.html
+            - listitem [ref=e311]:
+              - link "State saving" [ref=e312] [cursor=pointer]:
+                - /url: ./state_save.html
+            - listitem [ref=e313]:
+              - link "Alternative pagination" [ref=e314] [cursor=pointer]:
+                - /url: ./alt_pagination.html
+            - listitem [ref=e315]:
+              - link "Data rendering" [ref=e316] [cursor=pointer]:
+                - /url: ./data_rendering.html
+            - listitem [ref=e317]:
+              - link "Scroll - vertical" [ref=e318] [cursor=pointer]:
+                - /url: ./scroll_y.html
+            - listitem [ref=e319]:
+              - link "Scroll - vertical, dynamic height" [ref=e320] [cursor=pointer]:
+                - /url: ./scroll_y_dynamic.html
+            - listitem [ref=e321]:
+              - link "Scroll - horizontal" [ref=e322] [cursor=pointer]:
+                - /url: ./scroll_x.html
+            - listitem [ref=e323]:
+              - link "Scroll - horizontal and vertical" [ref=e324] [cursor=pointer]:
+                - /url: ./scroll_xy.html
+        - generic [ref=e325]:
+          - heading "Advanced initialisation" [level=3] [ref=e326]:
+            - link "Advanced initialisation" [ref=e327] [cursor=pointer]:
+              - /url: ../advanced_init/index.html
+          - list [ref=e328]:
+            - listitem [ref=e329]:
+              - link "DOM / jQuery events" [ref=e330] [cursor=pointer]:
+                - /url: ../advanced_init/events_live.html
+            - listitem [ref=e331]:
+              - link "DataTables events" [ref=e332] [cursor=pointer]:
+                - /url: ../advanced_init/dt_events.html
+            - listitem [ref=e333]:
+              - link "Enter Key to Search" [ref=e334] [cursor=pointer]:
+                - /url: ../advanced_init/enter_search.html
+            - listitem [ref=e335]:
+              - link "Column rendering" [ref=e336] [cursor=pointer]:
+                - /url: ../advanced_init/column_render.html
+            - listitem [ref=e337]:
+              - link "Page length options" [ref=e338] [cursor=pointer]:
+                - /url: ../advanced_init/length_menu.html
+            - listitem [ref=e339]:
+              - link "Complex headers with column visibility" [ref=e340] [cursor=pointer]:
+                - /url: ../advanced_init/complex_header.html
+            - listitem [ref=e341]:
+              - link "Read HTML to data objects" [ref=e342] [cursor=pointer]:
+                - /url: ../advanced_init/object_dom_read.html
+            - listitem [ref=e343]:
+              - link "HTML5 data-* attributes - cell data" [ref=e344] [cursor=pointer]:
+                - /url: ../advanced_init/html5-data-attributes.html
+            - listitem [ref=e345]:
+              - link "HTML5 data-* attributes - table options" [ref=e346] [cursor=pointer]:
+                - /url: ../advanced_init/html5-data-options.html
+            - listitem [ref=e347]:
+              - link "Setting defaults" [ref=e348] [cursor=pointer]:
+                - /url: ../advanced_init/defaults.html
+            - listitem [ref=e349]:
+              - link "Row created callback" [ref=e350] [cursor=pointer]:
+                - /url: ../advanced_init/row_callback.html
+            - listitem [ref=e351]:
+              - link "Row grouping" [ref=e352] [cursor=pointer]:
+                - /url: ../advanced_init/row_grouping.html
+            - listitem [ref=e353]:
+              - link "Footer callback" [ref=e354] [cursor=pointer]:
+                - /url: ../advanced_init/footer_callback.html
+            - listitem [ref=e355]:
+              - link "Order direction sequence control" [ref=e356] [cursor=pointer]:
+                - /url: ../advanced_init/sort_direction_control.html
+            - listitem [ref=e357]:
+              - link "DOM element return from renderer" [ref=e358] [cursor=pointer]:
+                - /url: ../advanced_init/dom_elements.html
+        - generic [ref=e359]:
+          - heading "Data sources" [level=3] [ref=e360]:
+            - link "Data sources" [ref=e361] [cursor=pointer]:
+              - /url: ../data_sources/index.html
+          - list [ref=e362]:
+            - listitem [ref=e363]:
+              - link "HTML (DOM) sourced data" [ref=e364] [cursor=pointer]:
+                - /url: ../data_sources/dom.html
+            - listitem [ref=e365]:
+              - link "Ajax sourced data" [ref=e366] [cursor=pointer]:
+                - /url: ../data_sources/ajax.html
+            - listitem [ref=e367]:
+              - link "JavaScript sourced data" [ref=e368] [cursor=pointer]:
+                - /url: ../data_sources/js_array.html
+            - listitem [ref=e369]:
+              - link "Server-side processing" [ref=e370] [cursor=pointer]:
+                - /url: ../data_sources/server_side.html
+        - generic [ref=e371]:
+          - heading "Language and Internationalisation" [level=3] [ref=e372]:
+            - link "Language and Internationalisation" [ref=e373] [cursor=pointer]:
+              - /url: ../i18n/index.html
+          - list [ref=e374]:
+            - listitem [ref=e375]:
+              - link "Language - display data type" [ref=e376] [cursor=pointer]:
+                - /url: ../i18n/entries.html
+            - listitem [ref=e377]:
+              - link "Auto-locale display" [ref=e378] [cursor=pointer]:
+                - /url: ../i18n/datetime.html
+            - listitem [ref=e379]:
+              - link "Locale based number display" [ref=e380] [cursor=pointer]:
+                - /url: ../i18n/numbers.html
+            - listitem [ref=e381]:
+              - link "Language - auto render" [ref=e382] [cursor=pointer]:
+                - /url: ../i18n/auto-render.html
+            - listitem [ref=e383]:
+              - link "Language options" [ref=e384] [cursor=pointer]:
+                - /url: ../i18n/options.html
+            - listitem [ref=e385]:
+              - link "Language - Comma decimal place" [ref=e386] [cursor=pointer]:
+                - /url: ../i18n/comma-decimal.html
+            - listitem [ref=e387]:
+              - link "Right-to-left language support" [ref=e388] [cursor=pointer]:
+                - /url: ../i18n/rtl.html
+            - listitem [ref=e389]:
+              - link "Remote language file" [ref=e390] [cursor=pointer]:
+                - /url: ../i18n/ajax.html
+            - listitem [ref=e391]:
+              - link "Remote language file + local definitions" [ref=e392] [cursor=pointer]:
+                - /url: ../i18n/ajax+local.html
+        - generic [ref=e393]:
+          - heading "DateTime" [level=3] [ref=e394]:
+            - link "DateTime" [ref=e395] [cursor=pointer]:
+              - /url: ../datetime/index.html
+          - list [ref=e396]:
+            - listitem [ref=e397]:
+              - link "ISO8601 detection" [ref=e398] [cursor=pointer]:
+                - /url: ../datetime/iso8601.html
+            - listitem [ref=e399]:
+              - link "Auto-locale display (Moment.js)" [ref=e400] [cursor=pointer]:
+                - /url: ../datetime/auto-locale-moment.html
+            - listitem [ref=e401]:
+              - link "Auto-locale display (Luxon)" [ref=e402] [cursor=pointer]:
+                - /url: ../datetime/auto-locale-luxon.html
+            - listitem [ref=e403]:
+              - link "Date rendering (Moment.js)" [ref=e404] [cursor=pointer]:
+                - /url: ../datetime/formatting-moment.html
+            - listitem [ref=e405]:
+              - link "Date rendering (Luxon)" [ref=e406] [cursor=pointer]:
+                - /url: ../datetime/formatting-luxon.html
+            - listitem [ref=e407]:
+              - link "Format transform (Moment.js)" [ref=e408] [cursor=pointer]:
+                - /url: ../datetime/transform-moment.html
+            - listitem [ref=e409]:
+              - link "Format transform (Luxon)" [ref=e410] [cursor=pointer]:
+                - /url: ../datetime/transform-luxon.html
+            - listitem [ref=e411]:
+              - link "Ordering formatted dates (Moment.js)" [ref=e412] [cursor=pointer]:
+                - /url: ../datetime/order-moment.html
+            - listitem [ref=e413]:
+              - link "Ordering formatted dates (Luxon)" [ref=e414] [cursor=pointer]:
+                - /url: ../datetime/order-luxon.html
+        - generic [ref=e415]:
+          - heading "Plug-ins" [level=3] [ref=e416]:
+            - link "Plug-ins" [ref=e417] [cursor=pointer]:
+              - /url: ../plug-ins/index.html
+          - list [ref=e418]:
+            - listitem [ref=e419]:
+              - link "API plug-in methods" [ref=e420] [cursor=pointer]:
+                - /url: ../plug-ins/api.html
+            - listitem [ref=e421]:
+              - link "Ordering plug-ins (with type detection)" [ref=e422] [cursor=pointer]:
+                - /url: ../plug-ins/sorting_auto.html
+            - listitem [ref=e423]:
+              - link "Ordering plug-ins (no type detection)" [ref=e424] [cursor=pointer]:
+                - /url: ../plug-ins/sorting_manual.html
+            - listitem [ref=e425]:
+              - link "Custom filtering - range search" [ref=e426] [cursor=pointer]:
+                - /url: ../plug-ins/range_filtering.html
+            - listitem [ref=e427]:
+              - link "Live DOM ordering" [ref=e428] [cursor=pointer]:
+                - /url: ../plug-ins/dom_sort.html
+        - generic [ref=e429]:
+          - heading "Styling" [level=3] [ref=e430]:
+            - link "Styling" [ref=e431] [cursor=pointer]:
+              - /url: ../styling/index.html
+          - list [ref=e432]:
+            - listitem [ref=e433]:
+              - link "Base style" [ref=e434] [cursor=pointer]:
+                - /url: ../styling/display.html
+            - listitem [ref=e435]:
+              - link "Base style - no styling classes" [ref=e436] [cursor=pointer]:
+                - /url: ../styling/no-classes.html
+            - listitem [ref=e437]:
+              - link "Base style - cell borders" [ref=e438] [cursor=pointer]:
+                - /url: ../styling/cell-border.html
+            - listitem [ref=e439]:
+              - link "Base style - compact" [ref=e440] [cursor=pointer]:
+                - /url: ../styling/compact.html
+            - listitem [ref=e441]:
+              - link "Base style - hover" [ref=e442] [cursor=pointer]:
+                - /url: ../styling/hover.html
+            - listitem [ref=e443]:
+              - link "Base style - order-column" [ref=e444] [cursor=pointer]:
+                - /url: ../styling/order-column.html
+            - listitem [ref=e445]:
+              - link "Base style - row borders" [ref=e446] [cursor=pointer]:
+                - /url: ../styling/row-border.html
+            - listitem [ref=e447]:
+              - link "Base style - stripe" [ref=e448] [cursor=pointer]:
+                - /url: ../styling/stripe.html
+            - listitem [ref=e449]:
+              - 'link "Text Alignment: Header Left / Text Auto" [ref=e450] [cursor=pointer]':
+                - /url: ../styling/alignmentHeaderOnly.html
+            - listitem [ref=e451]:
+              - 'link "Text Alignment: Header and Body Left" [ref=e452] [cursor=pointer]':
+                - /url: ../styling/alignmentBothLeft.html
+            - listitem [ref=e453]:
+              - link "Bootstrap 3" [ref=e454] [cursor=pointer]:
+                - /url: ../styling/bootstrap.html
+            - listitem [ref=e455]:
+              - link "Bootstrap 4" [ref=e456] [cursor=pointer]:
+                - /url: ../styling/bootstrap4.html
+            - listitem [ref=e457]:
+              - link "Bootstrap 5" [ref=e458] [cursor=pointer]:
+                - /url: ../styling/bootstrap5.html
+            - listitem [ref=e459]:
+              - link "Foundation" [ref=e460] [cursor=pointer]:
+                - /url: ../styling/foundation.html
+            - listitem [ref=e461]:
+              - link "Fomantic-UI (formally Semantic-UI)" [ref=e462] [cursor=pointer]:
+                - /url: ../styling/semanticui.html
+            - listitem [ref=e463]:
+              - link "Bulma" [ref=e464] [cursor=pointer]:
+                - /url: ../styling/bulma.html
+            - listitem [ref=e465]:
+              - link "jQuery UI ThemeRoller" [ref=e466] [cursor=pointer]:
+                - /url: ../styling/jqueryUI.html
+            - listitem [ref=e467]:
+              - link "Material Design (Tech. preview)" [ref=e468] [cursor=pointer]:
+                - /url: ../styling/material.html
+            - listitem [ref=e469]:
+              - link "UIKit 3 (Tech. preview)" [ref=e470] [cursor=pointer]:
+                - /url: ../styling/uikit.html
+            - listitem [ref=e471]:
+              - link "Tailwind CSS (Tech. preview)" [ref=e472] [cursor=pointer]:
+                - /url: ../styling/tailwind.html
+        - generic [ref=e473]:
+          - heading "Layout" [level=3] [ref=e474]:
+            - link "Layout" [ref=e475] [cursor=pointer]:
+              - /url: ../layout/index.html
+          - list [ref=e476]:
+            - listitem [ref=e477]:
+              - link "Table controls positioning" [ref=e478] [cursor=pointer]:
+                - /url: ../layout/positioning.html
+            - listitem [ref=e479]:
+              - link "Table controls positioning with options" [ref=e480] [cursor=pointer]:
+                - /url: ../layout/positioning-with-options.html
+            - listitem [ref=e481]:
+              - link "Grid layout" [ref=e482] [cursor=pointer]:
+                - /url: ../layout/grid.html
+            - listitem [ref=e483]:
+              - link "Multiple table control elements" [ref=e484] [cursor=pointer]:
+                - /url: ../layout/dom_multiple_elements.html
+            - listitem [ref=e485]:
+              - link "Element IDs and classes" [ref=e486] [cursor=pointer]:
+                - /url: ../layout/ids-and-classes.html
+            - listitem [ref=e487]:
+              - link "Custom controls - nodes" [ref=e488] [cursor=pointer]:
+                - /url: ../layout/custom-nodes.html
+            - listitem [ref=e489]:
+              - link "Custom controls - defined by functions" [ref=e490] [cursor=pointer]:
+                - /url: ../layout/custom-function.html
+            - listitem [ref=e491]:
+              - link "Custom controls - plug-ins" [ref=e492] [cursor=pointer]:
+                - /url: ../layout/custom-plugin.html
+            - listitem [ref=e493]:
+              - link "Legacy dom option" [ref=e494] [cursor=pointer]:
+                - /url: ../layout/dom.html
+        - generic [ref=e495]:
+          - heading "API" [level=3] [ref=e496]:
+            - link "API" [ref=e497] [cursor=pointer]:
+              - /url: ../api/index.html
+          - list [ref=e498]:
+            - listitem [ref=e499]:
+              - link "Add rows" [ref=e500] [cursor=pointer]:
+                - /url: ../api/add_row.html
+            - listitem [ref=e501]:
+              - link "Individual column searching (text inputs)" [ref=e502] [cursor=pointer]:
+                - /url: ../api/multi_filter.html
+            - listitem [ref=e503]:
+              - link "Individual column searching (select inputs)" [ref=e504] [cursor=pointer]:
+                - /url: ../api/multi_filter_select.html
+            - listitem [ref=e505]:
+              - link "Highlighting rows and columns" [ref=e506] [cursor=pointer]:
+                - /url: ../api/highlight.html
+            - listitem [ref=e507]:
+              - link "Child rows (show extra / detailed information)" [ref=e508] [cursor=pointer]:
+                - /url: ../api/row_details.html
+            - listitem [ref=e509]:
+              - link "Child rows with StateSave" [ref=e510] [cursor=pointer]:
+                - /url: ../api/row_details_stateSave.html
+            - listitem [ref=e511]:
+              - link "Row selection (multiple rows)" [ref=e512] [cursor=pointer]:
+                - /url: ../api/select_row.html
+            - listitem [ref=e513]:
+              - link "Row selection and deletion (single row)" [ref=e514] [cursor=pointer]:
+                - /url: ../api/select_single_row.html
+            - listitem [ref=e515]:
+              - link "Form inputs" [ref=e516] [cursor=pointer]:
+                - /url: ../api/form.html
+            - listitem [ref=e517]:
+              - link "Index column" [ref=e518] [cursor=pointer]:
+                - /url: ../api/counter_columns.html
+            - listitem [ref=e519]:
+              - link "Show / hide columns dynamically" [ref=e520] [cursor=pointer]:
+                - /url: ../api/show_hide.html
+            - listitem [ref=e521]:
+              - link "Using API in callbacks" [ref=e522] [cursor=pointer]:
+                - /url: ../api/api_in_init.html
+            - listitem [ref=e523]:
+              - link "Scrolling and Bootstrap tabs" [ref=e524] [cursor=pointer]:
+                - /url: ../api/tabs_and_scrolling.html
+            - listitem [ref=e525]:
+              - link "Search API (regular expressions)" [ref=e526] [cursor=pointer]:
+                - /url: ../api/regex.html
+            - listitem [ref=e527]:
+              - link "HighCharts Integration" [ref=e528] [cursor=pointer]:
+                - /url: ../api/highcharts.html
+        - generic [ref=e529]:
+          - heading "Ajax" [level=3] [ref=e530]:
+            - link "Ajax" [ref=e531] [cursor=pointer]:
+              - /url: ../ajax/index.html
+          - list [ref=e532]:
+            - listitem [ref=e533]:
+              - link "Ajax data source (arrays)" [ref=e534] [cursor=pointer]:
+                - /url: ../ajax/simple.html
+            - listitem [ref=e535]:
+              - link "Ajax data source (objects)" [ref=e536] [cursor=pointer]:
+                - /url: ../ajax/objects.html
+            - listitem [ref=e537]:
+              - link "Nested object data (objects)" [ref=e538] [cursor=pointer]:
+                - /url: ../ajax/deep.html
+            - listitem [ref=e539]:
+              - link "Nested object data (arrays)" [ref=e540] [cursor=pointer]:
+                - /url: ../ajax/objects_subarrays.html
+            - listitem [ref=e541]:
+              - link "Orthogonal data" [ref=e542] [cursor=pointer]:
+                - /url: ../ajax/orthogonal-data.html
+            - listitem [ref=e543]:
+              - link "Generated content for a column" [ref=e544] [cursor=pointer]:
+                - /url: ../ajax/null_data_source.html
+            - listitem [ref=e545]:
+              - link "Custom data source property" [ref=e546] [cursor=pointer]:
+                - /url: ../ajax/custom_data_property.html
+            - listitem [ref=e547]:
+              - link "Flat array data source" [ref=e548] [cursor=pointer]:
+                - /url: ../ajax/custom_data_flat.html
+            - listitem [ref=e549]:
+              - link "Deferred rendering feature" [ref=e550] [cursor=pointer]:
+                - /url: ../ajax/defer_render.html
+        - generic [ref=e551]:
+          - heading "Server-side" [level=3] [ref=e552]:
+            - link "Server-side" [ref=e553] [cursor=pointer]:
+              - /url: ../server_side/index.html
+          - list [ref=e554]:
+            - listitem [ref=e555]:
+              - link "Server-side processing" [ref=e556] [cursor=pointer]:
+                - /url: ../server_side/simple.html
+            - listitem [ref=e557]:
+              - link "Custom HTTP variables" [ref=e558] [cursor=pointer]:
+                - /url: ../server_side/custom_vars.html
+            - listitem [ref=e559]:
+              - link "POST data" [ref=e560] [cursor=pointer]:
+                - /url: ../server_side/post.html
+            - listitem [ref=e561]:
+              - link "Return key to search" [ref=e562] [cursor=pointer]:
+                - /url: ../server_side/return_search.html
+            - listitem [ref=e563]:
+              - link "Automatic addition of row ID attributes" [ref=e564] [cursor=pointer]:
+                - /url: ../server_side/ids.html
+            - listitem [ref=e565]:
+              - link "Object data source" [ref=e566] [cursor=pointer]:
+                - /url: ../server_side/object_data.html
+            - listitem [ref=e567]:
+              - link "Row details" [ref=e568] [cursor=pointer]:
+                - /url: ../server_side/row_details.html
+            - listitem [ref=e569]:
+              - link "JSONP data source for remote domains" [ref=e570] [cursor=pointer]:
+                - /url: ../server_side/jsonp.html
+            - listitem [ref=e571]:
+              - link "Deferred loading of data" [ref=e572] [cursor=pointer]:
+                - /url: ../server_side/defer_loading.html
+            - listitem [ref=e573]:
+              - link "Pipelining data to reduce Ajax calls for paging" [ref=e574] [cursor=pointer]:
+                - /url: ../server_side/pipeline.html
+  - generic [ref=e576]:
+    - heading "DataTables" [level=4] [ref=e577]
+    - paragraph [ref=e578]:
+      - text: DataTables designed and created by
+      - link "SpryMedia Ltd" [ref=e579] [cursor=pointer]:
+        - /url: //sprymedia.co.uk
+      - text: .
+      - text: © 2007-2025
+      - link "MIT licensed" [ref=e580] [cursor=pointer]:
+        - /url: /license/mit
+      - text: .
+      - link "Privacy policy" [ref=e581] [cursor=pointer]:
+        - /url: /privacy
+      - text: .
+      - link "Supporters" [ref=e582] [cursor=pointer]:
+        - /url: /supporters
+      - text: .
+      - text: SpryMedia Ltd is registered in Scotland, company no. SC456502.
+```

@@ -1,0 +1,22 @@
+total no of rows:5
+total no of columns:4
+table data is 1
+table data is Smartphone
+table data is $10.99
+table data is 
+table data is 2
+table data is Laptop
+table data is $19.99
+table data is 
+table data is 3
+table data is Tablet 
+table data is $5.99
+table data is 
+table data is 4
+table data is Smartwatch
+table data is $7.99
+table data is 
+table data is 5
+table data is Wireless Earbuds
+table data is $8.99
+table data is 

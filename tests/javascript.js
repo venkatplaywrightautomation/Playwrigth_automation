@@ -1394,19 +1394,19 @@ switch(day){
 // }
 
 
-let arr1 = [10, 20, 30, 40];
-for (let i = arr1.length - 1; i >= 0; i--) {
-  console.log(arr1[i]);
-}
+// let arr1 = [10, 20, 30, 40];
+// for (let i = arr1.length - 1; i >= 0; i--) {
+//   console.log(arr1[i]);
+// }
 
-for (let i = 1; i <= 5; i++) {
-  let line = '';
-  for (let j = 1; j <= i; j++) {
-    //line += '*';
-    line =line + "*"
-  }
-  console.log(line);
-}
+// for (let i = 1; i <= 5; i++) {
+//   let line = '';
+//   for (let j = 1; j <= i; j++) {
+//     //line += '*';
+//     line =line + "*"
+//   }
+//   console.log(line);
+// }
 
 // for (var i = 0; i < 3; i++) {
 //   setTimeout(() => console.log(i), 1000);
@@ -2053,8 +2053,199 @@ for (let i = 1; i <= 5; i++) {
 // let arrayIntegers3 = arrayIntegersOriginal3.splice(3, 1, "a", "b", "c");
 // console.log(arrayIntegers3);
 
-let numbers = [1, 2, 5, 3, 4];
-numbers.sort((a, b) => b - a);
-numbers.reverse();
-console.log(numbers); // [1, 2, 3, 4 ,5]
+// let numbers = [1, 2, 5, 3, 4];
+// numbers.sort((a, b) => b - a);
+// numbers.reverse();
+// console.log(numbers); // [1, 2, 3, 4 ,5]
+
+
+
+let str= "this is venkat";
+// let ov= str.match(/[aeiou]/gi)
+// console.log(ov.length)
+
+// let ovels="aeiouAEIOU"
+// let count1=0
+// for(let char of str){
+
+//     if(ovels.includes(char)){
+//         count1++
+//     }
+//   }
+
+//   console.log("vowel count:",count1)
+
+
+
+// let fact=1
+
+// for(let i=1;i<=5;i++){
+
+//   fact=fact * i
+// }
+// console.log(fact)
+
+
+// let num=7
+// let isprime=true
+// if(num <=1){
+//   isprime=false
+// }
+// for(let i=2;i<=Math.sqrt(num);i++){
+//   if(num % i ===0){
+//     isprime=false
+//     break
+//   } 
+// }
+// if(isprime){
+//   console.log(num + " is a prime number")
+// }
+// else{
+//   console.log(num + " is not a prime number")
+// }
+
+//  for(let num=2;num<=100;num++){
+//   let isprime=true
+//   for(let i=2;i<=Math.sqrt(num);i++){
+//     if(num % i ===0){
+//       isprime=false
+//       break
+//     }
+// }
+//   if(isprime){
+//     console.log(num)
+
+//   }
+//   }
+
+
+// let num1=0
+// let num2=1
+
+// let next
+// for(let i=2;i<=10;i++){
+
+//   console.log(num1)
+//   next= num1 +num2
+//   num1=num2
+//   num2=next
+
+// }
+
+// let arr1= [4,12, 45, 7, 89, 23, 56];
+
+// let max=arr[0]
+
+// for(let i=1;i<arr1.length;i++){
+// if(arr1[i] > max){
+//   max=arr1[i]  
+// }
+
+// }
+// console.log(max)
+
+// let str1="venkat1223"
+
+// let rev= ""
+
+// for(let i= str.length-1;i>=0;i--)
+// {
+
+//   rev=rev + str1[i]
+// }
+// console.log(rev)
+
+// if(str1 === rev)  
+// {
+//   console.log("yes")
+// }
+
+// else{
+//   console.log("no")
+// }
+
+// let num=1234
+// let digit;
+// let rev= 0
+// while(num > 0){
+//   digit= num % 10
+//   //console.log(digit)
+//  rev= rev * 10 + digit
+//   num= Math.floor(num / 10)
+//   //console.log(num)
+
+
+
+// }
+// console.log(rev)
+
+// let arr1=[1,2,3,4,56,7,8,9]
+
+// let sum=0
+
+// for(let i=0;i<arr1.length;i++){
+
+//   sum=sum + arr1[i]
+// }
+// console.log(sum)
+
+// let arr1=[1,2,3,4,5,6,7,8,9,2,3,4]
+
+
+// // let res=arr1.filter(num => num % 2 ==0)
+// // console.log(res)
+// let res=arr1.filter((ele,index,array) => array.indexOf(ele)!== index
+// )
+// // console.log(res)
+// let str1="javascript"
+
+
+// let count1={}
+// for(let ch of str){
+
+  
+//     let ch=str1[ch]
+//     if(count1[ch]){
+//         count1[ch]++
+//     }
+//     else{
+//         count1[ch]=1
+//     }
+// }
+// console.log(count1)
+
+// let arr1=[1,2,3,4,5,6,7,8,9,1,2,3,4,5]
+// let sum=arr1.reduce((access,cur) => access + cur,0)
+// console.log(sum)
+
+// let pro=arr1.reduce((access,cur) => access * cur,1)
+// console.log(pro)  
+
+
+// let arr1=[1,2,3,4,5,6,7,9]
+// let n=9
+
+// let act= arr1.reduce((access,cur) => access + cur,0)
+// console.log(act)
+
+// let exp= (n * (n -1)) / 2
+
+// let res= exp - act
+
+// console.log("missing number is",res)
+
+
+
+
+// let str1="venkat reddy"
+
+// let res= str1.split(" ").map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')
+// console.log(res)  
+
+
+
+
+// var b=30
+// b=40
+
 

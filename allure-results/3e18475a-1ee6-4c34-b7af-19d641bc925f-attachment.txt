@@ -1,0 +1,1 @@
+Number of pages open in the application are: 2

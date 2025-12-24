@@ -146,7 +146,7 @@ async isenabled(selector){
   return await this.page.locator(selector).isEnabled();
 } 
 async isdisabled(selector){
-  return !(await this.page.locator(selector).isdisabled
+  return !(await this.page.locator(selector)).isdisabled
 }
 
 async isEditable(selector){
@@ -267,14 +267,7 @@ async elementScreenshot(selector,options){
   async getAllElements(selector) {
     return await this.page.locator(selector).all();
   }
-}
-  // asy
-  // 
-  
 
-
-  //      await this.page.waitForTimeout(timeout);
-  // }
 
   async getErrorMessage() {
     return await this.errorMessage.textContent();
@@ -300,9 +293,7 @@ async elementScreenshot(selector,options){
 
   }
 
-  async #login(){
-
-  }
+ 
 
 }
 

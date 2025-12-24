@@ -1,0 +1,7 @@
+total no of rows:4
+total no of columns:5
+process name is:System
+process name is:Chrome
+cpu value for chrome is:9.5%
+process name is:Internet Explorer
+process name is:Firefox

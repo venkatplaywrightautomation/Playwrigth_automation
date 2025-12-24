@@ -1,0 +1,201 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - paragraph [ref=e3]:
+    - link "PMP Practice" [ref=e4] [cursor=pointer]:
+      - /url: https://pmp.expandtesting.com/
+    - text: "| Free PMP Certification Mock Exam Test +900 Questions & Quizzes"
+    - link "Software testing courses" [ref=e5] [cursor=pointer]:
+      - img [ref=e7] [cursor=pointer]
+      - generic [ref=e9] [cursor=pointer]: Software testing courses
+  - banner [ref=e11]:
+    - navigation "Main navigation" [ref=e12]:
+      - link "SUT" [ref=e13] [cursor=pointer]:
+        - /url: /
+        - 'img "Best Website for Practice Automation Testing: Free UI and REST API Examples and Apps. Using Cypress, Playwright, Selenium, WebdriverIO and Postman." [ref=e14] [cursor=pointer]'
+        - text: Practice
+      - generic [ref=e15]:
+        - list [ref=e16]:
+          - listitem [ref=e17]:
+            - button "Demos" [ref=e18] [cursor=pointer]
+          - listitem [ref=e19]:
+            - link "Tools" [ref=e20] [cursor=pointer]:
+              - /url: /#tools
+          - listitem [ref=e21]:
+            - link "Tips" [ref=e22] [cursor=pointer]:
+              - /url: /tips
+          - listitem [ref=e23]:
+            - link "Test Cases" [ref=e24] [cursor=pointer]:
+              - /url: /test-cases
+          - listitem [ref=e25]:
+            - link "API Testing" [ref=e26] [cursor=pointer]:
+              - /url: /notes/api/api-docs/
+          - listitem [ref=e27]:
+            - link "About" [ref=e28] [cursor=pointer]:
+              - /url: /about
+        - list
+        - link "Free ISTQB Mock Exams" [ref=e29] [cursor=pointer]:
+          - /url: https://istqb.expandtesting.com/
+  - main [ref=e30]:
+    - insertion [ref=e34]:
+      - generic [ref=e36]:
+        - generic "These are topics related to the article that might interest you" [ref=e37]: Discover more
+        - link "Project management software" [ref=e38] [cursor=pointer]:
+          - img [ref=e40] [cursor=pointer]
+          - generic [ref=e42] [cursor=pointer]: Project management software
+        - link "CPU load testing" [ref=e43] [cursor=pointer]:
+          - img [ref=e45] [cursor=pointer]
+          - generic [ref=e47] [cursor=pointer]: CPU load testing
+        - link "REST API testing" [ref=e48] [cursor=pointer]:
+          - img [ref=e50] [cursor=pointer]
+          - generic [ref=e52] [cursor=pointer]: REST API testing
+        - link "Automation Testing" [ref=e53] [cursor=pointer]:
+          - img [ref=e55] [cursor=pointer]
+          - generic [ref=e57] [cursor=pointer]: Automation Testing
+        - link "API" [ref=e58] [cursor=pointer]:
+          - img [ref=e60] [cursor=pointer]
+          - generic [ref=e62] [cursor=pointer]: API
+        - link "Ergonomic office chairs" [ref=e63] [cursor=pointer]:
+          - img [ref=e65] [cursor=pointer]
+          - generic [ref=e67] [cursor=pointer]: Ergonomic office chairs
+        - link "Automation testing courses" [ref=e68] [cursor=pointer]:
+          - img [ref=e70] [cursor=pointer]
+          - generic [ref=e72] [cursor=pointer]: Automation testing courses
+        - link "UI automation tutorials" [ref=e73] [cursor=pointer]:
+          - img [ref=e75] [cursor=pointer]
+          - generic [ref=e77] [cursor=pointer]: UI automation tutorials
+        - link "Automation practice website" [ref=e78] [cursor=pointer]:
+          - img [ref=e80] [cursor=pointer]
+          - generic [ref=e82] [cursor=pointer]: Automation practice website
+        - link "Playwright automation guide" [ref=e83] [cursor=pointer]:
+          - img [ref=e85] [cursor=pointer]
+          - generic [ref=e87] [cursor=pointer]: Playwright automation guide
+    - paragraph [ref=e89]:
+      - text: Do you enjoy this platform? ❤️
+      - link "Buy us a coffee" [ref=e90] [cursor=pointer]:
+        - /url: https://www.buymeacoffee.com/expandtesting
+    - generic [ref=e91]:
+      - insertion [ref=e93]:
+        - generic [ref=e95]:
+          - generic "These are topics related to the article that might interest you" [ref=e96]: Discover more
+          - link "Database management tools" [ref=e97] [cursor=pointer]:
+            - img [ref=e99] [cursor=pointer]
+            - generic [ref=e101] [cursor=pointer]: Database management tools
+          - link "Testing" [ref=e102] [cursor=pointer]:
+            - img [ref=e104] [cursor=pointer]
+            - generic [ref=e106] [cursor=pointer]: Testing
+          - link "PMP certification mock" [ref=e107] [cursor=pointer]:
+            - img [ref=e109] [cursor=pointer]
+            - generic [ref=e111] [cursor=pointer]: PMP certification mock
+          - link "Coffee subscriptions" [ref=e112] [cursor=pointer]:
+            - img [ref=e114] [cursor=pointer]
+            - generic [ref=e116] [cursor=pointer]: Coffee subscriptions
+          - link "Test automation tools" [ref=e117] [cursor=pointer]:
+            - img [ref=e119] [cursor=pointer]
+            - generic [ref=e121] [cursor=pointer]: Test automation tools
+          - link "Performance testing software" [ref=e122] [cursor=pointer]:
+            - img [ref=e124] [cursor=pointer]
+            - generic [ref=e126] [cursor=pointer]: Performance testing software
+          - link "Selenium automation framework" [ref=e127] [cursor=pointer]:
+            - img [ref=e129] [cursor=pointer]
+            - generic [ref=e131] [cursor=pointer]: Selenium automation framework
+          - link "Task manager simulator" [ref=e132] [cursor=pointer]:
+            - img [ref=e134] [cursor=pointer]
+            - generic [ref=e136] [cursor=pointer]: Task manager simulator
+          - link "Online learning platforms" [ref=e137] [cursor=pointer]:
+            - img [ref=e139] [cursor=pointer]
+            - generic [ref=e141] [cursor=pointer]: Online learning platforms
+          - link "CPU load testing" [ref=e142] [cursor=pointer]:
+            - img [ref=e144] [cursor=pointer]
+            - generic [ref=e146] [cursor=pointer]: CPU load testing
+      - generic [ref=e149]:
+        - navigation "breadcrumb mb-2" [ref=e150]:
+          - list [ref=e151]:
+            - listitem [ref=e152]:
+              - link "Home" [ref=e153] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e154]: / Dynamic Table
+        - heading "Dynamic Table page for Automation Testing Practice" [level=1] [ref=e155]
+        - generic [ref=e157]:
+          - paragraph [ref=e158]:
+            - text: Below you see a table where columns and rows change their position upon page reload.
+            - text: Values in cells are random.
+            - link "Test automation tools" [ref=e159] [cursor=pointer]:
+              - img [ref=e161] [cursor=pointer]
+              - generic [ref=e163] [cursor=pointer]: Test automation tools
+          - heading "Scenario" [level=2] [ref=e164]
+          - list [ref=e165]:
+            - listitem [ref=e166]: For Chrome process get value of CPU load.
+            - listitem [ref=e167]: Compare it with value in the yellow label.
+          - heading "Playground" [level=2] [ref=e168]
+        - generic [ref=e170]:
+          - generic [ref=e171]: Task Manager
+          - table [ref=e173]:
+            - rowgroup [ref=e174]:
+              - row "Name Memory Network Disk CPU" [ref=e175]:
+                - cell "Name" [ref=e176]
+                - cell "Memory" [ref=e177]
+                - cell "Network" [ref=e178]
+                - cell "Disk" [ref=e179]
+                - cell "CPU" [ref=e180]
+            - rowgroup [ref=e181]:
+              - row "System 47.1 MB 0.3 Mbps 0.6 MB/s 5.9%" [ref=e182]:
+                - cell "System" [ref=e183]
+                - cell "47.1 MB" [ref=e184]
+                - cell "0.3 Mbps" [ref=e185]
+                - cell "0.6 MB/s" [ref=e186]
+                - cell "5.9%" [ref=e187]
+              - row "Chrome 35.1 MB 9.2 Mbps 0.7 MB/s 8.6%" [ref=e188]:
+                - cell "Chrome" [ref=e189]
+                - cell "35.1 MB" [ref=e190]
+                - cell "9.2 Mbps" [ref=e191]
+                - cell "0.7 MB/s" [ref=e192]
+                - cell "8.6%" [ref=e193]
+              - row "Firefox 13.7 MB 4.6 Mbps 0.1 MB/s 2.2%" [ref=e194]:
+                - cell "Firefox" [ref=e195]
+                - cell "13.7 MB" [ref=e196]
+                - cell "4.6 Mbps" [ref=e197]
+                - cell "0.1 MB/s" [ref=e198]
+                - cell "2.2%" [ref=e199]
+              - row "Internet Explorer 47.8 MB 9.6 Mbps 0.7 MB/s 3.7%" [ref=e200]:
+                - cell "Internet Explorer" [ref=e201]
+                - cell "47.8 MB" [ref=e202]
+                - cell "9.6 Mbps" [ref=e203]
+                - cell "0.7 MB/s" [ref=e204]
+                - cell "3.7%" [ref=e205]
+          - paragraph [ref=e206]: "Chrome CPU: 8.6%"
+    - insertion [ref=e208]:
+      - iframe [ref=e210]:
+        - iframe [ref=f1e1]:
+          - generic [ref=f2e2]:
+            - link "Advertisement" [ref=f2e4] [cursor=pointer]:
+              - /url: https://ad.doubleclick.net/pcs/click?xai=AKAOjsu2Ef73NkBIYSZXetyR1ZyTB3gIZuGGzY_bp8Bf5UjHdJGSKY3e3Pg1RBtPFQEo2_8kw9CIgF0zII7XZ3wklpXa9etBFt8bKtWtL8styLKfPcfYtvkNnScpf1n7aNCtIqFxmSMrsHChGMON4EkjuuO03H2dbgq6zu6CF1QPESPJOraGTzOzho5mgHGwt2JuOVIefjNFZ_bmZCLm1Ks2GLMIFy7J47KoDTd6Zu7MAHs1uYS36mNpEgDWXvzqHwk3QJwikr6RJMLfjdaWFTnxutLpgKfubGxYI_oRN4fdmBA8q7PAJTxT3TdRUdztGatHwkTxW-X6ZEyVht-DYDDDzo8I9e_KsJfk-F-zimoxSmrwYy3Wa2YR3mOHW_I72IXc7Lt_KXKDVxanAbHou5wyZtNCsRYliEG_EJRYyC4oUL8no2vfwCmvMx1mcbn_UI3s05BhEso7qbwM-YBr7nxbe-p03lRlPq_kF2XL5JbthppMMcUjlj3YYerX_uxqzAM84PNXgfAGJ5wcjcN4KYkR9S37o1ricRH8jsgJlsBk2SKrau91nNTJrH5ZUyOBZzp5CCgEB1q_oB1nGK6710qB5KzR-YHxBjZDzIJ1iuEGnIN8w6gyxwVhumQsH9CQDASG0qXRHziyHxZFX9b8IERERAUz72Iczs3tjr8t4WEj6eqeTCLXtOBH4n4GfPMZgBhYXFhKA75jdVDgd8PT4dKOu4-5cTSvraeXoL16onMkxjywSim3yErftx_TSi-nlpjc3i6H46vQIT-gGHyO3rDgTgHhlbMZADk5pCAKaB3XKvuGrPGrqTENeswFqD_PxBqSiSXxG_jS-FbjTxPp4yrz_QKzwzKJluuu8dt8FcgCrJG8zEDqQDgL6btJ3iOD1RUEuMEoxc33hnWHPeBeIYK1eSjy4TGap3EpfBumbiEbXur0wCAR5F5rkVVinzTTl48X0skjm5L4pXVHvtdcKJh1ybF7CppVpHQyQPsXJ3fSCbXLnDfj70wBFMDu8A-kAN0W_lFNjz98arhdX7FTf9Euvaovufwtqvdw4UM73wSL4XbDc8mnfm_fKahL9WRQJya4n_zl0bTDan-GcIESX4wUeHi8PuzSsAgCqBBFYYq5gCbwSN_-6eE5YzzdiCV_FIzG5Nig3QS_y21wm6OMvrmOMxBndAHzEsJ8_Kx5_RLgjL1_gZQRC2_9vQMm-Lu4_VyV3JJt86-D2UTJAKYtMMdRmrpwwl8ibBtYxvkLgmkaMPFJJ6LPnMD7QZ30JiJumi-IMZLElHrYzXhRz56rgQjc3UJyfs5duasnyzSASBs3NniwhVdw_82PuIhWqsAvBUMS9Bp3p68Yb6Da0zCZv8GUZ3yvJp18_AA5NgufWpne1UKaKl5sM8Y-v6A36zMz0HHprf0uy5m0lcYjZHJbqkaH_016LEGrU-YeKDFm2p3QH_JBV2vaVKOpzMrWLkXgTq65UxeHK9oPxp_U57g91HAN65Rmw3Si8extYH8JyhiFNrt9zFYtAR5RcHynPuPBL4T1lVvwEO4_MfKCcDk9miSh1zkSV9E8gHXk-sn6SDcYoTa0_vgrrJ9iAc4fJm1R3YjO9GzenzFr9qyReQKj4nbDB9PF-KrvLv1K8zMKx6LP7nCyzJA1BPRYO5mmbc-GIgWVDTeppwThCP3H7YsMpEQR8297-AYZaNQj-J4o4XFTISqoKXZgeb0nPKODeWTxTBiz7ufid0AzemBt5uGefSmwaHj9dC_NbZWUfy9KOqGLODwiUGG4YaexbJWYcib6A2FEpUVAHgJnyD5o2oTb5XajklAGrbvR5d7UEx-CxY5v0az2n0OanQDlnnk7QetjSglbK_tF7dr6NeOD-fkbWJdm2RnCuyvcdaOF2CIJ8ljDr1x0nDFdWmNRPvuAqk8yBxM49VAXovD1X-s1YHlYtOTJSvp2Fp7N6bVeTQVQV-QA9mnDH1zF35hTP8MzEZhwJUdb6gIY30wW2NvUGHFHgaOevX2S5m11Xro9vg7An4pvoPmLi2n_a0JvErQtax0gczzcvhyj5A68PR1gisWv-K7JXY9XY91DY4wh0RfZp6cD1Bs7ntNsGiXfZmOEj1hNKsxfJ6cRcr5EzahsacMsRbSdNpDj0hvJBQ1k8ZrwBbdM8Mo&sai=AMfl-YS_0GxpWRtnb7LIsb2C_OD1iTIHe-l5goTz8gNi5yYVsmW7vhnAQBpKz0D1T2ieLUcjl-9WQL9hUhRjBcwSdydThhl2tQ5Wbp_g7qYK5f5miArUtWZzE6GzW-PV6uEjfwXJgsxpSCAGfEyvGRAvq_xv4kTOJmsMRRXdNy6zyeA5IfaKr7xNSOfGBBbWiuyw5MgXtN4PE5ih6PWt4J2qDTXAiLTWw0Whn5B1rFH16ANmGGTee8_BCeBCFhCjUFCpPlSkIDLGPMjdvN6uz8W3yG5c8MIy3Ct52ZsYbvzcdVaVCLQMp7AWQPJVY0PeAfjsYbRuPIqHJKGxwIjjn-H6c6e56TgCHOecwtAaXw6c5WKVOxIsjhZe1x0C2k_2ackzaDObTmZP38UuHngq0ehgYOSd4KFWi9Vm-2RjRkse-Nnihadll96oRstPnhOLwx3nVxJwLYl7LMEsvnc1HZ2_EP4N8P2n8oITeKomnHxs-51uSWRgqJjyvv3kRHNTQk-Tn11TBElExIszoyt4JULLnEfgkKEskU0XVWpIQRNVlAp9matpRiEhulzjhxu6Qt3DL7moH0woci5fMQqr5F4Ki8Ozwys2v9F67q2jSlYDEdn45fHeItI3KAvPpnTUTqyr53vy4N72NBkw4dv3IeCelpeJhOyRXNljP34&sig=Cg0ArKJSzO9ZLvbbuM_0&fbs_aeid=%5Bgw_fbsaeid%5D&crd=aHR0cHM6Ly9pdGNob3RlbHMuY29t&urlfix=1&adurl=https://www.itchotels.com/in/en/clubitc/membership-benefits/enrol%3Futm_source%3Dprogrammatic%26utm_medium%3Ddv360%26utm_content%3Ddisplay%26utm_campaign%3DPFX_Google-HQ_DTL-CHN-NA-QO-DisplayDV360-NA-Tactical-Membership-NA-NA-Feeder-C0%26utm_adgroup%3DDisplayDV360-NA-INT_Feeder-C0-CITCBranding_DisplayDV360-NA-INT_Feeder-0-CombinedTargeting_FeelRewarded%26dclid%3D%25edclid!%26gad_source%3D7
+              - img "Advertisement" [ref=f2e5] [cursor=pointer]
+            - generic [ref=f2e6]:
+              - generic:
+                - img [ref=f2e10] [cursor=pointer]
+                - button [ref=f2e12] [cursor=pointer]:
+                  - img [ref=f2e13] [cursor=pointer]
+  - contentinfo [ref=e211]:
+    - generic [ref=e216]:
+      - heading "Practice Test Automation WebSite for Web UI and Rest API" [level=4] [ref=e217]
+      - paragraph [ref=e218]:
+        - text: "Version: 874f3178 | Copyright"
+        - link "Expand Testing" [ref=e219] [cursor=pointer]:
+          - /url: https://expandtesting.com/
+        - text: "2025"
+  - insertion [ref=e220]:
+    - iframe [ref=e223]:
+      - iframe [ref=f3e1]:
+        - generic [ref=f4e2]:
+          - link "Advertisement" [ref=f4e4] [cursor=pointer]:
+            - /url: https://ad.doubleclick.net/pcs/click?xai=AKAOjssoMrzdcZ8PA7awpI54U1M5Q75m0JiKY12nFxZ5Tvr4t-2-i3qpn2lLkz0foDmPSiCxf3QWGNw2bYoytDacyiVzxUW1u27svvdXeFYRUkJTdneqIsdMJGftZqawwJAYgXMG2Ru2L7LuVUPD0MFt9qS3K9s_CV-4djLrhd_aJJCiF1w91OcnRWiu-L9DC3gzoTRPuML7pO6iZNo9dRtY9krzCpCVP1yil-76u24tFpZuldKVnELE6EmTMdaB4I-9H_ZKRkG8lkf7qQThrBmO9i5K2mHkh6cf5XCjPRAlgRGSOoKTqYcZsqH-HN0E2PBc9_xed9JAOa1lcv-71Ox-85FK5hE6bcAXBAgPbAptls7jGPX8kU2522tWovtjr4M2GJI9p5yD7f_KKPHjuroGHpGxvqNrBXPwva-OAthEfJO3uKshjZrYDfXQqaJRM7fnz7B3fvR7T8OYztlBD3oHNp6mS4KtOJ5jvwu3MkZsVYBJVzucvbiJK_pya7SUA1-jhbIRdD-O39US4obRG58NvXR5hSbPhKVK-9koDNXJkK2tGLXyyggdKLvBaoJS3IPqikLjUrfjW7Hu2AsVbk-V8hTPuLoKL1NUTPeT4OymFrEGJhPjPoLtDCWMx59U7VmKESJ7rpiUNiIahG34AgqAc_xRGwChxSdwv6qSU6Al5sDUoyprbLrHTnPl3AQlPRBjeZn4Iujzh6T679xM7VrfJ85j3W72vctzzfj8GmrnidGkM9XDU3tAKNHen67NLdeu6yzyjylosfsxUQ_vTBAOYGcvW52APfJcqoPelrQLTibyTQP_vcFJ0IQDN_wdmT8-83BKeMlOPxfSjyyOfle8e02xOY82BanrF4muX9iIHf7ULl2YMOWrzMQxF8p6umRt9PggxEPd7EmLoVNulgnyxVf5iElQzOFfl70G9h-oRx6Zj5z3h6GIy1r0BgYLSuyiwWDWPpyEFunajfMP7P1X4DJx_O3l36WvIScMxtUcCqDLEvRSZC7jG3FeXhCMccJ4w_WFzDh9ayagc3Q5BZWkFMhZ7JnyOMZYKpvqUOlnnj1ogFwsekuvXGnBsFfNcJVKfJ19CTI1ARVxmBWmeeVeNF0CzDs83vyOUk_DkY5Na3FDvICOFrfz8YD3lxLaicukzcHfSpqRfAaCB5O5BdQQwoqlfyp-8DqWRznAaXtLfOMeoAfHO3orOTVEGd-WEOcM1XupmyW9yMF108Sf8oXTaUu_Hyo-2ACtssXxpu5t7f4IsXrNfPjSLVKdrEYY5LkZowWvbVhirLINsNogrUXaibl1HxFutKLq31KW0YI_Q58axLi5oR5TF1iNYS2N2cV7vts-qh-pwxJkV7QYHh4KdEQlKB1nWHoPgwzJgcoWAlcmLUrhPExABClD-K-A7lNtRm0mZ0R8ppbU_BuJsj0zxY0zRuAUp_lJ-dUHvGlVdBc79kWy--ZxTJqLCDfK-eeaysCuDscUa3-Qb3k-e-JO5rLE9gEhGV21bCaCGPCd0NoostREFUbRuLb7OsvODUHqvHYFHl5j3APzMt_YHPgKrycprUqV1L2wYiNaRuDxbazwdo23p0mpa9ASkr4EQhw7CteLWJrAXe-GQbkcXoeusOGx43xcyPjeMll0eDfXU1zRiscQo8upHtu-FNroLIlE00ttfZ-XAKmvEGAvIuXniLOkqsQUMnFb-1I5nm5Efa6yINqR0S7zt9wXEr3JGsIe0TtqN9DUyWHHkNsTn_EJQ5EjJ71Sq6UsC-vGJ8B8MR_bgSUbxQc1axki03uIQA-Tf_Hb5JWJNiEgte_lXyr8WyybudCqHY3wREq9S_mktO-AvHHcIfGW2a1qBKXZuCSZDVfNvSn5AfrKmELG2bDvqkTmmD3fOWohZmL1h4qB2AZpdSkjn86hoFk22mGDkA4gz6LDUnaRX2L7G98IE98LrTm_aq6BOMmk9W-MYm1rmTAzWBovHrSSwnU7kRM-699ZtuGd9ao0cCdU6BNH8TMeuBcGqXUIWVaIvH4Q53nHHx7KIx8UuLF4SMU699QpeLUErreM6bcARPeeATHsv7Mbb1QF3TbIIfES0r464rxWb7RHbZ3qes7b&sai=AMfl-YQAy_0C5mwr_dhatGalMl3iQTkRLPN_JASTOJQ9hEkjnitHCewFgzSGhp9y1OxtULZ7ggnDmICWKtWCzHEj_fZAK5WE6dntcQ6Tx2-2waIAj4vDcQo0oBU6gFnRIDytMVY_P2ZoDIfPD3E_xFCKWgKRWe39j5magQSIyGJZdCDJvIeVOu9nb7v0eTXGg_6vj3Jw-Otxe22kFSONKoEqzcU9Kkh-0UwRook8oLqq2_alPMxxO7A0Ur_nzAttk1VeWc5Q4dDisN6JSEY8l5al5UslJ_xinlJidLbYjLIjT9Cvwg9FpwdqUdY8pwkHs3nTjurUVJCI5sdnwEEwxjOAbYbqQWMErdSZqPLWebsb0dgMmA5YagLgrcCh3uf4JVxiw2FzzapaehXpE-x2O7jh1Y5RHB8KF9OHc0g8R_91A-k8vhtHrjbnED6i2ozwxO0XTuzLmAQu6Hj-yh5lw-3ssKJ8Ndpoj7cnAurp47bYO4nYcfCHqHLOT0AmPsufYl9sbiro3Si-a3sHWFkB75jmCfxix56M1WK4wB4UDfc4xRBO7JAGnUru0iA6MhtqiD3qoBXtBlAkMxZBzEMx390bZesZq15I4B2xnUeKSMPAwLpUHaCRFqEggkX1IM0Y5L6bdEFTyHt98gTXkcJxbZ-GoFcutK_CqCyFv1k&sig=Cg0ArKJSzOachpXi2Qn5&fbs_aeid=%5Bgw_fbsaeid%5D&crd=aHR0cHM6Ly9pdGNob3RlbHMuY29t&urlfix=1&adurl=https://www.itchotels.com/in/en/clubitc/membership-benefits/enrol%3Futm_source%3Dprogrammatic%26utm_medium%3Ddv360%26utm_content%3Ddisplay%26utm_campaign%3DPFX_Google-HQ_DTL-CHN-NA-QO-DisplayDV360-NA-Tactical-Membership-NA-NA-Feeder-C0%26utm_adgroup%3DDisplayDV360-NA-INT_Feeder-C0-CITCBranding_DisplayDV360-NA-INT_Feeder-0-Customintent4_5starhotels_FeelRewarded%26dclid%3D%25edclid!%26gad_source%3D7
+            - img "Advertisement" [ref=f4e5] [cursor=pointer]
+          - generic [ref=f4e6]:
+            - generic:
+              - img [ref=f4e10] [cursor=pointer]
+              - button [ref=f4e12] [cursor=pointer]:
+                - img [ref=f4e13] [cursor=pointer]
+  - img [ref=e225] [cursor=pointer]
+```

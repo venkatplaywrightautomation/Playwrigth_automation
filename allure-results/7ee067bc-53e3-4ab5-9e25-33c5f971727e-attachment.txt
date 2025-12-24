@@ -1,0 +1,87 @@
+total no of rows:5
+total no of columns:4
+total no of pages:4
+page number is:1
+table data is 1
+table data is Smartphone
+table data is $10.99
+table data is 
+table data is 2
+table data is Laptop
+table data is $19.99
+table data is 
+table data is 3
+table data is Tablet 
+table data is $5.99
+table data is 
+table data is 4
+table data is Smartwatch
+table data is $7.99
+table data is 
+table data is 5
+table data is Wireless Earbuds
+table data is $8.99
+table data is 
+page number is:2
+table data is 6
+table data is Bluetooth Speaker
+table data is $9.99
+table data is 
+table data is 7
+table data is Television
+table data is $20.99
+table data is 
+table data is 8
+table data is Action Camera
+table data is $15.99
+table data is 
+table data is 9
+table data is Gaming Console
+table data is $5.99
+table data is 
+table data is 10
+table data is Digital Camera
+table data is $16.99
+table data is 
+page number is:3
+table data is 11
+table data is Smart Home Hub
+table data is $20.99
+table data is 
+table data is 12
+table data is Router
+table data is $24.99
+table data is 
+table data is 13
+table data is Portable Charger
+table data is $30.99
+table data is 
+table data is 14
+table data is Fitness Tracker
+table data is $19.99
+table data is 
+table data is 15
+table data is Desktop Computer
+table data is $2.99
+table data is 
+page number is:4
+table data is 16
+table data is E-Reader
+table data is $10.99
+table data is 
+table data is 17
+table data is VR Headset
+table data is $11.99
+table data is 
+table data is 18
+table data is Streaming Device
+table data is $13.99
+table data is 
+table data is 19
+table data is Soundbar
+table data is $16.99
+table data is 
+table data is 20
+table data is Wireless Mouse 20
+table data is $17.99
+table data is 

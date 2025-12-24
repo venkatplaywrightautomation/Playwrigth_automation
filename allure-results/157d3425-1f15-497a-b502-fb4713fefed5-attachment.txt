@@ -1,0 +1,9 @@
+total no of rows:4
+total no of columns:5
+process name is:Internet Explorer
+process name is:Chrome
+cpu value for chrome is:7.2%
+process name is:Firefox
+process name is:System
+yellow text cpu value is:Chrome CPU: 7.2%
+cpu value not matches

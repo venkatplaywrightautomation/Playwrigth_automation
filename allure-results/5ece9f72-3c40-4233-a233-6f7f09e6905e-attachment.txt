@@ -1,0 +1,3 @@
+all products text [ 'ZARA COAT 3', 'ADIDAS ORIGINAL', 'iphone 13 pro' ]
+all product names ZARA COAT 3
+all product names ADIDAS ORIGINAL
