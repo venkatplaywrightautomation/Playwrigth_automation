@@ -73,6 +73,12 @@ for(let i=0;i<rowcount;i++){
     })
     await matchedRow.locator('input').check()
         
-    }
+}
 
 
+
+
+test("Pagenation with while loop", async ({ page }) => {
+
+
+})

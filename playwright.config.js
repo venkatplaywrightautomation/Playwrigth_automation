@@ -2,39 +2,18 @@
 import { chromium, defineConfig, devices } from '@playwright/test';
 //import globalSetup from './tests/globalsetup';
 import dotenv from 'dotenv';
-import path from 'path';
-import { start } from 'repl';
+import globalsetup from './globalsetup';
 
-
-
-// const environments = {
-//   dev: "https://dev.example.com",
-//   qa: "https://qa.example.com",
-// };
 
 
 
 dotenv.config({
-
-  //path: `./enf-files/.env.qa`
-  //path: './envfiles/.env.qa'
-//path: `./envfiles/.env.${process.env.TEST_ENV}`
-
-path: process.env.TEST_ENV ? `./envfiles/.env.${process.env.TEST_ENV}` : `./envfiles/.env.qa`
-
-  //path: `./enf-files/.env.${process.env.TEST_ENV}`
-   //path: process.env.TEST_ENV ? `./enf-files/.env.${process.env.TEST_ENV}` : `./enf-files/.env.qa`
+ // path:`./envfiles/.env.${process.env.testenv}`
+ path: process.env.testenv ? `./envfiles/.env.${process.env.testenv}` : `'./envfiles/.env.qa'`
+ 
 })
 
-//globalSetup: require.resolve('./tests/globalSetup') 
 
-/**
- * Read environment variables from file.
- * https://github.com/motdotla/dotenv
- */
-// import dotenv from 'dotenv';
-// import path from 'path';
-// dotenv.config({ path: path.resolve(__dirname, '.env') });
 
   //const workers=process.env.CI ? 4 :undefined
 /**
@@ -44,12 +23,13 @@ export default defineConfig({
   //globalSetup:'./globalsetup',
 
  // globalSetup:'./pages/globalsetup.js',
+ globalSetup: "./globalsetup.js",
 
   testDir: './tests',
   
   
   /* Run tests in files in parallel */
-  fullyParallel: true,
+ // fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
   /* Retry on CI only */
@@ -60,7 +40,8 @@ export default defineConfig({
 
   
   /* Opt out of parallel tests on CI. */
-  workers: process.env.CI ? 1 : undefined,
+  //workers: process.env.CI ? 1 : undefined,
+  workers: 2,
 //testMatch:'/Webtable.spec.js*',
 //testIgnore: '/Webtable.spec.js/',
   //workers: 3,
@@ -94,10 +75,15 @@ export default defineConfig({
     // trace: 'on-first-retry',
     // headless:false,
     // screenshot:'on',
-    //storageState: './auth.json',
+    storageState: './Loginauth.json',
+    ignoreHTTPSErrors: true,
+    permissions:['geolocation'],
+    geolocation:{latitude: 12.9716, longitude: 77.5946},
+    //video:'on',
     //outputDir:'./test-results/',
     //channel: 'chrome',
     //headless: false,
+   // trace: 'on-first-retry'
     
 // trace:process.env.CI ? 'retain-on-failure' : 'off',
 //     viewport: { width: 1280, height: 720 },
@@ -121,6 +107,7 @@ export default defineConfig({
     use: { ...devices['Desktop Chrome'] ,
       deviceScaleFactor:undefined,
       viewport: null,
+    
       //headless: false,
     launchOptions:{
       args:[`--start-maximized`]

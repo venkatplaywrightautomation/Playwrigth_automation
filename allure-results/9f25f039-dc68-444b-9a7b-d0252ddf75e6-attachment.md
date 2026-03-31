@@ -1,0 +1,125 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e7]:
+        - text: GREEN
+        - generic [ref=e8]: KART
+      - link "Get Shortlisted by Recruiters - Take QA Skill Assessments on TechSmartHire" [ref=e9] [cursor=pointer]:
+        - /url: https://techsmarthire.com/
+  - generic [ref=e14]:
+    - generic [ref=e15]:
+      - generic [ref=e16]:
+        - generic [ref=e17]:
+          - generic [ref=e18]: "Page size:"
+          - combobox "Page size:" [ref=e19]:
+            - option "5" [selected]
+            - option "10"
+            - option "20"
+        - generic [ref=e20]:
+          - generic [ref=e21]: "Search:"
+          - searchbox "Search:" [ref=e22]
+      - list "Pagination" [ref=e24]:
+        - listitem:
+          - button "First" [disabled]
+        - listitem:
+          - button "Previous" [disabled]
+        - listitem [ref=e25]:
+          - button "1 (current)" [ref=e26] [cursor=pointer]:
+            - generic [ref=e27] [cursor=pointer]: "1"
+            - generic [ref=e28] [cursor=pointer]: (current)
+        - listitem [ref=e29]:
+          - button "2" [ref=e30] [cursor=pointer]:
+            - generic [ref=e31] [cursor=pointer]: "2"
+        - listitem [ref=e32]:
+          - button "3" [ref=e33] [cursor=pointer]:
+            - generic [ref=e34] [cursor=pointer]: "3"
+        - listitem [ref=e35]:
+          - button "4" [ref=e36] [cursor=pointer]:
+            - generic [ref=e37] [cursor=pointer]: "4"
+        - listitem [ref=e38]:
+          - button "Next" [ref=e39] [cursor=pointer]
+        - listitem [ref=e40]:
+          - button "Last" [ref=e41] [cursor=pointer]
+    - 'table "Sorted by name: descending order" [ref=e42]':
+      - alert [ref=e43]: "Sorted by name: descending order"
+      - rowgroup [ref=e44]:
+        - 'row "Veg/fruit name: activate to sort column ascending Price: activate to sort column ascending Discount price: activate to sort column ascending" [ref=e45]':
+          - 'columnheader "Veg/fruit name: activate to sort column ascending" [ref=e46] [cursor=pointer]':
+            - generic [ref=e47] [cursor=pointer]: Veg/fruit name
+          - 'columnheader "Price: activate to sort column ascending" [ref=e49] [cursor=pointer]':
+            - generic [ref=e50] [cursor=pointer]: Price
+          - 'columnheader "Discount price: activate to sort column ascending" [ref=e51] [cursor=pointer]':
+            - generic [ref=e52] [cursor=pointer]: Discount price
+      - rowgroup [ref=e53]:
+        - row "Wheat 67 28" [ref=e54]:
+          - cell "Wheat" [ref=e55]
+          - cell "67" [ref=e56]
+          - cell "28" [ref=e57]
+        - row "Tomato 37 26" [ref=e58]:
+          - cell "Tomato" [ref=e59]
+          - cell "37" [ref=e60]
+          - cell "26" [ref=e61]
+        - row "Strawberry 23 15" [ref=e62]:
+          - cell "Strawberry" [ref=e63]
+          - cell "23" [ref=e64]
+          - cell "15" [ref=e65]
+        - row "Rice 37 46" [ref=e66]:
+          - cell "Rice" [ref=e67]
+          - cell "37" [ref=e68]
+          - cell "46" [ref=e69]
+        - row "Potato 34 22" [ref=e70]:
+          - cell "Potato" [ref=e71]
+          - cell "34" [ref=e72]
+          - cell "22" [ref=e73]
+  - generic [ref=e74]:
+    - generic [ref=e75]: Delivery Date
+    - generic [ref=e76]:
+      - generic [ref=e77]:
+        - generic [ref=e78]:
+          - generic [ref=e79]: "0"
+          - spinbutton [ref=e80]: "3"
+          - generic [ref=e81]: /
+          - spinbutton [ref=e82]: "27"
+          - generic [ref=e83]: /
+          - spinbutton [ref=e84]: "2026"
+        - button [ref=e85] [cursor=pointer]:
+          - img [ref=e86] [cursor=pointer]
+        - button [ref=e89] [cursor=pointer]:
+          - img [ref=e90] [cursor=pointer]
+      - generic [ref=e94]:
+        - generic [ref=e95]:
+          - button "«" [ref=e96] [cursor=pointer]
+          - button "‹" [ref=e97] [cursor=pointer]
+          - button "2027" [ref=e98] [cursor=pointer]:
+            - generic [ref=e99] [cursor=pointer]: "2027"
+          - button "›" [ref=e100] [cursor=pointer]
+          - button "»" [ref=e101] [cursor=pointer]
+        - generic [ref=e104]:
+          - button "January 2027" [ref=e105] [cursor=pointer]:
+            - generic "January 2027" [ref=e106] [cursor=pointer]: January
+          - button "February 2027" [ref=e107] [cursor=pointer]:
+            - generic "February 2027" [ref=e108] [cursor=pointer]: February
+          - button "March 2027" [ref=e109] [cursor=pointer]:
+            - generic "March 2027" [ref=e110] [cursor=pointer]: March
+          - button "April 2027" [ref=e111] [cursor=pointer]:
+            - generic "April 2027" [ref=e112] [cursor=pointer]: April
+          - button "May 2027" [ref=e113] [cursor=pointer]:
+            - generic "May 2027" [ref=e114] [cursor=pointer]: May
+          - button "June 2027" [ref=e115] [cursor=pointer]:
+            - generic "June 2027" [ref=e116] [cursor=pointer]: June
+          - button "July 2027" [ref=e117] [cursor=pointer]:
+            - generic "July 2027" [ref=e118] [cursor=pointer]: July
+          - button "August 2027" [ref=e119] [cursor=pointer]:
+            - generic "August 2027" [ref=e120] [cursor=pointer]: August
+          - button "September 2027" [ref=e121] [cursor=pointer]:
+            - generic "September 2027" [ref=e122] [cursor=pointer]: September
+          - button "October 2027" [ref=e123] [cursor=pointer]:
+            - generic "October 2027" [ref=e124] [cursor=pointer]: October
+          - button "November 2027" [ref=e125] [cursor=pointer]:
+            - generic "November 2027" [ref=e126] [cursor=pointer]: November
+          - button "December 2027" [ref=e127] [cursor=pointer]:
+            - generic "December 2027" [ref=e128] [cursor=pointer]: December
+```

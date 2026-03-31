@@ -1,0 +1,259 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "Jump to Content" [ref=e3] [cursor=pointer]:
+      - /url: "#page-content"
+    - generic [ref=e5]:
+      - link "Google logo" [ref=e9] [cursor=pointer]:
+        - /url: https://about.google/
+        - img "Google logo" [ref=e11] [cursor=pointer]
+      - navigation [ref=e13]:
+        - list [ref=e14]:
+          - listitem [ref=e15]:
+            - link "About" [ref=e16] [cursor=pointer]:
+              - /url: https://about.google/
+          - listitem [ref=e17]:
+            - link "Products" [ref=e18] [cursor=pointer]:
+              - /url: https://about.google/products/
+          - listitem [ref=e19]:
+            - link "Company Info" [ref=e20] [cursor=pointer]:
+              - /url: https://about.google/company-info/
+          - listitem [ref=e21]:
+            - link "News" [ref=e22] [cursor=pointer]:
+              - /url: "https://blog.google/?utm_source=about.google&utm_medium=referral&utm_campaign=navigation "
+  - main [ref=e23]:
+    - generic [ref=e24]:
+      - generic [ref=e26]:
+        - generic [ref=e29]:
+          - heading "Create stunning images with Nano Banana 2" [level=1] [ref=e30]
+          - paragraph [ref=e31]:
+            - generic [ref=e32]: Our latest image generation model delivers vibrant lighting, sharp text and real-world knowledge so you can make high-quality images at lightning speed.
+          - link "See the difference" [ref=e34] [cursor=pointer]:
+            - /url: "https://blog.google/innovation-and-ai/technology/ai/nano-banana-2?utm_source=about.google&utm_medium=referral&utm_campaign=homepagehero "
+        - button "Video Play/pause" [ref=e38]:
+          - img [ref=e40]
+      - list [ref=e47]:
+        - listitem [ref=e48]:
+          - link "Explore our products and features across Search, Google Workspace and more" [ref=e49] [cursor=pointer]:
+            - /url: https://about.google/products/?utm_source=about.google&utm_medium=referral&utm_campaign=homepage
+            - generic [ref=e50] [cursor=pointer]:
+              - img [ref=e52] [cursor=pointer]
+              - generic [ref=e53] [cursor=pointer]:
+                - paragraph [ref=e54] [cursor=pointer]: Explore our products and features across Search, Google Workspace and more
+                - generic [ref=e55] [cursor=pointer]:
+                  - generic:
+                    - img
+        - listitem [ref=e56]:
+          - link "Learn all about our leading AI models — and discover their capabilities" [ref=e57] [cursor=pointer]:
+            - /url: https://deepmind.google/models/?utm_source=about.google&utm_medium=referral&utm_campaign=about&utm_content=
+            - generic [ref=e58] [cursor=pointer]:
+              - img [ref=e60] [cursor=pointer]
+              - generic [ref=e61] [cursor=pointer]:
+                - paragraph [ref=e62] [cursor=pointer]: Learn all about our leading AI models — and discover their capabilities
+                - generic [ref=e63] [cursor=pointer]:
+                  - generic:
+                    - img
+        - listitem [ref=e64]:
+          - link "See how we’re tackling some of the most challenging problems in computer science" [ref=e65] [cursor=pointer]:
+            - /url: https://ai.google/research/?utm_source=aboutgoogle&utm_medium=google-oo&utm_campaign=February2025&utm_content=homepage
+            - generic [ref=e66] [cursor=pointer]:
+              - img [ref=e68] [cursor=pointer]
+              - generic [ref=e69] [cursor=pointer]:
+                - paragraph [ref=e70] [cursor=pointer]: See how we’re tackling some of the most challenging problems in computer science
+                - generic [ref=e71] [cursor=pointer]:
+                  - generic:
+                    - img
+      - generic [ref=e76]:
+        - img "Mobile UI mockups illustrating new updates on Android." [ref=e81]
+        - generic [ref=e84]:
+          - heading "See what’s new on Android" [level=2] [ref=e85]
+          - generic [ref=e87]: With the latest updates, you can share your live location with friends mid-chat, quickly find lost luggage and create your own custom caller ID card.
+          - link "Check it out" [ref=e89] [cursor=pointer]:
+            - /url: https://blog.google/products-and-platforms/platforms/android/new-android-features-March-2026/?utm_source=about.google&utm_medium=referral&utm_campaign=homepage
+      - generic [ref=e95]:
+        - img "Dark Google search bar with \"Ask AI Mode\" and a glowing neon border." [ref=e100]
+        - generic [ref=e103]:
+          - heading "Canvas in AI Mode is now available to everyone in the U.S." [level=2] [ref=e104]
+          - generic [ref=e106]: Whether you’re studying for exams or planning a trip, Canvas in AI Mode lets you jumpstart your next big project right within search.
+          - link "Learn more" [ref=e108] [cursor=pointer]:
+            - /url: https://blog.google/products-and-platforms/products/search/ai-mode-canvas-writing-coding/?utm_source=about.google&utm_medium=referral&utm_campaign=homepage
+      - generic [ref=e116]:
+        - img "The Google logo, a capital “G” in red, yellow, green and blue." [ref=e119]
+        - heading "Google around the globe" [level=2] [ref=e120]
+        - generic [ref=e122]: Learn about Google's work and impact around the world.
+        - link "Explore" [ref=e124] [cursor=pointer]:
+          - /url: https://about.google/around-the-globe/
+      - generic [ref=e132]:
+        - generic [ref=e133]:
+          - heading "Get the latest news from Google in your inbox" [level=3] [ref=e134]
+          - paragraph [ref=e135]: Sign up to receive top stories from the week — from product announcements, to everyday tips.
+        - link "Subscribe" [ref=e137] [cursor=pointer]:
+          - /url: "https://blog.google/newsletter-subscribe/?utm_source=about.google&utm_medium=referral&utm_campaign=homepage "
+  - contentinfo [ref=e139]:
+    - heading "Footer links" [level=2] [ref=e140]
+    - navigation [ref=e141]:
+      - generic [ref=e142]:
+        - generic [ref=e143]:
+          - heading "Resources" [level=3] [ref=e144]:
+            - generic [ref=e146]: Resources
+          - list [ref=e148]:
+            - listitem [ref=e149]:
+              - link "Blog link opens in new tab or window" [ref=e150] [cursor=pointer]:
+                - /url: https://www.blog.google/?utm_source=about&utm_medium=referral&utm_campaign=footer-link
+                - text: Blog
+            - listitem [ref=e151]:
+              - link "Brand Resource Center link opens in same tab or window" [ref=e152] [cursor=pointer]:
+                - /url: https://about.google/brand-resource-center/
+                - text: Brand Resource Center
+            - listitem [ref=e153]:
+              - link "Careers link opens in new tab or window" [ref=e154] [cursor=pointer]:
+                - /url: https://careers.google.com/?utm_source=about&utm_medium=referral&utm_campaign=footer-link
+                - text: Careers
+            - listitem [ref=e155]:
+              - link "Contact us link opens in same tab or window" [ref=e156] [cursor=pointer]:
+                - /url: https://about.google/company-info/contact-google/
+                - text: Contact us
+            - listitem [ref=e157]:
+              - link "Help Center link opens in new tab or window" [ref=e158] [cursor=pointer]:
+                - /url: "https://support.google.com/?utm_source=about&utm_medium=referral&utm_campaign=footer-link "
+                - text: Help Center
+            - listitem [ref=e159]:
+              - link "Investor Relations link opens in new tab or window" [ref=e160] [cursor=pointer]:
+                - /url: https://abc.xyz/investor/?utm_source=about&utm_medium=referral&utm_campaign=footer-link
+                - text: Investor Relations
+            - listitem [ref=e161]:
+              - link "Locations link opens in same tab or window" [ref=e162] [cursor=pointer]:
+                - /url: https://about.google/company-info/locations/
+                - text: Locations
+            - listitem [ref=e163]:
+              - link "Press resources link opens in new tab or window" [ref=e164] [cursor=pointer]:
+                - /url: https://www.blog.google/press/?utm_source=about&utm_medium=referral&utm_campaign=footer-link
+                - text: Press resources
+        - generic [ref=e165]:
+          - heading "Outreach and initiatives" [level=3] [ref=e166]:
+            - generic [ref=e168]: Outreach and initiatives
+          - list [ref=e170]:
+            - listitem [ref=e171]:
+              - link "Accessibility link opens in new tab or window" [ref=e172] [cursor=pointer]:
+                - /url: https://google.com/accessibility?utm_source=about.google&utm_medium=referral&utm_campaign=footer
+                - text: Accessibility
+            - listitem [ref=e173]:
+              - link "Crisis Response link opens in new tab or window" [ref=e174] [cursor=pointer]:
+                - /url: https://crisisresponse.google/?utm_source=about&utm_medium=referral&utm_campaign=footer-link
+                - text: Crisis Response
+            - listitem [ref=e175]:
+              - link "Google.org link opens in new tab or window" [ref=e176] [cursor=pointer]:
+                - /url: https://www.google.org/?utm_source=about&utm_medium=referral&utm_campaign=footer-link
+                - text: Google.org
+            - listitem [ref=e177]:
+              - link "Google for Health link opens in new tab or window" [ref=e178] [cursor=pointer]:
+                - /url: https://health.google/?utm_source=about_google&utm_medium=web&utm_content=footer
+                - text: Google for Health
+            - listitem [ref=e179]:
+              - link "Grow with Google link opens in new tab or window" [ref=e180] [cursor=pointer]:
+                - /url: https://grow.google/?utm_source=about&utm_medium=referral&utm_campaign=footer-link
+                - text: Grow with Google
+            - listitem [ref=e181]:
+              - link "Learning link opens in new tab or window" [ref=e182] [cursor=pointer]:
+                - /url: https://learning.google/?utm_source=about&utm_medium=referral&utm_campaign=footer-link
+                - text: Learning
+            - listitem [ref=e183]:
+              - link "Public Policy link opens in new tab or window" [ref=e184] [cursor=pointer]:
+                - /url: https://publicpolicy.google/?utm_source=about.google&utm_medium=referral&utm_campaign=footer
+                - text: Public Policy
+            - listitem [ref=e185]:
+              - link "Sustainability link opens in new tab or window" [ref=e186] [cursor=pointer]:
+                - /url: https://sustainability.google/?utm_source=about&utm_medium=referral&utm_campaign=footer-link
+                - text: Sustainability
+        - generic [ref=e187]:
+          - heading "Research and technology" [level=3] [ref=e188]:
+            - generic [ref=e190]: Research and technology
+          - list [ref=e192]:
+            - listitem [ref=e193]:
+              - link "Google AI link opens in new tab or window" [ref=e194] [cursor=pointer]:
+                - /url: https://ai.google/?utm_source=about.google&utm_medium=referral&utm_campaign=footer
+                - text: Google AI
+            - listitem [ref=e195]:
+              - link "Google Cloud link opens in new tab or window" [ref=e196] [cursor=pointer]:
+                - /url: https://cloud.google.com/?utm_source=about.google&utm_medium=referral&utm_campaign=footer
+                - text: Google Cloud
+            - listitem [ref=e197]:
+              - link "Google DeepMind link opens in new tab or window" [ref=e198] [cursor=pointer]:
+                - /url: https://deepmind.google/?utm_source=about.google&utm_medium=referral&utm_campaign=footer
+                - text: Google DeepMind
+            - listitem [ref=e199]:
+              - link "Google for Developers link opens in new tab or window" [ref=e200] [cursor=pointer]:
+                - /url: https://developers.google.com/?utm_source=about.google&utm_medium=referral&utm_campaign=footer
+                - text: Google for Developers
+            - listitem [ref=e201]:
+              - link "Google Labs link opens in new tab or window" [ref=e202] [cursor=pointer]:
+                - /url: https://labs.google/?utm_source=about.google&utm_medium=referral&utm_campaign=footer
+                - text: Google Labs
+            - listitem [ref=e203]:
+              - link "Google Research link opens in new tab or window" [ref=e204] [cursor=pointer]:
+                - /url: https://research.google/?utm_source=about.google&utm_medium=referral&utm_campaign=footer
+                - text: Google Research
+        - generic [ref=e205]:
+          - heading "More about us" [level=3] [ref=e206]:
+            - generic [ref=e208]: More about us
+          - list [ref=e210]:
+            - listitem [ref=e211]:
+              - link "Around the globe link opens in same tab or window" [ref=e212] [cursor=pointer]:
+                - /url: https://about.google/around-the-globe/
+                - text: Around the globe
+            - listitem [ref=e213]:
+              - link "Human rights link opens in same tab or window" [ref=e214] [cursor=pointer]:
+                - /url: https://about.google/company-info/human-rights/
+                - text: Human rights
+            - listitem [ref=e215]:
+              - link "Safety Center link opens in new tab or window" [ref=e216] [cursor=pointer]:
+                - /url: https://safety.google/?utm_source=about&utm_medium=referral&utm_campaign=footer-link
+                - text: Safety Center
+            - listitem [ref=e217]:
+              - link "Supplier responsibility link opens in new tab or window" [ref=e218] [cursor=pointer]:
+                - /url: https://sustainability.google/progress/supplier-responsibility/?utm_source=about.google&utm_medium=referral&utm_campaign=footer
+                - text: Supplier responsibility
+            - listitem [ref=e219]:
+              - link "Transparency Center link opens in new tab or window" [ref=e220] [cursor=pointer]:
+                - /url: https://transparency.google/?utm_source=about.google&utm_medium=referral&utm_campaign=footer
+                - text: Transparency Center
+            - listitem [ref=e221]:
+              - link "Transparency Report link opens in new tab or window" [ref=e222] [cursor=pointer]:
+                - /url: https://transparencyreport.google.com/?utm_source=about&utm_medium=referral&utm_campaign=footer-link
+                - text: Transparency Report
+    - generic [ref=e223]:
+      - link "Google logo in dark gray" [ref=e225] [cursor=pointer]:
+        - /url: http://google.com/?utm_source=about.google&utm_medium=referral&utm_campaign=global-footer
+        - img "Google logo in dark gray" [ref=e226] [cursor=pointer]
+      - list [ref=e227]:
+        - listitem [ref=e228]:
+          - link "Privacy link opens in new tab or window" [ref=e229] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?utm_source=about.google&utm_medium=referral&utm_campaign=footer
+            - text: Privacy
+        - listitem [ref=e230]:
+          - link "Terms link opens in new tab or window" [ref=e231] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?utm_source=about.google&utm_medium=referral&utm_campaign=footer
+            - text: Terms
+      - link "Help" [ref=e232] [cursor=pointer]:
+        - /url: https://support.google.com/?utm_source=about&utm_medium=referral&utm_campaign=footer-link
+        - img [ref=e233] [cursor=pointer]
+        - text: Help
+      - combobox "Change language or region" [ref=e235]:
+        - option "English" [selected]
+        - option "Bahasa Indonesia"
+        - option "Deutsch"
+        - option "Español"
+        - option "Français"
+        - option "Italiano"
+        - option "Nederlands"
+        - option "Português"
+        - option "Türkçe"
+        - option "polski"
+        - option "العربية"
+        - option "中文 (繁體)"
+        - option "中文（简体）"
+        - option "日本語"
+        - option "한국어"
+```

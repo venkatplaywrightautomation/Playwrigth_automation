@@ -1,7 +1,12 @@
 
 
 
-import { test, expect, chromium } from '@playwright/test';    
+import { test, expect, chromium } from '@playwright/test';  
+
+//import {test,expect} from '@playwright/test'
+import { matchesGlob } from 'path';
+
+
 
 
 test('Verify number of pages in the application', async () => {
@@ -25,14 +30,19 @@ test('Verify number of pages in the application', async () => {
     await page2.waitForTimeout(3000)
     await page1.bringToFront()
     await page1.waitForTimeout(3000)
- 
+ await page2.getByRole('link',{name:'About'}).click()
+
 
 })
+
+
+
+
 
 test.only("No of links in the page", async ({page})=>{
 
     await page.goto("https://google.com")
-
+await page
     const links=await page.locator("a")
     console.log("Number of links in the page are: "+ await links.count())
 
@@ -46,4 +56,14 @@ test.only("No of links in the page", async ({page})=>{
         await page.waitForTimeout(3000)
        }
     }
+})
+
+
+test("title ",async({page}) =>{
+    await page.goto("https://www.saucedemo.com/")
+    await test.step("title",async() =>{
+        await expect(page).toHaveTitle("Swag Labs")
+
+    })
+
 })

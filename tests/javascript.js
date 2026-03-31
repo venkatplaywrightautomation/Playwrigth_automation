@@ -2,6 +2,7 @@
 
 const { count } = require("console");
 const { cpSync } = require("fs");
+const { parse } = require("path");
 
 
 // let rev=" "
@@ -2249,3 +2250,474 @@ let str= "this is venkat";
 // b=40
 
 
+// let arr1 = [1, 2, 2, 3, 4, 4, 5];
+// let result = [];
+
+// for (let i = 0; i < arr1.length; i++) {
+//   if (!result.includes(arr1[i])) {
+//     result.push(arr1[i]);
+//   }
+// }
+// console.log(result); // [1,2,3,4,5]
+
+
+// let arr1 = [1, 2, 3, 2, 4, 1];
+// let duplicates = [];
+
+// for (let i = 0; i < arr1.length; i++) {
+//   for (let j = i + 1; j < arr1.length; j++) {
+//     if (arr1[i] === arr1[j] && !duplicates.includes(arr1[i])) {
+//       duplicates.push(arr1[i]);
+//     }
+//   }
+// }
+// console.log(duplicates); // [1, 2]
+
+// let a = 0, b = 1;
+// console.log(a);
+// console.log(b);
+// for (let i = 2; i < 10; i++) {
+//   let c = a + b;
+//   console.log(c);
+//   a = b;
+//   b = c;
+// }
+
+
+
+// const str1 = "VENKAT";
+
+
+
+
+// for (let i = 0; i < str1.length; i++) {
+//   console.log(str1[i]);
+// }
+
+
+// const names = ["venkat", "reddy"];
+// const upper = names.map(n => n.toUpperCase());
+// console.log(upper);
+
+// console.log("A" - "B")
+
+// console.log("B" + "C")
+// console.log(null)
+// console.log(undefined )
+
+// let a = 10;
+
+// let b = 20;
+
+// [a, b] = [b, a];
+
+// console.log("aftr swapping",a, b);
+
+
+// let c = 10;
+// let d = 20;
+// [c, d] = [d, c]
+// console.log("after swapping c and d values",c,d)
+// let a=[1,2,3,4,5,4,3,2,1]
+
+// let res= [... new Set(a)]
+
+// console.log(res)
+
+
+
+// let re= "venkat"
+
+// let rev=""
+
+// for(let i=re.length -1;i>=0;i--){
+
+//     rev=rev + re[i]
+// }
+// console.log(rev)
+
+
+// let num=12340
+
+// let rev=0
+// let digit;
+// while(num > 0){
+//     digit= num  % 10
+//     rev= rev * 10 + digit
+//     num= Math.floor(num / 10)   
+// }
+// console.log(rev)
+
+// let arr1 = [10, 20, 30];
+
+// for (let value of arr1) {
+//   console.log(value);
+// }
+
+
+
+// const person = {
+//     name: "venkat",
+//     age: 30,
+//     city: "hyd"
+// };
+
+
+// for(let key in person)
+// {
+//    // console.log(key)
+//     console.log(person[key])
+// }
+
+
+
+// let string = "venkat reddy"
+
+// for(let c of string){
+
+//     console.log(c)
+// }
+
+
+// const person = { name: "Venkata", age: 25 };
+
+// for (let value of person) {  // ❌ Error
+//   console.log(value);
+// }
+
+
+// function add(a,b){
+//     return a + b
+
+// }
+
+// console.log(add(1,2))
+
+// const add=(a,b) => a + b
+
+// console.log(add(3,4))
+
+let fruits = ["Apple", "Banana", "Mango"];
+
+// console.log(fruits[0]);  // Apple
+// console.log(fruits[1]);  // Banana
+// console.log(fruits[2]);  // Mango
+// //console.log(fruits[3]);  // undefined
+// console.log(fruits.length); 
+
+// // 3
+// fruits.push("Orange");
+// console.log(fruits); // ["Apple", "Banana", "Mango", "Orange"]
+// console.log(fruits.length); // 4
+// fruits.unshift("Strawberry");
+// console.log(fruits); // ["Strawberry", "Apple", "Banana", "Mango", "Orange"]
+// console.log(fruits.length); // 5
+// fruits.pop();
+// console.log(fruits);
+
+// console.log("Hello");
+// console.error("Error");
+// console.warn("Warning");
+
+// for loop
+// for (let i = 0; i < 3; i++) {
+//   console.log(i);
+// }
+// let i=0
+// while(i<3){
+//     console.log(i)
+//     i++
+// }
+
+
+// let i=0
+// do{
+//     console.log(i)
+//     i++
+// }
+// while(i<5)
+
+
+// let a1=[1,2,3,4,5,6,7,8,9]
+
+// let re=a1.map(n =>n * 2)
+// console.log(re)
+
+// for (let i = 1; i <= 2; i++) {
+//   for (let j = 1; j <= 2; j++) {
+//     console.log(i, j);
+//   }
+// }
+
+// let age = 25;
+// age = 26;   // ✅ allowed
+// console.log(age);
+
+
+// function reverseString(str) {
+
+//     return str.split("").reverse().join("");
+
+// }
+
+// console.log(reverseString("venkat"))
+
+// function rev(str){
+//     let rev= ""
+
+//     for(let c of str){
+//         rev= c + rev
+//     }
+//     return rev
+// }
+// console.log(rev("venkat"))
+
+
+// function plaindrom(str){
+// const re= str.split("").reverse().join("")
+// return re === str
+// }
+// console.log(plaindrom("madam"))
+
+
+// function revnum(num){
+
+//     return parseInt(num.toString().split("").reverse().join(""))
+
+// }
+// console.log(revnum(12340))
+
+
+
+
+
+// function maxnum(arr){
+// let max= arr[0]
+// for(let c of arr){
+//     if(c < max){
+//         max=c
+//     }
+// }
+// return max
+// }
+
+// console.log(maxnum([1,2,3,4,5,6,7,8,9]))  
+
+
+// function ovels(str)
+// {
+//     let count=0
+//     let ovels="aeiouAEIOU"
+
+//     for(let c of str){
+//         if(ovels.includes(c)){
+//             count++
+//         }
+//     }
+//     return count
+// }
+// console.log("ovels count",ovels("venkat reddy"))
+
+
+// function fac(n)
+// {
+
+//     let fact=1
+//     for(let i=1;i<=n;i++){
+//         fact=fact * i
+// }
+// return fact
+// }
+// console.log(fac(5))
+// let fact=1
+// for(let i=1;i<=5;i++){
+//     fact=fact * i
+// }
+// console.log(fact)
+
+
+// let a=0
+// let b=1
+
+
+// for(let i=0;i<10;i++){
+
+//     console.log(a)
+//     let next= a + b
+//     a=b
+//     b=next
+
+// }
+// console.log(a)
+// let a=[1,2,3,4,5,6,7,8,9]
+
+// let sum=0
+// for(let c of a){
+//     sum=sum + c
+// }
+// console.log(sum)
+
+
+
+// let isprime= true
+// let num=9
+// if(num <=1){
+//     isprime=false
+// }
+// for(let i=2;i<=Math.sqrt(num);i++){
+//     if(num % i ===0){
+//         isprime=false
+//         break
+//     }
+// }
+// if(isprime){
+//     console.log(num + " is a prime number")
+// }
+// else{
+//     console.log(num + " is not a prime number")
+// }   
+
+// for(let num=2;num<=100;num++){
+//     let isprime=true
+//     for(let i=2;i<=Math.sqrt(num);i++){
+//         if(num % i ===0){
+//             isprime=false
+//             break
+//         }   
+//     }
+//     if(isprime){
+//         console.log(num)
+//     }
+// }
+
+
+// {
+//   var x = 1;
+// }
+// console.log(x);
+
+// let x="venkat@578jjj#$%%%"
+// let count1=x.replace(/[^0-9]/g,"")
+// console.log(count1) 
+
+
+// let a="venkata reddy Polaka"
+// let re=a.replace(/\s/g,"")
+
+// console.log(re)
+
+
+// let a="venkata reddy polaka"
+
+// let re=a.charAt(0).toUpperCase()+ a.slice(1)
+
+// console.log(re)
+
+
+
+// let a="venkata reddy polaka"
+
+// let count1 ={}
+
+
+// for(let c of a)
+// {
+
+//     if(count1[c]){
+//         count[c]++
+//     }
+//     else
+//     {
+//         count1[c]=1
+//     }
+// }
+
+// console.log(count1)
+
+
+// let str1="venkat reddy polaka polaka"
+// let re=str1.includes("venkat")
+// console.log(re)
+
+// let str1 = "JS ";
+
+// console.log(str1.repeat(3)); // JS JS JS
+
+// let str1 = "banana";
+// let count1 = str1.split("b").length - 1;
+
+// console.log(count1); // 3
+
+
+// let num=[1,2,3,4,5,6,7,8,9,10,1,2,3,4,5]
+
+// let res=num.filter((element,inde,arr) => arr.indexOf(element)  !== inde)
+
+// console.log(res)    
+
+// let arr = [1, 2, 3, 2, 4, 1];
+// let duplicates = [];
+
+// for (let i = 0; i < arr.length; i++) {
+//   for (let j = i + 1; j < arr.length; j++) {
+//     if (arr[i] === arr[j] && !duplicates.includes(arr[i])) {
+//       duplicates.push(arr[i]);
+//     }
+//   }
+// }
+// console.log(duplicates); // [1, 2]
+
+// let a=[1,2,3,4,5,6,7,8,9,1,2,3,4,5]
+// let duplcates=[]
+
+// for(let i = 0;i < a.length;i++){
+
+//  for(let j= i + 1;j < a.length;j++){
+//     if(a[i] === a[j] && !duplcates.includes(a[i])){
+//         duplcates.push(a[i])
+//     }
+//  }
+
+// }
+
+//  console.log(duplcates)
+//  let st="venkat reddy polaka polaka"
+// // let re=st.split("").filter((ele,ind,arr) => arr.indexOf(ele) === ind).join("")
+// // console.log(re)
+
+// // let re=[... new Set(st)].join("")
+// // console.log(re) 
+
+// let res=""
+// for(let c of st){
+
+//     if(!res.includes(c)){
+//         res[c]=1
+//     }
+//     else{
+//         res[c]++
+//     }
+
+// }
+// console.log(res)
+
+
+
+
+let num=7
+
+if(num <=1)
+{
+    return false;
+}
+
+for(let i=2;i<=Math.sqrt(num);i++)
+{
+    if(num % i === 0)
+    {
+        return false;
+    }
+}
+return true;
+
+console.log(isPrime(num));

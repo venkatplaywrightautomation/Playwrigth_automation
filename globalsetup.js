@@ -6,12 +6,13 @@ async function globalSetup() {
   const context = await browser.newContext();
   const page = await context.newPage();
 
-  await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
-
-  await page.locator("//input[@placeholder='Username']").fill("Admin")
-  await page.locator("//input[@placeholder='Password']").fill("admin123")
-  await page.locator("//button[normalize-space()='Login']").click()
-  await page.context().storageState({ path: './auth.json' });
+ await page.goto("https://www.saucedemo.com/")
+    await page.locator("//input[@id='user-name']").fill("standard_user")  
+    await page.locator("//input[@id='password']").fill("secret_sauce")
+    await page.locator("//input[@id='login-button']").click()
+    await page.context().storageState({ path: './Loginauth.json' });
+    //await expect(page.locator('[data-test="error"]')).toContainText("Epic sadface: Username and password do not match any user in this service")
+    await  page.waitForTimeout(3000)
   //await browser.close();
 }
 

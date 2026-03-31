@@ -1,0 +1,3 @@
+Total pages opened: 3
+Current page title: Facebook
+Total pages after closing one page: 2

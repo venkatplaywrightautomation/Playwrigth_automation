@@ -60,3 +60,21 @@ const links  = await page.$$eval('a',alllinks =>alllinks.map(link => link.href))
 
     
 
+test.beforeEach(async ({page},testinfo) =>{
+  if(testinfo.status !==testinfo.expectedStatus)
+  {
+await page.screenshot({path:'screenshots-${Date.now()}.png'})
+
+
+  }
+
+
+
+})
+
+test.only("This test is broken", async ({ page }) => {
+    await page.goto("https://www.google.com/")
+    await page.waitForTimeout(3000)
+    const counttext=await page.getByRole('textbox').count()
+
+})
