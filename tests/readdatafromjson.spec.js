@@ -1,3 +1,4 @@
+import fs from 'fs'
 
 
 
@@ -9,7 +10,6 @@ import testdata from '../testdata/differentData.json'
 
 
 import  arr from '../testdata/array.json';
-
 
 
 

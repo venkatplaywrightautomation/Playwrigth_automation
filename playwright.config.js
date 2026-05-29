@@ -75,6 +75,7 @@ export default defineConfig({
     // trace: 'on-first-retry',
     // headless:false,
     // screenshot:'on',
+    reporter: './javascript.js',
     storageState: './Loginauth.json',
     ignoreHTTPSErrors: true,
     permissions:['geolocation'],

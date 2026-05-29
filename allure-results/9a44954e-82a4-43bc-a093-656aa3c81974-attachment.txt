@@ -1,0 +1,33 @@
+Total products: 6
+inside for loopSauce Labs Backpackcarry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.$29.99Add to cart
+title is Sauce Labs Backpack
+price is $29.99
+price is 29.99
+inside for loopSauce Labs Bike LightA red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included.$9.99Add to cart
+title is Sauce Labs Bike Light
+price is $9.99
+price is 9.99
+inside for loopSauce Labs Bolt T-ShirtGet your testing superhero on with the Sauce Labs bolt T-shirt. From American Apparel, 100% ringspun combed cotton, heather gray with red bolt.$15.99Add to cart
+title is Sauce Labs Bolt T-Shirt
+price is $15.99
+price is 15.99
+inside for loopSauce Labs Fleece JacketIt's not every day that you come across a midweight quarter-zip fleece jacket capable of handling everything from a relaxing day outdoors to a busy day at the office.$49.99Add to cart
+title is Sauce Labs Fleece Jacket
+price is $49.99
+price is 49.99
+inside for loopSauce Labs OnesieRib snap infant onesie for the junior automation engineer in development. Reinforced 3-snap bottom closure, two-needle hemmed sleeved and bottom won't unravel.$7.99Add to cart
+title is Sauce Labs Onesie
+price is $7.99
+price is 7.99
+inside for loopTest.allTheThings() T-Shirt (Red)This classic Sauce Labs t-shirt is perfect to wear when cozying up to your keyboard to automate a few tests. Super-soft and comfy ringspun combed cotton.$15.99Add to cart
+title is Test.allTheThings() T-Shirt (Red)
+price is $15.99
+price is 15.99
+Added Products: [
+  'Sauce Labs Backpack',
+  'Sauce Labs Bike Light',
+  'Sauce Labs Bolt T-Shirt',
+  'Sauce Labs Fleece Jacket',
+  'Sauce Labs Onesie',
+  'Test.allTheThings() T-Shirt (Red)'
+]

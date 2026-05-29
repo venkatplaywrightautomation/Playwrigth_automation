@@ -1,8 +1,8 @@
 // let s="this is venkata reddy"
 
-const { count } = require("console");
-const { cpSync } = require("fs");
-const { parse } = require("path");
+// const { count } = require("console");
+// const { cpSync } = require("fs");
+// const { parse } = require("path");
 
 
 // let rev=" "
@@ -120,7 +120,7 @@ for (let i = 1; i < arr.length; i++) {
     if (arr[i] > largest) {
         secondLargest = largest;
         largest = arr[i];
-    } else if (arr[i] < largest && arr[i] >secondLargest) {
+    } else if (arr[i] < largest && arr[i] > secondLargest) {
         secondLargest = arr[i];
     }
 }
@@ -229,10 +229,10 @@ console.log("Second largest number in array:", secondLargest);
 // let result = str.replace(/[^\w]/g, '');
 // console.log(result); // "Hello_ World"
 
-let s="venkat 12345@#$$"
+let s = "venkat 12345@#$$"
 
-let r=s.replace(/\D/g,"")
-console.log(r)
+let r = s.replace(/\D/g, "")
+console.log("Digits:", r)
 
 
 
@@ -693,19 +693,19 @@ console.log(r)
 // console.log(arr)
 
 
-// let str ="javascript"
-// let count=[]
+let str ="javascript"
+let count=[]
 
-// for(let char of str){
+for(let char of str){
 
-//     if(count[char]){
-//         count[char]++
-//     }
-//     else{
-//         count[char]=1
-//     }       
-// }
-// console.log(count)
+    if(count[char]){
+        count[char]++
+    }
+    else{
+        count[char]=1
+    }       
+}
+console.log("char count:", count)
 
 //Reverse words in a sentence
 // let sentence = "I love JavaScript";
@@ -812,21 +812,21 @@ console.log(r)
 
 
 
-let day="1"
+let day = "1"
 
-switch(day){
+switch (day) {
     case "1":
-    console.log("sunday")
-    
-    
-       case "monday":
-    console.log("monday")
+        console.log("sunday")
 
 
-       case "tuesday":
-    console.log("tuesday")
+    case "monday":
+        console.log("monday")
+
+
+    case "tuesday":
+        console.log("tuesday")
     default:
-    console.log("invalid day")  
+        console.log("invalid day")
 
 }
 
@@ -845,7 +845,7 @@ switch(day){
 //     console.log("hello")
 //      console.log("hi") 
 // }
-  
+
 
 //   let a=2   
 
@@ -1066,7 +1066,7 @@ switch(day){
 //     isprime=false
 //     break
 //   }
- 
+
 // }
 
 
@@ -1477,7 +1477,7 @@ switch(day){
 // function isnull(value){
 //     return value === null
 
-    
+
 // }
 
 
@@ -1579,11 +1579,11 @@ switch(day){
 
 
 //     //console.log(key + " :" + student[key])
-    
+
 //     console.log(student[key])
 
-    
-    
+
+
 // }
 
 
@@ -2061,7 +2061,7 @@ switch(day){
 
 
 
-let str= "this is venkat";
+let str3 = "this is venkat";
 // let ov= str.match(/[aeiou]/gi)
 // console.log(ov.length)
 
@@ -2204,7 +2204,7 @@ let str= "this is venkat";
 // let count1={}
 // for(let ch of str){
 
-  
+
 //     let ch=str1[ch]
 //     if(count1[ch]){
 //         count1[ch]++
@@ -2704,20 +2704,323 @@ let fruits = ["Apple", "Banana", "Mango"];
 
 
 
-let num=7
+// let num=7
 
-if(num <=1)
-{
-    return false;
+// if(num <=1)
+// {
+//     return false;
+// }
+
+// for(let i=2;i<=Math.sqrt(num);i++)
+// {
+//     if(num % i === 0)
+//     {
+//         return false;
+//     }
+// }
+// return true;
+
+// console.log(isPrime(num));
+
+
+// function isPrime() {
+
+
+// var a=20
+
+// {
+
+//     var  a=30
+//     console.log("inside block",a)
+// }
+// console.log("outside block",a)  
+// }
+
+// console.log(isPrime())
+
+
+
+// console.log("first line")
+
+// console.log("second line")
+
+// console.log("third line")
+
+// setTimeout(function()  {
+//     console.log("fourth line")
+
+// }, 3000);
+
+// console.log("fifth line")
+// console.log("sixth line")   
+
+
+
+// function fetchdata(callback){
+//     return data
+
+// }
+
+// function processdata(data){
+
+//     console.log("processing data",data)
+
+// }
+
+// data=fetchdata()
+// processdata(data) 
+
+
+for (let i = 1; i <= 10; i++) {
+
+    if (i % 2 === 0 && i % 5 === 0) {
+        console.log(i + " is even")
+
+    }
+
+
 }
 
-for(let i=2;i<=Math.sqrt(num);i++)
-{
-    if(num % i === 0)
-    {
-        return false;
+
+
+let marks = Array(6)
+
+// new Array(10,20,30,40,50,60)
+
+// var mar= [10,20,30,40,50,60]
+
+
+
+// let sum=0
+// for(let i=0;i<mar.length;i++){
+
+//    // console.log(mar[i])
+//    sum=sum + mar[i]
+// }
+// console.log("sum of marks",sum)
+
+
+// let total=mar.reduce((acc,cur) => acc + cur,0)
+
+// console.log("total marks",total)
+
+//console.log(mar.slice(2,5))
+
+
+
+// console.log(marks[2])
+
+// mar[2]=35
+
+// console.log(mar)
+
+// console.log(mar.length)
+// mar.push(70)
+// console.log(mar)
+
+// mar.pop()
+// console.log(mar)
+
+
+// let even=[]
+// let scores= [10,20,30,40,50,60,23,25]
+
+// for(let i=0;i<scores.length;i++){
+//     if(scores[i] % 2==  0){
+
+//         //console.log(scores[i] + " is even")
+//         even.pop(scores[i])
+//     }
+// }
+// console.log("even scores",even)
+
+// let a=[55,23,45,67,89,12,34,56]
+
+// a.sort((a,b) => a - b)
+// console.log(a)
+// // let newarr=a.filter(num => num % 2 === 0)
+// // console.log("even numbers",newarr)
+
+
+
+
+// let value="sunday ";
+
+// let day1= "is funday"
+// let totalstr= value + day1
+// console.log(totalstr)
+
+// let dayIndex= totalstr.indexOf("day")
+// console.log(dayIndex)
+
+// let count =0
+
+// while (dayIndex !== -1) 
+// {
+
+//     count++
+//     dayIndex= totalstr.indexOf("day",dayIndex + 1)
+
+// }
+// console.log("count of day is",count)
+
+
+
+
+// const person = {
+
+//     firstname: "venkat",
+//     lastname: "reddy",
+//     age: 30,
+
+//        fullName: function () {
+//        console.log(this.firstname +  this.lastname)
+
+
+
+//     }
+// }
+// console.log(person.fullName())
+
+
+// console.log(person.firstname)
+// console.log(person.lastname)
+// console.log(person["firstname"])
+// console.log(person.age)
+// console.log(person) 
+
+
+// delete person.age
+// console.log(person)
+
+
+// console.log(typeof person)
+
+// console.log(typeof null)
+// console.log("firstname" in person)
+
+
+// for (let key in person) {
+
+//     console.log(key + " : " + person[key])
+// }
+
+
+// class Person{
+// age= 30
+// name="venkat"
+// }
+
+
+// let p=new Person()
+// console.log(p.name)
+// console.log(p.age)
+
+
+// module.exports = Person;
+
+// class Person{
+
+//     age=30
+
+
+//     get lcoation(){
+//         return "canada"
+//     }
+
+
+//     constructor(firstname,lastname){
+//         this.firstname=firstname
+//         this.lastname=lastname
+//     }
+
+
+//     fullname(){
+//         console.log(this.firstname + " " + this.lastname)
+//     }
+// }
+
+
+
+// const p=new Person("venkat", "reddy");
+// //console.log(p)
+// console.log(p.fullname())
+
+
+
+
+
+// class report {
+
+
+//     onBegin(){
+//         console.log("report is starting")
+//     }
+
+//     onEnd(){    
+//         console.log("report is ending")
+
+//     }
+
+//     onTestStart(test){
+//         console.log("test is starting",test.title)
+//     }
+
+//     onTestEnd(test){
+//         console.log("test is ending",test.title)
+//     }
+// }
+
+// module.exports = report
+
+// 
+
+// let a = 5, b = 10;
+// [a, b] = [b, a]
+// console.log("after swapping",a,b)
+
+let str1 = "aabbcdeff";
+
+let count1 = {}
+
+// Step 1: Count frequency
+for (let ch of str1) {
+  count1[ch] = (count1[ch] || 0) + 1;
+}
+
+// Step 2: Find first non-repeating
+let result = null;
+
+for (let ch of str1) {
+  if (count1[ch] === 1) {
+    result = ch;
+    break;
+  }
+}
+
+console.log(result); // c
+
+let str4= "venkat reddy polaka"
+
+
+
+let count3={}
+
+for(let c of str4){
+
+    count3[c]=(count3[c] || 0 )+ 1
+}
+
+let res1=null
+
+for(let c of str4){
+
+    if(count3[c] === 1){
+        res1=c
+        break
     }
 }
-return true;
+console.log(res1)
 
-console.log(isPrime(num));
+// const username = `user_${Date.now()}`;
+// await page.fill('#user', username);

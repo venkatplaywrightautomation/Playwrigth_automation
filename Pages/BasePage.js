@@ -1,4 +1,8 @@
 class BasePage {
+
+ 
+
+  }
   constructor(page) {
     this.page = page;
   }
@@ -9,6 +13,8 @@ class BasePage {
     if (typeof selector.fill === 'function') return selector; // already a locator
     return this.page.locator(selector);
   }
+
+
 
   async click(selector, options) {
     const loc = this.locator(selector);
