@@ -2,7 +2,6 @@
 
 import { base } from '@faker-js/faker';
 import { test, expect } from '@playwright/test';
-import { use } from 'react';
 
 test('Login into Facebook', async ({ page }) => {
   // Navigate to Facebook
