@@ -1,0 +1,30 @@
+No of links in the page are : 29
+Link name is : About
+Link name is : Store
+Link name is : Gmail
+Link name is : Images
+Link name is : 
+Link name is : Sign in
+Link name is : 
+Link name is : Google Terms of Service
+Link name is : Chrome and ChromeOS Additional Terms of Service
+Link name is : Learn more
+Link name is : हिन्दी
+Link name is : বাংলা
+Link name is : తెలుగు
+Link name is : मराठी
+Link name is : தமிழ்
+Link name is : ગુજરાતી
+Link name is : ಕನ್ನಡ
+Link name is : മലയാളം
+Link name is : ਪੰਜਾਬੀ
+Link name is : Advertising
+Link name is : Business
+Link name is :  How Search works 
+Link name is : Privacy
+Link name is : Terms
+Link name is : Search settings
+Link name is : Advanced search
+Link name is : Your data in Search
+Link name is : Search history
+Link name is : Search help

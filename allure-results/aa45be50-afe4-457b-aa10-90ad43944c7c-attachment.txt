@@ -1,0 +1,70 @@
+No of links in the page are : 20
+Link name is : About
+URL is : https://about.google/?fg=1&utm_source=google-IN&utm_medium=referral&utm_campaign=hp-header
+Broken link is : https://about.google/?fg=1&utm_source=google-IN&utm_medium=referral&utm_campaign=hp-header
+Link name is : Store
+URL is : https://store.google.com/IN?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-IN
+Broken link is : https://store.google.com/IN?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-IN
+Link name is : Gmail
+URL is : https://mail.google.com/mail/&ogbl
+Broken link is : https://mail.google.com/mail/&ogbl
+Link name is : Images
+URL is : https://www.google.com/imghp?hl=en&ogbl
+Broken link is : https://www.google.com/imghp?hl=en&ogbl
+Link name is : 
+URL is : https://www.google.co.in/intl/en/about/products
+Broken link is : https://www.google.co.in/intl/en/about/products
+Link name is : Sign in
+URL is : https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=futura_exp_og_so_72776762_e
+Broken link is : https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=futura_exp_og_so_72776762_e
+Link name is : Google Terms of Service
+URL is : https://policies.google.com/terms
+Broken link is : https://policies.google.com/terms
+Link name is : Chrome and ChromeOS Additional Terms of Service
+URL is : https://www.google.com/chrome/terms/
+Broken link is : https://www.google.com/chrome/terms/
+Link name is : Learn more
+URL is : https://support.google.com/chrome/answer/96817
+Broken link is : https://support.google.com/chrome/answer/96817
+Link name is : हिन्दी
+URL is : https://www.google.com/setprefs?sig=0_AvAtSBU7myc3bUkRU7d70NZ7wVk%3D&hl=hi&source=homepage&sa=X&ved=0ahUKEwjpiMPqqbiVAxXIUGwGHQn8N_4Q2ZgBCCU
+Broken link is : https://www.google.com/setprefs?sig=0_AvAtSBU7myc3bUkRU7d70NZ7wVk%3D&hl=hi&source=homepage&sa=X&ved=0ahUKEwjpiMPqqbiVAxXIUGwGHQn8N_4Q2ZgBCCU
+Link name is : বাংলা
+URL is : https://www.google.com/setprefs?sig=0_AvAtSBU7myc3bUkRU7d70NZ7wVk%3D&hl=bn&source=homepage&sa=X&ved=0ahUKEwjpiMPqqbiVAxXIUGwGHQn8N_4Q2ZgBCCY
+Broken link is : https://www.google.com/setprefs?sig=0_AvAtSBU7myc3bUkRU7d70NZ7wVk%3D&hl=bn&source=homepage&sa=X&ved=0ahUKEwjpiMPqqbiVAxXIUGwGHQn8N_4Q2ZgBCCY
+Link name is : తెలుగు
+URL is : https://www.google.com/setprefs?sig=0_AvAtSBU7myc3bUkRU7d70NZ7wVk%3D&hl=te&source=homepage&sa=X&ved=0ahUKEwjpiMPqqbiVAxXIUGwGHQn8N_4Q2ZgBCCc
+Broken link is : https://www.google.com/setprefs?sig=0_AvAtSBU7myc3bUkRU7d70NZ7wVk%3D&hl=te&source=homepage&sa=X&ved=0ahUKEwjpiMPqqbiVAxXIUGwGHQn8N_4Q2ZgBCCc
+Link name is : मराठी
+URL is : https://www.google.com/setprefs?sig=0_AvAtSBU7myc3bUkRU7d70NZ7wVk%3D&hl=mr&source=homepage&sa=X&ved=0ahUKEwjpiMPqqbiVAxXIUGwGHQn8N_4Q2ZgBCCg
+Broken link is : https://www.google.com/setprefs?sig=0_AvAtSBU7myc3bUkRU7d70NZ7wVk%3D&hl=mr&source=homepage&sa=X&ved=0ahUKEwjpiMPqqbiVAxXIUGwGHQn8N_4Q2ZgBCCg
+Link name is : தமிழ்
+URL is : https://www.google.com/setprefs?sig=0_AvAtSBU7myc3bUkRU7d70NZ7wVk%3D&hl=ta&source=homepage&sa=X&ved=0ahUKEwjpiMPqqbiVAxXIUGwGHQn8N_4Q2ZgBCCk
+Broken link is : https://www.google.com/setprefs?sig=0_AvAtSBU7myc3bUkRU7d70NZ7wVk%3D&hl=ta&source=homepage&sa=X&ved=0ahUKEwjpiMPqqbiVAxXIUGwGHQn8N_4Q2ZgBCCk
+Link name is : ગુજરાતી
+URL is : https://www.google.com/setprefs?sig=0_AvAtSBU7myc3bUkRU7d70NZ7wVk%3D&hl=gu&source=homepage&sa=X&ved=0ahUKEwjpiMPqqbiVAxXIUGwGHQn8N_4Q2ZgBCCo
+Broken link is : https://www.google.com/setprefs?sig=0_AvAtSBU7myc3bUkRU7d70NZ7wVk%3D&hl=gu&source=homepage&sa=X&ved=0ahUKEwjpiMPqqbiVAxXIUGwGHQn8N_4Q2ZgBCCo
+Link name is : ಕನ್ನಡ
+URL is : https://www.google.com/setprefs?sig=0_AvAtSBU7myc3bUkRU7d70NZ7wVk%3D&hl=kn&source=homepage&sa=X&ved=0ahUKEwjpiMPqqbiVAxXIUGwGHQn8N_4Q2ZgBCCs
+Broken link is : https://www.google.com/setprefs?sig=0_AvAtSBU7myc3bUkRU7d70NZ7wVk%3D&hl=kn&source=homepage&sa=X&ved=0ahUKEwjpiMPqqbiVAxXIUGwGHQn8N_4Q2ZgBCCs
+Link name is : മലയാളം
+URL is : https://www.google.com/setprefs?sig=0_AvAtSBU7myc3bUkRU7d70NZ7wVk%3D&hl=ml&source=homepage&sa=X&ved=0ahUKEwjpiMPqqbiVAxXIUGwGHQn8N_4Q2ZgBCCw
+Broken link is : https://www.google.com/setprefs?sig=0_AvAtSBU7myc3bUkRU7d70NZ7wVk%3D&hl=ml&source=homepage&sa=X&ved=0ahUKEwjpiMPqqbiVAxXIUGwGHQn8N_4Q2ZgBCCw
+Link name is : ਪੰਜਾਬੀ
+URL is : https://www.google.com/setprefs?sig=0_AvAtSBU7myc3bUkRU7d70NZ7wVk%3D&hl=pa&source=homepage&sa=X&ved=0ahUKEwjpiMPqqbiVAxXIUGwGHQn8N_4Q2ZgBCC0
+Broken link is : https://www.google.com/setprefs?sig=0_AvAtSBU7myc3bUkRU7d70NZ7wVk%3D&hl=pa&source=homepage&sa=X&ved=0ahUKEwjpiMPqqbiVAxXIUGwGHQn8N_4Q2ZgBCC0
+Link name is : Advertising
+URL is : https://www.google.com/intl/en_in/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1
+Broken link is : https://www.google.com/intl/en_in/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1
+Link name is : Business
+URL is : https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1
+Broken link is : https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1
+Link name is :  How Search works 
+URL is : https://google.com/search/howsearchworks/?fg=1
+Broken link is : https://google.com/search/howsearchworks/?fg=1
+Link name is : Privacy
+URL is : https://policies.google.com/privacy?hl=en-IN&fg=1
+Broken link is : https://policies.google.com/privacy?hl=en-IN&fg=1
+Link name is : Terms
+URL is : https://policies.google.com/terms?hl=en-IN&fg=1
+Broken link is : https://policies.google.com/terms?hl=en-IN&fg=1

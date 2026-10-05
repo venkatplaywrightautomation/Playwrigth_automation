@@ -1,0 +1,118 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: RahuApi.spec.js >> API Testing
+- Location: tests\RahuApi.spec.js:59:6
+
+# Error details
+
+```
+TypeError: request.newContext is not a function
+```
+
+# Test source
+
+```ts
+  1  | 
+  2  | 
+  3  | import { test,expect,request} from '@playwright/test'
+  4  | 
+  5  | 
+  6  | 
+  7  | 
+  8  | 
+  9  | // const loginPayLoad={userEmail: "venkatautomation5342@gmail.com", userPassword: "Venkat@9538"}
+  10 | 
+  11 | 
+  12 | // // userEmail
+  13 | // // : 
+  14 | // // "venkatautomation5342@gmail.com"
+  15 | // // userPassword
+  16 | // // : 
+  17 | // // "Venkat@9538"
+  18 | // test.beforeAll(async () => {
+  19 | 
+  20 | 
+  21 | //     const contextApi = await request.newContext();
+  22 | 
+  23 | 
+  24 | //     const APIresponse = await contextApi.post("https://rahulshettyacademy.com/client/#/auth/login",
+  25 | //         {
+  26 | 
+  27 | //             data: loginPayLoad
+  28 | //         }
+  29 | 
+  30 | //     )
+  31 | //     expect(APIresponse.ok()).toBeTruthy();
+  32 | 
+  33 | 
+  34 | //     const jsonBody=APIresponse.json()
+  35 | 
+  36 | 
+  37 | //     const Token= jsonBody.Token
+  38 | 
+  39 | //     console.log(jsonBody)
+  40 | 
+  41 | 
+  42 | //     console.log(Token)
+  43 | 
+  44 | 
+  45 | 
+  46 | 
+  47 | // });
+  48 | 
+  49 | 
+  50 | 
+  51 | 
+  52 | // test.afterAll( async () =>{
+  53 | 
+  54 | 
+  55 | //     await request.newContext()
+  56 | // })
+  57 | 
+  58 | 
+  59 | test.only("API Testing" , async ({request}) => {
+  60 | 
+  61 | 
+> 62 |     const contextApi = await request.newContext();
+     |                                      ^ TypeError: request.newContext is not a function
+  63 | 
+  64 | 
+  65 |     const APIresponse = await contextApi.post("https://rahulshettyacademy.com/client/#/auth/login",
+  66 | 
+  67 | 
+  68 |         {
+  69 | 
+  70 | 
+  71 |         
+  72 | 
+  73 |         Headers:{
+  74 | 
+  75 |             "userEmail" : "venkatautomation5342@gmail.com", 
+  76 |             "userPassword": "Venkat@9538",
+  77 |         }
+  78 |         
+  79 |     
+  80 |     }
+  81 |     )
+  82 |     expect(APIresponse.ok()).toBeTruthy();
+  83 | 
+  84 | 
+  85 |     const jsonBody=await APIresponse.json()
+  86 | 
+  87 | 
+  88 |     console.log("Token"+ jsonBody.Token)
+  89 | 
+  90 |     console.log(jsonBody)
+  91 | 
+  92 | 
+  93 |     //console.log(Token)
+  94 | 
+  95 | 
+  96 | })
+```

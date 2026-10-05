@@ -1,0 +1,16 @@
+token is:381b322f30dce38
+{
+  bookingid: 4313,
+  booking: {
+    firstname: 'Jim',
+    lastname: 'Brown',
+    totalprice: 111,
+    depositpaid: true,
+    bookingdates: { checkin: '2018-01-01', checkout: '2019-01-01' },
+    additionalneeds: 'Breakfast'
+  }
+}
+Booking id:4313
+Delete status is 201
+201
+Created

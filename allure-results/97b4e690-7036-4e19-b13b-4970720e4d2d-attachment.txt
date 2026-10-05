@@ -1,0 +1,254 @@
+Total options: 252
+Option 1: Select
+              country
+Option 2: Afghanistan
+Option 3: Aland Islands
+Option 4: Albania
+Option 5: Algeria
+Option 6: American Samoa
+Option 7: Andorra
+Option 8: Angola
+Option 9: Anguilla
+Option 10: Antarctica
+Option 11: Antigua and Barbuda
+Option 12: Argentina
+Option 13: Armenia
+Option 14: Aruba
+Option 15: Australia
+Option 16: Austria
+Option 17: Azerbaijan
+Option 18: Bahamas
+Option 19: Bahrain
+Option 20: Bangladesh
+Option 21: Barbados
+Option 22: Belarus
+Option 23: Belgium
+Option 24: Belize
+Option 25: Benin
+Option 26: Bermuda
+Option 27: Bhutan
+Option 28: Bolivia
+Option 29: Bonaire, Sint Eustatius and Saba
+Option 30: Bosnia and Herzegovina
+Option 31: Botswana
+Option 32: Bouvet Island
+Option 33: Brazil
+Option 34: British Indian Ocean Territory
+Option 35: Brunei Darussalam
+Option 36: Bulgaria
+Option 37: Burkina Faso
+Option 38: Burundi
+Option 39: Cambodia
+Option 40: Cameroon
+Option 41: Canada
+Option 42: Cape Verde
+Option 43: Cayman Islands
+Option 44: Central African Republic
+Option 45: Chad
+Option 46: Chile
+Option 47: China
+Option 48: Christmas Island
+Option 49: Cocos (Keeling) Islands
+Option 50: Colombia
+Option 51: Comoros
+Option 52: Congo
+Option 53: Congo, Democratic Republic of the Congo
+Option 54: Cook Islands
+Option 55: Costa Rica
+Option 56: Cote D'Ivoire
+Option 57: Croatia
+Option 58: Cuba
+Option 59: Curacao
+Option 60: Cyprus
+Option 61: Czech Republic
+Option 62: Denmark
+Option 63: Djibouti
+Option 64: Dominica
+Option 65: Dominican Republic
+Option 66: Ecuador
+Option 67: Egypt
+Option 68: El Salvador
+Option 69: Equatorial Guinea
+Option 70: Eritrea
+Option 71: Estonia
+Option 72: Ethiopia
+Option 73: Falkland Islands (Malvinas)
+Option 74: Faroe Islands
+Option 75: Fiji
+Option 76: Finland
+Option 77: France
+Option 78: French Guiana
+Option 79: French Polynesia
+Option 80: French Southern Territories
+Option 81: Gabon
+Option 82: Gambia
+Option 83: Georgia
+Option 84: Germany
+Option 85: Ghana
+Option 86: Gibraltar
+Option 87: Greece
+Option 88: Greenland
+Option 89: Grenada
+Option 90: Guadeloupe
+Option 91: Guam
+Option 92: Guatemala
+Option 93: Guernsey
+Option 94: Guinea
+Option 95: Guinea-Bissau
+Option 96: Guyana
+Option 97: Haiti
+Option 98: Heard Island and Mcdonald Islands
+Option 99: Holy See (Vatican City State)
+Option 100: Honduras
+Option 101: Hong Kong
+Option 102: Hungary
+Option 103: Iceland
+Option 104: India
+Option 105: Indonesia
+Option 106: Iran, Islamic Republic of
+Option 107: Iraq
+Option 108: Ireland
+Option 109: Isle of Man
+Option 110: Italy
+Option 111: Jamaica
+Option 112: Japan
+Option 113: Jersey
+Option 114: Jordan
+Option 115: Kazakhstan
+Option 116: Kenya
+Option 117: Kiribati
+Option 118: Korea, Democratic People's Republic of
+Option 119: Korea, Republic of
+Option 120: Kosovo
+Option 121: Kuwait
+Option 122: Kyrgyzstan
+Option 123: Lao People's Democratic Republic
+Option 124: Latvia
+Option 125: Lebanon
+Option 126: Lesotho
+Option 127: Liberia
+Option 128: Libyan Arab Jamahiriya
+Option 129: Liechtenstein
+Option 130: Lithuania
+Option 131: Luxembourg
+Option 132: Macao
+Option 133: Macedonia, the Former Yugoslav Republic of
+Option 134: Madagascar
+Option 135: Malawi
+Option 136: Malaysia
+Option 137: Maldives
+Option 138: Mali
+Option 139: Malta
+Option 140: Marshall Islands
+Option 141: Martinique
+Option 142: Mauritania
+Option 143: Mauritius
+Option 144: Mayotte
+Option 145: Mexico
+Option 146: Micronesia, Federated States of
+Option 147: Moldova, Republic of
+Option 148: Monaco
+Option 149: Mongolia
+Option 150: Montenegro
+Option 151: Montserrat
+Option 152: Morocco
+Option 153: Mozambique
+Option 154: Myanmar
+Option 155: Namibia
+Option 156: Nauru
+Option 157: Nepal
+Option 158: Netherlands
+Option 159: Netherlands Antilles
+Option 160: New Caledonia
+Option 161: New Zealand
+Option 162: Nicaragua
+Option 163: Niger
+Option 164: Nigeria
+Option 165: Niue
+Option 166: Norfolk Island
+Option 167: Northern Mariana Islands
+Option 168: Norway
+Option 169: Oman
+Option 170: Pakistan
+Option 171: Palau
+Option 172: Palestinian Territory, Occupied
+Option 173: Panama
+Option 174: Papua New Guinea
+Option 175: Paraguay
+Option 176: Peru
+Option 177: Philippines
+Option 178: Pitcairn
+Option 179: Poland
+Option 180: Portugal
+Option 181: Puerto Rico
+Option 182: Qatar
+Option 183: Reunion
+Option 184: Romania
+Option 185: Russian Federation
+Option 186: Rwanda
+Option 187: Saint Barthelemy
+Option 188: Saint Helena
+Option 189: Saint Kitts and Nevis
+Option 190: Saint Lucia
+Option 191: Saint Martin
+Option 192: Saint Pierre and Miquelon
+Option 193: Saint Vincent and the Grenadines
+Option 194: Samoa
+Option 195: San Marino
+Option 196: Sao Tome and Principe
+Option 197: Saudi Arabia
+Option 198: Senegal
+Option 199: Serbia
+Option 200: Serbia and Montenegro
+Option 201: Seychelles
+Option 202: Sierra Leone
+Option 203: Singapore
+Option 204: Sint Maarten
+Option 205: Slovakia
+Option 206: Slovenia
+Option 207: Solomon Islands
+Option 208: Somalia
+Option 209: South Africa
+Option 210: South Georgia and the South Sandwich Islands
+Option 211: South Sudan
+Option 212: Spain
+Option 213: Sri Lanka
+Option 214: Sudan
+Option 215: Suriname
+Option 216: Svalbard and Jan Mayen
+Option 217: Swaziland
+Option 218: Sweden
+Option 219: Switzerland
+Option 220: Syrian Arab Republic
+Option 221: Taiwan, Province of China
+Option 222: Tajikistan
+Option 223: Tanzania, United Republic of
+Option 224: Thailand
+Option 225: Timor-Leste
+Option 226: Togo
+Option 227: Tokelau
+Option 228: Tonga
+Option 229: Trinidad and Tobago
+Option 230: Tunisia
+Option 231: Turkey
+Option 232: Turkmenistan
+Option 233: Turks and Caicos Islands
+Option 234: Tuvalu
+Option 235: Uganda
+Option 236: Ukraine
+Option 237: United Arab Emirates
+Option 238: United Kingdom
+Option 239: United States
+Option 240: United States Minor Outlying Islands
+Option 241: Uruguay
+Option 242: Uzbekistan
+Option 243: Vanuatu
+Option 244: Venezuela
+Option 245: Viet Nam
+Option 246: Virgin Islands, British
+Option 247: Virgin Islands, U.s.
+Option 248: Wallis and Futuna
+Option 249: Western Sahara
+Option 250: Yemen
+Option 251: Zambia
+Option 252: Zimbabwe

@@ -1,0 +1,107 @@
+Total options: 252
+Option 1: Select
+              country
+Option 2: Afghanistan
+Option 3: Aland Islands
+Option 4: Albania
+Option 5: Algeria
+Option 6: American Samoa
+Option 7: Andorra
+Option 8: Angola
+Option 9: Anguilla
+Option 10: Antarctica
+Option 11: Antigua and Barbuda
+Option 12: Argentina
+Option 13: Armenia
+Option 14: Aruba
+Option 15: Australia
+Option 16: Austria
+Option 17: Azerbaijan
+Option 18: Bahamas
+Option 19: Bahrain
+Option 20: Bangladesh
+Option 21: Barbados
+Option 22: Belarus
+Option 23: Belgium
+Option 24: Belize
+Option 25: Benin
+Option 26: Bermuda
+Option 27: Bhutan
+Option 28: Bolivia
+Option 29: Bonaire, Sint Eustatius and Saba
+Option 30: Bosnia and Herzegovina
+Option 31: Botswana
+Option 32: Bouvet Island
+Option 33: Brazil
+Option 34: British Indian Ocean Territory
+Option 35: Brunei Darussalam
+Option 36: Bulgaria
+Option 37: Burkina Faso
+Option 38: Burundi
+Option 39: Cambodia
+Option 40: Cameroon
+Option 41: Canada
+Option 42: Cape Verde
+Option 43: Cayman Islands
+Option 44: Central African Republic
+Option 45: Chad
+Option 46: Chile
+Option 47: China
+Option 48: Christmas Island
+Option 49: Cocos (Keeling) Islands
+Option 50: Colombia
+Option 51: Comoros
+Option 52: Congo
+Option 53: Congo, Democratic Republic of the Congo
+Option 54: Cook Islands
+Option 55: Costa Rica
+Option 56: Cote D'Ivoire
+Option 57: Croatia
+Option 58: Cuba
+Option 59: Curacao
+Option 60: Cyprus
+Option 61: Czech Republic
+Option 62: Denmark
+Option 63: Djibouti
+Option 64: Dominica
+Option 65: Dominican Republic
+Option 66: Ecuador
+Option 67: Egypt
+Option 68: El Salvador
+Option 69: Equatorial Guinea
+Option 70: Eritrea
+Option 71: Estonia
+Option 72: Ethiopia
+Option 73: Falkland Islands (Malvinas)
+Option 74: Faroe Islands
+Option 75: Fiji
+Option 76: Finland
+Option 77: France
+Option 78: French Guiana
+Option 79: French Polynesia
+Option 80: French Southern Territories
+Option 81: Gabon
+Option 82: Gambia
+Option 83: Georgia
+Option 84: Germany
+Option 85: Ghana
+Option 86: Gibraltar
+Option 87: Greece
+Option 88: Greenland
+Option 89: Grenada
+Option 90: Guadeloupe
+Option 91: Guam
+Option 92: Guatemala
+Option 93: Guernsey
+Option 94: Guinea
+Option 95: Guinea-Bissau
+Option 96: Guyana
+Option 97: Haiti
+Option 98: Heard Island and Mcdonald Islands
+Option 99: Holy See (Vatican City State)
+Option 100: Honduras
+Option 101: Hong Kong
+Option 102: Hungary
+Option 103: Iceland
+Option 104: India
+India is present in the dropdown

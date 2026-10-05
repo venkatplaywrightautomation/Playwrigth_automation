@@ -1,0 +1,32 @@
+token is:ea70a6437746526
+{
+  bookingid: 1042,
+  booking: {
+    firstname: 'Jim',
+    lastname: 'Brown',
+    totalprice: 111,
+    depositpaid: true,
+    bookingdates: { checkin: '2018-01-01', checkout: '2019-01-01' },
+    additionalneeds: 'Breakfast'
+  }
+}
+Booking id:1042
+APIResponse: 200 OK
+  Content-Length: 171
+  Content-Type: application/json; charset=utf-8
+  Date: Wed, 08 Jul 2026 12:22:32 GMT
+  Etag: W/"ab-MMTNRqJVy+ehD0hY7wbRbXfRlD4"
+  Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+  Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=m5UtXKOVE00kXXmGpmRpbKmHd7lQqSzTZ%2FUbstEVW2A%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1783513352"}],"max_age":3600}
+  Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=m5UtXKOVE00kXXmGpmRpbKmHd7lQqSzTZ%2FUbstEVW2A%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1783513352"
+  Server: Heroku
+  Via: 1.1 heroku-router
+  X-Powered-By: Express
+{
+  firstname: 'Venkat',
+  lastname: 'Brown',
+  totalprice: 111,
+  depositpaid: true,
+  bookingdates: { checkin: '2018-01-01', checkout: '2019-01-01' },
+  additionalneeds: 'Breakfast'
+}

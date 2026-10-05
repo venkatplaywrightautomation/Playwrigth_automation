@@ -3,6 +3,21 @@
 
 const { test, expect } = require('@playwright/test');
 
+
+
+
+test.describe("rahul",() =>{
+
+
+    test.beforeAll("before all",() =>{
+        console.log("before all")
+    })
+    test.beforeEach("before each",() =>{
+        console.log("before each")
+    }
+    
+
+})
 test('add product to the cart', async ({ page }) => {
 
  await page.waitForTimeout(3000)

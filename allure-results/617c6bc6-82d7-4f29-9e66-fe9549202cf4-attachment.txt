@@ -1,0 +1,11 @@
+{
+  bookingid: 3693,
+  booking: {
+    firstname: 'Jeremiah',
+    lastname: 'Konopelski-Zemlak',
+    totalprice: 73,
+    depositpaid: true,
+    bookingdates: { checkin: '2026-07-09', checkout: '2026-07-14' },
+    additionalneeds: 'Breakfast'
+  }
+}

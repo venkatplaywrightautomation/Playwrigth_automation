@@ -1,0 +1,21 @@
+{
+  username: 'standard_user',
+  password: 'secret_',
+  error: 'Epic sadface: Username and password do not match any user in this service'
+}
+Epic sadface: Username and password do not match any user in this service
+{
+  username: 'locked_out_user',
+  password: 'secret_sauce123',
+  error: 'Epic sadface: Username and password do not match any user in this service'
+}
+Epic sadface: Username and password do not match any user in this service
+{
+  username: 'problem_user123',
+  password: 'secret_sauce123',
+  error: 'Epic sadface: Username and password do not match any user in this service'
+}
+Epic sadface: Username and password do not match any user in this service
+Passed for standard_user
+Passed for locked_out_user
+Passed for problem_user123

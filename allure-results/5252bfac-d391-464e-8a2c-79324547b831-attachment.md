@@ -1,0 +1,119 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: tests\Features\login.feature.spec.js >> Feature name >> failed with invalid credentials >> Example #1
+- Location: .features-gen\tests\Features\login.feature.spec.js:16:9
+
+# Error details
+
+```
+Error: expect(locator).toHaveText(expected) failed
+
+Locator: locator('//div[normalize-space()=\'Sauce Labs Backpack\']')
+Expected: "Error"
+Timeout: 5000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "toHaveText" with timeout 5000ms
+  - waiting for locator('//div[normalize-space()=\'Sauce Labs Backpack\']')
+
+```
+
+```yaml
+- text: Swag Labs
+- main:
+  - form "Login":
+    - textbox "Username": standard_user
+    - textbox "Password": venkat
+    - alert:
+      - button "Dismiss error"
+      - text: "Epic sadface: Username and password do not match any user in this service"
+    - button "Login"
+  - heading "Accepted usernames are:" [level=4]
+  - text: standard_user locked_out_user problem_user performance_glitch_user error_user visual_user
+  - heading "Password for all users:" [level=4]
+  - text: secret_sauce
+```
+
+# Test source
+
+```ts
+  1  | //const { Given } = require('@cucumber/cucumber')
+  2  | const { url } = require('inspector')
+  3  | const {createBdd}= require('playwright-bdd');
+  4  | const {LoginPageBDDClass } = require('../Pages/LoginPageBDD');
+  5  | //const { LoginPage } = require('../Pages/LoginPageBDD.js');
+  6  | 
+  7  | 
+  8  | const {expect,page}=require('@playwright/test')
+  9  | 
+  10 | 
+  11 | //import {LoginPageBDDClass} from '../Pages/LoginPageBDD'
+  12 | 
+  13 | 
+  14 | const {Given,When,Then,Before,And}= createBdd()
+  15 | 
+  16 | 
+  17 | //let log;
+  18 | 
+  19 | 
+  20 | 
+  21 | 
+  22 | // Before(async ({page})=>{
+  23 | 
+  24 | // log= new LoginPageBDDClass(page)
+  25 | // //await log.navigate(url)
+  26 | 
+  27 | // })
+  28 | 
+  29 | Given(`I Navigate to {string}`,async ({page},url)=>{
+  30 | 
+  31 | let log= new LoginPageBDDClass(page)
+  32 |     await log.navigate(url)
+  33 |     
+  34 | })
+  35 | 
+  36 | Given(`I Enter Username {string}`,async({page},username)=>{
+  37 | 
+  38 | let log= new LoginPageBDDClass(page)
+  39 |     await log.enterUsername(username)
+  40 | })
+  41 | 
+  42 | 
+  43 | Given(`I Enter password {string}`,async({page},password)=>{
+  44 | 
+  45 | let log= new LoginPageBDDClass(page)
+  46 |     await log.enterPassword(password)
+  47 | })
+  48 | 
+  49 | When("click on Login Button",async ({page})=>{
+  50 | 
+  51 | let log= new LoginPageBDDClass(page)
+  52 |     await log.clickLogin()
+  53 | })
+  54 | 
+  55 | 
+  56 | 
+  57 | 
+  58 | Then(`I Should see the Page containing {string}`,async ({page},msg)=>{
+  59 | 
+  60 | let log= new LoginPageBDDClass(page)
+  61 | await expect (log.successmsg).toContainText(msg)
+  62 | })
+  63 | 
+  64 | 
+  65 | Then('I Should see the error message {string}', async ({page}, messgae) => {
+  66 |   // Step: Then I Should see the error message "Error message"
+  67 |   // From: tests\Features\login.feature:23:9
+  68 | let log= new LoginPageBDDClass(page)
+  69 |   await expect (log.successmsg).toHaveText(messgae)
+  70 | });
+  71 | 
+     |                                ^ Error: expect(locator).toHaveText(expected) failed
+```

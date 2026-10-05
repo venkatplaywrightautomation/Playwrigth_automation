@@ -1,0 +1,80 @@
+Total time taken 1138 ms
+Response code from API is 201
+Total time taken 240 ms
+Response code from API is 201
+Total time taken 241 ms
+Response code from API is 201
+Total time taken 249 ms
+Response code from API is 201
+Total time taken 242 ms
+Response code from API is 201
+Total time taken 240 ms
+Response code from API is 201
+Total time taken 239 ms
+Response code from API is 201
+Total time taken 239 ms
+Response code from API is 201
+Total time taken 240 ms
+Response code from API is 201
+Total time taken 242 ms
+Response code from API is 201
+Total time taken 239 ms
+Response code from API is 201
+Total time taken 249 ms
+Response code from API is 201
+Total time taken 250 ms
+Response code from API is 201
+Total time taken 238 ms
+Response code from API is 201
+Total time taken 243 ms
+Response code from API is 201
+Total time taken 255 ms
+Response code from API is 201
+Total time taken 246 ms
+Response code from API is 201
+Total time taken 241 ms
+Response code from API is 201
+Total time taken 238 ms
+Response code from API is 201
+Total time taken 238 ms
+Response code from API is 201
+Total time taken 236 ms
+Response code from API is 201
+Total time taken 238 ms
+Response code from API is 201
+Total time taken 252 ms
+Response code from API is 201
+Total time taken 239 ms
+Response code from API is 201
+Total time taken 238 ms
+Response code from API is 201
+Total time taken 237 ms
+Response code from API is 201
+Total time taken 237 ms
+Response code from API is 201
+Total time taken 251 ms
+Response code from API is 201
+Total time taken 241 ms
+Response code from API is 201
+Total time taken 241 ms
+Response code from API is 201
+Total time taken 237 ms
+Response code from API is 201
+Total time taken 243 ms
+Response code from API is 201
+Total time taken 241 ms
+Response code from API is 201
+Total time taken 243 ms
+Response code from API is 201
+Total time taken 238 ms
+Response code from API is 201
+Total time taken 238 ms
+Response code from API is 201
+Total time taken 237 ms
+Response code from API is 201
+Total time taken 237 ms
+Response code from API is 201
+Total time taken 237 ms
+Response code from API is 201
+Total time taken 239 ms
+Response code from API is 201

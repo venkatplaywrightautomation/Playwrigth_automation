@@ -1,0 +1,2 @@
+No of links in the page https://www.google.com/ are : 29
+No of links in the page https://www.amazon.in/ are : 0

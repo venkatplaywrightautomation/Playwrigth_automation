@@ -1,0 +1,113 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - navigation [ref=e3]:
+    - link "About" [ref=e4] [cursor=pointer]:
+      - /url: https://about.google/?fg=1&utm_source=google-IN&utm_medium=referral&utm_campaign=hp-header
+    - link "Store" [ref=e5] [cursor=pointer]:
+      - /url: https://store.google.com/IN?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-IN
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - link "Gmail" [ref=e10] [cursor=pointer]:
+          - /url: https://mail.google.com/mail/&ogbl
+        - link "Search for Images" [ref=e12] [cursor=pointer]:
+          - /url: https://www.google.com/imghp?hl=en&ogbl
+          - text: Images
+      - button "Google apps" [ref=e15] [cursor=pointer]:
+        - img [ref=e16] [cursor=pointer]
+      - link "Sign in" [ref=e20] [cursor=pointer]:
+        - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=futura_exp_og_so_72776762_e
+        - generic [ref=e21] [cursor=pointer]: Sign in
+  - img "Google" [ref=e24]
+  - search [ref=e32]:
+    - generic [ref=e34]:
+      - generic [ref=e36]:
+        - button "Add files and tools" [ref=e41] [cursor=pointer]:
+          - img [ref=e43] [cursor=pointer]
+        - combobox "Search" [ref=e46]
+        - generic [ref=e47]:
+          - generic [ref=e48]:
+            - button "Search by voice" [ref=e51] [cursor=pointer]:
+              - img [ref=e52] [cursor=pointer]
+            - button "Search by image" [ref=e56] [cursor=pointer]:
+              - img [ref=e57] [cursor=pointer]
+          - link "AI Mode" [ref=e59] [cursor=pointer]:
+            - generic [ref=e61] [cursor=pointer]:
+              - img [ref=e63] [cursor=pointer]
+              - generic [ref=e70] [cursor=pointer]: AI Mode
+      - generic [ref=e72]:
+        - button "Google Search" [ref=e73] [cursor=pointer]
+        - button "I'm Feeling Lucky" [ref=e74] [cursor=pointer]
+  - generic [ref=e75]:
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - dialog "Choose Chrome, the browser built by Google":
+                      - generic [ref=e84]:
+                        - generic [ref=e85]:
+                          - generic [ref=e86]: Choose Chrome, the browser built by Google
+                          - generic [ref=e87]: Try a fast, secure browser with automatic updates
+                          - generic [ref=e88]:
+                            - text: By downloading Chrome, you agree to the
+                            - link "Google Terms of Service" [ref=e89] [cursor=pointer]:
+                              - /url: https://policies.google.com/terms
+                            - text: and
+                            - link "Chrome and ChromeOS Additional Terms of Service" [ref=e90] [cursor=pointer]:
+                              - /url: https://www.google.com/chrome/terms/
+                            - text: .
+                          - checkbox "Help make Google Chrome better by automatically sending usage statistics and crash reports to Google. Learn more." [ref=e92]:
+                            - checkbox "Help make Google Chrome better by automatically sending usage statistics and crash reports to Google. Learn more." [checked] [ref=e93]
+                            - generic [ref=e94]:
+                              - text: Help make Google Chrome better by automatically sending usage statistics and crash reports to Google.
+                              - link "Learn more" [ref=e95] [cursor=pointer]:
+                                - /url: https://support.google.com/chrome/answer/96817
+                              - text: .
+                        - generic [ref=e96]:
+                          - button "Do not use Chrome" [ref=e97] [cursor=pointer]:
+                            - generic [ref=e99] [cursor=pointer]: Do not use Chrome
+                          - button "Download Chrome" [ref=e100] [cursor=pointer]:
+                            - generic [ref=e102] [cursor=pointer]: Download Chrome
+    - generic [ref=e104]:
+      - text: "Google offered in:"
+      - link "हिन्दी" [ref=e105] [cursor=pointer]:
+        - /url: https://www.google.com/setprefs?sig=0_3m3AChIN46pm_W5-oV1Q0nmselM%3D&hl=hi&source=homepage&sa=X&ved=0ahUKEwiVp8-up7iVAxVEa2wGHTbdGGUQ2ZgBCCo
+      - link "বাংলা" [ref=e106] [cursor=pointer]:
+        - /url: https://www.google.com/setprefs?sig=0_3m3AChIN46pm_W5-oV1Q0nmselM%3D&hl=bn&source=homepage&sa=X&ved=0ahUKEwiVp8-up7iVAxVEa2wGHTbdGGUQ2ZgBCCs
+      - link "తెలుగు" [ref=e107] [cursor=pointer]:
+        - /url: https://www.google.com/setprefs?sig=0_3m3AChIN46pm_W5-oV1Q0nmselM%3D&hl=te&source=homepage&sa=X&ved=0ahUKEwiVp8-up7iVAxVEa2wGHTbdGGUQ2ZgBCCw
+      - link "मराठी" [ref=e108] [cursor=pointer]:
+        - /url: https://www.google.com/setprefs?sig=0_3m3AChIN46pm_W5-oV1Q0nmselM%3D&hl=mr&source=homepage&sa=X&ved=0ahUKEwiVp8-up7iVAxVEa2wGHTbdGGUQ2ZgBCC0
+      - link "தமிழ்" [ref=e109] [cursor=pointer]:
+        - /url: https://www.google.com/setprefs?sig=0_3m3AChIN46pm_W5-oV1Q0nmselM%3D&hl=ta&source=homepage&sa=X&ved=0ahUKEwiVp8-up7iVAxVEa2wGHTbdGGUQ2ZgBCC4
+      - link "ગુજરાતી" [ref=e110] [cursor=pointer]:
+        - /url: https://www.google.com/setprefs?sig=0_3m3AChIN46pm_W5-oV1Q0nmselM%3D&hl=gu&source=homepage&sa=X&ved=0ahUKEwiVp8-up7iVAxVEa2wGHTbdGGUQ2ZgBCC8
+      - link "ಕನ್ನಡ" [ref=e111] [cursor=pointer]:
+        - /url: https://www.google.com/setprefs?sig=0_3m3AChIN46pm_W5-oV1Q0nmselM%3D&hl=kn&source=homepage&sa=X&ved=0ahUKEwiVp8-up7iVAxVEa2wGHTbdGGUQ2ZgBCDA
+      - link "മലയാളം" [ref=e112] [cursor=pointer]:
+        - /url: https://www.google.com/setprefs?sig=0_3m3AChIN46pm_W5-oV1Q0nmselM%3D&hl=ml&source=homepage&sa=X&ved=0ahUKEwiVp8-up7iVAxVEa2wGHTbdGGUQ2ZgBCDE
+      - link "ਪੰਜਾਬੀ" [ref=e113] [cursor=pointer]:
+        - /url: https://www.google.com/setprefs?sig=0_3m3AChIN46pm_W5-oV1Q0nmselM%3D&hl=pa&source=homepage&sa=X&ved=0ahUKEwiVp8-up7iVAxVEa2wGHTbdGGUQ2ZgBCDI
+  - contentinfo [ref=e115]:
+    - generic [ref=e116]: India
+    - generic [ref=e117]:
+      - generic [ref=e118]:
+        - link "Advertising" [ref=e119] [cursor=pointer]:
+          - /url: https://www.google.com/intl/en_in/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1
+        - link "Business" [ref=e120] [cursor=pointer]:
+          - /url: https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1
+        - link "How Search works" [ref=e121] [cursor=pointer]:
+          - /url: https://google.com/search/howsearchworks/?fg=1
+      - generic [ref=e122]:
+        - link "Privacy" [ref=e123] [cursor=pointer]:
+          - /url: https://policies.google.com/privacy?hl=en-IN&fg=1
+        - link "Terms" [ref=e124] [cursor=pointer]:
+          - /url: https://policies.google.com/terms?hl=en-IN&fg=1
+        - button "Settings" [ref=e128] [cursor=pointer]:
+          - generic [ref=e129] [cursor=pointer]: Settings
+```

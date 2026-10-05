@@ -4,21 +4,30 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test-qa": "cross-env testenv=qa npx playwright test env1.spec.js --headed",
-    "test-stage": "cross-env testenv=stage npx playwright test env1.spec.js --headed"
+    "test-qa": "cross-env TESTENV=qa npx playwright test Basetest.spec.js --headed",
+    "test-stage": "cross-env TESTENV=stage npx playwright test Basetest.spec.js --headed",
+    "regression": "npx playwright test  --grep '@regression --headed",
+    "smoke": "npx playwright test  --grep '@regression --headed",
+    "e2e": " npx playwright test",
+    "test":"cucumber-js features --import steps"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  
   "devDependencies": {
+    "@faker-js/faker": "^10.5.0",
     "@playwright/test": "^1.55.0",
     "@types/node": "^24.3.0",
-    "allure-playwright": "^3.3.3"
+    "allure-commandline": "^2.43.0",
+    "allure-playwright": "^3.3.3",
+    "playwright-bdd": "^9.2.1"
   },
   "dependencies": {
-    "@cucumber/cucumber": "^12.7.0",
+    "@cucumber/cucumber": "^12.9.0",
     "cross-env": "^10.0.0",
-    "dotenv": "^17.3.1",
-    "exceljs": "^4.4.0"
+    "dotenv": "^17.4.2",
+    "exceljs": "^3.4.0",
+    "luxon": "^3.7.2" 
   }
 }

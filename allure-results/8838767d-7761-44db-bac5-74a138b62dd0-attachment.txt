@@ -1,0 +1,5 @@
+No of links in the page are : 28
+Link name is : About
+Link name is : Store
+Link name is : Gmail
+Gmail link is present in the page

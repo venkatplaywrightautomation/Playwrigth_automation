@@ -1,0 +1,17 @@
+class login {
+
+#name;
+#age;
+
+constructor(name,age){
+
+    this.#name=name
+    this.#age=age
+}
+
+get namae(){
+
+    return this.#name
+}
+
+}

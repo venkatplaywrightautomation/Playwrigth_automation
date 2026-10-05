@@ -1,0 +1,77 @@
+No of links in the page are : 29
+URL is : https://about.google/?fg=1&utm_source=google-IN&utm_medium=referral&utm_campaign=hp-header
+Response status is : 200
+Broken link is : https://about.google/?fg=1&utm_source=google-IN&utm_medium=referral&utm_campaign=hp-header
+URL is : https://store.google.com/IN?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-IN
+Response status is : 200
+Broken link is : https://store.google.com/IN?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-IN
+URL is : https://mail.google.com/mail/&ogbl
+Response status is : 200
+Broken link is : https://mail.google.com/mail/&ogbl
+URL is : https://www.google.com/imghp?hl=en&ogbl
+Response status is : 200
+Broken link is : https://www.google.com/imghp?hl=en&ogbl
+URL is : https://www.google.co.in/intl/en/about/products
+Response status is : 200
+Broken link is : https://www.google.co.in/intl/en/about/products
+URL is : https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=futura_exp_og_so_72776762_e
+Response status is : 200
+Broken link is : https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=futura_exp_og_so_72776762_e
+URL is : https://www.google.com/webhp?hl=en&ictx=0&sa=X&ved=0ahUKEwiVp8-up7iVAxVEa2wGHTbdGGUQPAgE
+Response status is : 200
+Broken link is : https://www.google.com/webhp?hl=en&ictx=0&sa=X&ved=0ahUKEwiVp8-up7iVAxVEa2wGHTbdGGUQPAgE
+URL is : https://policies.google.com/terms
+Response status is : 200
+Broken link is : https://policies.google.com/terms
+URL is : https://www.google.com/chrome/terms/
+Response status is : 200
+Broken link is : https://www.google.com/chrome/terms/
+URL is : https://support.google.com/chrome/answer/96817
+Response status is : 200
+Broken link is : https://support.google.com/chrome/answer/96817
+URL is : https://www.google.com/setprefs?sig=0_3m3AChIN46pm_W5-oV1Q0nmselM%3D&hl=hi&source=homepage&sa=X&ved=0ahUKEwiVp8-up7iVAxVEa2wGHTbdGGUQ2ZgBCCo
+Response status is : 200
+Broken link is : https://www.google.com/setprefs?sig=0_3m3AChIN46pm_W5-oV1Q0nmselM%3D&hl=hi&source=homepage&sa=X&ved=0ahUKEwiVp8-up7iVAxVEa2wGHTbdGGUQ2ZgBCCo
+URL is : https://www.google.com/setprefs?sig=0_3m3AChIN46pm_W5-oV1Q0nmselM%3D&hl=bn&source=homepage&sa=X&ved=0ahUKEwiVp8-up7iVAxVEa2wGHTbdGGUQ2ZgBCCs
+Response status is : 200
+Broken link is : https://www.google.com/setprefs?sig=0_3m3AChIN46pm_W5-oV1Q0nmselM%3D&hl=bn&source=homepage&sa=X&ved=0ahUKEwiVp8-up7iVAxVEa2wGHTbdGGUQ2ZgBCCs
+URL is : https://www.google.com/setprefs?sig=0_3m3AChIN46pm_W5-oV1Q0nmselM%3D&hl=te&source=homepage&sa=X&ved=0ahUKEwiVp8-up7iVAxVEa2wGHTbdGGUQ2ZgBCCw
+Response status is : 200
+Broken link is : https://www.google.com/setprefs?sig=0_3m3AChIN46pm_W5-oV1Q0nmselM%3D&hl=te&source=homepage&sa=X&ved=0ahUKEwiVp8-up7iVAxVEa2wGHTbdGGUQ2ZgBCCw
+URL is : https://www.google.com/setprefs?sig=0_3m3AChIN46pm_W5-oV1Q0nmselM%3D&hl=mr&source=homepage&sa=X&ved=0ahUKEwiVp8-up7iVAxVEa2wGHTbdGGUQ2ZgBCC0
+Response status is : 200
+Broken link is : https://www.google.com/setprefs?sig=0_3m3AChIN46pm_W5-oV1Q0nmselM%3D&hl=mr&source=homepage&sa=X&ved=0ahUKEwiVp8-up7iVAxVEa2wGHTbdGGUQ2ZgBCC0
+URL is : https://www.google.com/setprefs?sig=0_3m3AChIN46pm_W5-oV1Q0nmselM%3D&hl=ta&source=homepage&sa=X&ved=0ahUKEwiVp8-up7iVAxVEa2wGHTbdGGUQ2ZgBCC4
+Response status is : 200
+Broken link is : https://www.google.com/setprefs?sig=0_3m3AChIN46pm_W5-oV1Q0nmselM%3D&hl=ta&source=homepage&sa=X&ved=0ahUKEwiVp8-up7iVAxVEa2wGHTbdGGUQ2ZgBCC4
+URL is : https://www.google.com/setprefs?sig=0_3m3AChIN46pm_W5-oV1Q0nmselM%3D&hl=gu&source=homepage&sa=X&ved=0ahUKEwiVp8-up7iVAxVEa2wGHTbdGGUQ2ZgBCC8
+Response status is : 200
+Broken link is : https://www.google.com/setprefs?sig=0_3m3AChIN46pm_W5-oV1Q0nmselM%3D&hl=gu&source=homepage&sa=X&ved=0ahUKEwiVp8-up7iVAxVEa2wGHTbdGGUQ2ZgBCC8
+URL is : https://www.google.com/setprefs?sig=0_3m3AChIN46pm_W5-oV1Q0nmselM%3D&hl=kn&source=homepage&sa=X&ved=0ahUKEwiVp8-up7iVAxVEa2wGHTbdGGUQ2ZgBCDA
+Response status is : 200
+Broken link is : https://www.google.com/setprefs?sig=0_3m3AChIN46pm_W5-oV1Q0nmselM%3D&hl=kn&source=homepage&sa=X&ved=0ahUKEwiVp8-up7iVAxVEa2wGHTbdGGUQ2ZgBCDA
+URL is : https://www.google.com/setprefs?sig=0_3m3AChIN46pm_W5-oV1Q0nmselM%3D&hl=ml&source=homepage&sa=X&ved=0ahUKEwiVp8-up7iVAxVEa2wGHTbdGGUQ2ZgBCDE
+Response status is : 200
+Broken link is : https://www.google.com/setprefs?sig=0_3m3AChIN46pm_W5-oV1Q0nmselM%3D&hl=ml&source=homepage&sa=X&ved=0ahUKEwiVp8-up7iVAxVEa2wGHTbdGGUQ2ZgBCDE
+URL is : https://www.google.com/setprefs?sig=0_3m3AChIN46pm_W5-oV1Q0nmselM%3D&hl=pa&source=homepage&sa=X&ved=0ahUKEwiVp8-up7iVAxVEa2wGHTbdGGUQ2ZgBCDI
+Response status is : 200
+Broken link is : https://www.google.com/setprefs?sig=0_3m3AChIN46pm_W5-oV1Q0nmselM%3D&hl=pa&source=homepage&sa=X&ved=0ahUKEwiVp8-up7iVAxVEa2wGHTbdGGUQ2ZgBCDI
+URL is : https://www.google.com/intl/en_in/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1
+Response status is : 200
+Broken link is : https://www.google.com/intl/en_in/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1
+URL is : https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1
+Response status is : 200
+Broken link is : https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1
+URL is : https://google.com/search/howsearchworks/?fg=1
+Response status is : 200
+Broken link is : https://google.com/search/howsearchworks/?fg=1
+URL is : https://policies.google.com/privacy?hl=en-IN&fg=1
+Response status is : 200
+Broken link is : https://policies.google.com/privacy?hl=en-IN&fg=1
+URL is : https://policies.google.com/terms?hl=en-IN&fg=1
+Response status is : 200
+Broken link is : https://policies.google.com/terms?hl=en-IN&fg=1
+URL is : https://www.google.com/preferences?hl=en-IN&fg=1
+Response status is : 200
+Broken link is : https://www.google.com/preferences?hl=en-IN&fg=1
+URL is : /advanced_search?hl=en-IN&fg=1

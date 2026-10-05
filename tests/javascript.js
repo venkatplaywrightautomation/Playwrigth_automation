@@ -1,5 +1,7 @@
 // let s="this is venkata reddy"
 
+import { count } from "console"
+
 // const { count } = require("console");
 // const { cpSync } = require("fs");
 // const { parse } = require("path");
@@ -17,13 +19,13 @@
 // console.log(rev)
 
 
-// let  s="this is venkata reddy"
+// let  s3="this is venkata reddy"
 
 // let charCount={}
 
-// for(let i = 0; i < s.length;i++){
+// for(let i = 0; i < s3.length;i++){
 
-//     let ch=s[i]
+//     let ch=s3[i]
 //     if(charCount[ch]){
 //         charCount[ch]++;
 
@@ -32,7 +34,7 @@
 //     }
 // }
 
-// console.log(charCount)
+// console.log("char count: "+charCount)
 
 
 
@@ -111,20 +113,20 @@
 
 
 
-let arr = [12, 45, 7, 89, 23, 56];
+// let arr = [12, 45, 7, 89, 23, 56];
 
-let largest = arr[0];
-let secondLargest = arr[0];
+// let largest = arr[0];
+// let secondLargest = arr[0];
 
-for (let i = 1; i < arr.length; i++) {
-    if (arr[i] > largest) {
-        secondLargest = largest;
-        largest = arr[i];
-    } else if (arr[i] < largest && arr[i] > secondLargest) {
-        secondLargest = arr[i];
-    }
-}
-console.log("Second largest number in array:", secondLargest);
+// for (let i = 1; i < arr.length; i++) {
+//     if (arr[i] > largest) {
+//         secondLargest = largest;
+//         largest = arr[i];
+//     } else if (arr[i] < largest && arr[i] > secondLargest) {
+//         secondLargest = arr[i];
+//     }
+// }
+// console.log("Second largest number in array:", secondLargest);
 
 
 // let arr = [12, 45, 7, 89, 23, 56];
@@ -327,7 +329,7 @@ console.log("Digits:", r)
 // const duplicates = arr.filter((item, index) => arr.indexOf(item) !== index);
 
 // console.log(duplicates);
-
+    
 
 // let arr = [1, 2, 3,4, 5,7];
 // let n = arr.length + 1;  // total numbers including missing one
@@ -693,19 +695,19 @@ console.log("Digits:", r)
 // console.log(arr)
 
 
-let str ="javascript"
-let count=[]
+// let str ="javascript"
+// let count=[]
 
-for(let char of str){
+// for(let char of str){
 
-    if(count[char]){
-        count[char]++
-    }
-    else{
-        count[char]=1
-    }       
-}
-console.log("char count:", count)
+//     if(count[char]){
+//         count[char]++
+//     }
+//     else{
+//         count[char]=1
+//     }       
+// }
+// console.log("char count:", count)
 
 //Reverse words in a sentence
 // let sentence = "I love JavaScript";
@@ -2919,108 +2921,545 @@ let marks = Array(6)
 
 // module.exports = Person;
 
-// class Person{
+// // class Person{
 
-//     age=30
-
-
-//     get lcoation(){
-//         return "canada"
-//     }
+// //     age=30
 
 
-//     constructor(firstname,lastname){
-//         this.firstname=firstname
-//         this.lastname=lastname
-//     }
+// //     get lcoation(){
+// //         return "canada"
+// //     }
 
 
-//     fullname(){
-//         console.log(this.firstname + " " + this.lastname)
-//     }
+// //     constructor(firstname,lastname){
+// //         this.firstname=firstname
+// //         this.lastname=lastname
+// //     }
+
+
+// //     fullname(){
+// //         console.log(this.firstname + " " + this.lastname)
+// //     }
+// // }
+
+
+
+// // const p=new Person("venkat", "reddy");
+// // //console.log(p)
+// // console.log(p.fullname())
+
+
+
+
+
+// // class report {
+
+
+// //     onBegin(){
+// //         console.log("report is starting")
+// //     }
+
+// //     onEnd(){    
+// //         console.log("report is ending")
+
+// //     }
+
+// //     onTestStart(test){
+// //         console.log("test is starting",test.title)
+// //     }
+
+// //     onTestEnd(test){
+// //         console.log("test is ending",test.title)
+// //     }
+// // }
+
+// // module.exports = report
+
+// // 
+
+// // let a = 5, b = 10;
+// // [a, b] = [b, a]
+// // console.log("after swapping",a,b)
+
+// let str1 = "aabbcdeff";
+
+// let count1 = {}
+
+// // Step 1: Count frequency
+// for (let ch of str1) {
+//   count1[ch] = (count1[ch] || 0) + 1;
 // }
 
+// // Step 2: Find first non-repeating
+// let result = null;
 
-
-// const p=new Person("venkat", "reddy");
-// //console.log(p)
-// console.log(p.fullname())
-
-
-
-
-
-// class report {
-
-
-//     onBegin(){
-//         console.log("report is starting")
-//     }
-
-//     onEnd(){    
-//         console.log("report is ending")
-
-//     }
-
-//     onTestStart(test){
-//         console.log("test is starting",test.title)
-//     }
-
-//     onTestEnd(test){
-//         console.log("test is ending",test.title)
-//     }
+// for (let ch of str1) {
+//   if (count1[ch] === 1) {
+//     result = ch;
+//     break;
+//   }
 // }
 
-// module.exports = report
+// console.log(result); // c
 
-// 
-
-// let a = 5, b = 10;
-// [a, b] = [b, a]
-// console.log("after swapping",a,b)
-
-let str1 = "aabbcdeff";
-
-let count1 = {}
-
-// Step 1: Count frequency
-for (let ch of str1) {
-  count1[ch] = (count1[ch] || 0) + 1;
-}
-
-// Step 2: Find first non-repeating
-let result = null;
-
-for (let ch of str1) {
-  if (count1[ch] === 1) {
-    result = ch;
-    break;
-  }
-}
-
-console.log(result); // c
-
-let str4= "venkat reddy polaka"
+// let str4= "venkat reddy polaka"
 
 
 
-let count3={}
+// let count3={}
 
-for(let c of str4){
+// for(let c of str4){
 
-    count3[c]=(count3[c] || 0 )+ 1
-}
+//     count3[c]=(count3[c] || 0 )+ 1
+// }
 
-let res1=null
+// let res1=null
 
-for(let c of str4){
+// for(let c of str4){
 
-    if(count3[c] === 1){
-        res1=c
-        break
-    }
-}
-console.log(res1)
+//     if(count3[c] === 1){
+//         res1=c
+//         break
+//     }
+// }
+// console.log(res1)
 
 // const username = `user_${Date.now()}`;
 // await page.fill('#user', username);
+
+// let a="venkat"
+//  a="reddy"
+// console.log(a);
+
+
+// const userdetails={
+//     name:"venkat",
+//     age:30  
+// }
+// console.log(userdetails.name)
+// console.log(userdetails.age)
+
+
+
+const fruits1= ["apple", "banana", "mango"]
+
+
+console.log(fruits1.length)
+
+// console.log(fruits1[0])
+// console.log(fruits1[1])
+// console.log(fruits1[2])
+
+
+// for(let i=0;i<fruits1.length;i++){
+//     console.log(fruits1[i])
+// }
+
+// for(const fruit of fruits1){
+//     console.log(fruit)
+// }
+
+
+
+// let str4 = "hi hello ths is venkat hi";
+
+// let count = str4.split("hi").length - 1;
+
+// console.log("hi displayed:", count, "times");
+
+
+// let str = "hi hello this is venkat hi hello Hello is ";
+
+// let words = str.split(" ");
+// let wordCount = {};
+
+// for (let word of words) {
+//     wordCount[word] = (wordCount[word] || 0) + 1;
+// }
+
+// console.log(wordCount);
+
+
+// let str4 = "hi hello this is venkat hi hello Hello is ";
+
+
+// let word= str4.split(" ")
+
+// let count= {}
+
+// for(let char of word){
+
+//     count[char]= (count[char] || 0) + 1
+// }
+// console.log(count)
+
+
+// let str5="this is venkat is"
+
+// let count= {}
+
+// for(let c of str5){
+
+//     if(count[c]){
+//         count[c]++
+//     }
+//     else{
+//         count[c]=1
+//     }
+// }
+
+// console.log(count)
+
+// let str = "hi hello this is venkat hi";
+
+// let wordCount = str
+//     .split(" ")
+//     .reduce((acc, word) => {
+//         acc[word] = (acc[word] || 0) + 1;
+//         return acc;
+//     }, {});
+
+// console.log(wordCount);
+
+
+// let str6= "this is venkat is This is venkat"
+
+// let wordcount= str6.split(" ").reduce((acc,word) =>{
+
+//     acc[word]= (acc[word] || 0) + 1
+//     return acc  
+// },{});
+
+// console.log(wordcount)
+
+// let str = "hi hello this is venkat hi";
+
+// let words = str.split(" ");
+// let wordCount = {};
+
+// for (let word of words) {
+//     wordCount[word] = (wordCount[word] || 0) + 1;
+// }
+
+// for (let key in wordCount) {
+//     console.log(`${key} -> ${wordCount[key]}`);
+// }
+
+
+// let str9= "this is venkat hi"
+
+// let count= {}
+// let word= str9.split(" ")
+
+// for(let c of word){
+// count[c]= (count[c] || 0) + 1   
+
+// }
+
+// for(let key in count){
+
+//     console.log(`${key} -> ${count[key]}`)
+// }
+
+// let str4 = "hello he hello this is venkat hi hello Hello is ";
+
+// let word = str4.split(" ");
+// let count = {};
+
+// for (let char of word) {
+//     count[char] = (count[char] || 0) + 1;
+// }
+
+// console.log(count);
+
+// let arr3= [1, 2, 3, 4, 5, 6, 7, 8, 9,4,7]
+
+// let re=arr3.filter((item,index) => arr3.indexOf(item) === index)
+
+// console.log(re)
+
+// let a1 = [10, 50, 20, 80, 30];
+
+// let unique = [...new Set(a1)].sort((a, b) => b - a);
+
+// console.log("second largest number"+unique[0]);
+
+
+// let a = 10;
+// let b = 20;
+
+// [a, b] = [b, a];
+
+// console.log(a, b);
+
+// let n = 10;
+// let a = 0, b = 1;
+
+// for (let i = 1; i < n; i++) {
+//     console.log("factorial "+a);
+
+//     let temp = a + b;
+//     a = b;
+//     b = temp;
+// }
+
+// let str = "I love Playwright";
+
+// let result = str
+//     .split(" ")
+//     .reverse()
+//     .join(" ");
+
+// console.log(result);
+
+
+
+// let str = "aabbcde";
+
+// for (let char of str) {
+//     if (str.indexOf(char) === str.lastIndexOf(char)) {
+//         console.log(char);
+//         break;
+//     }
+// }
+
+// let x=20
+// let x=40
+
+// console.log(x)
+
+
+// let str1="venkat reddy polaka"
+
+// for(let c in str1){
+
+//     console.log(c,str1[c])
+// }
+
+
+// const map= new Map()
+// map.set("name","venkat")
+// map.set("age",30)
+// map.set("city","hyd")
+// console.log(map.get("name"))
+// console.log(map.get("age"))
+// console.log(map.get("city"))
+// const map1= new Map([["name","venkat"],["age",30],["city","hyd"]])
+
+
+// let fruits11= ["apple", "banana", "mango"]
+
+// fruits11.forEach((fruit,index) =>{
+
+// console.log(index,fruit)
+// })
+
+// let su=[12,3,3,4,5,6,7,8,9,10]
+// let sum=0
+
+// su.forEach((num) =>{
+
+// sum=sum + num
+// })
+// console.log("sum of array is",sum)
+
+
+// const user=[
+
+//     {
+//         name:"venkat",
+//         age:30,
+//         city:"hyd"
+//     }
+// ]
+
+// user.forEach((user) =>{
+
+// console.log(`${user.name} is ${user.age} years old and lives in ${user.city}`)
+// })
+
+
+// const nums = [1, 2, 3, 4, 5, 6];
+
+// nums.forEach(num => {
+//   if (num % 2 === 0) {
+//     console.log(num);
+//   }
+// });
+
+// const names = ["alice", "bob"];
+
+// const result = [];
+
+// names.forEach(name => {
+//   result.push(name.toUpperCase());
+// });
+
+// console.log(result);
+
+
+// const nums = [12, 45, 7, 90];
+
+// let max = nums[0];
+
+// nums.forEach(num => {
+//   if (num > max) {
+//     max = num;
+//   }
+// });
+
+// console.log(max); // 90
+
+
+// for(let i=0;i<nums.length;i++){
+//     if(nums[i]>max){
+//         max=nums[i]
+//     }
+// }
+// console.log(max)
+
+// const result = [1, 2, 3].forEach(x => x * 2);
+
+// console.log(result); // undefined
+
+
+// const nums = [1, 2, 3, 4, 5];
+
+// nums.forEach((num) =>{
+
+//     if( num % 2 !== 0){
+//         console.log(num + " is even")
+//     }
+// })
+
+// const text = "playwrightp";
+
+// const counts = {};
+
+// for (const ch of text) {
+//   counts[ch] = (counts[ch] || 0) + 1;
+// }
+
+// console.log(counts);
+
+
+// const nums = [1, 2, 3];
+
+// nums.forEach(num => console.log(num));
+
+// const doubled = nums.map(num => num * 2);
+// console.log(doubled); // [2, 4, 6]
+
+
+// const user = {
+//   name: "Venkat",
+//   age: 30
+// };
+
+// const arr5 = Object.entries(user);
+
+// console.log(arr5);
+
+
+// function rev(str){
+
+
+//     let rev= "";
+
+//     for(let i= str.length - 1;i>=0;i--){
+//         rev= rev + str[i]
+//     }
+//     return rev; 
+// }
+
+// console.log(rev("venkat"))
+
+// const arr4 = [1, 2, 3, 2, 4, 1];
+
+// for (let i = 0; i < arr4.length; i++) {
+//     for (let j = i + 1; j < arr4.length; j++) {
+//         if (arr4[i] === arr4[j]) {
+//             console.log(arr4[i]);
+//             break;
+//         }
+//     }
+// }   
+
+
+let arr5= [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+let max=arr5[0]
+
+let secondmax=arr5[0]
+
+
+
+
+
+
+// for(let i=1;i<arr5.length;i++)
+
+//     {
+// if(arr5[i] > max){
+// secondmax=max
+// max=arr5[i]
+//     }
+
+
+//     else if(arr5[i] <max && arr5[i] > secondmax){
+//         secondmax=arr5[i]
+//     }
+
+// }
+// console.log("max number is",max)
+// console.log("second max number is",secondmax)
+
+
+
+
+
+// let str5="i love javascript"
+
+// let count=1
+
+// for(let i=0;i<str5.length;i++){
+
+//     if(str5[i] === " ")
+//     {
+//         count++
+//     }
+// }
+
+// console.log("count:"+ count)
+
+
+// let arr6=[1,2,3,4,5,1,2]
+
+// let unique= [];
+
+// for(let i of arr6)
+// {
+// if(!unique.includes(i))
+//     unique.push(i)
+  
+// }
+
+
+// console.log(unique)
+
+
+// let str5= "this is venkat"
+
+
+// let count7 = 0;
+
+// for(let c of str5)
+// {
+//     count7++
+// }
+
+// console.log(count7)
+
+
+let arr7= [1, 5]
+console.log(arr7.length)

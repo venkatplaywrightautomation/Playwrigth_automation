@@ -1,0 +1,1 @@
+No of links in the page are : [object Promise]

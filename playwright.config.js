@@ -4,14 +4,49 @@ import { chromium, defineConfig, devices } from '@playwright/test';
 import dotenv from 'dotenv';
 import globalsetup from './globalsetup';
 
+//import {defineConfig } from '@cucumber/cucumber';
 
 
 
-dotenv.config({
- // path:`./envfiles/.env.${process.env.testenv}`
- path: process.env.testenv ? `./envfiles/.env.${process.env.testenv}` : `'./envfiles/.env.qa'`
+
+
+
+// const  {defineBddConfig}= require('playwright-bdd')
+
+
+// const testDir=defineBddConfig({
+
+// features: `./tests/Features/*.feature`,
+// steps: `./tests/Steps/*.js`
+
+// })
+
+
+
+
+
+
+
+
+// dotenv.config({
+//  // path:`./envfiles/.env.${process.env.testenv}`
+//  path: process.env.testenv ? `./envfiles/.env.${process.env.testenv}` : `'./envfiles/.env.qa'`
+
  
-})
+import path from 'path';
+
+ 
+
+// dotenv.config({
+
+//   path:process.env.TESTENV ? `./envfiles/.env.${process.env.TESTENV}` : `'./envfiles/.env.qa'`
+// })
+// })
+//dotenv.config({path: path.resolve(__dirname, '../envfiles/.env')});
+// dotenv.config({
+
+//     path: `./envfiles/.env.${process.env.TESTENV}`
+// })
 
 
 
@@ -26,6 +61,8 @@ export default defineConfig({
  globalSetup: "./globalsetup.js",
 
   testDir: './tests',
+
+  fullyParallel: true,
   
   
   /* Run tests in files in parallel */
@@ -41,7 +78,7 @@ export default defineConfig({
   
   /* Opt out of parallel tests on CI. */
   //workers: process.env.CI ? 1 : undefined,
-  workers: 2,
+  workers: 3,
 //testMatch:'/Webtable.spec.js*',
 //testIgnore: '/Webtable.spec.js/',
   //workers: 3,
@@ -50,7 +87,7 @@ export default defineConfig({
 //testMatch: /.*(spec|test)\.(ts|js)/,
 
   
-//storageState: 'testdata/auth.json',
+//storageState: 'testdata/role.json',
 
   /* Set global timeout for each test */
   timeout: 30 * 1000,
@@ -70,16 +107,18 @@ export default defineConfig({
     /* Maximum time each action such as `click()` can take. Defaults to 0 (no limit). */
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://localhost:3000',
+    baseURL: process.env.URL,
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    // trace: 'on-first-retry',
-    // headless:false,
-    // screenshot:'on',
-    reporter: './javascript.js',
-    storageState: './Loginauth.json',
-    ignoreHTTPSErrors: true,
-    permissions:['geolocation'],
-    geolocation:{latitude: 12.9716, longitude: 77.5946},
+     trace: 'on-first-retry',
+     headless:false,
+     screenshot:'on',
+    //reporter: './javascript.js',
+    //storageState: './Loginauth.json',
+    storageState:'testdata/admin.json',
+    //ignoreHTTPSErrors: true,
+    //permissions:['geolocation'],
+    //geolocation:{latitude: 12.9716, longitude: 77.5946},
     //video:'on',
     //outputDir:'./test-results/',
     //channel: 'chrome',
@@ -93,8 +132,11 @@ export default defineConfig({
     //trace: 'on-first-retry',
     //timezoneId: 'UTC',
 //storageState:'testdata/auth.json'
+
     
   },
+
+
 
   /* Configure projects for major browsers */
   projects: [
@@ -108,6 +150,7 @@ export default defineConfig({
     use: { ...devices['Desktop Chrome'] ,
       deviceScaleFactor:undefined,
       viewport: null,
+      
     
       //headless: false,
     launchOptions:{
@@ -159,6 +202,9 @@ export default defineConfig({
     //   name: 'Google Chrome',
     //   use: { ...devices['Desktop Chrome'], channel: 'chrome' },
     // },
+
+    
+    
   ],
 
   /* Run your local dev server before starting the tests */
