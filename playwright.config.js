@@ -2,7 +2,7 @@
 import { chromium, defineConfig, devices } from '@playwright/test';
 //import globalSetup from './tests/globalsetup';
 import dotenv from 'dotenv';
-import globalsetup from './globalsetup';
+//import globalsetup from './globalsetup';
 
 //import {defineConfig } from '@cucumber/cucumber';
 
@@ -58,7 +58,7 @@ export default defineConfig({
   //globalSetup:'./globalsetup',
 
  // globalSetup:'./pages/globalsetup.js',
- globalSetup: "./globalsetup.js",
+ //globalSetup: "./globalsetup.js",
 
   testDir: './tests',
 
