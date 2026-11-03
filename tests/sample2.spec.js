@@ -1,7 +1,49 @@
 
 
 import { base } from '@faker-js/faker';
-import { test, expect } from '@playwright/test';
+import { test, expect,request,chromium } from '@playwright/test';
+
+
+
+
+test("login",async () =>{
+
+
+
+    const browser = await chromium.launch({ headless: false });
+    const page = await browser.newPage();
+
+    await page.goto('https://facebook.com');
+
+    const elements = await page.locator("a").allTextContents()
+
+    console.log('Number of links:', elements);
+
+
+
+    await browser.close();
+})
+
+
+test("Login Test", async ({ page }) => {
+  await test.step("Open SauceDemo", async () => {
+    await page.goto("https://www.saucedemo.com/");
+  });
+
+  await test.step("Login with valid credentials", async () => {
+    await page.getByPlaceholder("Username").fill("standard_user");
+    await page.getByPlaceholder("Password").fill("secret_sauce");
+    await page.getByRole("button", { name: "Login" }).click();
+  });
+
+  await test.step("Verify successful login", async () => {
+    await expect(page).toHaveURL(/\/inventory\.html$/);
+    await expect(page.getByText("Products", { exact: true })).toBeVisible();
+  });
+});
+
+
+
 
 test('Login into Facebook', async ({ page }) => {
   // Navigate to Facebook
@@ -9,6 +51,14 @@ test('Login into Facebook', async ({ page }) => {
   
   // Wait for page to load
   await page.waitForLoadState('networkidle');
+
+
+
+  
+
+
+
+
 
   // Fill in email/phone field
   const emailInput = page.locator('input[id="email"]');
@@ -76,3 +126,23 @@ test('Add product to cart on Sauce Demo', async ({ page }) => {
 
 
 
+
+
+
+//const { test, expect } = require('@playwright/test');
+
+test('Login Test 1', async ({ page }) => {
+  console.log('Login Test');
+});
+
+test('Home Test', async ({ page }) => {
+  console.log('Home Test');
+});
+
+test('Profile Test', async ({ page }) => {
+  console.log('Profile Test');
+});
+
+test('Logout Test', async ({ page }) => {
+  console.log('Logout Test');
+});

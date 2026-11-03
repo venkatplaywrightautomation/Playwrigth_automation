@@ -1,0 +1,133 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: API.spec.js >> Reusable functions used
+- Location: tests\API.spec.js:141:6
+
+# Error details
+
+```
+ReferenceError: Cannot access 'apiUsers' before initialization
+```
+
+# Test source
+
+```ts
+  44  | 
+  45  |     const response = await apicontext.post('https://reqres.in/api/login', {
+  46  |         data: {
+  47  | 
+  48  |             email: "eve.holt@reqres.in",
+  49  |             password: "cityslicka"
+  50  | 
+  51  |         }
+  52  |     })
+  53  | 
+  54  |     expect(response.status()).toBe(200);
+  55  | 
+  56  |     const responseBody = await response.json();
+  57  |     expect(responseBody).toHaveProperty('token');
+  58  |   //  console.log("Body" + responseBody);
+  59  |   //  console.log("Token+: " + responseBody.token);
+  60  | 
+  61  | 
+  62  |     const token= responseBody.token
+  63  | 
+  64  |   console.log("Token+: " + responseBody.token);
+  65  | 
+  66  |   console.log("##############")
+  67  | 
+  68  |   
+  69  | 
+  70  | })
+  71  | 
+  72  | 
+  73  | 
+  74  | test("Token",async ()=>{
+  75  | 
+  76  | let token="QpwL5tke4Pnpja7X4"
+  77  | 
+  78  | 
+  79  |     const apicontext = await request.newContext({
+  80  |         extraHTTPHeaders: {
+  81  |             "x-api-key": "free_user_3G7TebN7wh9gPjhgrmGw57IWyeV"
+  82  |         }
+  83  | 
+  84  | 
+  85  | 
+  86  |     });
+  87  |     const respose= await apicontext.get("https://reqres.in/api/users",{
+  88  | 
+  89  | 
+  90  |     Headers:{
+  91  |         Authorization: `Bearer ${token}`
+  92  |     } 
+  93  |   })
+  94  |   const body=await respose.json()
+  95  | 
+  96  |   console.log(body)
+  97  | })
+  98  | 
+  99  | 
+  100 | test.only('API chaining', async ({ request }) => {
+  101 | 
+  102 |     // 1. Create
+  103 |     const createResponse = await request.post('https://reqres.in/api/users', {
+  104 |         data: {
+  105 |             name: 'Venkat',
+  106 |             job: 'Tester'
+  107 |         }
+  108 |     });
+  109 | 
+  110 |     expect(createResponse.status()).toBe(201);
+  111 | 
+  112 |     const createdUser = await createResponse.json();
+  113 | 
+  114 |     const userId = createdUser.id;
+  115 | 
+  116 |     console.log('Created ID:', userId);
+  117 | 
+  118 |     // 2. Get
+  119 |     const getResponse = await request.get(`https://reqres.in/api/users/${userId}`);
+  120 | 
+  121 |     console.log(await getResponse.json());
+  122 | 
+  123 |     // 3. Update
+  124 |     const updateResponse = await request.put(`https://reqres.in/api/users/${userId}`, {
+  125 |         data: {
+  126 |             name: 'Venkat Updated',
+  127 |             job: 'Senior Tester'
+  128 |         }
+  129 |     });
+  130 | 
+  131 |     expect(updateResponse.status()).toBe(200);
+  132 | 
+  133 |     // // 4. Delete
+  134 |     // const deleteResponse = await request.delete(`https://reqres.in/api/users/${userId}`);
+  135 | 
+  136 |     // expect(deleteResponse.status()).toBe(204);
+  137 | });
+  138 | 
+  139 | 
+  140 | 
+  141 | test.only("Reusable functions used",async ({request}) =>{
+  142 | 
+  143 | 
+> 144 |     const apiUsers=new apiUsers(request)
+      |                    ^ ReferenceError: Cannot access 'apiUsers' before initialization
+  145 | 
+  146 | 
+  147 |     const response= await apiUsers.createdUser("venkat","QA")
+  148 |     expect(response.status()).toBe(201);
+  149 | 
+  150 |     const body = await response.json();
+  151 | 
+  152 |     expect(body.name).toBe('Venkat');
+  153 | 
+  154 | })
+```

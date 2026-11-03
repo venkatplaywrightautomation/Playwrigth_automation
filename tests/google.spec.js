@@ -8,6 +8,7 @@ const { test } = require('@playwright/test')
 
 test('google test', async ({ page }) => {
     await page.goto('https://www.google.com/');
+    
     await page.locator('textarea[name="q"]').fill('playwright');
 
     await page.locator('textarea[name="q"]').press('Enter');

@@ -1,0 +1,105 @@
+Cless count:6
+Rows:12267mumbai central - ahmedabad ac duronto expDurontoM,T,W,T,F,S,S23:2505:55
+Col text:mumbai central - ahmedabad ac duronto exp
+Train Numbers:12267
+train names:mumbai central - ahmedabad ac duronto exp
+Rows:12268ahmedabad - mumbai cent ac duronto expDurontoM,T,W,T,F,S,S23:4006:00
+Col text:Duronto
+Train Numbers:12267
+train names:mumbai central - ahmedabad ac duronto exp
+Rows:22201kolkata sealdah - puri duronto expressDurontoM,W,F20:0004:00
+Col text:M,T,W,T,F,S,S
+Train Numbers:12267
+train names:mumbai central - ahmedabad ac duronto exp
+Rows:22204secunderabad - visakhapatnam ac duronto expressDurontoM,W,S20:1506:35
+Col text:23:25
+Train Numbers:12267
+train names:mumbai central - ahmedabad ac duronto exp
+Rows:22206madurai - chennai central ac duronto expressDurontoTUE,THU22:4007:20
+Col text:05:55
+Train Numbers:12267
+train names:mumbai central - ahmedabad ac duronto exp
+Rows:12426jammu tawi - new delhi rajdhani expressRajdhaniM,T,W,T,F,S,S19:4005:05
+Col text:12268
+Train Numbers:12267
+train names:mumbai central - ahmedabad ac duronto exp
+Rows:12430new delhi - lucknow ac sf expressRajdhaniM,T,F,S20:5006:40
+Col text:ahmedabad - mumbai cent ac duronto exp
+Train Numbers:12267
+train names:mumbai central - ahmedabad ac duronto exp
+Rows:12437secunderabad - hazrat nizamuddin rajdhani expressRajdhaniWED12:4510:25
+Col text:Duronto
+Train Numbers:12267
+train names:mumbai central - ahmedabad ac duronto exp
+Rows:12951mumbai central - new delhi rajdhani expressRajdhaniM,T,W,T,F,S,S16:3508:35
+Col text:M,T,W,T,F,S,S
+Train Numbers:12267
+train names:mumbai central - ahmedabad ac duronto exp
+Rows:12953mumbai cent - hazrat nizamuddin august kranti raj expRajdhaniM,T,W,T,F,S,S17:4010:55
+Col text:23:40
+Train Numbers:12267
+train names:mumbai central - ahmedabad ac duronto exp
+Rows:12019howrah - ranchi shatabdi expressShatabdiM,T,W,T,F,S06:0513:15
+Col text:06:00
+Train Numbers:12267
+train names:mumbai central - ahmedabad ac duronto exp
+Rows:12038ludhiana - new delhi shatabdi expressShatabdiT,W,T,F,S16:4022:10
+Col text:22201
+Train Numbers:12267
+train names:mumbai central - ahmedabad ac duronto exp
+Rows:12048firozpur - new delhi shatabdi expressShatabdiM,S04:0021:10
+Col text:kolkata sealdah - puri duronto express
+Train Numbers:12267
+train names:mumbai central - ahmedabad ac duronto exp
+Rows:12049agra cantt - delhi h nizamuddin gatimaan expressShatabdiM,T,W,T,S,S17:5019:30
+Col text:Duronto
+Train Numbers:12267
+train names:mumbai central - ahmedabad ac duronto exp
+Rows:12050delhi h nizamuddin - agra cantt gatimaan expressShatabdiM,T,W,T,S,S08:1009:50
+Col text:M,W,F
+Train Numbers:12267
+train names:mumbai central - ahmedabad ac duronto exp
+Rows:11077pune - jammu tawi jhelum expressMAIL EXPRESSM,T,W,T,F,S,S17:2010:10
+Col text:20:00
+Train Numbers:12267
+train names:mumbai central - ahmedabad ac duronto exp
+Rows:12138firozpur cantt - mumbai cst punjab mail sf expSUPERFASTM,T,W,T,F,S,S21:4007:35
+Col text:04:00
+Train Numbers:12267
+train names:mumbai central - ahmedabad ac duronto exp
+Rows:12295bangalore city - danapur sanghamitra sf expSUPERFASTM,T,W,T,F,S,S09:0009:20
+Col text:22204
+Train Numbers:12267
+train names:mumbai central - ahmedabad ac duronto exp
+Rows:12307howrah - jodhpur sf expressSUPERFASTM,T,W,T,F,S,S23:3008:30
+Col text:secunderabad - visakhapatnam ac duronto express
+Train Numbers:12267
+train names:mumbai central - ahmedabad ac duronto exp
+Rows:12424new delhi - dibrugarh town rajdhani expressRAJDHANIM,T,W,T,F,S,S13:5507:00
+Col text:Duronto
+Train Numbers:12267
+train names:mumbai central - ahmedabad ac duronto exp
+Rows:12506delhi anand vihar - guwahati north east expressSUPERFASTM,T,W,T,F,S,S06:4516:50
+Col text:M,W,S
+Train Numbers:12267
+train names:mumbai central - ahmedabad ac duronto exp
+Rows:12801puri - new delhi purushottam sf expressSUPERFASTM,T,W,T,F,S,S21:4504:50
+Col text:20:15
+Train Numbers:12267
+train names:mumbai central - ahmedabad ac duronto exp
+Rows:12802new delhi - puri purushottam sf expressSUPERFASTM,T,W,T,F,S,S22:1505:25
+Col text:06:35
+Train Numbers:12267
+train names:mumbai central - ahmedabad ac duronto exp
+Rows:12833ahmedabad - howrah sf expressSUPERFASTM,T,W,T,F,S,S00:1513:30
+Col text:22206
+Train Numbers:12267
+train names:mumbai central - ahmedabad ac duronto exp
+Rows:12859mumbai cst - howrah gitanjali sf expressSUPERFASTM,T,W,T,F,S,S06:0012:30
+Col text:madurai - chennai central ac duronto express
+Train Numbers:12267
+train names:mumbai central - ahmedabad ac duronto exp
+Rows:12864yesvantpur - howrah sf expressSUPERFASTM,T,W,T,F,S,S19:3506:25
+Col text:Duronto
+Train Numbers:12267
+train names:mumbai central - ahmedabad ac duronto exp

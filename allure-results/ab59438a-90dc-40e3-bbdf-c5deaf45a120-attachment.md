@@ -1,0 +1,3558 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Sample4.spec.js >> Flipkart search pen
+- Location: tests\Sample4.spec.js:117:6
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: locator.click: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for locator('//span[normalize-space()=\'Next\']')
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation "Shortcuts menu" [ref=e3]:
+      - heading "Skip to" [level=2] [ref=e4]
+      - list "Skip to" [ref=e5]:
+        - listitem [ref=e6]:
+          - link "main content" [ref=e7] [cursor=pointer]:
+            - /url: "#skippedLink"
+            - text: Main content
+        - listitem [ref=e8]:
+          - link "Results" [ref=e9] [cursor=pointer]:
+            - /url: .s-asin a:has(h2)
+        - listitem [ref=e10]:
+          - link "Filters" [ref=e11] [cursor=pointer]:
+            - /url: "#s-refinements > div.a-section > div:first-child"
+      - separator [ref=e12]
+      - heading "Keyboard shortcuts" [level=2] [ref=e13]
+      - list "Keyboard shortcuts" [ref=e14]:
+        - listitem [ref=e15]:
+          - link "Search, alt, forward slash" [ref=e16] [cursor=pointer]:
+            - /url: javascript:void(0)
+            - generic [ref=e17]:
+              - generic [ref=e18]: Search
+              - generic [ref=e19]:
+                - generic [ref=e20]: alt
+                - generic [ref=e21]: +
+                - generic [ref=e22]: /
+        - listitem [ref=e23]:
+          - link "Cart, shift, alt, c" [ref=e24] [cursor=pointer]:
+            - /url: javascript:void(0)
+            - generic [ref=e25]:
+              - generic [ref=e26]: Cart
+              - generic [ref=e27]:
+                - generic [ref=e28]: shift
+                - generic [ref=e29]: +
+                - generic [ref=e30]: alt
+                - generic [ref=e31]: +
+                - generic [ref=e32]: C
+        - listitem [ref=e33]:
+          - link "Home, shift, alt, h" [ref=e34] [cursor=pointer]:
+            - /url: javascript:void(0)
+            - generic [ref=e35]:
+              - generic [ref=e36]: Home
+              - generic [ref=e37]:
+                - generic [ref=e38]: shift
+                - generic [ref=e39]: +
+                - generic [ref=e40]: alt
+                - generic [ref=e41]: +
+                - generic [ref=e42]: H
+        - listitem [ref=e43]:
+          - link "Your orders, shift, alt, o" [ref=e44] [cursor=pointer]:
+            - /url: javascript:void(0)
+            - generic [ref=e45]:
+              - generic [ref=e46]: Orders
+              - generic [ref=e47]:
+                - generic [ref=e48]: shift
+                - generic [ref=e49]: +
+                - generic [ref=e50]: alt
+                - generic [ref=e51]: +
+                - generic [ref=e52]: O
+        - listitem [ref=e53]:
+          - button "Show/hide shortcuts, shift, alt, z" [ref=e54] [cursor=pointer]:
+            - generic [ref=e55]:
+              - generic [ref=e56]: Show/Hide shortcuts
+              - generic [ref=e57]:
+                - generic [ref=e58]: shift
+                - generic [ref=e59]: +
+                - generic [ref=e60]: alt
+                - generic [ref=e61]: +
+                - generic [ref=e62]: Z
+      - generic [ref=e68]: To move between items, use your keyboard's up or down arrows.
+    - banner [ref=e69]:
+      - navigation "Primary" [ref=e70]:
+        - generic [ref=e71]:
+          - generic [ref=e72]:
+            - link "Amazon" [ref=e74] [cursor=pointer]:
+              - /url: /ref=nav_logo
+            - button "Deliver to India" [ref=e77] [cursor=pointer]:
+              - generic [ref=e79]:
+                - generic [ref=e80]: Deliver to
+                - generic [ref=e81]: India
+          - search [ref=e84]:
+            - generic [ref=e87]:
+              - generic [ref=e89]: All
+              - combobox "Select the department you want to search in" [ref=e91] [cursor=pointer]:
+                - option "All Departments" [selected]
+                - option "Arts & Crafts"
+                - option "Automotive"
+                - option "Baby"
+                - option "Beauty & Personal Care"
+                - option "Books"
+                - option "Boys' Fashion"
+                - option "Computers"
+                - option "Deals"
+                - option "Digital Music"
+                - option "Electronics"
+                - option "Girls' Fashion"
+                - option "Health & Household"
+                - option "Home & Kitchen"
+                - option "Industrial & Scientific"
+                - option "Kindle Store"
+                - option "Luggage"
+                - option "Men's Fashion"
+                - option "Movies & TV"
+                - option "Music, CDs & Vinyl"
+                - option "Pet Supplies"
+                - option "Prime Video"
+                - option "Software"
+                - option "Sports & Outdoors"
+                - option "Tools & Home Improvement"
+                - option "Toys & Games"
+                - option "Video Games"
+                - option "Women's Fashion"
+            - searchbox "Search Amazon" [ref=e94]: pen
+            - generic "Go" [ref=e97] [cursor=pointer]:
+              - button "Go" [ref=e98]
+          - generic [ref=e100]:
+            - generic [ref=e101]:
+              - link "Choose a language for shopping in Amazon United States. The current selection is English (EN)." [ref=e102] [cursor=pointer]:
+                - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=topnav_lang_ais
+                - generic [ref=e105]:
+                  - img "United States" [ref=e106]
+                  - generic [ref=e107]: EN
+              - button "Expand to Change Language or Country" [ref=e108] [cursor=pointer]
+            - generic [ref=e109]:
+              - link "Hello, sign in Account & Lists" [ref=e110] [cursor=pointer]:
+                - /url: https://www.amazon.com/ap/signin?openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fs%3Fk%3Dpen%26ref%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0
+                - generic [ref=e112]: Hello, sign in
+                - generic [ref=e113]: Account & Lists
+              - button "Expand Account and Lists" [ref=e114] [cursor=pointer]
+            - link "Returns & Orders" [ref=e115] [cursor=pointer]:
+              - /url: /gp/css/order-history?ref_=nav_orders_first
+              - generic [ref=e116]: Returns
+              - generic [ref=e117]: "& Orders"
+            - link "0 items in cart" [ref=e118] [cursor=pointer]:
+              - /url: /gp/cart/view.html?ref_=nav_cart
+              - generic [ref=e120]: "0"
+              - generic [ref=e123]: Cart
+        - alertdialog "International Shopping Transition Alert" [ref=e124]:
+          - generic [ref=e125]:
+            - generic [ref=e129]:
+              - text: We're showing you items that ship to
+              - strong [ref=e130]: India
+              - text: . To see items that ship to a different country, change your delivery address.
+            - generic [ref=e131]:
+              - generic [ref=e133] [cursor=pointer]:
+                - button "Dismiss" [ref=e134]
+                - generic [ref=e135]: Dismiss
+              - generic [ref=e137] [cursor=pointer]:
+                - button "Change Address" [ref=e138]
+                - generic [ref=e139]: Change Address
+        - generic [ref=e140]:
+          - button "Open All Categories Menu" [ref=e142] [cursor=pointer]:
+            - generic [ref=e144]: All
+          - list [ref=e148]:
+            - listitem [ref=e149]:
+              - link "Prime Video" [ref=e151] [cursor=pointer]:
+                - /url: /Amazon-Video/b/?ie=UTF8&node=2858778011&ref_=nav_cs_prime_video
+            - listitem [ref=e152]:
+              - link "Coupons" [ref=e154] [cursor=pointer]:
+                - /url: /coupons?ref_=nav_cs_coupons
+            - listitem [ref=e155]:
+              - link "Customer Service" [ref=e157] [cursor=pointer]:
+                - /url: /gp/help/customer/display.html?nodeId=508510&ref_=nav_cs_customerservice
+            - listitem [ref=e158]:
+              - link "Today's Deals" [ref=e160] [cursor=pointer]:
+                - /url: /gp/goldbox?ref_=nav_cs_gb
+            - listitem [ref=e161]:
+              - link "Registry" [ref=e163] [cursor=pointer]:
+                - /url: /gp/browse.html?node=16115931011&ref_=nav_cs_registry
+            - listitem [ref=e164]:
+              - link "Gift Cards" [ref=e166] [cursor=pointer]:
+                - /url: /gift-cards/b/?ie=UTF8&node=2238192011&ref_=nav_cs_gc
+            - listitem [ref=e167]:
+              - link "Sell" [ref=e169] [cursor=pointer]:
+                - /url: /b/?_encoding=UTF8&ld=AZUSSOA-sell&node=12766669011&ref_=nav_cs_sell
+            - link "Click to call our Disability Customer Support line, or reach us directly at 1-888-283-1678" [ref=e170] [cursor=pointer]:
+              - /url: /gp/help/customer/accessibility
+              - text: Disability Customer Support
+        - dialog [ref=e173]
+    - generic [ref=e175]:
+      - heading "145-192 of over 100,000 results for \"pen\" Featured" [level=1] [ref=e178]:
+        - generic [ref=e179]:
+          - heading "145-192 of over 100,000 results for \"pen\"" [level=2] [ref=e182]
+          - generic [ref=e187]:
+            - generic [ref=e188]: "Sort by:"
+            - combobox "Sort by:" [ref=e189]:
+              - option "Featured" [selected]
+              - 'option "Price: Low to High"'
+              - 'option "Price: High to Low"'
+              - option "Avg. Customer Review"
+              - option "Newest Arrivals"
+              - option "Best Sellers"
+            - generic [ref=e192] [cursor=pointer]: Sort by:Featured
+      - generic [ref=e194]:
+        - generic [ref=e196]:
+          - generic [ref=e198]:
+            - generic [ref=e200]:
+              - generic [ref=e203]:
+                - heading "Results" [level=2] [ref=e204]
+                - generic [ref=e205]: Check each product page for other buying options.
+              - generic:
+                - list:
+                  - listitem [ref=e206]:
+                    - generic [ref=e211]:
+                      - link [ref=e214] [cursor=pointer]:
+                        - /url: /Parker-Monochrome-Ballpoint-Finish-Medium/dp/B0B2SJDDFM/ref=sr_1_145?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-145&xpid=1UyUulPOlf7Sc
+                        - img [ref=e216]
+                      - generic [ref=e217]:
+                        - group "colors available" [ref=e219]:
+                          - list [ref=e220]:
+                            - generic [ref=e221]:
+                              - listitem:
+                                - link "Blue":
+                                  - /url: /Parker-Monochrome-Ballpoint-Finish-Medium/dp/B0B2SJDDFM/ref=cs_sr_dp_loc_1?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-145&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e224]:
+                              - listitem:
+                                - link "Burgundy":
+                                  - /url: /Parker-Monochrome-Ballpoint-Finish-Medium/dp/B0C6FJ77HM/ref=cs_sr_dp_loc_2?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-145&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e227]:
+                              - listitem:
+                                - link "Champagne":
+                                  - /url: /Parker-Monochrome-Ballpoint-Finish-Medium/dp/B0B2SFNWR3/ref=cs_sr_dp_loc_3?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-145&xpid=1UyUulPOlf7Sc
+                        - link "Parker IM Monochrome Ballpoint Pen Blue Ink Blue Finish and Trims Medium Point Gift Box" [ref=e231] [cursor=pointer]:
+                          - /url: /Parker-Monochrome-Ballpoint-Finish-Medium/dp/B0B2SJDDFM/ref=sr_1_145?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-145&xpid=1UyUulPOlf7Sc
+                          - heading "Parker IM Monochrome Ballpoint Pen Blue Ink Blue Finish and Trims Medium Point Gift Box" [level=2] [ref=e232]
+                        - generic [ref=e233]:
+                          - generic [ref=e234]:
+                            - text: "4.7"
+                            - button "4.7 out of 5 stars, rating details" [ref=e236] [cursor=pointer]:
+                              - generic [ref=e238]: 4.7 out of 5 stars
+                            - link "1,202 ratings" [ref=e242] [cursor=pointer]:
+                              - /url: /Parker-Monochrome-Ballpoint-Finish-Medium/dp/B0B2SJDDFM/ref=sr_1_145?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-145&xpid=1UyUulPOlf7Sc#customerReviews
+                              - text: (1.2K)
+                          - generic [ref=e243]: 50+ bought in past month
+                        - generic [ref=e244]:
+                          - generic [ref=e246]:
+                            - generic [ref=e247]: Price, product page
+                            - 'link "INR 2,762.82 Typical: INR 3,238.65 Typical: INR 3,238.65" [ref=e248] [cursor=pointer]':
+                              - /url: /Parker-Monochrome-Ballpoint-Finish-Medium/dp/B0B2SJDDFM/ref=sr_1_145?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-145&xpid=1UyUulPOlf7Sc
+                              - generic [ref=e249]:
+                                - generic [ref=e250]: INR 2,762.82
+                                - generic [ref=e251]:
+                                  - text: INR
+                                  - generic [ref=e252]:
+                                    - text: 2,762
+                                    - generic [ref=e253]: .
+                                  - text: "82"
+                              - generic [ref=e254]: "Typical: INR 3,238.65"
+                              - generic [ref=e255]:
+                                - text: "Typical:"
+                                - generic [ref=e256]:
+                                  - generic [ref=e257]: INR 3,238.65
+                                  - text: INR3,238.65
+                          - generic [ref=e258]:
+                            - generic [ref=e259]: 40%
+                            - text: off promotion available
+                        - generic [ref=e260]:
+                          - generic [ref=e266]: INR 893.71 delivery Wed, Nov 4
+                          - generic [ref=e267]: Ships to India
+                        - generic [ref=e281] [cursor=pointer]:
+                          - button "Add to cart" [ref=e282]
+                          - generic [ref=e283]: Add to cart
+                        - generic [ref=e285]:
+                          - text: More Buying Choices
+                          - text: INR 2,754.28
+                          - link "(4 new offers)" [ref=e287] [cursor=pointer]:
+                            - /url: /gp/offer-listing/B0B2SJDDFM/ref=sr_1_145_olp?keywords=pen&dib_tag=se&xpid=1UyUulPOlf7Sc&dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&qid=1792394334&sr=8-145
+                  - listitem [ref=e288]:
+                    - generic [ref=e293]:
+                      - link [ref=e296] [cursor=pointer]:
+                        - /url: /Paper-Mate-Retractable-Ballpoint-1951396/dp/B01EB6E3EC/ref=sr_1_146?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-146&xpid=1UyUulPOlf7Sc
+                        - img [ref=e298]
+                      - generic [ref=e299]:
+                        - link "Paper Mate InkJoy 100RT Retractable Ballpoint Pens, Medium Point (1.0mm), 20 Count - Teacher Essentials, Colorful Office Supplies, Note-Taking, Back to School" [ref=e301] [cursor=pointer]:
+                          - /url: /Paper-Mate-Retractable-Ballpoint-1951396/dp/B01EB6E3EC/ref=sr_1_146?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-146&xpid=1UyUulPOlf7Sc
+                          - heading "Paper Mate InkJoy 100RT Retractable Ballpoint Pens, Medium Point (1.0mm), 20 Count - Teacher Essentials, Colorful Office Supplies, Note-Taking, Back to School" [level=2] [ref=e302]
+                        - generic [ref=e303]:
+                          - generic [ref=e304]:
+                            - text: "4.7"
+                            - button "4.7 out of 5 stars, rating details" [ref=e306] [cursor=pointer]:
+                              - generic [ref=e308]: 4.7 out of 5 stars
+                            - link "15,216 ratings" [ref=e312] [cursor=pointer]:
+                              - /url: /Paper-Mate-Retractable-Ballpoint-1951396/dp/B01EB6E3EC/ref=sr_1_146?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-146&xpid=1UyUulPOlf7Sc#customerReviews
+                              - text: (15.2K)
+                          - generic [ref=e313]: 3K+ bought in past month
+                        - generic [ref=e316]:
+                          - generic [ref=e317]: Price, product page
+                          - 'link "INR 948.80 ( INR 47.49 /count) List: INR 1,186.24 List: INR 1,186.24" [ref=e318] [cursor=pointer]':
+                            - /url: /Paper-Mate-Retractable-Ballpoint-1951396/dp/B01EB6E3EC/ref=sr_1_146?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-146&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e319]:
+                              - generic [ref=e320]: INR 948.80
+                              - generic [ref=e321]:
+                                - text: INR
+                                - generic [ref=e322]:
+                                  - text: "948"
+                                  - generic [ref=e323]: .
+                                - text: "80"
+                            - generic [ref=e324]:
+                              - text: (
+                              - generic [ref=e325]:
+                                - generic [ref=e326]: INR 47.49
+                                - text: INR47.49
+                              - text: /count)
+                            - generic [ref=e327]: "List: INR 1,186.24"
+                            - generic [ref=e328]:
+                              - text: "List:"
+                              - generic [ref=e329]:
+                                - generic [ref=e330]: INR 1,186.24
+                                - text: INR1,186.24
+                        - generic [ref=e331]:
+                          - generic [ref=e337]: INR 935.50 delivery Tue, Nov 3
+                          - generic [ref=e338]: Ships to India
+                        - generic [ref=e352] [cursor=pointer]:
+                          - button "Add to cart" [ref=e353]
+                          - generic [ref=e354]: Add to cart
+                        - generic [ref=e356]:
+                          - text: More Buying Choices
+                          - text: INR 834.83
+                          - link "(4 new offers)" [ref=e358] [cursor=pointer]:
+                            - /url: /gp/offer-listing/B01EB6E3EC/ref=sr_1_146_olp?keywords=pen&dib_tag=se&xpid=1UyUulPOlf7Sc&dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&qid=1792394334&sr=8-146
+                  - listitem [ref=e359]:
+                    - generic [ref=e364]:
+                      - link [ref=e367] [cursor=pointer]:
+                        - /url: /PILOT-Acroball-PureWhite-Refillable-Retractable/dp/B084HG63QH/ref=sr_1_147?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-147&xpid=1UyUulPOlf7Sc
+                        - img [ref=e369]
+                      - generic [ref=e370]:
+                        - group "colors available" [ref=e372]:
+                          - list [ref=e373]:
+                            - generic [ref=e374]:
+                              - listitem:
+                                - link "Assorted Accents":
+                                  - /url: /PILOT-Acroball-PureWhite-Refillable-Retractable/dp/B084HG63QH/ref=cs_sr_dp_loc_1?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-147&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e377]:
+                              - listitem:
+                                - link "Blue Accents":
+                                  - /url: /PILOT-Acroball-PureWhite-Refillable-Retractable/dp/B009ZMI73G/ref=cs_sr_dp_loc_2?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-147&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e380]:
+                              - listitem:
+                                - link "Silver Accents":
+                                  - /url: /PILOT-Acroball-PureWhite-Refillable-Retractable/dp/B084HG6D6F/ref=cs_sr_dp_loc_3?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-147&xpid=1UyUulPOlf7Sc
+                        - generic [ref=e383]:
+                          - link "PILOT Acroball PureWhite Advanced Ink Ball Point Pens, 0.7mm, 14-Pack" [ref=e384] [cursor=pointer]:
+                            - /url: /PILOT-Acroball-PureWhite-Refillable-Retractable/dp/B084HG63QH/ref=sr_1_147?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-147&xpid=1UyUulPOlf7Sc
+                            - heading "PILOT Acroball PureWhite Advanced Ink Ball Point Pens, 0.7mm, 14-Pack" [level=2] [ref=e385]
+                          - generic "Smooth writing daily, black ink pens for paper, click pens, refillable, assorted color accents, fine point" [ref=e387]
+                        - generic [ref=e388]:
+                          - generic [ref=e389]:
+                            - text: "4.8"
+                            - button "4.8 out of 5 stars, rating details" [ref=e391] [cursor=pointer]:
+                              - generic [ref=e393]: 4.8 out of 5 stars
+                            - link "5,370 ratings" [ref=e397] [cursor=pointer]:
+                              - /url: /PILOT-Acroball-PureWhite-Refillable-Retractable/dp/B084HG63QH/ref=sr_1_147?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-147&xpid=1UyUulPOlf7Sc#customerReviews
+                              - text: (5.3K)
+                          - generic [ref=e398]: 300+ bought in past month
+                        - generic [ref=e401]:
+                          - generic [ref=e402]: Price, product page
+                          - 'link "INR 1,807.37 ( INR 129.17 /count) Typical: INR 1,993.53 Typical: INR 1,993.53" [ref=e403] [cursor=pointer]':
+                            - /url: /PILOT-Acroball-PureWhite-Refillable-Retractable/dp/B084HG63QH/ref=sr_1_147?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-147&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e404]:
+                              - generic [ref=e405]: INR 1,807.37
+                              - generic [ref=e406]:
+                                - text: INR
+                                - generic [ref=e407]:
+                                  - text: 1,807
+                                  - generic [ref=e408]: .
+                                - text: "37"
+                            - generic [ref=e409]:
+                              - text: (
+                              - generic [ref=e410]:
+                                - generic [ref=e411]: INR 129.17
+                                - text: INR129.17
+                              - text: /count)
+                            - generic [ref=e412]: "Typical: INR 1,993.53"
+                            - generic [ref=e413]:
+                              - text: "Typical:"
+                              - generic [ref=e414]:
+                                - generic [ref=e415]: INR 1,993.53
+                                - text: INR1,993.53
+                        - generic [ref=e416]:
+                          - generic [ref=e422]: INR 926.96 delivery Tue, Nov 3
+                          - generic [ref=e423]: Ships to India
+                        - generic [ref=e437] [cursor=pointer]:
+                          - button "Add to cart" [ref=e438]
+                          - generic [ref=e439]: Add to cart
+                        - generic [ref=e441]:
+                          - text: More Buying Choices
+                          - text: INR 1,447.42
+                          - link "(2 used & new offers)" [ref=e443] [cursor=pointer]:
+                            - /url: /gp/offer-listing/B084HG63QH/ref=sr_1_147_olp?keywords=pen&dib_tag=se&xpid=1UyUulPOlf7Sc&dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&qid=1792394334&sr=8-147
+                  - listitem [ref=e444]:
+                    - generic [ref=e449]:
+                      - link [ref=e452] [cursor=pointer]:
+                        - /url: /Mr-Retractable-Morandi-Aesthetic-Japanese/dp/B0CDY669MT/ref=sr_1_148?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-148&xpid=1UyUulPOlf7Sc
+                        - img [ref=e454]
+                      - generic [ref=e455]:
+                        - group "colors available" [ref=e457]:
+                          - list
+                          - link "+5 other colors/patterns" [ref=e459] [cursor=pointer]:
+                            - /url: /Mr-Retractable-Morandi-Aesthetic-Japanese/dp/B0CDY669MT/ref=cs_sr_dp_loc?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-148&xpid=1UyUulPOlf7Sc
+                        - generic [ref=e460]:
+                          - link "Mr. Pen- Retractable Gel Pens, 12 Pack, Morandi and Vintage Barrels" [ref=e461] [cursor=pointer]:
+                            - /url: /Mr-Retractable-Morandi-Aesthetic-Japanese/dp/B0CDY669MT/ref=sr_1_148?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-148&xpid=1UyUulPOlf7Sc
+                            - heading "Mr. Pen- Retractable Gel Pens, 12 Pack, Morandi and Vintage Barrels" [level=2] [ref=e462]
+                          - generic "Fast Dry, Black Gel Pens Fine Point 0.5mm, Aesthetic Pens for Journaling" [ref=e464]
+                        - generic [ref=e465]:
+                          - generic [ref=e466]:
+                            - text: "4.6"
+                            - button "4.6 out of 5 stars, rating details" [ref=e468] [cursor=pointer]:
+                              - generic [ref=e470]: 4.6 out of 5 stars
+                            - link "3,721 ratings" [ref=e474] [cursor=pointer]:
+                              - /url: /Mr-Retractable-Morandi-Aesthetic-Japanese/dp/B0CDY669MT/ref=sr_1_148?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-148&xpid=1UyUulPOlf7Sc#customerReviews
+                              - text: (3.7K)
+                          - generic [ref=e475]: 500+ bought in past month
+                        - link "See options" [ref=e483] [cursor=pointer]:
+                          - /url: /Mr-Retractable-Morandi-Aesthetic-Japanese/dp/B0CDY669MT/ref=sr_1_148_so_WRITING_INSTRUMENT?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-148&xpid=1UyUulPOlf7Sc
+                  - listitem [ref=e484]:
+                    - generic [ref=e489]:
+                      - link [ref=e492] [cursor=pointer]:
+                        - /url: /Jetstream-Multifunction-Ballpoint-Mechanical-MSXE4-5500-05D-9/dp/B0FHCWTJGY/ref=sr_1_149?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-149&xpid=1UyUulPOlf7Sc
+                        - img [ref=e494]
+                      - generic [ref=e495]:
+                        - group "colors available" [ref=e497]:
+                          - list [ref=e498]:
+                            - generic [ref=e499]:
+                              - listitem:
+                                - link "Dark Navy":
+                                  - /url: /Jetstream-Multifunction-Ballpoint-Mechanical-MSXE4-5500-05D-9/dp/B0FHCWTJGY/ref=cs_sr_dp_loc_1?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-149&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e502]:
+                              - listitem:
+                                - link "Black":
+                                  - /url: /Jetstream-Multifunction-Ballpoint-Mechanical-MSXE4-5500-05D-9/dp/B0FHDMYG6N/ref=cs_sr_dp_loc_2?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-149&xpid=1UyUulPOlf7Sc
+                        - link "Uni Jetstream Prime 3&1 Multifunction Ballpoint Pen, Equipped with 0.5mm Oil-Based Ink (Black, Red, Blue), 0.5mm Mechanical Pencil, Metal Body, Dark Navy, MSXE4-5500-05D.9" [ref=e506] [cursor=pointer]:
+                          - /url: /Jetstream-Multifunction-Ballpoint-Mechanical-MSXE4-5500-05D-9/dp/B0FHCWTJGY/ref=sr_1_149?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-149&xpid=1UyUulPOlf7Sc
+                          - heading "Uni Jetstream Prime 3&1 Multifunction Ballpoint Pen, Equipped with 0.5mm Oil-Based Ink (Black, Red, Blue), 0.5mm Mechanical Pencil, Metal Body, Dark Navy, MSXE4-5500-05D.9" [level=2] [ref=e507]
+                        - generic [ref=e508]:
+                          - generic [ref=e509]:
+                            - text: "4.8"
+                            - button "4.8 out of 5 stars, rating details" [ref=e511] [cursor=pointer]:
+                              - generic [ref=e513]: 4.8 out of 5 stars
+                            - link "75 ratings" [ref=e517] [cursor=pointer]:
+                              - /url: /Jetstream-Multifunction-Ballpoint-Mechanical-MSXE4-5500-05D-9/dp/B0FHCWTJGY/ref=sr_1_149?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-149&xpid=1UyUulPOlf7Sc#customerReviews
+                              - text: (75)
+                          - generic [ref=e518]: 50+ bought in past month
+                        - link "See options" [ref=e526] [cursor=pointer]:
+                          - /url: /Jetstream-Multifunction-Ballpoint-Mechanical-MSXE4-5500-05D-9/dp/B0FHCWTJGY/ref=sr_1_149_so_WRITING_INSTRUMENT?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-149&xpid=1UyUulPOlf7Sc
+                  - listitem [ref=e527]:
+                    - generic [ref=e532]:
+                      - link [ref=e535] [cursor=pointer]:
+                        - /url: /PARKER-Ballpoint-Matte-Medium-Refill/dp/B08LDMP19M/ref=sr_1_150?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-150&xpid=1UyUulPOlf7Sc
+                        - img [ref=e537]
+                      - generic [ref=e538]:
+                        - link "Parker IM Ballpoint Pen, Matte Black with Black Trim, Medium Point, Blue Ink" [ref=e540] [cursor=pointer]:
+                          - /url: /PARKER-Ballpoint-Matte-Medium-Refill/dp/B08LDMP19M/ref=sr_1_150?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-150&xpid=1UyUulPOlf7Sc
+                          - heading "Parker IM Ballpoint Pen, Matte Black with Black Trim, Medium Point, Blue Ink" [level=2] [ref=e541]
+                        - generic [ref=e542]:
+                          - generic [ref=e543]:
+                            - text: "4.3"
+                            - button "4.3 out of 5 stars, rating details" [ref=e545] [cursor=pointer]:
+                              - generic [ref=e547]: 4.3 out of 5 stars
+                            - link "926 ratings" [ref=e551] [cursor=pointer]:
+                              - /url: /PARKER-Ballpoint-Matte-Medium-Refill/dp/B08LDMP19M/ref=sr_1_150?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-150&xpid=1UyUulPOlf7Sc#customerReviews
+                              - text: (926)
+                          - generic [ref=e552]: 50+ bought in past month
+                        - generic [ref=e555]:
+                          - generic [ref=e556]: Price, product page
+                          - link "INR 2,381.97" [ref=e557] [cursor=pointer]:
+                            - /url: /PARKER-Ballpoint-Matte-Medium-Refill/dp/B08LDMP19M/ref=sr_1_150?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-150&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e558]:
+                              - generic [ref=e559]: INR 2,381.97
+                              - generic [ref=e560]:
+                                - text: INR
+                                - generic [ref=e561]:
+                                  - text: 2,381
+                                  - generic [ref=e562]: .
+                                - text: "97"
+                        - generic [ref=e563]:
+                          - generic [ref=e569]: INR 888.02 delivery Tue, Nov 3
+                          - generic [ref=e570]: Ships to India
+                        - generic [ref=e584] [cursor=pointer]:
+                          - button "Add to cart" [ref=e585]
+                          - generic [ref=e586]: Add to cart
+                        - generic [ref=e588]:
+                          - text: More Buying Choices
+                          - text: INR 2,374.38
+                          - link "(5 used & new offers)" [ref=e590] [cursor=pointer]:
+                            - /url: /gp/offer-listing/B08LDMP19M/ref=sr_1_150_olp?keywords=pen&dib_tag=se&xpid=1UyUulPOlf7Sc&dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&qid=1792394334&sr=8-150
+                  - listitem [ref=e591]:
+                    - generic [ref=e596]:
+                      - link [ref=e599] [cursor=pointer]:
+                        - /url: /Intensity-Clic-Retractable-Roller-Black/dp/B000F2PEY0/ref=sr_1_151?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-151&xpid=1UyUulPOlf7Sc
+                        - img [ref=e601]
+                      - generic [ref=e602]:
+                        - generic [ref=e603]:
+                          - link "BIC Intensity Clic Black Gel Pens, Medium Point, 0.7mm, 12-Count Pack" [ref=e604] [cursor=pointer]:
+                            - /url: /Intensity-Clic-Retractable-Roller-Black/dp/B000F2PEY0/ref=sr_1_151?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-151&xpid=1UyUulPOlf7Sc
+                            - heading "BIC Intensity Clic Black Gel Pens, Medium Point, 0.7mm, 12-Count Pack" [level=2] [ref=e605]
+                          - generic "Retractable Design, Comfortable Grip, Smear Resistant Ink, Quick-Drying Ink, Perfect for School, Office, Or Home Use" [ref=e607]
+                        - generic [ref=e608]:
+                          - generic [ref=e609]:
+                            - text: "4.8"
+                            - button "4.8 out of 5 stars, rating details" [ref=e611] [cursor=pointer]:
+                              - generic [ref=e613]: 4.8 out of 5 stars
+                            - link "501 ratings" [ref=e617] [cursor=pointer]:
+                              - /url: /Intensity-Clic-Retractable-Roller-Black/dp/B000F2PEY0/ref=sr_1_151?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-151&xpid=1UyUulPOlf7Sc#customerReviews
+                              - text: (501)
+                          - generic [ref=e618]: 900+ bought in past month
+                        - generic [ref=e621]:
+                          - generic [ref=e622]: Price, product page
+                          - link "INR 2,225.26 ( INR 185.20 /count)" [ref=e623] [cursor=pointer]:
+                            - /url: /Intensity-Clic-Retractable-Roller-Black/dp/B000F2PEY0/ref=sr_1_151?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-151&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e624]:
+                              - generic [ref=e625]: INR 2,225.26
+                              - generic [ref=e626]:
+                                - text: INR
+                                - generic [ref=e627]:
+                                  - text: 2,225
+                                  - generic [ref=e628]: .
+                                - text: "26"
+                            - generic [ref=e629]:
+                              - text: (
+                              - generic [ref=e630]:
+                                - generic [ref=e631]: INR 185.20
+                                - text: INR185.20
+                              - text: /count)
+                        - generic [ref=e632]:
+                          - generic [ref=e638]: INR 942.15 delivery Oct 28 - Nov 13
+                          - generic [ref=e639]: Ships to India
+                        - generic [ref=e653] [cursor=pointer]:
+                          - button "Add to cart" [ref=e654]
+                          - generic [ref=e655]: Add to cart
+                        - generic [ref=e657]:
+                          - text: More Buying Choices
+                          - text: INR 1,775.08
+                          - link "(4+ used & new offers)" [ref=e659] [cursor=pointer]:
+                            - /url: /gp/offer-listing/B000F2PEY0/ref=sr_1_151_olp?keywords=pen&dib_tag=se&xpid=1UyUulPOlf7Sc&dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&qid=1792394334&sr=8-151
+                  - listitem [ref=e660]:
+                    - generic [ref=e665]:
+                      - link [ref=e668] [cursor=pointer]:
+                        - /url: /MONTBLANC-Montblanc-Solitaire-Blue-Ballpoint/dp/B00ZJIDTL0/ref=sr_1_152?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-152&xpid=1UyUulPOlf7Sc
+                        - img [ref=e670]
+                      - generic [ref=e671]:
+                        - link "Montblanc Meisterstuck Solitaire Blue Hour Midsize Ballpoint Pen" [ref=e673] [cursor=pointer]:
+                          - /url: /MONTBLANC-Montblanc-Solitaire-Blue-Ballpoint/dp/B00ZJIDTL0/ref=sr_1_152?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-152&xpid=1UyUulPOlf7Sc
+                          - heading "Montblanc Meisterstuck Solitaire Blue Hour Midsize Ballpoint Pen" [level=2] [ref=e674]
+                        - generic [ref=e676]:
+                          - text: "4.1"
+                          - button "4.1 out of 5 stars, rating details" [ref=e678] [cursor=pointer]:
+                            - generic [ref=e680]: 4.1 out of 5 stars
+                          - link "33 ratings" [ref=e684] [cursor=pointer]:
+                            - /url: /MONTBLANC-Montblanc-Solitaire-Blue-Ballpoint/dp/B00ZJIDTL0/ref=sr_1_152?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-152&xpid=1UyUulPOlf7Sc#customerReviews
+                            - text: (33)
+                        - generic [ref=e687]:
+                          - generic [ref=e688]: Price, product page
+                          - link "INR 142,367.52" [ref=e689] [cursor=pointer]:
+                            - /url: /MONTBLANC-Montblanc-Solitaire-Blue-Ballpoint/dp/B00ZJIDTL0/ref=sr_1_152?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-152&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e690]:
+                              - generic [ref=e691]: INR 142,367.52
+                              - generic [ref=e692]:
+                                - text: INR
+                                - generic [ref=e693]:
+                                  - text: 142,367
+                                  - generic [ref=e694]: .
+                                - text: "52"
+                        - generic [ref=e695]:
+                          - generic [ref=e701]: INR 6,638.75 delivery Nov 4 - 19
+                          - generic "Only 1 left in stock - order soon." [ref=e703]
+                        - generic [ref=e717] [cursor=pointer]:
+                          - button "Add to cart" [ref=e718]
+                          - generic [ref=e719]: Add to cart
+                        - generic [ref=e721]:
+                          - text: More Buying Choices
+                          - text: INR 141,253.47
+                          - link "(3 new offers)" [ref=e723] [cursor=pointer]:
+                            - /url: /gp/offer-listing/B00ZJIDTL0/ref=sr_1_152_olp?keywords=pen&dib_tag=se&xpid=1UyUulPOlf7Sc&dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&qid=1792394334&sr=8-152
+                  - listitem [ref=e724]:
+                    - generic [ref=e729]:
+                      - link [ref=e732] [cursor=pointer]:
+                        - /url: /Waterman-Expert-Ballpoint-Chrome-Cartridge/dp/B002C2IF1K/ref=sr_1_153?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-153&xpid=1UyUulPOlf7Sc
+                        - img [ref=e734]
+                      - generic [ref=e735]:
+                        - link "Waterman Expert Ballpoint Pen, Gloss Black with Chrome Trim, Medium Tip, Blue Ink, Luxury Pen in Gift Box - Supreme Writing Comfort, Signature Style, Polished, Professional" [ref=e737] [cursor=pointer]:
+                          - /url: /Waterman-Expert-Ballpoint-Chrome-Cartridge/dp/B002C2IF1K/ref=sr_1_153?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-153&xpid=1UyUulPOlf7Sc
+                          - heading "Waterman Expert Ballpoint Pen, Gloss Black with Chrome Trim, Medium Tip, Blue Ink, Luxury Pen in Gift Box - Supreme Writing Comfort, Signature Style, Polished, Professional" [level=2] [ref=e738]
+                        - generic [ref=e739]:
+                          - generic [ref=e740]:
+                            - text: "4.6"
+                            - button "4.6 out of 5 stars, rating details" [ref=e742] [cursor=pointer]:
+                              - generic [ref=e744]: 4.6 out of 5 stars
+                            - link "1,115 ratings" [ref=e748] [cursor=pointer]:
+                              - /url: /Waterman-Expert-Ballpoint-Chrome-Cartridge/dp/B002C2IF1K/ref=sr_1_153?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-153&xpid=1UyUulPOlf7Sc#customerReviews
+                              - text: (1.1K)
+                          - generic [ref=e749]: 200+ bought in past month
+                        - link "See options" [ref=e757] [cursor=pointer]:
+                          - /url: /Waterman-Expert-Ballpoint-Chrome-Cartridge/dp/B002C2IF1K/ref=sr_1_153_so_WRITING_INSTRUMENT?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-153&xpid=1UyUulPOlf7Sc
+                  - listitem [ref=e758]:
+                    - generic [ref=e763]:
+                      - link [ref=e766] [cursor=pointer]:
+                        - /url: /Rotring-Non-Slip-Knurled-Hexagonal-Refillable/dp/B0DVZHJBQJ/ref=sr_1_154?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-154&xpid=1UyUulPOlf7Sc
+                        - img [ref=e768]
+                      - generic [ref=e769]:
+                        - group "colors available" [ref=e771]:
+                          - list [ref=e772]:
+                            - generic [ref=e773]:
+                              - listitem:
+                                - link "Black":
+                                  - /url: /Rotring-Non-Slip-Knurled-Hexagonal-Refillable/dp/B0DVZHJBQJ/ref=cs_sr_dp_loc_1?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-154&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e776]:
+                              - listitem:
+                                - link "Silver":
+                                  - /url: /Rotring-Non-Slip-Knurled-Hexagonal-Refillable/dp/B0DVZP4HTR/ref=cs_sr_dp_loc_2?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-154&xpid=1UyUulPOlf7Sc
+                        - link "rOtring 600 Gel Pen, Black Metal Body Pen, Black Ink, 0.55mm, Non-Slip Knurled Grip & Hexagonal Barrel, Refillable, 1 Count - Smooth Writing, Stationary, Desk Essentials" [ref=e780] [cursor=pointer]:
+                          - /url: /Rotring-Non-Slip-Knurled-Hexagonal-Refillable/dp/B0DVZHJBQJ/ref=sr_1_154?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-154&xpid=1UyUulPOlf7Sc
+                          - heading "rOtring 600 Gel Pen, Black Metal Body Pen, Black Ink, 0.55mm, Non-Slip Knurled Grip & Hexagonal Barrel, Refillable, 1 Count - Smooth Writing, Stationary, Desk Essentials" [level=2] [ref=e781]
+                        - generic [ref=e782]:
+                          - generic [ref=e783]:
+                            - text: "4.5"
+                            - button "4.5 out of 5 stars, rating details" [ref=e785] [cursor=pointer]:
+                              - generic [ref=e787]: 4.5 out of 5 stars
+                            - link "802 ratings" [ref=e791] [cursor=pointer]:
+                              - /url: /Rotring-Non-Slip-Knurled-Hexagonal-Refillable/dp/B0DVZHJBQJ/ref=sr_1_154?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-154&xpid=1UyUulPOlf7Sc#customerReviews
+                              - text: (802)
+                          - generic [ref=e792]: 300+ bought in past month
+                        - generic [ref=e795]:
+                          - generic [ref=e796]: Price, product page
+                          - link "INR 3,223.45" [ref=e797] [cursor=pointer]:
+                            - /url: /Rotring-Non-Slip-Knurled-Hexagonal-Refillable/dp/B0DVZHJBQJ/ref=sr_1_154?dib=eyJ2IjoiMSJ9.xBRlJxIPsy_td0pjHS8448GpJonOKEWzzxpxmPzY4YUCpf_8ZlpotTXLgxX1NM-jYWt6lmQ8lqjC_ieWnQaVXS8t-4HtZA7STIrleNBT4wuM27ro8JeWBPsYrYXWD4wV7CL_qJHILKTDPbN7dHVg8A.zRhhlu59zEFfbhTiJ1rAyOFvdc6kT_EdU8-1uAzgE9I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-154&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e798]:
+                              - generic [ref=e799]: INR 3,223.45
+                              - generic [ref=e800]:
+                                - text: INR
+                                - generic [ref=e801]:
+                                  - text: 3,223
+                                  - generic [ref=e802]: .
+                                - text: "45"
+                        - generic [ref=e803]:
+                          - generic [ref=e809]: INR 878.52 delivery Tue, Nov 3
+                          - generic [ref=e810]: Ships to India
+                        - generic [ref=e824] [cursor=pointer]:
+                          - button "Add to cart" [ref=e825]
+                          - generic [ref=e826]: Add to cart
+                  - listitem [ref=e827]:
+                    - generic [ref=e832]:
+                      - link [ref=e835] [cursor=pointer]:
+                        - /url: /uni-ball-Retractable-Medium-Point-0-7mm/dp/B0002LD112/ref=sr_1_155?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-155&xpid=1UyUulPOlf7Sc
+                        - img [ref=e837]
+                      - generic [ref=e838]:
+                        - group "colors available" [ref=e840]:
+                          - list [ref=e841]:
+                            - generic [ref=e842]:
+                              - listitem:
+                                - link "Black":
+                                  - /url: /uni-ball-Retractable-Medium-Point-0-7mm/dp/B0002LD112/ref=cs_sr_dp_loc_1?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-155&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e845]:
+                              - listitem:
+                                - link "Assorted":
+                                  - /url: /uni-ball-Retractable-Medium-Point-0-7mm/dp/B00AXX0S42/ref=cs_sr_dp_loc_2?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-155&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e848]:
+                              - listitem:
+                                - link "Blue":
+                                  - /url: /uni-ball-Retractable-Medium-Point-0-7mm/dp/B005HNZ5TG/ref=cs_sr_dp_loc_3?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-155&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e851]:
+                              - listitem:
+                                - link "Red":
+                                  - /url: /uni-ball-Retractable-Medium-Point-0-7mm/dp/B000Z8ET18/ref=cs_sr_dp_loc_4?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-155&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e854]:
+                              - listitem:
+                                - link "Violet":
+                                  - /url: /uni-ball-Retractable-Medium-Point-0-7mm/dp/B0017TI7S0/ref=cs_sr_dp_loc_5?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-155&xpid=1UyUulPOlf7Sc
+                        - generic [ref=e857]:
+                          - link "uniball™ 207 Gel Pens, Black Ink, 0.7mm Medium Point, Retractable, 2 Count" [ref=e858] [cursor=pointer]:
+                            - /url: /uni-ball-Retractable-Medium-Point-0-7mm/dp/B0002LD112/ref=sr_1_155?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-155&xpid=1UyUulPOlf7Sc
+                            - heading "uniball™ 207 Gel Pens, Black Ink, 0.7mm Medium Point, Retractable, 2 Count" [level=2] [ref=e859]
+                          - generic "Smooth Writing, Fraud-Resistant, uni Super Ink™" [ref=e861]
+                        - generic [ref=e862]:
+                          - generic [ref=e863]:
+                            - text: "4.6"
+                            - button "4.6 out of 5 stars, rating details" [ref=e865] [cursor=pointer]:
+                              - generic [ref=e867]: 4.6 out of 5 stars
+                            - link "32,766 ratings" [ref=e871] [cursor=pointer]:
+                              - /url: /uni-ball-Retractable-Medium-Point-0-7mm/dp/B0002LD112/ref=sr_1_155?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-155&xpid=1UyUulPOlf7Sc#customerReviews
+                              - text: (32.7K)
+                          - generic [ref=e872]: 1K+ bought in past month
+                        - generic [ref=e875]:
+                          - generic [ref=e876]: Price, product page
+                          - 'link "INR 315.32 ( INR 157.66 /count) List: INR 450.18 List: INR 450.18" [ref=e877] [cursor=pointer]':
+                            - /url: /uni-ball-Retractable-Medium-Point-0-7mm/dp/B0002LD112/ref=sr_1_155?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-155&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e878]:
+                              - generic [ref=e879]: INR 315.32
+                              - generic [ref=e880]:
+                                - text: INR
+                                - generic [ref=e881]:
+                                  - text: "315"
+                                  - generic [ref=e882]: .
+                                - text: "32"
+                            - generic [ref=e883]:
+                              - text: (
+                              - generic [ref=e884]:
+                                - generic [ref=e885]: INR 157.66
+                                - text: INR157.66
+                              - text: /count)
+                            - generic [ref=e886]: "List: INR 450.18"
+                            - generic [ref=e887]:
+                              - text: "List:"
+                              - generic [ref=e888]:
+                                - generic [ref=e889]: INR 450.18
+                                - text: INR450.18
+                        - generic [ref=e890]:
+                          - generic [ref=e896]: INR 869.97 delivery Tue, Nov 3
+                          - generic [ref=e897]: Ships to India
+                        - generic [ref=e911] [cursor=pointer]:
+                          - button "Add to cart" [ref=e912]
+                          - generic [ref=e913]: Add to cart
+                  - listitem [ref=e914]:
+                    - generic [ref=e919]:
+                      - link [ref=e922] [cursor=pointer]:
+                        - /url: /Pentel-EnerGel-Retractable-Liquid-BL77BP6A/dp/B00MHVU2GM/ref=sr_1_156?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-156&xpid=1UyUulPOlf7Sc
+                        - img [ref=e924]
+                      - generic [ref=e925]:
+                        - group "colors available" [ref=e927]:
+                          - list
+                          - link "+3 other colors/patterns" [ref=e929] [cursor=pointer]:
+                            - /url: /Pentel-EnerGel-Retractable-Liquid-BL77BP6A/dp/B00MHVU2GM/ref=cs_sr_dp_loc?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-156&xpid=1UyUulPOlf7Sc
+                        - link "Pentel EnerGel RTX Retractable Liquid Gel Pen, (0.7mm), Medium Line, Metal Tip, Black Ink, Pack of 6 (BL77BP6A)" [ref=e931] [cursor=pointer]:
+                          - /url: /Pentel-EnerGel-Retractable-Liquid-BL77BP6A/dp/B00MHVU2GM/ref=sr_1_156?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-156&xpid=1UyUulPOlf7Sc
+                          - heading "Pentel EnerGel RTX Retractable Liquid Gel Pen, (0.7mm), Medium Line, Metal Tip, Black Ink, Pack of 6 (BL77BP6A)" [level=2] [ref=e932]
+                        - generic [ref=e933]:
+                          - generic [ref=e934]:
+                            - text: "4.8"
+                            - button "4.8 out of 5 stars, rating details" [ref=e936] [cursor=pointer]:
+                              - generic [ref=e938]: 4.8 out of 5 stars
+                            - link "4,502 ratings" [ref=e942] [cursor=pointer]:
+                              - /url: /Pentel-EnerGel-Retractable-Liquid-BL77BP6A/dp/B00MHVU2GM/ref=sr_1_156?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-156&xpid=1UyUulPOlf7Sc#customerReviews
+                              - text: (4.5K)
+                          - generic [ref=e943]: 600+ bought in past month
+                        - generic [ref=e946]:
+                          - generic [ref=e947]: Price, product page
+                          - link "INR 1,029.53 ( INR 171.90 /count)" [ref=e948] [cursor=pointer]:
+                            - /url: /Pentel-EnerGel-Retractable-Liquid-BL77BP6A/dp/B00MHVU2GM/ref=sr_1_156?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-156&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e949]:
+                              - generic [ref=e950]: INR 1,029.53
+                              - generic [ref=e951]:
+                                - text: INR
+                                - generic [ref=e952]:
+                                  - text: 1,029
+                                  - generic [ref=e953]: .
+                                - text: "53"
+                            - generic [ref=e954]:
+                              - text: (
+                              - generic [ref=e955]:
+                                - generic [ref=e956]: INR 171.90
+                                - text: INR171.90
+                              - text: /count)
+                        - generic [ref=e957]:
+                          - generic [ref=e963]: INR 893.71 delivery Tue, Nov 3
+                          - generic [ref=e964]: Ships to India
+                        - generic [ref=e978] [cursor=pointer]:
+                          - button "Add to cart" [ref=e979]
+                          - generic [ref=e980]: Add to cart
+                        - generic [ref=e982]:
+                          - text: More Buying Choices
+                          - text: INR 713.26
+                          - link "(4 used & new offers)" [ref=e984] [cursor=pointer]:
+                            - /url: /gp/offer-listing/B00MHVU2GM/ref=sr_1_156_olp?keywords=pen&dib_tag=se&xpid=1UyUulPOlf7Sc&dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&qid=1792394334&sr=8-156
+                  - listitem [ref=e985]:
+                    - generic [ref=e990]:
+                      - link [ref=e993] [cursor=pointer]:
+                        - /url: /Cross-Calais-Satin-Chrome-Ballpoint/dp/B01DPGYPQU/ref=sr_1_157?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-157&xpid=1UyUulPOlf7Sc
+                        - img [ref=e995]
+                      - generic [ref=e996]:
+                        - group "colors available" [ref=e998]:
+                          - list [ref=e999]:
+                            - generic [ref=e1000]:
+                              - listitem:
+                                - link "Satin Chrome":
+                                  - /url: /Cross-Calais-Satin-Chrome-Ballpoint/dp/B01DPGYPQU/ref=cs_sr_dp_loc_1?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-157&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e1003]:
+                              - listitem:
+                                - link "White & Rose Gold":
+                                  - /url: /Cross-Calais-Satin-Chrome-Ballpoint/dp/B09LRM5M83/ref=cs_sr_dp_loc_2?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-157&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e1006]:
+                              - listitem:
+                                - link "Brushed Rose Gold & Black":
+                                  - /url: /Cross-Calais-Satin-Chrome-Ballpoint/dp/B08JQNFRLD/ref=cs_sr_dp_loc_3?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-157&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e1009]:
+                              - listitem:
+                                - link "Chrome & Black":
+                                  - /url: /Cross-Calais-Satin-Chrome-Ballpoint/dp/B001O049ZC/ref=cs_sr_dp_loc_4?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-157&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e1012]:
+                              - listitem:
+                                - link "Chrome & Blue":
+                                  - /url: /Cross-Calais-Satin-Chrome-Ballpoint/dp/B001YQGQSE/ref=cs_sr_dp_loc_5?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-157&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e1015]:
+                              - listitem:
+                                - link "Matte Gray & Black":
+                                  - /url: /Cross-Calais-Satin-Chrome-Ballpoint/dp/B08JRTP45Z/ref=cs_sr_dp_loc_6?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-157&xpid=1UyUulPOlf7Sc
+                          - link "+5 other colors/patterns" [ref=e1019] [cursor=pointer]:
+                            - /url: /Cross-Calais-Satin-Chrome-Ballpoint/dp/B01DPGYPQU/ref=cs_sr_dp_loc_n?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-157&xpid=1UyUulPOlf7Sc
+                            - text: "+5"
+                        - generic [ref=e1020]:
+                          - link "Cross Calais Ballpoint Pen, Satin Chrome, Medium Point, Black Ink" [ref=e1021] [cursor=pointer]:
+                            - /url: /Cross-Calais-Satin-Chrome-Ballpoint/dp/B01DPGYPQU/ref=sr_1_157?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-157&xpid=1UyUulPOlf7Sc
+                            - heading "Cross Calais Ballpoint Pen, Satin Chrome, Medium Point, Black Ink" [level=2] [ref=e1022]
+                          - generic "Ballpoint Pen for Everyday Use, Professional Desk Essential, Smooth Writing, Luxury Gift Box, Medium Point Black Refill" [ref=e1024]
+                        - generic [ref=e1026]:
+                          - text: "4.6"
+                          - button "4.6 out of 5 stars, rating details" [ref=e1028] [cursor=pointer]:
+                            - generic [ref=e1030]: 4.6 out of 5 stars
+                          - link "2,871 ratings" [ref=e1034] [cursor=pointer]:
+                            - /url: /Cross-Calais-Satin-Chrome-Ballpoint/dp/B01DPGYPQU/ref=sr_1_157?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-157&xpid=1UyUulPOlf7Sc#customerReviews
+                            - text: (2.8K)
+                        - link "See options" [ref=e1042] [cursor=pointer]:
+                          - /url: /Cross-Calais-Satin-Chrome-Ballpoint/dp/B01DPGYPQU/ref=sr_1_157_so_WRITING_INSTRUMENT?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-157&xpid=1UyUulPOlf7Sc
+                  - listitem [ref=e1043]:
+                    - generic [ref=e1048]:
+                      - link [ref=e1051] [cursor=pointer]:
+                        - /url: /GYSIEN-NewPen001-Injection-Pen-5PCS/dp/B0HB9WLVHH/ref=sr_1_158?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-158&xpid=1UyUulPOlf7Sc
+                        - img [ref=e1053]
+                      - generic [ref=e1054]:
+                        - link "Injection Pen, 5PCS Set" [ref=e1056] [cursor=pointer]:
+                          - /url: /GYSIEN-NewPen001-Injection-Pen-5PCS/dp/B0HB9WLVHH/ref=sr_1_158?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-158&xpid=1UyUulPOlf7Sc
+                          - heading "Injection Pen, 5PCS Set" [level=2] [ref=e1057]
+                        - generic [ref=e1059]:
+                          - text: "3.4"
+                          - button "3.4 out of 5 stars, rating details" [ref=e1061] [cursor=pointer]:
+                            - generic [ref=e1063]: 3.4 out of 5 stars
+                          - link "17 ratings" [ref=e1067] [cursor=pointer]:
+                            - /url: /GYSIEN-NewPen001-Injection-Pen-5PCS/dp/B0HB9WLVHH/ref=sr_1_158?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-158&xpid=1UyUulPOlf7Sc#customerReviews
+                            - text: (17)
+                        - link "See options" [ref=e1075] [cursor=pointer]:
+                          - /url: /GYSIEN-NewPen001-Injection-Pen-5PCS/dp/B0HB9WLVHH/ref=sr_1_158_so_HEALTH_PERSONAL_CARE?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-158&xpid=1UyUulPOlf7Sc
+                  - listitem [ref=e1076]:
+                    - generic [ref=e1081]:
+                      - link [ref=e1084] [cursor=pointer]:
+                        - /url: /Pen-Microneedling-Cartridges-Replacement-Microneedle/dp/B0HC72LWV4/ref=sr_1_159?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-159&xpid=1UyUulPOlf7Sc
+                        - img [ref=e1086]
+                      - generic [ref=e1087]:
+                        - link "Dr Pen Microneedling Pen M8 with 20 Pcs Cartridges Replacement for Home Use Microneedle Derma Roller Pen for Women Men, Micro Needle Roller Pen for Skin Tools" [ref=e1089] [cursor=pointer]:
+                          - /url: /Pen-Microneedling-Cartridges-Replacement-Microneedle/dp/B0HC72LWV4/ref=sr_1_159?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-159&xpid=1UyUulPOlf7Sc
+                          - heading "Dr Pen Microneedling Pen M8 with 20 Pcs Cartridges Replacement for Home Use Microneedle Derma Roller Pen for Women Men, Micro Needle Roller Pen for Skin Tools" [level=2] [ref=e1090]
+                        - generic [ref=e1091]:
+                          - generic [ref=e1092]:
+                            - text: "5.0"
+                            - button "5.0 out of 5 stars, rating details" [ref=e1094] [cursor=pointer]:
+                              - generic [ref=e1096]: 5.0 out of 5 stars
+                            - link "5 ratings" [ref=e1100] [cursor=pointer]:
+                              - /url: /Pen-Microneedling-Cartridges-Replacement-Microneedle/dp/B0HC72LWV4/ref=sr_1_159?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-159&xpid=1UyUulPOlf7Sc#customerReviews
+                              - text: (5)
+                          - generic [ref=e1101]: 200+ bought in past month
+                        - link "See options" [ref=e1109] [cursor=pointer]:
+                          - /url: /Pen-Microneedling-Cartridges-Replacement-Microneedle/dp/B0HC72LWV4/ref=sr_1_159_so_BEAUTY?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-159&xpid=1UyUulPOlf7Sc
+                  - listitem [ref=e1110]:
+                    - generic [ref=e1115]:
+                      - link [ref=e1118] [cursor=pointer]:
+                        - /url: /Make-Real-Write-Creation-Station/dp/B0GRWPW57X/ref=sr_1_160?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-160&xpid=1UyUulPOlf7Sc
+                        - img [ref=e1120]
+                      - generic [ref=e1121]:
+                        - generic [ref=e1122]:
+                          - link "Make It Real Pen Creation Station - DIY Decorating Kit for Girls" [ref=e1123] [cursor=pointer]:
+                            - /url: /Make-Real-Write-Creation-Station/dp/B0GRWPW57X/ref=sr_1_160?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-160&xpid=1UyUulPOlf7Sc
+                            - heading "Make It Real Pen Creation Station - DIY Decorating Kit for Girls" [level=2] [ref=e1124]
+                          - generic "Craft custom pens with beads, charms, and decorative wraps Ideal gift for ages 8 and up for creative, screen-free fun" [ref=e1126]
+                        - generic [ref=e1127]:
+                          - generic [ref=e1128]:
+                            - text: "4.5"
+                            - button "4.5 out of 5 stars, rating details" [ref=e1130] [cursor=pointer]:
+                              - generic [ref=e1132]: 4.5 out of 5 stars
+                            - link "391 ratings" [ref=e1136] [cursor=pointer]:
+                              - /url: /Make-Real-Write-Creation-Station/dp/B0GRWPW57X/ref=sr_1_160?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-160&xpid=1UyUulPOlf7Sc#customerReviews
+                              - text: (391)
+                          - generic [ref=e1137]: 1K+ bought in past month
+                        - generic [ref=e1140]:
+                          - generic [ref=e1141]: Price, product page
+                          - link "INR 1,613.63" [ref=e1142] [cursor=pointer]:
+                            - /url: /Make-Real-Write-Creation-Station/dp/B0GRWPW57X/ref=sr_1_160?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-160&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e1143]:
+                              - generic [ref=e1144]: INR 1,613.63
+                              - generic [ref=e1145]:
+                                - text: INR
+                                - generic [ref=e1146]:
+                                  - text: 1,613
+                                  - generic [ref=e1147]: .
+                                - text: "63"
+                        - generic [ref=e1148]:
+                          - generic [ref=e1154]: INR 1,622.17 delivery Tue, Nov 3
+                          - generic [ref=e1155]: Ships to India
+                        - generic [ref=e1169] [cursor=pointer]:
+                          - button "Add to cart" [ref=e1170]
+                          - generic [ref=e1171]: Add to cart
+                  - listitem [ref=e1172]:
+                    - generic [ref=e1177]:
+                      - link [ref=e1180] [cursor=pointer]:
+                        - /url: /Pentel-EnerGel-Retractable-Liquid-BL77PBP3A-BC/dp/B004CWI2F2/ref=sr_1_161?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-161&xpid=1UyUulPOlf7Sc
+                        - img [ref=e1182]
+                      - generic [ref=e1183]:
+                        - link "Pentel Pink BCA EnerGel Retractable Liquid Gel Pen, (0.7mm), Medium Line, Metal Tip, Pink Barrel, Black Ink, Pack of 3 (BL77PBP3A-BC)" [ref=e1185] [cursor=pointer]:
+                          - /url: /Pentel-EnerGel-Retractable-Liquid-BL77PBP3A-BC/dp/B004CWI2F2/ref=sr_1_161?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-161&xpid=1UyUulPOlf7Sc
+                          - heading "Pentel Pink BCA EnerGel Retractable Liquid Gel Pen, (0.7mm), Medium Line, Metal Tip, Pink Barrel, Black Ink, Pack of 3 (BL77PBP3A-BC)" [level=2] [ref=e1186]
+                        - generic [ref=e1187]:
+                          - generic [ref=e1188]:
+                            - text: "4.8"
+                            - button "4.8 out of 5 stars, rating details" [ref=e1190] [cursor=pointer]:
+                              - generic [ref=e1192]: 4.8 out of 5 stars
+                            - link "3,291 ratings" [ref=e1196] [cursor=pointer]:
+                              - /url: /Pentel-EnerGel-Retractable-Liquid-BL77PBP3A-BC/dp/B004CWI2F2/ref=sr_1_161?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-161&xpid=1UyUulPOlf7Sc#customerReviews
+                              - text: (3.2K)
+                          - generic [ref=e1197]: 2K+ bought in past month
+                        - generic [ref=e1200]:
+                          - generic [ref=e1201]: Price, product page
+                          - link "INR 473.93 ( INR 157.66 /count)" [ref=e1202] [cursor=pointer]:
+                            - /url: /Pentel-EnerGel-Retractable-Liquid-BL77PBP3A-BC/dp/B004CWI2F2/ref=sr_1_161?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-161&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e1203]:
+                              - generic [ref=e1204]: INR 473.93
+                              - generic [ref=e1205]:
+                                - text: INR
+                                - generic [ref=e1206]:
+                                  - text: "473"
+                                  - generic [ref=e1207]: .
+                                - text: "93"
+                            - generic [ref=e1208]:
+                              - text: (
+                              - generic [ref=e1209]:
+                                - generic [ref=e1210]: INR 157.66
+                                - text: INR157.66
+                              - text: /count)
+                        - generic [ref=e1211]:
+                          - generic [ref=e1217]: INR 874.72 delivery Tue, Nov 3
+                          - generic [ref=e1218]: Ships to India
+                        - generic [ref=e1232] [cursor=pointer]:
+                          - button "Add to cart" [ref=e1233]
+                          - generic [ref=e1234]: Add to cart
+                  - listitem [ref=e1235]:
+                    - generic [ref=e1240]:
+                      - link [ref=e1243] [cursor=pointer]:
+                        - /url: /Cross-AT0082-156/dp/B09JGV4WGT/ref=sr_1_162?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-162&xpid=1UyUulPOlf7Sc
+                        - img [ref=e1245]
+                      - generic [ref=e1246]:
+                        - group "colors available" [ref=e1248]:
+                          - list [ref=e1249]:
+                            - generic [ref=e1250]:
+                              - listitem:
+                                - link "Gold":
+                                  - /url: /Cross-AT0082-156/dp/B09JGV4WGT/ref=cs_sr_dp_loc_1?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-162&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e1253]:
+                              - listitem:
+                                - link "Black & Chrome":
+                                  - /url: /Cross-AT0082-156/dp/B00BFCGPRO/ref=cs_sr_dp_loc_2?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-162&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e1256]:
+                              - listitem:
+                                - link "Black & Gold":
+                                  - /url: /Cross-AT0082-156/dp/B000087HA0/ref=cs_sr_dp_loc_3?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-162&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e1259]:
+                              - listitem:
+                                - link "Black Micro-knurl":
+                                  - /url: /Cross-AT0082-156/dp/B084ZWKBDC/ref=cs_sr_dp_loc_4?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-162&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e1262]:
+                              - listitem:
+                                - link "Brushed Black":
+                                  - /url: /Cross-AT0082-156/dp/B07P11DBP5/ref=cs_sr_dp_loc_5?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-162&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e1265]:
+                              - listitem:
+                                - link "Brushed Chrome":
+                                  - /url: /Cross-AT0082-156/dp/B000IGMB5I/ref=cs_sr_dp_loc_6?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-162&xpid=1UyUulPOlf7Sc
+                          - link "+8 other colors/patterns" [ref=e1269] [cursor=pointer]:
+                            - /url: /Cross-AT0082-156/dp/B09JGV4WGT/ref=cs_sr_dp_loc_n?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-162&xpid=1UyUulPOlf7Sc
+                            - text: "+8"
+                        - generic [ref=e1270]:
+                          - link "Cross Classic Century 23KT Gold Ballpoint Pen, Medium Point, Black Ink" [ref=e1271] [cursor=pointer]:
+                            - /url: /Cross-AT0082-156/dp/B09JGV4WGT/ref=sr_1_162?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-162&xpid=1UyUulPOlf7Sc
+                            - heading "Cross Classic Century 23KT Gold Ballpoint Pen, Medium Point, Black Ink" [level=2] [ref=e1272]
+                          - generic "Refillable Pen for Effortless Writing, Durable Construction, Premier Distinctive Look, Gift-Ready Presentation" [ref=e1274]
+                        - generic [ref=e1275]:
+                          - generic [ref=e1276]:
+                            - text: "4.7"
+                            - button "4.7 out of 5 stars, rating details" [ref=e1278] [cursor=pointer]:
+                              - generic [ref=e1280]: 4.7 out of 5 stars
+                            - link "8,690 ratings" [ref=e1284] [cursor=pointer]:
+                              - /url: /Cross-AT0082-156/dp/B09JGV4WGT/ref=sr_1_162?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-162&xpid=1UyUulPOlf7Sc#customerReviews
+                              - text: (8.6K)
+                          - generic [ref=e1285]: 50+ bought in past month
+                        - link "See options" [ref=e1293] [cursor=pointer]:
+                          - /url: /Cross-AT0082-156/dp/B09JGV4WGT/ref=sr_1_162_so_WRITING_INSTRUMENT?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-162&xpid=1UyUulPOlf7Sc
+                  - listitem [ref=e1294]:
+                    - generic [ref=e1299]:
+                      - link [ref=e1302] [cursor=pointer]:
+                        - /url: /Faber-Castell-Classic-Fountain-Pernambuco-Platinum/dp/B000UTMLYY/ref=sr_1_163?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-163&xpid=1UyUulPOlf7Sc
+                        - img [ref=e1304]
+                      - generic [ref=e1305]:
+                        - link "Faber Castell 145542 EF Fountain Pen, Extra Fine Point, Classic Collection, Pernambuco, Platinum Coating, Genuine Import" [ref=e1307] [cursor=pointer]:
+                          - /url: /Faber-Castell-Classic-Fountain-Pernambuco-Platinum/dp/B000UTMLYY/ref=sr_1_163?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-163&xpid=1UyUulPOlf7Sc
+                          - heading "Faber Castell 145542 EF Fountain Pen, Extra Fine Point, Classic Collection, Pernambuco, Platinum Coating, Genuine Import" [level=2] [ref=e1308]
+                        - generic [ref=e1310]:
+                          - text: "3.5"
+                          - button "3.5 out of 5 stars, rating details" [ref=e1312] [cursor=pointer]:
+                            - generic [ref=e1314]: 3.5 out of 5 stars
+                          - link "3 ratings" [ref=e1318] [cursor=pointer]:
+                            - /url: /Faber-Castell-Classic-Fountain-Pernambuco-Platinum/dp/B000UTMLYY/ref=sr_1_163?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-163&xpid=1UyUulPOlf7Sc#customerReviews
+                            - text: (3)
+                        - generic [ref=e1321]:
+                          - generic [ref=e1322]: Price, product page
+                          - 'link "INR 57,052.43 List Price: INR 72,370.95 List Price: INR 72,370.95" [ref=e1323] [cursor=pointer]':
+                            - /url: /Faber-Castell-Classic-Fountain-Pernambuco-Platinum/dp/B000UTMLYY/ref=sr_1_163?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-163&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e1324]:
+                              - generic [ref=e1325]: INR 57,052.43
+                              - generic [ref=e1326]:
+                                - text: INR
+                                - generic [ref=e1327]:
+                                  - text: 57,052
+                                  - generic [ref=e1328]: .
+                                - text: "43"
+                            - generic [ref=e1329]: "List Price: INR 72,370.95"
+                            - generic [ref=e1330]:
+                              - text: "List Price:"
+                              - generic [ref=e1331]:
+                                - generic [ref=e1332]: INR 72,370.95
+                                - text: INR72,370.95
+                        - generic "Usually ships within 6 weeks" [ref=e1339]
+                        - generic [ref=e1353] [cursor=pointer]:
+                          - button "Add to cart" [ref=e1354]
+                          - generic [ref=e1355]: Add to cart
+                  - listitem [ref=e1356]:
+                    - generic [ref=e1361]:
+                      - link [ref=e1364] [cursor=pointer]:
+                        - /url: /PILOT-Acroball-Ultra-Premium-Refillable-Retractable/dp/B082MR6P55/ref=sr_1_164?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-164&xpid=1UyUulPOlf7Sc
+                        - img [ref=e1366]
+                      - generic [ref=e1367]:
+                        - group "colors available" [ref=e1369]:
+                          - list [ref=e1370]:
+                            - generic [ref=e1371]:
+                              - listitem:
+                                - link "Navy Barrel":
+                                  - /url: /PILOT-Acroball-Ultra-Premium-Refillable-Retractable/dp/B082MR6P55/ref=cs_sr_dp_loc_1?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-164&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e1374]:
+                              - listitem:
+                                - link "Black Barrel":
+                                  - /url: /PILOT-Acroball-Ultra-Premium-Refillable-Retractable/dp/B082MR89BF/ref=cs_sr_dp_loc_2?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-164&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e1377]:
+                              - listitem:
+                                - link "Blue Barrel":
+                                  - /url: /PILOT-Acroball-Ultra-Premium-Refillable-Retractable/dp/B082MRCCNQ/ref=cs_sr_dp_loc_3?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-164&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e1380]:
+                              - listitem:
+                                - link "Red Barrel":
+                                  - /url: /PILOT-Acroball-Ultra-Premium-Refillable-Retractable/dp/B082MR1SHK/ref=cs_sr_dp_loc_4?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-164&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e1383]:
+                              - listitem:
+                                - link "Rose Gold Barrel":
+                                  - /url: /PILOT-Acroball-Ultra-Premium-Refillable-Retractable/dp/B082MRF2XN/ref=cs_sr_dp_loc_5?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-164&xpid=1UyUulPOlf7Sc
+                        - generic [ref=e1386]:
+                          - link "PILOT Acroball 1000 Ballpoint Pen, Navy Barrel, Black Ink, Single Pen" [ref=e1387] [cursor=pointer]:
+                            - /url: /PILOT-Acroball-Ultra-Premium-Refillable-Retractable/dp/B082MR6P55/ref=sr_1_164?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-164&xpid=1UyUulPOlf7Sc
+                            - heading "PILOT Acroball 1000 Ballpoint Pen, Navy Barrel, Black Ink, Single Pen" [level=2] [ref=e1388]
+                          - generic "Ultra-premium writing, black ink ballpoint pen, fine point, retractable, refillable, navy barrel, pen for office and gifts" [ref=e1390]
+                        - generic [ref=e1391]:
+                          - generic [ref=e1392]:
+                            - text: "4.6"
+                            - button "4.6 out of 5 stars, rating details" [ref=e1394] [cursor=pointer]:
+                              - generic [ref=e1396]: 4.6 out of 5 stars
+                            - link "1,255 ratings" [ref=e1400] [cursor=pointer]:
+                              - /url: /PILOT-Acroball-Ultra-Premium-Refillable-Retractable/dp/B082MR6P55/ref=sr_1_164?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-164&xpid=1UyUulPOlf7Sc#customerReviews
+                              - text: (1.2K)
+                          - generic [ref=e1401]: 100+ bought in past month
+                        - generic [ref=e1404]:
+                          - generic [ref=e1405]: Price, product page
+                          - link "INR 1,196.68" [ref=e1406] [cursor=pointer]:
+                            - /url: /PILOT-Acroball-Ultra-Premium-Refillable-Retractable/dp/B082MR6P55/ref=sr_1_164?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-164&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e1407]:
+                              - generic [ref=e1408]: INR 1,196.68
+                              - generic [ref=e1409]:
+                                - text: INR
+                                - generic [ref=e1410]:
+                                  - text: 1,196
+                                  - generic [ref=e1411]: .
+                                - text: "68"
+                        - generic [ref=e1412]:
+                          - generic [ref=e1418]: INR 868.07 delivery Tue, Nov 3
+                          - generic [ref=e1419]: Ships to India
+                        - generic [ref=e1433] [cursor=pointer]:
+                          - button "Add to cart" [ref=e1434]
+                          - generic [ref=e1435]: Add to cart
+                        - generic [ref=e1437]:
+                          - text: More Buying Choices
+                          - text: INR 1,155.85
+                          - link "(4 new offers)" [ref=e1439] [cursor=pointer]:
+                            - /url: /gp/offer-listing/B082MR6P55/ref=sr_1_164_olp?keywords=pen&dib_tag=se&xpid=1UyUulPOlf7Sc&dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&qid=1792394334&sr=8-164
+                  - listitem [ref=e1440]:
+                    - generic [ref=e1445]:
+                      - link [ref=e1448] [cursor=pointer]:
+                        - /url: /Pentel-Portable-Pocket-Medium-2Refills/dp/B00N9UUWLA/ref=sr_1_165?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-165&xpid=1UyUulPOlf7Sc
+                        - img [ref=e1450]
+                      - generic [ref=e1451]:
+                        - link "Pentel Arts Portable Pocket Brush Pen (Medium Point), 1Pen & 2Refills" [ref=e1453] [cursor=pointer]:
+                          - /url: /Pentel-Portable-Pocket-Medium-2Refills/dp/B00N9UUWLA/ref=sr_1_165?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-165&xpid=1UyUulPOlf7Sc
+                          - heading "Pentel Arts Portable Pocket Brush Pen (Medium Point), 1Pen & 2Refills" [level=2] [ref=e1454]
+                        - generic [ref=e1455]:
+                          - generic [ref=e1456]:
+                            - text: "4.6"
+                            - button "4.6 out of 5 stars, rating details" [ref=e1458] [cursor=pointer]:
+                              - generic [ref=e1460]: 4.6 out of 5 stars
+                            - link "2,674 ratings" [ref=e1464] [cursor=pointer]:
+                              - /url: /Pentel-Portable-Pocket-Medium-2Refills/dp/B00N9UUWLA/ref=sr_1_165?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-165&xpid=1UyUulPOlf7Sc#customerReviews
+                              - text: (2.6K)
+                          - generic [ref=e1465]: 1K+ bought in past month
+                        - link "See options" [ref=e1473] [cursor=pointer]:
+                          - /url: /Pentel-Portable-Pocket-Medium-2Refills/dp/B00N9UUWLA/ref=sr_1_165_so_WRITING_INSTRUMENT?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-165&xpid=1UyUulPOlf7Sc
+                  - listitem [ref=e1474]:
+                    - generic [ref=e1479]:
+                      - link [ref=e1482] [cursor=pointer]:
+                        - /url: /Jetstream-Ballpoint-Mechanical-Pencil-MSXE52000A05-74/dp/B08L8XTF3K/ref=sr_1_166?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-166&xpid=1UyUulPOlf7Sc
+                        - img [ref=e1484]
+                      - generic [ref=e1485]:
+                        - group "colors available" [ref=e1487]:
+                          - list
+                          - link "+4 other colors/patterns" [ref=e1489] [cursor=pointer]:
+                            - /url: /Jetstream-Ballpoint-Mechanical-Pencil-MSXE52000A05-74/dp/B08L8XTF3K/ref=cs_sr_dp_loc?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-166&xpid=1UyUulPOlf7Sc
+                        - link "uni Jetstream 4&1 Metal Edition, 0.5mm Ballpoint Pen (Black, Red, Blue, Green) and 0.5mm Mechanical Pencil, Pink Gold (MSXE52000A05.74)" [ref=e1491] [cursor=pointer]:
+                          - /url: /Jetstream-Ballpoint-Mechanical-Pencil-MSXE52000A05-74/dp/B08L8XTF3K/ref=sr_1_166?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-166&xpid=1UyUulPOlf7Sc
+                          - heading "uni Jetstream 4&1 Metal Edition, 0.5mm Ballpoint Pen (Black, Red, Blue, Green) and 0.5mm Mechanical Pencil, Pink Gold (MSXE52000A05.74)" [level=2] [ref=e1492]
+                        - generic [ref=e1493]:
+                          - generic [ref=e1494]:
+                            - text: "4.2"
+                            - button "4.2 out of 5 stars, rating details" [ref=e1496] [cursor=pointer]:
+                              - generic [ref=e1498]: 4.2 out of 5 stars
+                            - link "3,148 ratings" [ref=e1502] [cursor=pointer]:
+                              - /url: /Jetstream-Ballpoint-Mechanical-Pencil-MSXE52000A05-74/dp/B08L8XTF3K/ref=sr_1_166?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-166&xpid=1UyUulPOlf7Sc#customerReviews
+                              - text: (3.1K)
+                          - generic [ref=e1503]: 100+ bought in past month
+                        - generic [ref=e1506]:
+                          - generic [ref=e1507]: Price, product page
+                          - link "INR 2,564.32" [ref=e1508] [cursor=pointer]:
+                            - /url: /Jetstream-Ballpoint-Mechanical-Pencil-MSXE52000A05-74/dp/B08L8XTF3K/ref=sr_1_166?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-166&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e1509]:
+                              - generic [ref=e1510]: INR 2,564.32
+                              - generic [ref=e1511]:
+                                - text: INR
+                                - generic [ref=e1512]:
+                                  - text: 2,564
+                                  - generic [ref=e1513]: .
+                                - text: "32"
+                        - generic [ref=e1514]:
+                          - generic [ref=e1520]: INR 978.24 delivery
+                          - generic [ref=e1521]: Ships to India
+                          - generic "Only 1 left in stock - order soon." [ref=e1523]
+                        - generic [ref=e1537] [cursor=pointer]:
+                          - button "Add to cart" [ref=e1538]
+                          - generic [ref=e1539]: Add to cart
+                        - generic [ref=e1541]:
+                          - text: More Buying Choices
+                          - text: INR 1,462.62
+                          - link "(19 new offers)" [ref=e1543] [cursor=pointer]:
+                            - /url: /gp/offer-listing/B08L8XTF3K/ref=sr_1_166_olp?keywords=pen&dib_tag=se&xpid=1UyUulPOlf7Sc&dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&qid=1792394334&sr=8-166
+                  - listitem [ref=e1544]:
+                    - generic [ref=e1549]:
+                      - link [ref=e1552] [cursor=pointer]:
+                        - /url: /Pentel-EnerGel-Colors-Assorted-BL77PC20MTCU/dp/B09XWS9VSG/ref=sr_1_167?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-167&xpid=1UyUulPOlf7Sc
+                        - img [ref=e1554]
+                      - generic [ref=e1555]:
+                        - link "Pentel EnerGel RTX True Colors United 0.7mm Medium Line, 20 Assorted ink Colors, Pack of 20 pens BL77PC20MTCU" [ref=e1557] [cursor=pointer]:
+                          - /url: /Pentel-EnerGel-Colors-Assorted-BL77PC20MTCU/dp/B09XWS9VSG/ref=sr_1_167?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-167&xpid=1UyUulPOlf7Sc
+                          - heading "Pentel EnerGel RTX True Colors United 0.7mm Medium Line, 20 Assorted ink Colors, Pack of 20 pens BL77PC20MTCU" [level=2] [ref=e1558]
+                        - generic [ref=e1559]:
+                          - generic [ref=e1560]:
+                            - text: "4.8"
+                            - button "4.8 out of 5 stars, rating details" [ref=e1562] [cursor=pointer]:
+                              - generic [ref=e1564]: 4.8 out of 5 stars
+                            - link "1,714 ratings" [ref=e1568] [cursor=pointer]:
+                              - /url: /Pentel-EnerGel-Colors-Assorted-BL77PC20MTCU/dp/B09XWS9VSG/ref=sr_1_167?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-167&xpid=1UyUulPOlf7Sc#customerReviews
+                              - text: (1.7K)
+                          - generic [ref=e1569]: 300+ bought in past month
+                        - generic [ref=e1572]:
+                          - generic [ref=e1573]: Price, product page
+                          - 'link "INR 2,391.47 ( INR 119.67 /count) Typical: INR 3,735.37 Typical: INR 3,735.37" [ref=e1574] [cursor=pointer]':
+                            - /url: /Pentel-EnerGel-Colors-Assorted-BL77PC20MTCU/dp/B09XWS9VSG/ref=sr_1_167?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-167&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e1575]:
+                              - generic [ref=e1576]: INR 2,391.47
+                              - generic [ref=e1577]:
+                                - text: INR
+                                - generic [ref=e1578]:
+                                  - text: 2,391
+                                  - generic [ref=e1579]: .
+                                - text: "47"
+                            - generic [ref=e1580]:
+                              - text: (
+                              - generic [ref=e1581]:
+                                - generic [ref=e1582]: INR 119.67
+                                - text: INR119.67
+                              - text: /count)
+                            - generic [ref=e1583]: "Typical: INR 3,735.37"
+                            - generic [ref=e1584]:
+                              - text: "Typical:"
+                              - generic [ref=e1585]:
+                                - generic [ref=e1586]: INR 3,735.37
+                                - text: INR3,735.37
+                        - generic [ref=e1587]:
+                          - generic [ref=e1593]: INR 999.14 delivery Wed, Nov 4
+                          - generic [ref=e1594]: Ships to India
+                        - generic [ref=e1608] [cursor=pointer]:
+                          - button "Add to cart" [ref=e1609]
+                          - generic [ref=e1610]: Add to cart
+                  - listitem [ref=e1611]:
+                    - generic [ref=e1616]:
+                      - link [ref=e1619] [cursor=pointer]:
+                        - /url: /Zebra-Pen-Retractable-Ballpoint-41416/dp/B09YVS8MNH/ref=sr_1_168?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-168&xpid=1UyUulPOlf7Sc
+                        - img [ref=e1621]
+                      - generic [ref=e1622]:
+                        - group "colors available" [ref=e1624]:
+                          - list [ref=e1625]:
+                            - generic [ref=e1626]:
+                              - listitem:
+                                - link "Black C":
+                                  - /url: /Zebra-Pen-Retractable-Ballpoint-41416/dp/B09YVS8MNH/ref=cs_sr_dp_loc_1?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-168&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e1629]:
+                              - listitem:
+                                - link "Black A":
+                                  - /url: /Zebra-Pen-Retractable-Ballpoint-41416/dp/B097WMLBSH/ref=cs_sr_dp_loc_2?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-168&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e1632]:
+                              - listitem:
+                                - link "Black B":
+                                  - /url: /Zebra-Pen-Retractable-Ballpoint-41416/dp/B09B1C96TD/ref=cs_sr_dp_loc_3?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-168&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e1635]:
+                              - listitem:
+                                - link "Black D":
+                                  - /url: /Zebra-Pen-Retractable-Ballpoint-41416/dp/B09QQS2LR4/ref=cs_sr_dp_loc_4?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-168&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e1638]:
+                              - listitem:
+                                - link "Black E":
+                                  - /url: /Zebra-Pen-Retractable-Ballpoint-41416/dp/B09QQSVKVX/ref=cs_sr_dp_loc_5?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-168&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e1641]:
+                              - listitem:
+                                - link "Black/Blue":
+                                  - /url: /Zebra-Pen-Retractable-Ballpoint-41416/dp/B0CK96YGPN/ref=cs_sr_dp_loc_6?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-168&xpid=1UyUulPOlf7Sc
+                          - link "+3 other colors/patterns" [ref=e1645] [cursor=pointer]:
+                            - /url: /Zebra-Pen-Retractable-Ballpoint-41416/dp/B09YVS8MNH/ref=cs_sr_dp_loc_n?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-168&xpid=1UyUulPOlf7Sc
+                            - text: "+3"
+                        - generic [ref=e1646]:
+                          - link "Zebra Pen bLen White and Black Retractable Gel Pen, Black Ink, 0.7mm, 6-Pk" [ref=e1647] [cursor=pointer]:
+                            - /url: /Zebra-Pen-Retractable-Ballpoint-41416/dp/B09YVS8MNH/ref=sr_1_168?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-168&xpid=1UyUulPOlf7Sc
+                            - heading "Zebra Pen bLen White and Black Retractable Gel Pen, Black Ink, 0.7mm, 6-Pk" [level=2] [ref=e1648]
+                          - generic "Rapid-Dry Ink, Low-Vibration Stable Writing, Refillable, Medium Point Tip, + Refills, Ideal Office & School Supplies (41416)" [ref=e1650]
+                        - generic [ref=e1651]:
+                          - generic [ref=e1652]:
+                            - text: "4.6"
+                            - button "4.6 out of 5 stars, rating details" [ref=e1654] [cursor=pointer]:
+                              - generic [ref=e1656]: 4.6 out of 5 stars
+                            - link "1,166 ratings" [ref=e1660] [cursor=pointer]:
+                              - /url: /Zebra-Pen-Retractable-Ballpoint-41416/dp/B09YVS8MNH/ref=sr_1_168?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-168&xpid=1UyUulPOlf7Sc#customerReviews
+                              - text: (1.1K)
+                          - generic [ref=e1661]: 100+ bought in past month
+                        - generic [ref=e1664]:
+                          - generic [ref=e1665]: Price, product page
+                          - 'link "INR 1,355.29 ( INR 226.04 /count) Typical: INR 1,443.62 Typical: INR 1,443.62" [ref=e1666] [cursor=pointer]':
+                            - /url: /Zebra-Pen-Retractable-Ballpoint-41416/dp/B09YVS8MNH/ref=sr_1_168?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-168&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e1667]:
+                              - generic [ref=e1668]: INR 1,355.29
+                              - generic [ref=e1669]:
+                                - text: INR
+                                - generic [ref=e1670]:
+                                  - text: 1,355
+                                  - generic [ref=e1671]: .
+                                - text: "29"
+                            - generic [ref=e1672]:
+                              - text: (
+                              - generic [ref=e1673]:
+                                - generic [ref=e1674]: INR 226.04
+                                - text: INR226.04
+                              - text: /count)
+                            - generic [ref=e1675]: "Typical: INR 1,443.62"
+                            - generic [ref=e1676]:
+                              - text: "Typical:"
+                              - generic [ref=e1677]:
+                                - generic [ref=e1678]: INR 1,443.62
+                                - text: INR1,443.62
+                        - generic [ref=e1679]:
+                          - generic [ref=e1685]: INR 900.36 delivery Tue, Nov 3
+                          - generic [ref=e1686]: Ships to India
+                        - generic [ref=e1700] [cursor=pointer]:
+                          - button "Add to cart" [ref=e1701]
+                          - generic [ref=e1702]: Add to cart
+                  - listitem [ref=e1703]:
+                    - generic [ref=e1708]:
+                      - link [ref=e1711] [cursor=pointer]:
+                        - /url: /Parker-Jotter-Originals-Ballpoint-Collection/dp/B07J5FHBPH/ref=sr_1_169?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-169&xpid=1UyUulPOlf7Sc
+                        - img [ref=e1713]
+                      - generic [ref=e1714]:
+                        - link "Parker Jotter Originals Ballpoint Pen Collection, Assorted Retro Finishes, Medium Point, Black Ink, 4 Count - Colorful Stationary, Desk Essentials, Signature Design" [ref=e1716] [cursor=pointer]:
+                          - /url: /Parker-Jotter-Originals-Ballpoint-Collection/dp/B07J5FHBPH/ref=sr_1_169?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-169&xpid=1UyUulPOlf7Sc
+                          - heading "Parker Jotter Originals Ballpoint Pen Collection, Assorted Retro Finishes, Medium Point, Black Ink, 4 Count - Colorful Stationary, Desk Essentials, Signature Design" [level=2] [ref=e1717]
+                        - generic [ref=e1718]:
+                          - generic [ref=e1719]:
+                            - text: "4.7"
+                            - button "4.7 out of 5 stars, rating details" [ref=e1721] [cursor=pointer]:
+                              - generic [ref=e1723]: 4.7 out of 5 stars
+                            - link "6,280 ratings" [ref=e1727] [cursor=pointer]:
+                              - /url: /Parker-Jotter-Originals-Ballpoint-Collection/dp/B07J5FHBPH/ref=sr_1_169?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-169&xpid=1UyUulPOlf7Sc#customerReviews
+                              - text: (6.2K)
+                          - generic [ref=e1728]: 700+ bought in past month
+                        - generic [ref=e1731]:
+                          - generic [ref=e1732]: Price, product page
+                          - link "INR 1,644.02 ( INR 411.24 /count)" [ref=e1733] [cursor=pointer]:
+                            - /url: /Parker-Jotter-Originals-Ballpoint-Collection/dp/B07J5FHBPH/ref=sr_1_169?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-169&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e1734]:
+                              - generic [ref=e1735]: INR 1,644.02
+                              - generic [ref=e1736]:
+                                - text: INR
+                                - generic [ref=e1737]:
+                                  - text: 1,644
+                                  - generic [ref=e1738]: .
+                                - text: "02"
+                            - generic [ref=e1739]:
+                              - text: (
+                              - generic [ref=e1740]:
+                                - generic [ref=e1741]: INR 411.24
+                                - text: INR411.24
+                              - text: /count)
+                        - generic [ref=e1742]:
+                          - generic [ref=e1748]: INR 946.90 delivery Tue, Nov 3
+                          - generic [ref=e1749]: Ships to India
+                        - generic [ref=e1763] [cursor=pointer]:
+                          - button "Add to cart" [ref=e1764]
+                          - generic [ref=e1765]: Add to cart
+                  - listitem [ref=e1766]:
+                    - generic [ref=e1771]:
+                      - link [ref=e1774] [cursor=pointer]:
+                        - /url: /Microneedling-Cartridges-0-25mm-Cosmetic-Auto-Pause/dp/B0HJBSBR4Z/ref=sr_1_170?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-170&xpid=1UyUulPOlf7Sc
+                        - img [ref=e1776]
+                      - generic [ref=e1777]:
+                        - generic [ref=e1778]:
+                          - link "Dr. Pen A11 Microneedling Pen Kit with 30 Cartridges for Home Use" [ref=e1779] [cursor=pointer]:
+                            - /url: /Microneedling-Cartridges-0-25mm-Cosmetic-Auto-Pause/dp/B0HJBSBR4Z/ref=sr_1_170?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-170&xpid=1UyUulPOlf7Sc
+                            - heading "Dr. Pen A11 Microneedling Pen Kit with 30 Cartridges for Home Use" [level=2] [ref=e1780]
+                          - generic "0.25mm, Cosmetic Beauty Kit with Smart Auto-Pause Base" [ref=e1782]
+                        - generic [ref=e1783]:
+                          - generic [ref=e1784]:
+                            - text: "5.0"
+                            - button "5.0 out of 5 stars, rating details" [ref=e1786] [cursor=pointer]:
+                              - generic [ref=e1788]: 5.0 out of 5 stars
+                            - link "2 ratings" [ref=e1792] [cursor=pointer]:
+                              - /url: /Microneedling-Cartridges-0-25mm-Cosmetic-Auto-Pause/dp/B0HJBSBR4Z/ref=sr_1_170?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-170&xpid=1UyUulPOlf7Sc#customerReviews
+                              - text: (2)
+                          - generic [ref=e1793]: New on Amazon in past month
+                        - link "See options" [ref=e1801] [cursor=pointer]:
+                          - /url: /Microneedling-Cartridges-0-25mm-Cosmetic-Auto-Pause/dp/B0HJBSBR4Z/ref=sr_1_170_so_SKIN_CARE_AGENT?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-170&xpid=1UyUulPOlf7Sc
+                  - listitem [ref=e1802]:
+                    - generic [ref=e1807]:
+                      - link [ref=e1810] [cursor=pointer]:
+                        - /url: /Fountain-Madoromi-Beginners-Expression-PFKA-1MDPF/dp/B0DP68D4QR/ref=sr_1_171?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-171&xpid=1UyUulPOlf7Sc
+                        - img [ref=e1812]
+                      - generic [ref=e1813]:
+                        - group "colors available" [ref=e1815]:
+                          - list [ref=e1816]:
+                            - generic [ref=e1817]:
+                              - listitem:
+                                - link "Pink":
+                                  - /url: /Fountain-Madoromi-Beginners-Expression-PFKA-1MDPF/dp/B0DP68D4QR/ref=cs_sr_dp_loc_1?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-171&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e1820]:
+                              - listitem:
+                                - link "Braun":
+                                  - /url: /Fountain-Madoromi-Beginners-Expression-PFKA-1MDPF/dp/B0DP63YT62/ref=cs_sr_dp_loc_2?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-171&xpid=1UyUulPOlf7Sc
+                        - link "Pilot Kakuno Fountain Pen Madoromi Color Series, Gold (Smiley Face) Fine Nib, Perfect for Beginners and Creative Expression, Pink, PFKA-1MDPF" [ref=e1824] [cursor=pointer]:
+                          - /url: /Fountain-Madoromi-Beginners-Expression-PFKA-1MDPF/dp/B0DP68D4QR/ref=sr_1_171?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-171&xpid=1UyUulPOlf7Sc
+                          - heading "Pilot Kakuno Fountain Pen Madoromi Color Series, Gold (Smiley Face) Fine Nib, Perfect for Beginners and Creative Expression, Pink, PFKA-1MDPF" [level=2] [ref=e1825]
+                        - generic [ref=e1826]:
+                          - generic [ref=e1827]:
+                            - text: "4.7"
+                            - button "4.7 out of 5 stars, rating details" [ref=e1829] [cursor=pointer]:
+                              - generic [ref=e1831]: 4.7 out of 5 stars
+                            - link "276 ratings" [ref=e1835] [cursor=pointer]:
+                              - /url: /Fountain-Madoromi-Beginners-Expression-PFKA-1MDPF/dp/B0DP68D4QR/ref=sr_1_171?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-171&xpid=1UyUulPOlf7Sc#customerReviews
+                              - text: (276)
+                          - generic [ref=e1836]: 1K+ bought in past month
+                        - link "See options" [ref=e1844] [cursor=pointer]:
+                          - /url: /Fountain-Madoromi-Beginners-Expression-PFKA-1MDPF/dp/B0DP68D4QR/ref=sr_1_171_so_WRITING_INSTRUMENT?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-171&xpid=1UyUulPOlf7Sc
+                  - listitem [ref=e1845]:
+                    - generic [ref=e1850]:
+                      - link [ref=e1853] [cursor=pointer]:
+                        - /url: /Pilot-Parallel-Calligraphy-Cartridges-90052/dp/B002RJPPMK/ref=sr_1_172?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-172&xpid=1UyUulPOlf7Sc
+                        - img [ref=e1855]
+                      - generic [ref=e1856]:
+                        - group "colors available" [ref=e1858]:
+                          - list [ref=e1859]:
+                            - generic [ref=e1860]:
+                              - listitem:
+                                - link "Red/Blue":
+                                  - /url: /Pilot-Parallel-Calligraphy-Cartridges-90052/dp/B002RJPPMK/ref=cs_sr_dp_loc_1?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-172&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e1863]:
+                              - listitem:
+                                - link "Black/Red Ink":
+                                  - /url: /Pilot-Parallel-Calligraphy-Cartridges-90052/dp/B019YLRFFS/ref=cs_sr_dp_loc_2?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-172&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e1866]:
+                              - listitem:
+                                - link "White":
+                                  - /url: /Pilot-Parallel-Calligraphy-Cartridges-90052/dp/B08LQT1JTP/ref=cs_sr_dp_loc_3?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-172&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e1869]:
+                              - listitem:
+                                - link "White/Teal":
+                                  - /url: /Pilot-Parallel-Calligraphy-Cartridges-90052/dp/B08LQR2L93/ref=cs_sr_dp_loc_4?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-172&xpid=1UyUulPOlf7Sc
+                        - link "PILOT Parallel Calligraphy Pen Set, 3.8mm Nib with Black and Red Ink Cartridges (90052)" [ref=e1873] [cursor=pointer]:
+                          - /url: /Pilot-Parallel-Calligraphy-Cartridges-90052/dp/B002RJPPMK/ref=sr_1_172?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-172&xpid=1UyUulPOlf7Sc
+                          - heading "PILOT Parallel Calligraphy Pen Set, 3.8mm Nib with Black and Red Ink Cartridges (90052)" [level=2] [ref=e1874]
+                        - generic [ref=e1875]:
+                          - generic [ref=e1876]:
+                            - text: "4.6"
+                            - button "4.6 out of 5 stars, rating details" [ref=e1878] [cursor=pointer]:
+                              - generic [ref=e1880]: 4.6 out of 5 stars
+                            - link "5,946 ratings" [ref=e1884] [cursor=pointer]:
+                              - /url: /Pilot-Parallel-Calligraphy-Cartridges-90052/dp/B002RJPPMK/ref=sr_1_172?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-172&xpid=1UyUulPOlf7Sc#customerReviews
+                              - text: (5.9K)
+                          - generic [ref=e1885]: 500+ bought in past month
+                        - link "See options" [ref=e1893] [cursor=pointer]:
+                          - /url: /Pilot-Parallel-Calligraphy-Cartridges-90052/dp/B002RJPPMK/ref=sr_1_172_so_WRITING_INSTRUMENT?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-172&xpid=1UyUulPOlf7Sc
+                  - listitem [ref=e1894]:
+                    - generic [ref=e1899]:
+                      - link [ref=e1902] [cursor=pointer]:
+                        - /url: /Scanmarker-Standalone-Translator-Assistive-Difficulties/dp/B0CKRMQPN5/ref=sr_1_173?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-173&xpid=1UyUulPOlf7Sc
+                        - img [ref=e1904]
+                      - generic [ref=e1905]:
+                        - link "Scanmarker Pro | Translation Pen & Reading Pen for Kids & Adults | Assistive Tool & Language Translator Device for Dyslexia, Reading Support & Language Learners | Translator Pen for 100 Languages" [ref=e1907] [cursor=pointer]:
+                          - /url: /Scanmarker-Standalone-Translator-Assistive-Difficulties/dp/B0CKRMQPN5/ref=sr_1_173?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-173&xpid=1UyUulPOlf7Sc
+                          - heading "Scanmarker Pro | Translation Pen & Reading Pen for Kids & Adults | Assistive Tool & Language Translator Device for Dyslexia, Reading Support & Language Learners | Translator Pen for 100 Languages" [level=2] [ref=e1908]
+                        - generic [ref=e1909]:
+                          - generic [ref=e1910]:
+                            - text: "4.0"
+                            - button "4.0 out of 5 stars, rating details" [ref=e1912] [cursor=pointer]:
+                              - generic [ref=e1914]: 4.0 out of 5 stars
+                            - link "213 ratings" [ref=e1918] [cursor=pointer]:
+                              - /url: /Scanmarker-Standalone-Translator-Assistive-Difficulties/dp/B0CKRMQPN5/ref=sr_1_173?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-173&xpid=1UyUulPOlf7Sc#customerReviews
+                              - text: (213)
+                          - generic [ref=e1919]: 100+ bought in past month
+                        - link "See options" [ref=e1927] [cursor=pointer]:
+                          - /url: /Scanmarker-Standalone-Translator-Assistive-Difficulties/dp/B0CKRMQPN5/ref=sr_1_173_so_SCANNER?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-173&xpid=1UyUulPOlf7Sc
+                  - listitem [ref=e1928]:
+                    - generic [ref=e1933]:
+                      - link [ref=e1936] [cursor=pointer]:
+                        - /url: /Reusable-Injection-Cartridges-Injector-Adjustable/dp/B0HHDJNMJ5/ref=sr_1_174?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-174&xpid=1UyUulPOlf7Sc
+                        - img [ref=e1938]
+                      - generic [ref=e1939]:
+                        - link "V2 Reusable Injection Pen Set, 5 Pens with 5 Bonus Cartridges, 60 Unit Peptide Pen Injector with Adjustable Dose Dial (Deepblue, Pink, Black, Green, Purple)" [ref=e1941] [cursor=pointer]:
+                          - /url: /Reusable-Injection-Cartridges-Injector-Adjustable/dp/B0HHDJNMJ5/ref=sr_1_174?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-174&xpid=1UyUulPOlf7Sc
+                          - heading "V2 Reusable Injection Pen Set, 5 Pens with 5 Bonus Cartridges, 60 Unit Peptide Pen Injector with Adjustable Dose Dial (Deepblue, Pink, Black, Green, Purple)" [level=2] [ref=e1942]
+                        - generic [ref=e1944]:
+                          - text: "5.0"
+                          - button "5.0 out of 5 stars, rating details" [ref=e1946] [cursor=pointer]:
+                            - generic [ref=e1948]: 5.0 out of 5 stars
+                          - link "29 ratings" [ref=e1952] [cursor=pointer]:
+                            - /url: /Reusable-Injection-Cartridges-Injector-Adjustable/dp/B0HHDJNMJ5/ref=sr_1_174?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-174&xpid=1UyUulPOlf7Sc#customerReviews
+                            - text: (29)
+                        - link "See options" [ref=e1960] [cursor=pointer]:
+                          - /url: /Reusable-Injection-Cartridges-Injector-Adjustable/dp/B0HHDJNMJ5/ref=sr_1_174_so_HEALTH_PERSONAL_CARE?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-174&xpid=1UyUulPOlf7Sc
+                  - listitem [ref=e1961]:
+                    - generic [ref=e1966]:
+                      - link [ref=e1969] [cursor=pointer]:
+                        - /url: /Pentel-EnerGel-Style-Medium-Barrel/dp/B07D4Y9TY4/ref=sr_1_175?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-175&xpid=1UyUulPOlf7Sc
+                        - img [ref=e1971]
+                      - generic [ref=e1972]:
+                        - group "colors available" [ref=e1974]:
+                          - list [ref=e1975]:
+                            - generic [ref=e1976]:
+                              - listitem:
+                                - link "Teal Blue":
+                                  - /url: /Pentel-EnerGel-Style-Medium-Barrel/dp/B07D4Y9TY4/ref=cs_sr_dp_loc_1?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-175&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e1979]:
+                              - listitem:
+                                - link "Black":
+                                  - /url: /Pentel-EnerGel-Style-Medium-Barrel/dp/B0776M8VY1/ref=cs_sr_dp_loc_2?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-175&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e1982]:
+                              - listitem:
+                                - link "Dark Blue":
+                                  - /url: /Pentel-EnerGel-Style-Medium-Barrel/dp/B0776KVXG1/ref=cs_sr_dp_loc_3?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-175&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e1985]:
+                              - listitem:
+                                - link "Gold":
+                                  - /url: /Pentel-EnerGel-Style-Medium-Barrel/dp/B07XSQBR2B/ref=cs_sr_dp_loc_4?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-175&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e1988]:
+                              - listitem:
+                                - link "Silver":
+                                  - /url: /Pentel-EnerGel-Style-Medium-Barrel/dp/B07D4YXY8G/ref=cs_sr_dp_loc_5?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-175&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e1991]:
+                              - listitem:
+                                - link "White":
+                                  - /url: /Pentel-EnerGel-Style-Medium-Barrel/dp/B0776MX9CT/ref=cs_sr_dp_loc_6?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-175&xpid=1UyUulPOlf7Sc
+                        - link "Pentel EnerGel Style Gel Pen, (0.7mm) Medium Line,Teal Blue Barrel - BL2007SABX" [ref=e1995] [cursor=pointer]:
+                          - /url: /Pentel-EnerGel-Style-Medium-Barrel/dp/B07D4Y9TY4/ref=sr_1_175?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-175&xpid=1UyUulPOlf7Sc
+                          - heading "Pentel EnerGel Style Gel Pen, (0.7mm) Medium Line,Teal Blue Barrel - BL2007SABX" [level=2] [ref=e1996]
+                        - generic [ref=e1997]:
+                          - generic [ref=e1998]:
+                            - text: "4.7"
+                            - button "4.7 out of 5 stars, rating details" [ref=e2000] [cursor=pointer]:
+                              - generic [ref=e2002]: 4.7 out of 5 stars
+                            - link "3,252 ratings" [ref=e2006] [cursor=pointer]:
+                              - /url: /Pentel-EnerGel-Style-Medium-Barrel/dp/B07D4Y9TY4/ref=sr_1_175?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-175&xpid=1UyUulPOlf7Sc#customerReviews
+                              - text: (3.2K)
+                          - generic [ref=e2007]: 100+ bought in past month
+                        - generic [ref=e2010]:
+                          - generic [ref=e2011]: Price, product page
+                          - link "INR 1,595.58" [ref=e2012] [cursor=pointer]:
+                            - /url: /Pentel-EnerGel-Style-Medium-Barrel/dp/B07D4Y9TY4/ref=sr_1_175?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-175&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e2013]:
+                              - generic [ref=e2014]: INR 1,595.58
+                              - generic [ref=e2015]:
+                                - text: INR
+                                - generic [ref=e2016]:
+                                  - text: 1,595
+                                  - generic [ref=e2017]: .
+                                - text: "58"
+                        - generic [ref=e2018]:
+                          - generic [ref=e2024]: INR 878.52 delivery Tue, Nov 3
+                          - generic [ref=e2025]: Ships to India
+                        - generic [ref=e2039] [cursor=pointer]:
+                          - button "Add to cart" [ref=e2040]
+                          - generic [ref=e2041]: Add to cart
+                  - listitem [ref=e2042]:
+                    - generic [ref=e2047]:
+                      - link [ref=e2050] [cursor=pointer]:
+                        - /url: /Waterman-Car%C3%A8ne-Marine-Fountain-Cartridge/dp/B000J3VJPI/ref=sr_1_176?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-176&xpid=1UyUulPOlf7Sc
+                        - img [ref=e2052]
+                      - generic [ref=e2053]:
+                        - link "Waterman Carène Marine Amber Fountain Pen | Gloss Brown & Black with 23k Gold Clip | Medium Nib with Blue Ink Cartridge | Gift Box" [ref=e2055] [cursor=pointer]:
+                          - /url: /Waterman-Car%C3%A8ne-Marine-Fountain-Cartridge/dp/B000J3VJPI/ref=sr_1_176?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-176&xpid=1UyUulPOlf7Sc
+                          - heading "Waterman Carène Marine Amber Fountain Pen | Gloss Brown & Black with 23k Gold Clip | Medium Nib with Blue Ink Cartridge | Gift Box" [level=2] [ref=e2056]
+                        - generic [ref=e2057]:
+                          - generic [ref=e2058]:
+                            - text: "4.4"
+                            - button "4.4 out of 5 stars, rating details" [ref=e2060] [cursor=pointer]:
+                              - generic [ref=e2062]: 4.4 out of 5 stars
+                            - link "241 ratings" [ref=e2066] [cursor=pointer]:
+                              - /url: /Waterman-Car%C3%A8ne-Marine-Fountain-Cartridge/dp/B000J3VJPI/ref=sr_1_176?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-176&xpid=1UyUulPOlf7Sc#customerReviews
+                              - text: (241)
+                          - generic [ref=e2067]: 50+ bought in past month
+                        - link "See options" [ref=e2075] [cursor=pointer]:
+                          - /url: /Waterman-Car%C3%A8ne-Marine-Fountain-Cartridge/dp/B000J3VJPI/ref=sr_1_176_so_WRITING_INSTRUMENT?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-176&xpid=1UyUulPOlf7Sc
+                  - listitem [ref=e2076]:
+                    - generic [ref=e2081]:
+                      - link [ref=e2084] [cursor=pointer]:
+                        - /url: /reMarkable-Responsive-precise-paper-like-replacement/dp/B08HDMSKV5/ref=sr_1_177?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-177&xpid=1UyUulPOlf7Sc
+                        - img [ref=e2086]
+                      - generic [ref=e2087]:
+                        - generic [ref=e2088]:
+                          - link "reMarkable 2 Marker Plus" [ref=e2089] [cursor=pointer]:
+                            - /url: /reMarkable-Responsive-precise-paper-like-replacement/dp/B08HDMSKV5/ref=sr_1_177?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-177&xpid=1UyUulPOlf7Sc
+                            - heading "reMarkable 2 Marker Plus" [level=2] [ref=e2090]
+                          - generic "Responsive and precise pen with built-in-eraser, paper-like feel, includes 9 marker replacement tips - Black" [ref=e2092]
+                        - generic [ref=e2093]:
+                          - generic [ref=e2094]:
+                            - text: "4.4"
+                            - button "4.4 out of 5 stars, rating details" [ref=e2096] [cursor=pointer]:
+                              - generic [ref=e2098]: 4.4 out of 5 stars
+                            - link "383 ratings" [ref=e2102] [cursor=pointer]:
+                              - /url: /reMarkable-Responsive-precise-paper-like-replacement/dp/B08HDMSKV5/ref=sr_1_177?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-177&xpid=1UyUulPOlf7Sc#customerReviews
+                              - text: (383)
+                          - generic [ref=e2103]: 500+ bought in past month
+                        - link "See options" [ref=e2111] [cursor=pointer]:
+                          - /url: /reMarkable-Responsive-precise-paper-like-replacement/dp/B08HDMSKV5/ref=sr_1_177_so_INPUT_PEN?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-177&xpid=1UyUulPOlf7Sc
+                  - listitem [ref=e2112]:
+                    - generic [ref=e2117]:
+                      - link [ref=e2120] [cursor=pointer]:
+                        - /url: /Pilot-Marker-Ultra-Fine-Assorted-8-Pack/dp/B00006IFJQ/ref=sr_1_178?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-178&xpid=1UyUulPOlf7Sc
+                        - img [ref=e2122]
+                      - generic [ref=e2123]:
+                        - generic [ref=e2124]:
+                          - link "PILOT Razor Point Pens, Ultra-Fine Point 0.3mm, Assorted, 8-Pack" [ref=e2125] [cursor=pointer]:
+                            - /url: /Pilot-Marker-Ultra-Fine-Assorted-8-Pack/dp/B00006IFJQ/ref=sr_1_178?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-178&xpid=1UyUulPOlf7Sc
+                            - heading "PILOT Razor Point Pens, Ultra-Fine Point 0.3mm, Assorted, 8-Pack" [level=2] [ref=e2126]
+                          - generic "Fine-line writing for taking notes, assorted pens for paper, fine line marker stick pens, smooth pens for writing" [ref=e2128]
+                        - generic [ref=e2129]:
+                          - generic [ref=e2130]:
+                            - text: "4.8"
+                            - button "4.8 out of 5 stars, rating details" [ref=e2132] [cursor=pointer]:
+                              - generic [ref=e2134]: 4.8 out of 5 stars
+                            - link "1,137 ratings" [ref=e2138] [cursor=pointer]:
+                              - /url: /Pilot-Marker-Ultra-Fine-Assorted-8-Pack/dp/B00006IFJQ/ref=sr_1_178?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-178&xpid=1UyUulPOlf7Sc#customerReviews
+                              - text: (1.1K)
+                          - generic [ref=e2139]: 200+ bought in past month
+                        - generic [ref=e2142]:
+                          - generic [ref=e2143]: Price, product page
+                          - link "INR 1,343.90 ( INR 168.11 /count)" [ref=e2144] [cursor=pointer]:
+                            - /url: /Pilot-Marker-Ultra-Fine-Assorted-8-Pack/dp/B00006IFJQ/ref=sr_1_178?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-178&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e2145]:
+                              - generic [ref=e2146]: INR 1,343.90
+                              - generic [ref=e2147]:
+                                - text: INR
+                                - generic [ref=e2148]:
+                                  - text: 1,343
+                                  - generic [ref=e2149]: .
+                                - text: "90"
+                            - generic [ref=e2150]:
+                              - text: (
+                              - generic [ref=e2151]:
+                                - generic [ref=e2152]: INR 168.11
+                                - text: INR168.11
+                              - text: /count)
+                        - generic [ref=e2153]:
+                          - generic [ref=e2159]: INR 898.46 delivery Tue, Nov 3
+                          - generic [ref=e2160]: Ships to India
+                        - generic [ref=e2174] [cursor=pointer]:
+                          - button "Add to cart" [ref=e2175]
+                          - generic [ref=e2176]: Add to cart
+                        - generic [ref=e2178]:
+                          - text: More Buying Choices
+                          - text: INR 885.17
+                          - link "(7 used & new offers)" [ref=e2180] [cursor=pointer]:
+                            - /url: /gp/offer-listing/B00006IFJQ/ref=sr_1_178_olp?keywords=pen&dib_tag=se&xpid=1UyUulPOlf7Sc&dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&qid=1792394334&sr=8-178
+                  - listitem [ref=e2181]:
+                    - generic [ref=e2186]:
+                      - link [ref=e2189] [cursor=pointer]:
+                        - /url: /Montblanc-Starwalker-Resin-Line-118847/dp/B07S8L33S6/ref=sr_1_179?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-179&xpid=1UyUulPOlf7Sc
+                        - img [ref=e2191]
+                      - generic [ref=e2192]:
+                        - link "Montblanc StarWalker Fineliner Pen - Black" [ref=e2194] [cursor=pointer]:
+                          - /url: /Montblanc-Starwalker-Resin-Line-118847/dp/B07S8L33S6/ref=sr_1_179?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-179&xpid=1UyUulPOlf7Sc
+                          - heading "Montblanc StarWalker Fineliner Pen - Black" [level=2] [ref=e2195]
+                        - generic [ref=e2197]:
+                          - text: "4.3"
+                          - button "4.3 out of 5 stars, rating details" [ref=e2199] [cursor=pointer]:
+                            - generic [ref=e2201]: 4.3 out of 5 stars
+                          - link "111 ratings" [ref=e2205] [cursor=pointer]:
+                            - /url: /Montblanc-Starwalker-Resin-Line-118847/dp/B07S8L33S6/ref=sr_1_179?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-179&xpid=1UyUulPOlf7Sc#customerReviews
+                            - text: (111)
+                        - link "See options" [ref=e2213] [cursor=pointer]:
+                          - /url: /Montblanc-Starwalker-Resin-Line-118847/dp/B07S8L33S6/ref=sr_1_179_so_WRITING_INSTRUMENT?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-179&xpid=1UyUulPOlf7Sc
+                  - listitem [ref=e2214]:
+                    - generic [ref=e2219]:
+                      - link [ref=e2222] [cursor=pointer]:
+                        - /url: /ROTRING-800-Ballpoint-Pen-Black/dp/B077GQDPYM/ref=sr_1_180?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-180&xpid=1UyUulPOlf7Sc
+                        - img [ref=e2224]
+                      - generic [ref=e2225]:
+                        - link "Rotring 800 Retractable Ballpoint Pen, Metal Barrel, Medium Point, Black Ink, Refillable, 1 Count" [ref=e2227] [cursor=pointer]:
+                          - /url: /ROTRING-800-Ballpoint-Pen-Black/dp/B077GQDPYM/ref=sr_1_180?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-180&xpid=1UyUulPOlf7Sc
+                          - heading "Rotring 800 Retractable Ballpoint Pen, Metal Barrel, Medium Point, Black Ink, Refillable, 1 Count" [level=2] [ref=e2228]
+                        - generic [ref=e2230]:
+                          - text: "4.6"
+                          - button "4.6 out of 5 stars, rating details" [ref=e2232] [cursor=pointer]:
+                            - generic [ref=e2234]: 4.6 out of 5 stars
+                          - link "1,257 ratings" [ref=e2238] [cursor=pointer]:
+                            - /url: /ROTRING-800-Ballpoint-Pen-Black/dp/B077GQDPYM/ref=sr_1_180?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-180&xpid=1UyUulPOlf7Sc#customerReviews
+                            - text: (1.2K)
+                        - generic [ref=e2241]:
+                          - generic [ref=e2242]: Price, product page
+                          - link "INR 5,183.74" [ref=e2243] [cursor=pointer]:
+                            - /url: /ROTRING-800-Ballpoint-Pen-Black/dp/B077GQDPYM/ref=sr_1_180?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-180&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e2244]:
+                              - generic [ref=e2245]: INR 5,183.74
+                              - generic [ref=e2246]:
+                                - text: INR
+                                - generic [ref=e2247]:
+                                  - text: 5,183
+                                  - generic [ref=e2248]: .
+                                - text: "74"
+                        - generic [ref=e2249]:
+                          - generic [ref=e2255]: INR 878.52 delivery
+                          - generic [ref=e2256]: Ships to India
+                        - generic [ref=e2270] [cursor=pointer]:
+                          - button "Add to cart" [ref=e2271]
+                          - generic [ref=e2272]: Add to cart
+                        - generic [ref=e2274]:
+                          - text: More Buying Choices
+                          - text: INR 4,211.19
+                          - link "(5 new offers)" [ref=e2276] [cursor=pointer]:
+                            - /url: /gp/offer-listing/B077GQDPYM/ref=sr_1_180_olp?keywords=pen&dib_tag=se&xpid=1UyUulPOlf7Sc&dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&qid=1792394334&sr=8-180
+                  - listitem [ref=e2277]:
+                    - generic [ref=e2282]:
+                      - link [ref=e2285] [cursor=pointer]:
+                        - /url: /Rotring-Ballpoint-All-Metal-Hexagonal-Refillable/dp/B0DSJQN1DC/ref=sr_1_181?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-181&xpid=1UyUulPOlf7Sc
+                        - img [ref=e2287]
+                      - generic [ref=e2288]:
+                        - group "colors available" [ref=e2290]:
+                          - list [ref=e2291]:
+                            - generic [ref=e2292]:
+                              - listitem:
+                                - link "Dark Stone":
+                                  - /url: /Rotring-Ballpoint-All-Metal-Hexagonal-Refillable/dp/B0DSJQN1DC/ref=cs_sr_dp_loc_1?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-181&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e2295]:
+                              - listitem:
+                                - link "Chocolate Truffle":
+                                  - /url: /Rotring-Ballpoint-All-Metal-Hexagonal-Refillable/dp/B0DSJMNCMC/ref=cs_sr_dp_loc_2?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-181&xpid=1UyUulPOlf7Sc
+                        - link "rOtring 600 Ballpoint Pen | Medium Point | Black Ink | All-Metal Body Pen | Dark Stone | Non-Slip Knurled Grip & Hexagonal Barrel | Refillable" [ref=e2299] [cursor=pointer]:
+                          - /url: /Rotring-Ballpoint-All-Metal-Hexagonal-Refillable/dp/B0DSJQN1DC/ref=sr_1_181?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-181&xpid=1UyUulPOlf7Sc
+                          - heading "rOtring 600 Ballpoint Pen | Medium Point | Black Ink | All-Metal Body Pen | Dark Stone | Non-Slip Knurled Grip & Hexagonal Barrel | Refillable" [level=2] [ref=e2300]
+                        - generic [ref=e2301]:
+                          - generic [ref=e2302]:
+                            - text: "4.8"
+                            - button "4.8 out of 5 stars, rating details" [ref=e2304] [cursor=pointer]:
+                              - generic [ref=e2306]: 4.8 out of 5 stars
+                            - link "369 ratings" [ref=e2310] [cursor=pointer]:
+                              - /url: /Rotring-Ballpoint-All-Metal-Hexagonal-Refillable/dp/B0DSJQN1DC/ref=sr_1_181?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-181&xpid=1UyUulPOlf7Sc#customerReviews
+                              - text: (369)
+                          - generic [ref=e2311]: 200+ bought in past month
+                        - generic [ref=e2314]:
+                          - generic [ref=e2315]: Price, product page
+                          - link "INR 2,421.86" [ref=e2316] [cursor=pointer]:
+                            - /url: /Rotring-Ballpoint-All-Metal-Hexagonal-Refillable/dp/B0DSJQN1DC/ref=sr_1_181?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-181&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e2317]:
+                              - generic [ref=e2318]: INR 2,421.86
+                              - generic [ref=e2319]:
+                                - text: INR
+                                - generic [ref=e2320]:
+                                  - text: 2,421
+                                  - generic [ref=e2321]: .
+                                - text: "86"
+                        - generic "Only 4 left in stock - order soon." [ref=e2328]
+                        - generic [ref=e2342] [cursor=pointer]:
+                          - button "Add to cart" [ref=e2343]
+                          - generic [ref=e2344]: Add to cart
+                  - listitem [ref=e2345]:
+                    - generic [ref=e2350]:
+                      - link [ref=e2353] [cursor=pointer]:
+                        - /url: /Waterman-Expert-Golden-Fountain-S0951640/dp/B005NJOJNM/ref=sr_1_182?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-182&xpid=1UyUulPOlf7Sc
+                        - img [ref=e2355]
+                      - generic [ref=e2356]:
+                        - link "Waterman Expert Fountain Pen, Gloss Black with 23k Gold Trim, Fine Nib, Includes Gift Box - Luxury Writing" [ref=e2358] [cursor=pointer]:
+                          - /url: /Waterman-Expert-Golden-Fountain-S0951640/dp/B005NJOJNM/ref=sr_1_182?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-182&xpid=1UyUulPOlf7Sc
+                          - heading "Waterman Expert Fountain Pen, Gloss Black with 23k Gold Trim, Fine Nib, Includes Gift Box - Luxury Writing" [level=2] [ref=e2359]
+                        - generic [ref=e2360]:
+                          - generic [ref=e2361]:
+                            - text: "4.4"
+                            - button "4.4 out of 5 stars, rating details" [ref=e2363] [cursor=pointer]:
+                              - generic [ref=e2365]: 4.4 out of 5 stars
+                            - link "2,438 ratings" [ref=e2369] [cursor=pointer]:
+                              - /url: /Waterman-Expert-Golden-Fountain-S0951640/dp/B005NJOJNM/ref=sr_1_182?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-182&xpid=1UyUulPOlf7Sc#customerReviews
+                              - text: (2.4K)
+                          - generic [ref=e2370]: 100+ bought in past month
+                        - link "See options" [ref=e2378] [cursor=pointer]:
+                          - /url: /Waterman-Expert-Golden-Fountain-S0951640/dp/B005NJOJNM/ref=sr_1_182_so_WRITING_INSTRUMENT?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-182&xpid=1UyUulPOlf7Sc
+                  - listitem [ref=e2379]:
+                    - generic [ref=e2384]:
+                      - link [ref=e2387] [cursor=pointer]:
+                        - /url: /PARKER-Sonnet-Ballpoint-Prestige-Chiselled/dp/B015N3Q8HM/ref=sr_1_183?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-183&xpid=1UyUulPOlf7Sc
+                        - img [ref=e2389]
+                      - generic [ref=e2390]:
+                        - group "colors available" [ref=e2392]:
+                          - list [ref=e2393]:
+                            - generic [ref=e2394]:
+                              - listitem:
+                                - link "Prestige Silver":
+                                  - /url: /PARKER-Sonnet-Ballpoint-Prestige-Chiselled/dp/B015N3Q8HM/ref=cs_sr_dp_loc_1?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-183&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e2397]:
+                              - listitem:
+                                - link "Premium Silver":
+                                  - /url: /PARKER-Sonnet-Ballpoint-Prestige-Chiselled/dp/B08Z72LVNB/ref=cs_sr_dp_loc_2?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-183&xpid=1UyUulPOlf7Sc
+                        - link "Parker Sonnet Ballpoint Pen Chiselled Silver with Gold Trim Medium Point Black Ink (1931492)" [ref=e2401] [cursor=pointer]:
+                          - /url: /PARKER-Sonnet-Ballpoint-Prestige-Chiselled/dp/B015N3Q8HM/ref=sr_1_183?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-183&xpid=1UyUulPOlf7Sc
+                          - heading "Parker Sonnet Ballpoint Pen Chiselled Silver with Gold Trim Medium Point Black Ink (1931492)" [level=2] [ref=e2402]
+                        - generic [ref=e2404]:
+                          - text: "4.4"
+                          - button "4.4 out of 5 stars, rating details" [ref=e2406] [cursor=pointer]:
+                            - generic [ref=e2408]: 4.4 out of 5 stars
+                          - link "295 ratings" [ref=e2412] [cursor=pointer]:
+                            - /url: /PARKER-Sonnet-Ballpoint-Prestige-Chiselled/dp/B015N3Q8HM/ref=sr_1_183?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-183&xpid=1UyUulPOlf7Sc#customerReviews
+                            - text: (295)
+                        - link "See options" [ref=e2420] [cursor=pointer]:
+                          - /url: /PARKER-Sonnet-Ballpoint-Prestige-Chiselled/dp/B015N3Q8HM/ref=sr_1_183_so_WRITING_INSTRUMENT?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-183&xpid=1UyUulPOlf7Sc
+                  - listitem [ref=e2421]:
+                    - generic [ref=e2426]:
+                      - link [ref=e2429] [cursor=pointer]:
+                        - /url: /Waterman-Carene-Black-Fountain-S0700300/dp/B0036EAOZS/ref=sr_1_184?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-184&xpid=1UyUulPOlf7Sc
+                        - img [ref=e2431]
+                      - generic [ref=e2432]:
+                        - link "Waterman Carène Black Sea Fountain Pen | High-Gloss Black & 23k Gold Clip | Fine Nib with Blue Ink Cartridge | Gift Box" [ref=e2434] [cursor=pointer]:
+                          - /url: /Waterman-Carene-Black-Fountain-S0700300/dp/B0036EAOZS/ref=sr_1_184?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-184&xpid=1UyUulPOlf7Sc
+                          - heading "Waterman Carène Black Sea Fountain Pen | High-Gloss Black & 23k Gold Clip | Fine Nib with Blue Ink Cartridge | Gift Box" [level=2] [ref=e2435]
+                        - generic [ref=e2437]:
+                          - text: "3.6"
+                          - button "3.6 out of 5 stars, rating details" [ref=e2439] [cursor=pointer]:
+                            - generic [ref=e2441]: 3.6 out of 5 stars
+                          - link "121 ratings" [ref=e2445] [cursor=pointer]:
+                            - /url: /Waterman-Carene-Black-Fountain-S0700300/dp/B0036EAOZS/ref=sr_1_184?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-184&xpid=1UyUulPOlf7Sc#customerReviews
+                            - text: (121)
+                        - link "See options" [ref=e2453] [cursor=pointer]:
+                          - /url: /Waterman-Carene-Black-Fountain-S0700300/dp/B0036EAOZS/ref=sr_1_184_so_WRITING_INSTRUMENT?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-184&xpid=1UyUulPOlf7Sc
+                  - listitem [ref=e2454]:
+                    - generic [ref=e2459]:
+                      - link [ref=e2462] [cursor=pointer]:
+                        - /url: /Waterman-Carene-Black-Fountain-S0293970/dp/B001W1UWLI/ref=sr_1_185?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-185&xpid=1UyUulPOlf7Sc
+                        - img [ref=e2464]
+                      - generic [ref=e2465]:
+                        - link "Waterman Carène Black Sea Fountain Pen, High-Gloss Black with Palladium Plated Trim, Fine Nib with Blue Ink Cartridge, Gift Box" [ref=e2467] [cursor=pointer]:
+                          - /url: /Waterman-Carene-Black-Fountain-S0293970/dp/B001W1UWLI/ref=sr_1_185?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-185&xpid=1UyUulPOlf7Sc
+                          - heading "Waterman Carène Black Sea Fountain Pen, High-Gloss Black with Palladium Plated Trim, Fine Nib with Blue Ink Cartridge, Gift Box" [level=2] [ref=e2468]
+                        - generic [ref=e2470]:
+                          - text: "4.3"
+                          - button "4.3 out of 5 stars, rating details" [ref=e2472] [cursor=pointer]:
+                            - generic [ref=e2474]: 4.3 out of 5 stars
+                          - link "110 ratings" [ref=e2478] [cursor=pointer]:
+                            - /url: /Waterman-Carene-Black-Fountain-S0293970/dp/B001W1UWLI/ref=sr_1_185?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-185&xpid=1UyUulPOlf7Sc#customerReviews
+                            - text: (110)
+                        - link "See options" [ref=e2486] [cursor=pointer]:
+                          - /url: /Waterman-Carene-Black-Fountain-S0293970/dp/B001W1UWLI/ref=sr_1_185_so_WRITING_INSTRUMENT?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-185&xpid=1UyUulPOlf7Sc
+                  - listitem [ref=e2487]:
+                    - generic [ref=e2492]:
+                      - link [ref=e2495] [cursor=pointer]:
+                        - /url: /Microsoft-Surface-Touchscreen-Snapdragon-Keyboard/dp/B0HHB8SJRL/ref=sr_1_186?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-186&xpid=1UyUulPOlf7Sc
+                        - img [ref=e2497]
+                      - link "Microsoft Surface Pro 12\" 2-in-1 Touchscreen Tablet, Snapdragon X Plus AI NPU, 16-Hr Battery, Slim Pen, Generic Grey Keyboard, MS 365, 65W Charger, 16GB RAM, 512GB Storage, Win 11 (Renewed)" [ref=e2500] [cursor=pointer]:
+                        - /url: /Microsoft-Surface-Touchscreen-Snapdragon-Keyboard/dp/B0HHB8SJRL/ref=sr_1_186?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-186&xpid=1UyUulPOlf7Sc
+                        - heading "Microsoft Surface Pro 12\" 2-in-1 Touchscreen Tablet, Snapdragon X Plus AI NPU, 16-Hr Battery, Slim Pen, Generic Grey Keyboard, MS 365, 65W Charger, 16GB RAM, 512GB Storage, Win 11 (Renewed)" [level=2] [ref=e2501]
+                  - listitem [ref=e2502]:
+                    - generic [ref=e2507]:
+                      - link [ref=e2510] [cursor=pointer]:
+                        - /url: /PARKER-Sonnet-Ballpoint-Lacquer-Medium/dp/B015N3QTIK/ref=sr_1_187?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-187&xpid=1UyUulPOlf7Sc
+                        - img [ref=e2512]
+                      - generic [ref=e2513]:
+                        - group "colors available" [ref=e2515]:
+                          - list [ref=e2516]:
+                            - generic [ref=e2517]:
+                              - listitem:
+                                - link "Black":
+                                  - /url: /PARKER-Sonnet-Ballpoint-Lacquer-Medium/dp/B015N3QTIK/ref=cs_sr_dp_loc_1?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-187&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e2520]:
+                              - listitem:
+                                - link "Blue and Chrome":
+                                  - /url: /PARKER-Sonnet-Ballpoint-Lacquer-Medium/dp/B015N3QPIY/ref=cs_sr_dp_loc_2?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-187&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e2523]:
+                              - listitem:
+                                - link "Matte Black Lacquer with Chrome Trim":
+                                  - /url: /PARKER-Sonnet-Ballpoint-Lacquer-Medium/dp/B015N3R254/ref=cs_sr_dp_loc_3?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-187&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e2526]:
+                              - listitem:
+                                - link "Matte Black Lacquer with Gold Trim":
+                                  - /url: /PARKER-Sonnet-Ballpoint-Lacquer-Medium/dp/B015N3QYA8/ref=cs_sr_dp_loc_4?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-187&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e2529]:
+                              - listitem:
+                                - link "Red and Gold":
+                                  - /url: /PARKER-Sonnet-Ballpoint-Lacquer-Medium/dp/B015N3QTM6/ref=cs_sr_dp_loc_5?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-187&xpid=1UyUulPOlf7Sc
+                        - link "Parker Sonnet Ballpoint Pen Black Lacquer with Gold Trim Medium Point Black Ink (1931497)" [ref=e2533] [cursor=pointer]:
+                          - /url: /PARKER-Sonnet-Ballpoint-Lacquer-Medium/dp/B015N3QTIK/ref=sr_1_187?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-187&xpid=1UyUulPOlf7Sc
+                          - heading "Parker Sonnet Ballpoint Pen Black Lacquer with Gold Trim Medium Point Black Ink (1931497)" [level=2] [ref=e2534]
+                        - generic [ref=e2536]:
+                          - text: "4.6"
+                          - button "4.6 out of 5 stars, rating details" [ref=e2538] [cursor=pointer]:
+                            - generic [ref=e2540]: 4.6 out of 5 stars
+                          - link "1,658 ratings" [ref=e2544] [cursor=pointer]:
+                            - /url: /PARKER-Sonnet-Ballpoint-Lacquer-Medium/dp/B015N3QTIK/ref=sr_1_187?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-187&xpid=1UyUulPOlf7Sc#customerReviews
+                            - text: (1.6K)
+                        - link "See options" [ref=e2552] [cursor=pointer]:
+                          - /url: /PARKER-Sonnet-Ballpoint-Lacquer-Medium/dp/B015N3QTIK/ref=sr_1_187_so_WRITING_INSTRUMENT?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-187&xpid=1UyUulPOlf7Sc
+                  - listitem [ref=e2553]:
+                    - generic [ref=e2558]:
+                      - link [ref=e2561] [cursor=pointer]:
+                        - /url: /PARKER-Duofold-Ballpoint-Prestige-Chevron/dp/B015N3PRBK/ref=sr_1_188?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-188&xpid=1UyUulPOlf7Sc
+                        - img [ref=e2563]
+                      - generic [ref=e2564]:
+                        - group "colors available" [ref=e2566]:
+                          - list [ref=e2567]:
+                            - generic [ref=e2568]:
+                              - listitem:
+                                - link "blue chevron - gold plated trim":
+                                  - /url: /PARKER-Duofold-Ballpoint-Prestige-Chevron/dp/B015N3PRBK/ref=cs_sr_dp_loc_1?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-188&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e2571]:
+                              - listitem:
+                                - link "Chiselled - Palladium Trim":
+                                  - /url: /PARKER-Duofold-Ballpoint-Prestige-Chevron/dp/B015N3PVD4/ref=cs_sr_dp_loc_2?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-188&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e2574]:
+                              - listitem:
+                                - link "Ivory \\u0026 Black - Gold Plated Trim":
+                                  - /url: /PARKER-Duofold-Ballpoint-Prestige-Chevron/dp/B015N3Q4MG/ref=cs_sr_dp_loc_3?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-188&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e2577]:
+                              - listitem:
+                                - link "black - palladium trim":
+                                  - /url: /PARKER-Duofold-Ballpoint-Prestige-Chevron/dp/B015WDC610/ref=cs_sr_dp_loc_4?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-188&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e2580]:
+                              - listitem:
+                                - link "black chevron - ruthenium trim":
+                                  - /url: /PARKER-Duofold-Ballpoint-Prestige-Chevron/dp/B015N3PW0Q/ref=cs_sr_dp_loc_5?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-188&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e2583]:
+                              - listitem:
+                                - link "blue \\u0026 black - chrome trim":
+                                  - /url: /PARKER-Duofold-Ballpoint-Prestige-Chevron/dp/B01AHTS1VI/ref=cs_sr_dp_loc_6?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-188&xpid=1UyUulPOlf7Sc
+                          - link "+2 other colors/patterns" [ref=e2587] [cursor=pointer]:
+                            - /url: /PARKER-Duofold-Ballpoint-Prestige-Chevron/dp/B015N3PRBK/ref=cs_sr_dp_loc_n?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-188&xpid=1UyUulPOlf7Sc
+                            - text: "+2"
+                        - link "Parker Duofold Ballpoint Pen, Prestige Blue Chevron with Medium Point Black Ink Refill" [ref=e2589] [cursor=pointer]:
+                          - /url: /PARKER-Duofold-Ballpoint-Prestige-Chevron/dp/B015N3PRBK/ref=sr_1_188?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-188&xpid=1UyUulPOlf7Sc
+                          - heading "Parker Duofold Ballpoint Pen, Prestige Blue Chevron with Medium Point Black Ink Refill" [level=2] [ref=e2590]
+                        - generic [ref=e2592]:
+                          - text: "4.5"
+                          - button "4.5 out of 5 stars, rating details" [ref=e2594] [cursor=pointer]:
+                            - generic [ref=e2596]: 4.5 out of 5 stars
+                          - link "193 ratings" [ref=e2600] [cursor=pointer]:
+                            - /url: /PARKER-Duofold-Ballpoint-Prestige-Chevron/dp/B015N3PRBK/ref=sr_1_188?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-188&xpid=1UyUulPOlf7Sc#customerReviews
+                            - text: (193)
+                        - generic [ref=e2603]:
+                          - generic [ref=e2604]: Price, product page
+                          - link "INR 45,180.56" [ref=e2605] [cursor=pointer]:
+                            - /url: /PARKER-Duofold-Ballpoint-Prestige-Chevron/dp/B015N3PRBK/ref=sr_1_188?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-188&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e2606]:
+                              - generic [ref=e2607]: INR 45,180.56
+                              - generic [ref=e2608]:
+                                - text: INR
+                                - generic [ref=e2609]:
+                                  - text: 45,180
+                                  - generic [ref=e2610]: .
+                                - text: "56"
+                        - generic "Only 1 left in stock - order soon." [ref=e2617]
+                        - generic [ref=e2631] [cursor=pointer]:
+                          - button "Add to cart" [ref=e2632]
+                          - generic [ref=e2633]: Add to cart
+                  - listitem [ref=e2634]:
+                    - generic [ref=e2639]:
+                      - link [ref=e2642] [cursor=pointer]:
+                        - /url: /Pilot-Vanishing-Collection-Retractable-60581/dp/B004WOST9Y/ref=sr_1_189?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-189&xpid=1UyUulPOlf7Sc
+                        - img [ref=e2644]
+                      - generic [ref=e2645]:
+                        - group "colors available" [ref=e2647]:
+                          - list [ref=e2648]:
+                            - generic [ref=e2649]:
+                              - listitem:
+                                - link "Matte Black":
+                                  - /url: /Pilot-Vanishing-Collection-Retractable-60581/dp/B004WOST9Y/ref=cs_sr_dp_loc_1?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-189&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e2652]:
+                              - listitem:
+                                - link "Black Carbonesque/Rhodium":
+                                  - /url: /Pilot-Vanishing-Collection-Retractable-60581/dp/B001D3ROMU/ref=cs_sr_dp_loc_2?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-189&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e2655]:
+                              - listitem:
+                                - link "Black/Gold":
+                                  - /url: /Pilot-Vanishing-Collection-Retractable-60581/dp/B00063NV5C/ref=cs_sr_dp_loc_3?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-189&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e2658]:
+                              - listitem:
+                                - link "Black/Rhodium":
+                                  - /url: /Pilot-Vanishing-Collection-Retractable-60581/dp/B0002ZQB1K/ref=cs_sr_dp_loc_4?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-189&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e2661]:
+                              - listitem:
+                                - link "Blue Carbonesque/Rhodium":
+                                  - /url: /Pilot-Vanishing-Collection-Retractable-60581/dp/B001D3NYHO/ref=cs_sr_dp_loc_5?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-189&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e2664]:
+                              - listitem:
+                                - link "Blue Matte":
+                                  - /url: /Pilot-Vanishing-Collection-Retractable-60581/dp/B01GHRMD1I/ref=cs_sr_dp_loc_6?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-189&xpid=1UyUulPOlf7Sc
+                          - link "+6 other colors/patterns" [ref=e2668] [cursor=pointer]:
+                            - /url: /Pilot-Vanishing-Collection-Retractable-60581/dp/B004WOST9Y/ref=cs_sr_dp_loc_n?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-189&xpid=1UyUulPOlf7Sc
+                            - text: "+6"
+                        - link "PILOT Vanishing Point Collection Refillable & Retractable Fountain Pen, Matte Black Barrel, Blue Ink, Medium Nib (60581)" [ref=e2670] [cursor=pointer]:
+                          - /url: /Pilot-Vanishing-Collection-Retractable-60581/dp/B004WOST9Y/ref=sr_1_189?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-189&xpid=1UyUulPOlf7Sc
+                          - heading "PILOT Vanishing Point Collection Refillable & Retractable Fountain Pen, Matte Black Barrel, Blue Ink, Medium Nib (60581)" [level=2] [ref=e2671]
+                        - generic [ref=e2673]:
+                          - text: "4.5"
+                          - button "4.5 out of 5 stars, rating details" [ref=e2675] [cursor=pointer]:
+                            - generic [ref=e2677]: 4.5 out of 5 stars
+                          - link "1,717 ratings" [ref=e2681] [cursor=pointer]:
+                            - /url: /Pilot-Vanishing-Collection-Retractable-60581/dp/B004WOST9Y/ref=sr_1_189?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-189&xpid=1UyUulPOlf7Sc#customerReviews
+                            - text: (1.7K)
+                        - link "See options" [ref=e2689] [cursor=pointer]:
+                          - /url: /Pilot-Vanishing-Collection-Retractable-60581/dp/B004WOST9Y/ref=sr_1_189_so_WRITING_INSTRUMENT?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-189&xpid=1UyUulPOlf7Sc
+                  - listitem [ref=e2690]:
+                    - generic [ref=e2695]:
+                      - link [ref=e2698] [cursor=pointer]:
+                        - /url: /Blueys-Quest-Golden-Abdallah-Smash/dp/B0HF4JFT5S/ref=sr_1_190?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-190&xpid=1UyUulPOlf7Sc
+                        - img [ref=e2700]
+                      - generic [ref=e2701]:
+                        - generic [ref=e2702]:
+                          - heading "Bluey's Quest for the Golden Pen by Abdallah Smash" [level=2] [ref=e2703]:
+                            - link "Bluey's Quest for the Golden Pen by Abdallah Smash" [ref=e2704] [cursor=pointer]:
+                              - /url: /Blueys-Quest-Golden-Abdallah-Smash/dp/B0HF4JFT5S/ref=sr_1_190?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-190&xpid=1UyUulPOlf7Sc
+                          - generic [ref=e2706]: "2026"
+                        - link "Prime Video" [ref=e2709] [cursor=pointer]:
+                          - /url: /Blueys-Quest-Golden-Abdallah-Smash/dp/B0HF4JFT5S/ref=sr_1_190?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-190&xpid=1UyUulPOlf7Sc
+                        - generic [ref=e2712]: INR 0.00 with a Sensical subscription trial
+                  - listitem [ref=e2713]:
+                    - generic [ref=e2718]:
+                      - link [ref=e2721] [cursor=pointer]:
+                        - /url: /MONTBLANC-Montblanc-Unisex-Pen-127852/dp/B0C69V7S25/ref=sr_1_191?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-191&xpid=1UyUulPOlf7Sc
+                        - img [ref=e2723]
+                      - generic [ref=e2724]:
+                        - link "Montblanc Unisex Pen 127852" [ref=e2726] [cursor=pointer]:
+                          - /url: /MONTBLANC-Montblanc-Unisex-Pen-127852/dp/B0C69V7S25/ref=sr_1_191?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-191&xpid=1UyUulPOlf7Sc
+                          - heading "Montblanc Unisex Pen 127852" [level=2] [ref=e2727]
+                        - generic [ref=e2729]:
+                          - text: "5.0"
+                          - button "5.0 out of 5 stars, rating details" [ref=e2731] [cursor=pointer]:
+                            - generic [ref=e2733]: 5.0 out of 5 stars
+                          - link "1 ratings" [ref=e2737] [cursor=pointer]:
+                            - /url: /MONTBLANC-Montblanc-Unisex-Pen-127852/dp/B0C69V7S25/ref=sr_1_191?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-191&xpid=1UyUulPOlf7Sc#customerReviews
+                            - text: (1)
+                        - link "See options" [ref=e2745] [cursor=pointer]:
+                          - /url: /MONTBLANC-Montblanc-Unisex-Pen-127852/dp/B0C69V7S25/ref=sr_1_191_so_WRITING_INSTRUMENT?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-191&xpid=1UyUulPOlf7Sc
+                  - listitem [ref=e2746]:
+                    - generic [ref=e2751]:
+                      - link [ref=e2754] [cursor=pointer]:
+                        - /url: /Duofold-Centennial-Fountain-Convertor-1931381/dp/B01BM3TCJI/ref=sr_1_192?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-192&xpid=1UyUulPOlf7Sc
+                        - img [ref=e2756]
+                      - generic [ref=e2757]:
+                        - group "colors available" [ref=e2759]:
+                          - list [ref=e2760]:
+                            - generic [ref=e2761]:
+                              - listitem:
+                                - link "black - gold plated finish":
+                                  - /url: /Duofold-Centennial-Fountain-Convertor-1931381/dp/B01BM3TCJI/ref=cs_sr_dp_loc_1?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-192&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e2764]:
+                              - listitem:
+                                - link "Classic Blue and Black":
+                                  - /url: /Duofold-Centennial-Fountain-Convertor-1931381/dp/B01BM3THC0/ref=cs_sr_dp_loc_2?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-192&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e2767]:
+                              - listitem:
+                                - link "Classic Ivory and Black":
+                                  - /url: /Duofold-Centennial-Fountain-Convertor-1931381/dp/B01BM3TANQ/ref=cs_sr_dp_loc_3?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-192&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e2770]:
+                              - listitem:
+                                - link "big red vintage":
+                                  - /url: /Duofold-Centennial-Fountain-Convertor-1931381/dp/B01BM3TEW8/ref=cs_sr_dp_loc_4?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-192&xpid=1UyUulPOlf7Sc
+                        - link "PARKER Duofold Centennial Fountain Pen, Classic Black with Gold Trim, Fine Solid Gold Nib, Black Ink and Convertor (1931381)" [ref=e2774] [cursor=pointer]:
+                          - /url: /Duofold-Centennial-Fountain-Convertor-1931381/dp/B01BM3TCJI/ref=sr_1_192?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-192&xpid=1UyUulPOlf7Sc
+                          - heading "PARKER Duofold Centennial Fountain Pen, Classic Black with Gold Trim, Fine Solid Gold Nib, Black Ink and Convertor (1931381)" [level=2] [ref=e2775]
+                        - generic [ref=e2777]:
+                          - text: "4.6"
+                          - button "4.6 out of 5 stars, rating details" [ref=e2779] [cursor=pointer]:
+                            - generic [ref=e2781]: 4.6 out of 5 stars
+                          - link "267 ratings" [ref=e2785] [cursor=pointer]:
+                            - /url: /Duofold-Centennial-Fountain-Convertor-1931381/dp/B01BM3TCJI/ref=sr_1_192?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-192&xpid=1UyUulPOlf7Sc#customerReviews
+                            - text: (267)
+                        - generic [ref=e2788]:
+                          - generic [ref=e2789]: Price, product page
+                          - link "INR 59,625.30" [ref=e2790] [cursor=pointer]:
+                            - /url: /Duofold-Centennial-Fountain-Convertor-1931381/dp/B01BM3TCJI/ref=sr_1_192?dib=eyJ2IjoiMSJ9.VUohSg2sK1AIhcsp1CXu3DCgGCqtcdfcpWpcmgWWDeS5tootNnr-eeZNxEywq7FZ3-AphiG67EQYjk-UOJBKXs_gsMA60gz4tMICKA3gLx_wmDGOcAHGEfAc06d0VHCkAkAHZFDDQJ1rgi88kRVL4AmukG5We7z-9k2Um8MpS-lIt3wtJpT6G5CggahaU1dVE-UVOJVwiX6oSFIQtp5voSfg4CSl283FsK_PSTRLZeYEb8ADH1qOzi32_WesAWriqzq6WRHGIRC7YxE1zmb10bxXvFaxT_Cneg5NE_4XLRw.G_REbYmqPXWRRt7v6fB2IytzFH1fQQk5gyyvXLEWk2I&dib_tag=se&keywords=pen&qid=1792394334&sr=8-192&xpid=1UyUulPOlf7Sc
+                            - generic [ref=e2791]:
+                              - generic [ref=e2792]: INR 59,625.30
+                              - generic [ref=e2793]:
+                                - text: INR
+                                - generic [ref=e2794]:
+                                  - text: 59,625
+                                  - generic [ref=e2795]: .
+                                - text: "30"
+                        - generic "Only 1 left in stock - order soon." [ref=e2802]
+                        - generic [ref=e2816] [cursor=pointer]:
+                          - button "Add to cart" [ref=e2817]
+                          - generic [ref=e2818]: Add to cart
+            - generic [ref=e2824]:
+              - generic "Related searches in pen" [ref=e2825]:
+                - heading "Related searches" [level=2] [ref=e2828]
+              - list [ref=e2830]:
+                - generic [ref=e2831]:
+                  - link "pens" [ref=e2832] [cursor=pointer]:
+                    - /url: /s?k=pens&ref=rsl_sug_0_0&pd_rd_w=aGt3y&content-id=amzn1.sym.3be64970-3b95-4a6d-a45d-78077a3ff871:amzn1.sym.3be64970-3b95-4a6d-a45d-78077a3ff871&pf_rd_p=3be64970-3b95-4a6d-a45d-78077a3ff871&pf_rd_r=GFZ256K6F9FTNGF59XHZ&pd_rd_wg=701Pn&pd_rd_r=8e5aaae2-02f0-4642-89ab-fd1ab3e52074&qid=1792394334
+                    - listitem [ref=e2833]:
+                      - generic [ref=e2839]: pens
+                  - link "highlighters" [ref=e2840] [cursor=pointer]:
+                    - /url: /s?k=highlighters&ref=rsl_sug_0_3&pd_rd_w=aGt3y&content-id=amzn1.sym.3be64970-3b95-4a6d-a45d-78077a3ff871:amzn1.sym.3be64970-3b95-4a6d-a45d-78077a3ff871&pf_rd_p=3be64970-3b95-4a6d-a45d-78077a3ff871&pf_rd_r=GFZ256K6F9FTNGF59XHZ&pd_rd_wg=701Pn&pd_rd_r=8e5aaae2-02f0-4642-89ab-fd1ab3e52074&qid=1792394334
+                    - listitem [ref=e2841]:
+                      - generic [ref=e2847]: highlighters
+                - generic [ref=e2848]:
+                  - link "notebook" [ref=e2849] [cursor=pointer]:
+                    - /url: /s?k=notebook&ref=rsl_sug_0_1&pd_rd_w=aGt3y&content-id=amzn1.sym.3be64970-3b95-4a6d-a45d-78077a3ff871:amzn1.sym.3be64970-3b95-4a6d-a45d-78077a3ff871&pf_rd_p=3be64970-3b95-4a6d-a45d-78077a3ff871&pf_rd_r=GFZ256K6F9FTNGF59XHZ&pd_rd_wg=701Pn&pd_rd_r=8e5aaae2-02f0-4642-89ab-fd1ab3e52074&qid=1792394334
+                    - listitem [ref=e2850]:
+                      - generic [ref=e2856]: notebook
+                  - link "mechanical pencils" [ref=e2857] [cursor=pointer]:
+                    - /url: /s?k=mechanical+pencils&ref=rsl_sug_0_4&pd_rd_w=aGt3y&content-id=amzn1.sym.3be64970-3b95-4a6d-a45d-78077a3ff871:amzn1.sym.3be64970-3b95-4a6d-a45d-78077a3ff871&pf_rd_p=3be64970-3b95-4a6d-a45d-78077a3ff871&pf_rd_r=GFZ256K6F9FTNGF59XHZ&pd_rd_wg=701Pn&pd_rd_r=8e5aaae2-02f0-4642-89ab-fd1ab3e52074&qid=1792394334
+                    - listitem [ref=e2858]:
+                      - generic [ref=e2864]: mechanical pencils
+                - generic [ref=e2865]:
+                  - link "pencils" [ref=e2866] [cursor=pointer]:
+                    - /url: /s?k=pencils&ref=rsl_sug_0_2&pd_rd_w=aGt3y&content-id=amzn1.sym.3be64970-3b95-4a6d-a45d-78077a3ff871:amzn1.sym.3be64970-3b95-4a6d-a45d-78077a3ff871&pf_rd_p=3be64970-3b95-4a6d-a45d-78077a3ff871&pf_rd_r=GFZ256K6F9FTNGF59XHZ&pd_rd_wg=701Pn&pd_rd_r=8e5aaae2-02f0-4642-89ab-fd1ab3e52074&qid=1792394334
+                    - listitem [ref=e2867]:
+                      - generic [ref=e2873]: pencils
+                  - link "fountain pen" [ref=e2874] [cursor=pointer]:
+                    - /url: /s?k=fountain+pen&ref=rsl_sug_0_5&pd_rd_w=aGt3y&content-id=amzn1.sym.3be64970-3b95-4a6d-a45d-78077a3ff871:amzn1.sym.3be64970-3b95-4a6d-a45d-78077a3ff871&pf_rd_p=3be64970-3b95-4a6d-a45d-78077a3ff871&pf_rd_r=GFZ256K6F9FTNGF59XHZ&pd_rd_wg=701Pn&pd_rd_r=8e5aaae2-02f0-4642-89ab-fd1ab3e52074&qid=1792394334
+                    - listitem [ref=e2875]:
+                      - generic [ref=e2881]: fountain pen
+            - navigation "pagination" [ref=e2884]:
+              - list [ref=e2886]:
+                - listitem [ref=e2887]:
+                  - button "Go to previous page, page 3" [ref=e2889] [cursor=pointer]:
+                    - img [ref=e2890]
+                    - text: Previous
+                - listitem [ref=e2892]:
+                  - button "Go to page 1" [ref=e2894] [cursor=pointer]: "1"
+                - listitem [ref=e2895]:
+                  - button "Go to page 2" [ref=e2897] [cursor=pointer]: "2"
+                - listitem [ref=e2898]:
+                  - button "Go to page 3" [ref=e2900] [cursor=pointer]: "3"
+                - listitem [ref=e2901]:
+                  - button "Page 4" [ref=e2903]: "4"
+                - listitem [ref=e2904]:
+                  - button "Go to page 5" [ref=e2906] [cursor=pointer]: "5"
+                - listitem [ref=e2907]:
+                  - button "Go to page 6" [ref=e2909] [cursor=pointer]: "6"
+                - listitem [ref=e2910]:
+                  - button "Go to page 7" [ref=e2912] [cursor=pointer]: "7"
+                - listitem [ref=e2913]:
+                  - button "Go to next page, page 5" [ref=e2915] [cursor=pointer]:
+                    - text: Next
+                    - img [ref=e2916]
+            - generic [ref=e2923]:
+              - heading "Need help?" [level=2] [ref=e2926]
+              - generic [ref=e2927]:
+                - link "Visit the help section" [ref=e2928] [cursor=pointer]:
+                  - /url: /gp/help/customer/display.html?nodeId=468556
+                - text: or
+                - link "contact us" [ref=e2929] [cursor=pointer]:
+                  - /url: /gp/help/customer/contact-us
+          - link "Go back to filtering menu" [ref=e2930] [cursor=pointer]:
+            - /url: "#s-skipLinkTargetForFilterOptions"
+        - generic [ref=e2932]:
+          - link "Skip to main search results" [ref=e2933] [cursor=pointer]:
+            - /url: "#s-skipLinkTargetForMainSearchResults"
+          - generic [ref=e2939]:
+            - group [ref=e2940]:
+              - heading "Popular Shopping Ideas" [level=2] [ref=e2941]
+              - list [ref=e2942]:
+                - listitem [ref=e2943]:
+                  - link "Professional" [ref=e2945] [cursor=pointer]:
+                    - /url: /s?k=pen+professional&ref=sr_nr_p_rag_integrated_qb_0
+                - listitem [ref=e2946]:
+                  - link "Ballpoint" [ref=e2948] [cursor=pointer]:
+                    - /url: /s?k=ballpoint+pen&ref=sr_nr_p_rag_integrated_qb_1
+                - listitem [ref=e2949]:
+                  - link "Gel" [ref=e2951] [cursor=pointer]:
+                    - /url: /s?k=gel+pen&ref=sr_nr_p_rag_integrated_qb_2
+                - listitem [ref=e2952]:
+                  - link "Fine Point" [ref=e2954] [cursor=pointer]:
+                    - /url: /s?k=pen+fine+point&ref=sr_nr_p_rag_integrated_qb_3
+                - listitem [ref=e2955]:
+                  - button "See more" [ref=e2958] [cursor=pointer]: See more
+            - separator [ref=e2960]
+            - group "Customer Reviews" [ref=e2961]:
+              - heading "Customer Reviews" [level=2] [ref=e2962]
+              - list "Customer Reviews" [ref=e2963]:
+                - listitem [ref=e2964]:
+                  - link "Apply 4 Stars & Up filter to narrow results" [ref=e2967] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_72%3A1248945011&dc&qid=1792394316&rnid=1248943011&ref=sr_nr_p_72_1&ds=v1%3AypSbGwBHF%2Fuk62tI%2BIN2m%2FBCqxidUFVpMXANatWdlac
+                    - generic [ref=e2969]: 4 Stars
+                    - text: "& Up"
+            - group "Brands" [ref=e2970]:
+              - heading "Brands" [level=2] [ref=e2971]
+              - list "Brands" [ref=e2972]:
+                - listitem "Popular Shopping Ideas" [ref=e2973]:
+                  - link "Apply PILOT filter to narrow results" [ref=e2975] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_123%3A486782&dc&qid=1792394316&rnid=85457740011&ref=sr_nr_p_123_1&ds=v1%3AnBu%2F2vYepEET5gxECW3rW7Mcnkdap8K7NCmmsl5H33o
+                    - checkbox [ref=e2978]
+                    - text: PILOT
+                - listitem "Popular Shopping Ideas" [ref=e2980]:
+                  - link "Apply Uni-Ball filter to narrow results" [ref=e2982] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_123%3A251662&dc&qid=1792394316&rnid=85457740011&ref=sr_nr_p_123_2&ds=v1%3AZaLvZPkqsaJS8LNW1IKrMYLAAaI9dABSLwxM657nndU
+                    - checkbox [ref=e2985]
+                    - text: Uni-Ball
+                - listitem "Popular Shopping Ideas" [ref=e2987]:
+                  - link "Apply Sharpie filter to narrow results" [ref=e2989] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_123%3A237088&dc&qid=1792394316&rnid=85457740011&ref=sr_nr_p_123_3&ds=v1%3ArnwALahTTpew8LJzf90kiTWzU2%2F7qouCqmkt%2FxE%2BcH0
+                    - checkbox [ref=e2992]
+                    - text: Sharpie
+                - listitem "Popular Shopping Ideas" [ref=e2994]:
+                  - link "Apply Parker filter to narrow results" [ref=e2996] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_123%3A237099&dc&qid=1792394316&rnid=85457740011&ref=sr_nr_p_123_4&ds=v1%3ATr9TVxKsmw5TxUyAu85H%2FnUkCq4edt%2FGE2ffp%2BdGVME
+                    - checkbox [ref=e2999]
+                    - text: Parker
+                - listitem "Popular Shopping Ideas" [ref=e3001]:
+                  - link "Apply BIC filter to narrow results" [ref=e3003] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_123%3A266624&dc&qid=1792394316&rnid=85457740011&ref=sr_nr_p_123_5&ds=v1%3AmzcjXZfQ%2BJuciNS7SaJO1ekrSQSevCNvUU7Wv1g5x7s
+                    - checkbox [ref=e3006]
+                    - text: BIC
+                - listitem "Popular Shopping Ideas" [ref=e3008]:
+                  - link "Apply Pentel filter to narrow results" [ref=e3010] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_123%3A236620&dc&qid=1792394316&rnid=85457740011&ref=sr_nr_p_123_6&ds=v1%3AWVR3HtHlcAujxyhlQRHPHV1uXdTv7g3FZbaajTwr8kc
+                    - checkbox [ref=e3013]
+                    - text: Pentel
+                - listitem "Popular Shopping Ideas" [ref=e3015]:
+                  - link "Apply Cross filter to narrow results" [ref=e3017] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_123%3A18514&dc&qid=1792394316&rnid=85457740011&ref=sr_nr_p_123_7&ds=v1%3AAx1TYGvq9jlVJtMTpGOUPR3gqQWi%2Fhf7V6jJFK1vBrU
+                    - checkbox [ref=e3020]
+                    - text: Cross
+                - listitem [ref=e3022]:
+                  - button "See more, Brands" [ref=e3025] [cursor=pointer]: See more
+              - heading "Featured Character" [level=2] [ref=e3027]
+              - list "Featured Character" [ref=e3028]:
+                - listitem [ref=e3029]:
+                  - link "Bolt" [ref=e3031] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_lbr_characters_browse-bin%3ABolt&dc&qid=1792394316&rnid=3296952011&ref=sr_nr_p_lbr_characters_browse-bin_1&ds=v1%3AZz72%2BIpk6EazDrWpbqtMjUIpA49lKlRw63NKHlsGBUs
+                - listitem [ref=e3032]:
+                  - link "Stitch" [ref=e3034] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_lbr_characters_browse-bin%3AStitch&dc&qid=1792394316&rnid=3296952011&ref=sr_nr_p_lbr_characters_browse-bin_2&ds=v1%3AUiwfFESxcFJVw6RhOXYhDisbv0%2FTDfwYR0FJodC8Xbg
+            - group "Deals & Discounts" [ref=e3035]:
+              - heading "Deals & Discounts" [level=2] [ref=e3036]
+              - list "Deals & Discounts" [ref=e3037]:
+                - listitem [ref=e3038]:
+                  - link "All Discounts" [ref=e3040] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_deal_type%3A23566065011&dc&qid=1792394316&rnid=23566063011&ref=sr_nr_p_n_deal_type_1&ds=v1%3AGfgsXCqjdGSkwXeM8ViLs9rtDFK9wqM%2FU9hrF6Ko1Tc
+                - listitem [ref=e3041]:
+                  - link "Buy More, Save More" [ref=e3043] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_deal_type%3A210906365011&dc&qid=1792394316&rnid=23566063011&ref=sr_nr_p_n_deal_type_2&ds=v1%3AN8tVliatNDfzn7nY2KfVSDUuaHbPZfncgWeApGm9lRA
+                - listitem [ref=e3044]:
+                  - link "Coupons" [ref=e3046] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_deal_type%3A210906366011&dc&qid=1792394316&rnid=23566063011&ref=sr_nr_p_n_deal_type_3&ds=v1%3A93HSZRH6otkAHdLBoZ3KE%2FYxTJxooz1mn4gyDoD3Dwg
+                - listitem [ref=e3047]:
+                  - link "Today's Deals" [ref=e3049] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_deal_type%3A23566064011&dc&qid=1792394316&rnid=23566063011&ref=sr_nr_p_n_deal_type_4&ds=v1%3A%2FjaLL7g0NxC5mYZgyBBipnQCIuNEX61y2cAJebRXQ%2BY
+            - group "Ink Color" [ref=e3050]:
+              - heading "Ink Color" [level=2] [ref=e3051]
+              - list "Ink Color" [ref=e3052]:
+                - listitem "Popular Shopping Ideas" [ref=e3053]:
+                  - link "Apply Black filter to narrow results" [ref=e3055] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1003249505111%3A23895080011&dc&qid=1792394316&rnid=23895064011&ref=sr_nr_p_n_g-1003249505111_1&ds=v1%3AqTrIH86J2uHtjNIDKMtxEP99iWMyXfvF8rf1VQlfF24
+                    - checkbox [ref=e3058]
+                    - text: Black
+                - listitem "Popular Shopping Ideas" [ref=e3060]:
+                  - link "Apply Blue filter to narrow results" [ref=e3062] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1003249505111%3A23895069011&dc&qid=1792394316&rnid=23895064011&ref=sr_nr_p_n_g-1003249505111_2&ds=v1%3AkGmBwS0Ph6%2F0IKw0GadrpxUpaczyqGbV4yMF8Mj%2F%2FGo
+                    - checkbox [ref=e3065]
+                    - text: Blue
+                - listitem "Popular Shopping Ideas" [ref=e3067]:
+                  - link "Apply Aqua filter to narrow results" [ref=e3069] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1003249505111%3A23895079011&dc&qid=1792394316&rnid=23895064011&ref=sr_nr_p_n_g-1003249505111_3&ds=v1%3AXGpsMe8KXM4jSoa9TsnEtYxmwYWdTUbCJbFVmDDJxyk
+                    - checkbox [ref=e3072]
+                    - text: Aqua
+                - listitem "Popular Shopping Ideas" [ref=e3074]:
+                  - link "Apply Brown filter to narrow results" [ref=e3076] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1003249505111%3A23895065011&dc&qid=1792394316&rnid=23895064011&ref=sr_nr_p_n_g-1003249505111_4&ds=v1%3AjBgCD6pRthBW9TaFYbqpob3ALpmVt6m21mbEnYUldj8
+                    - checkbox [ref=e3079]
+                    - text: Brown
+                - listitem "Popular Shopping Ideas" [ref=e3081]:
+                  - link "Apply Gold filter to narrow results" [ref=e3083] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1003249505111%3A23895071011&dc&qid=1792394316&rnid=23895064011&ref=sr_nr_p_n_g-1003249505111_5&ds=v1%3AvRgRai4YDbUfASPM9KTiiCPsVUPdDS9k%2FlaXmXqSRP0
+                    - checkbox [ref=e3086]
+                    - text: Gold
+                - listitem "Popular Shopping Ideas" [ref=e3088]:
+                  - link "Apply Gray filter to narrow results" [ref=e3090] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1003249505111%3A23895066011&dc&qid=1792394316&rnid=23895064011&ref=sr_nr_p_n_g-1003249505111_6&ds=v1%3ASA0ecIMt8MLitAbADbolt21B9tW76%2F8tjBgn1we1MgQ
+                    - checkbox [ref=e3093]
+                    - text: Gray
+                - listitem "Popular Shopping Ideas" [ref=e3095]:
+                  - link "Apply Green filter to narrow results" [ref=e3097] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1003249505111%3A23895077011&dc&qid=1792394316&rnid=23895064011&ref=sr_nr_p_n_g-1003249505111_7&ds=v1%3AUDgOwwSqGVCSpsY25zUv2bihGifnLT16HKAPf%2BV7CoY
+                    - checkbox [ref=e3100]
+                    - text: Green
+                - listitem [ref=e3102]:
+                  - button "See more, Ink Color" [ref=e3105] [cursor=pointer]: See more
+            - group "Line Size" [ref=e3107]:
+              - heading "Line Size" [level=2] [ref=e3108]
+              - list "Line Size" [ref=e3109]:
+                - listitem "Popular Shopping Ideas" [ref=e3110]:
+                  - link "Apply 0.3mm filter to narrow results" [ref=e3112] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101013569805111%3A67053708011&dc&qid=1792394316&rnid=67053686011&ref=sr_nr_p_n_g-101013569805111_1&ds=v1%3A%2BxmVEoQZeMgEDjHg9bbb86%2BQMogaQ2M3nRLVVJF64yw
+                    - checkbox [ref=e3115]
+                    - text: 0.3mm
+                - listitem "Popular Shopping Ideas" [ref=e3117]:
+                  - link "Apply 0.5mm filter to narrow results" [ref=e3119] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101013569805111%3A67053705011&dc&qid=1792394316&rnid=67053686011&ref=sr_nr_p_n_g-101013569805111_2&ds=v1%3Al1JCOg28CQzo5nQpY5SdTN2nAxU3mB5YQopjQJUC4F0
+                    - checkbox [ref=e3122]
+                    - text: 0.5mm
+                - listitem "Popular Shopping Ideas" [ref=e3124]:
+                  - link "Apply 0.7mm filter to narrow results" [ref=e3126] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101013569805111%3A67053710011&dc&qid=1792394316&rnid=67053686011&ref=sr_nr_p_n_g-101013569805111_3&ds=v1%3AtWuDD2bbSY1RHeeKNnra6Hl%2BJ%2FvHREmwxAnLEpIjU1s
+                    - checkbox [ref=e3129]
+                    - text: 0.7mm
+                - listitem "Popular Shopping Ideas" [ref=e3131]:
+                  - link "Apply 0.9mm filter to narrow results" [ref=e3133] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101013569805111%3A67053707011&dc&qid=1792394316&rnid=67053686011&ref=sr_nr_p_n_g-101013569805111_4&ds=v1%3AvI%2Fgq6jPRNUXcS1FZVkn8UyvroI9tNldeVEB0HHNEf4
+                    - checkbox [ref=e3136]
+                    - text: 0.9mm
+                - listitem "Popular Shopping Ideas" [ref=e3138]:
+                  - link "Apply 1.0-1.9mm filter to narrow results" [ref=e3140] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101013569805111%3A67053713011&dc&qid=1792394316&rnid=67053686011&ref=sr_nr_p_n_g-101013569805111_5&ds=v1%3AhNCNOC%2BleaVuEiAqmvswiogEkftwD8WdGynhPU0Wkk8
+                    - checkbox [ref=e3143]
+                    - text: 1.0-1.9mm
+                - listitem "Popular Shopping Ideas" [ref=e3145]:
+                  - link "Apply 2mm & Above filter to narrow results" [ref=e3147] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101013569805111%3A67053703011&dc&qid=1792394316&rnid=67053686011&ref=sr_nr_p_n_g-101013569805111_6&ds=v1%3AQG5xJIL8AudOIpZ5vrG79zWyczklWyQDWpwrjstK8lY
+                    - checkbox [ref=e3150]
+                    - text: 2mm & Above
+            - group "Point Type" [ref=e3152]:
+              - heading "Point Type" [level=2] [ref=e3153]
+              - list "Point Type" [ref=e3154]:
+                - listitem "Popular Shopping Ideas" [ref=e3155]:
+                  - link "Apply Medium filter to narrow results" [ref=e3157] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1003389648111%3A24056404011&dc&qid=1792394316&rnid=24056390011&ref=sr_nr_p_n_g-1003389648111_1&ds=v1%3AuFz4GoXiBfY022HnSJTCEghRimnmRjUm7WYjxJdD9dU
+                    - checkbox [ref=e3160]
+                    - text: Medium
+                - listitem "Popular Shopping Ideas" [ref=e3162]:
+                  - link "Apply Fine filter to narrow results" [ref=e3164] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1003389648111%3A24056412011&dc&qid=1792394316&rnid=24056390011&ref=sr_nr_p_n_g-1003389648111_2&ds=v1%3AKeXJZ59Vfy6UqH6cyy3%2FDxIY20xx5SltIdQjBmhDb1Y
+                    - checkbox [ref=e3167]
+                    - text: Fine
+                - listitem "Popular Shopping Ideas" [ref=e3169]:
+                  - link "Apply Bold filter to narrow results" [ref=e3171] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1003389648111%3A24056410011&dc&qid=1792394316&rnid=24056390011&ref=sr_nr_p_n_g-1003389648111_3&ds=v1%3AMoypFg1SkYEjT8iQC5wmBe7pT2e27KVz%2BBKyABRYZY4
+                    - checkbox [ref=e3174]
+                    - text: Bold
+                - listitem "Popular Shopping Ideas" [ref=e3176]:
+                  - link "Apply Broad filter to narrow results" [ref=e3178] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1003389648111%3A24056405011&dc&qid=1792394316&rnid=24056390011&ref=sr_nr_p_n_g-1003389648111_4&ds=v1%3AKRhrlRZtOzN%2FRUCX1PFmHVVkknt8LoL4qooxqd5i44c
+                    - checkbox [ref=e3181]
+                    - text: Broad
+                - listitem "Popular Shopping Ideas" [ref=e3183]:
+                  - link "Apply Extra Fine filter to narrow results" [ref=e3185] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1003389648111%3A24056403011&dc&qid=1792394316&rnid=24056390011&ref=sr_nr_p_n_g-1003389648111_5&ds=v1%3Au8i%2FbW8wlSudDBZVYzMr6N5Dsf5O%2B0Dc%2B9IXoOrlqhg
+                    - checkbox [ref=e3188]
+                    - text: Extra Fine
+                - listitem "Popular Shopping Ideas" [ref=e3190]:
+                  - link "Apply Micro filter to narrow results" [ref=e3192] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1003389648111%3A24056406011&dc&qid=1792394316&rnid=24056390011&ref=sr_nr_p_n_g-1003389648111_6&ds=v1%3AfhLRf1%2Flae%2FVHaeoR9rsr%2FkcvUfTxopmR4KHUKFOYvs
+                    - checkbox [ref=e3195]
+                    - text: Micro
+                - listitem "Popular Shopping Ideas" [ref=e3197]:
+                  - link "Apply Ultra Fine filter to narrow results" [ref=e3199] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1003389648111%3A24056407011&dc&qid=1792394316&rnid=24056390011&ref=sr_nr_p_n_g-1003389648111_7&ds=v1%3AR23rnf%2B34Ig3CTRRGsLMES6v7BaA9Xu6YUYYQKM0J9Q
+                    - checkbox [ref=e3202]
+                    - text: Ultra Fine
+                - listitem [ref=e3204]:
+                  - button "See more, Point Type" [ref=e3207] [cursor=pointer]: See more
+            - group "Special Features" [ref=e3209]:
+              - heading "Special Features" [level=2] [ref=e3210]
+              - list "Special Features" [ref=e3211]:
+                - listitem "Popular Shopping Ideas" [ref=e3212]:
+                  - link "Apply Retractable filter to narrow results" [ref=e3214] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1003018810111%3A23631262011&dc&qid=1792394316&rnid=23631259011&ref=sr_nr_p_n_g-1003018810111_1&ds=v1%3AIhmUvFcrEKkKEBUaR0PqdgovAASzBn%2FMfA8%2FcZhq%2BHM
+                    - checkbox [ref=e3217]
+                    - text: Retractable
+                - listitem "Popular Shopping Ideas" [ref=e3219]:
+                  - 'link "Apply #2 Pencil filter to narrow results" [ref=e3221] [cursor=pointer]':
+                    - /url: /s?k=pen&rh=p_n_g-1003018810111%3A204385361011&dc&qid=1792394316&rnid=23631259011&ref=sr_nr_p_n_g-1003018810111_2&ds=v1%3AehANhKWDFR5J5ZRtVDNvU8XhggjxakxEXebk7%2BiHLVk
+                    - checkbox [ref=e3224]
+                    - text: "#2 Pencil"
+                - listitem "Popular Shopping Ideas" [ref=e3226]:
+                  - link "Apply Refillable filter to narrow results" [ref=e3228] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1003018810111%3A23631274011&dc&qid=1792394316&rnid=23631259011&ref=sr_nr_p_n_g-1003018810111_3&ds=v1%3AQHODerphA0ilt88P5X7MKPGXLq5MvX%2BGv0pv1omPx%2Bs
+                    - checkbox [ref=e3231]
+                    - text: Refillable
+                - listitem "Popular Shopping Ideas" [ref=e3233]:
+                  - link "Apply Blendable filter to narrow results" [ref=e3235] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1003018810111%3A23631272011&dc&qid=1792394316&rnid=23631259011&ref=sr_nr_p_n_g-1003018810111_4&ds=v1%3AUHtRCzY58p5dONFpfHB8eWjbT4GQbnnU55bu4rGQt4U
+                    - checkbox [ref=e3238]
+                    - text: Blendable
+                - listitem "Popular Shopping Ideas" [ref=e3240]:
+                  - link "Apply Compact filter to narrow results" [ref=e3242] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1003018810111%3A122177152011&dc&qid=1792394316&rnid=23631259011&ref=sr_nr_p_n_g-1003018810111_5&ds=v1%3AQmxJz6GWhs%2BEI1exU%2BcA%2BWNi3HfgcJ932lqaFyb0RsA
+                    - checkbox [ref=e3245]
+                    - text: Compact
+                - listitem "Popular Shopping Ideas" [ref=e3247]:
+                  - link "Apply Dual Tip filter to narrow results" [ref=e3249] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1003018810111%3A122177153011&dc&qid=1792394316&rnid=23631259011&ref=sr_nr_p_n_g-1003018810111_6&ds=v1%3AOYr9Ki6WEHYFUIJXZ%2Byw0fYZPHZzTyrGbhjDLS%2Bt8QQ
+                    - checkbox [ref=e3252]
+                    - text: Dual Tip
+                - listitem "Popular Shopping Ideas" [ref=e3254]:
+                  - link "Apply Dust Free filter to narrow results" [ref=e3256] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1003018810111%3A23631271011&dc&qid=1792394316&rnid=23631259011&ref=sr_nr_p_n_g-1003018810111_7&ds=v1%3AWuu5tM%2BGMrRhvm4rEOsMz8Yn7xrV9EiVDzQ2jJBUm6A
+                    - checkbox [ref=e3259]
+                    - text: Dust Free
+                - listitem [ref=e3261]:
+                  - button "See more, Special Features" [ref=e3264] [cursor=pointer]: See more
+            - group "Style" [ref=e3266]:
+              - heading "Style" [level=2] [ref=e3267]
+              - list "Style" [ref=e3268]:
+                - listitem "Popular Shopping Ideas" [ref=e3269]:
+                  - link "Apply Modern filter to narrow results" [ref=e3271] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101014837957111%3A117987605011&dc&qid=1792394316&rnid=117987467011&ref=sr_nr_p_n_g-101014837957111_1&ds=v1%3AjXONx63s8roePDypmkbfOGJxns6PNGZbm0xS3OZLQ9U
+                    - checkbox [ref=e3274]
+                    - text: Modern
+                - listitem "Popular Shopping Ideas" [ref=e3276]:
+                  - link "Apply Contemporary filter to narrow results" [ref=e3278] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101014837957111%3A117987603011&dc&qid=1792394316&rnid=117987467011&ref=sr_nr_p_n_g-101014837957111_2&ds=v1%3A27l7qPtrIlInDiCuQl3R8fdlN9gPZX5xnppF8zue%2BF0
+                    - checkbox [ref=e3281]
+                    - text: Contemporary
+                - listitem "Popular Shopping Ideas" [ref=e3283]:
+                  - link "Apply Retro filter to narrow results" [ref=e3285] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101014837957111%3A117987604011&dc&qid=1792394316&rnid=117987467011&ref=sr_nr_p_n_g-101014837957111_3&ds=v1%3Atis2x2%2Fk6GAV9BbB9jsEi9iDMwd9h8LVaQsvy15R4Io
+                    - checkbox [ref=e3288]
+                    - text: Retro
+                - listitem "Popular Shopping Ideas" [ref=e3290]:
+                  - link "Apply Baroque filter to narrow results" [ref=e3292] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101014837957111%3A117987608011&dc&qid=1792394316&rnid=117987467011&ref=sr_nr_p_n_g-101014837957111_4&ds=v1%3AinBLapr66Jp4LE5K0lpj%2F0Bcoku4JZ2%2B5OZ38r2h0VE
+                    - checkbox [ref=e3295]
+                    - text: Baroque
+                - listitem "Popular Shopping Ideas" [ref=e3297]:
+                  - link "Apply French filter to narrow results" [ref=e3299] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101014837957111%3A117987607011&dc&qid=1792394316&rnid=117987467011&ref=sr_nr_p_n_g-101014837957111_5&ds=v1%3ATij7uxvQyDvFSXprigOZvSBbxSFY4WjqDsInrjlAvKM
+                    - checkbox [ref=e3302]
+                    - text: French
+                - listitem "Popular Shopping Ideas" [ref=e3304]:
+                  - link "Apply Japanese filter to narrow results" [ref=e3306] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101014837957111%3A117987606011&dc&qid=1792394316&rnid=117987467011&ref=sr_nr_p_n_g-101014837957111_6&ds=v1%3AYYXc%2BXHL00axr4nQaUHOKzOozxIw8iqYYgUsZbQ4mbU
+                    - checkbox [ref=e3309]
+                    - text: Japanese
+            - group "Closure" [ref=e3311]:
+              - heading "Closure" [level=2] [ref=e3312]
+              - list "Closure" [ref=e3313]:
+                - listitem "Popular Shopping Ideas" [ref=e3314]:
+                  - link "Apply Retractable filter to narrow results" [ref=e3316] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1002841571111%3A23559323011&dc&qid=1792394316&rnid=23559320011&ref=sr_nr_p_n_g-1002841571111_1&ds=v1%3A06RCLY578Tgeue%2BkUb%2B34apPYojtpt0qmRoUHAky2yk
+                    - checkbox [ref=e3319]
+                    - text: Retractable
+                - listitem "Popular Shopping Ideas" [ref=e3321]:
+                  - link "Apply Twist filter to narrow results" [ref=e3323] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1002841571111%3A23559325011&dc&qid=1792394316&rnid=23559320011&ref=sr_nr_p_n_g-1002841571111_2&ds=v1%3AfNhauaD3PC7HmwPJCcu8FTRrf9YmGb7aV3WYsTRcz2Q
+                    - checkbox [ref=e3326]
+                    - text: Twist
+                - listitem "Popular Shopping Ideas" [ref=e3328]:
+                  - link "Apply Click-Off Cap filter to narrow results" [ref=e3330] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1002841571111%3A23559326011&dc&qid=1792394316&rnid=23559320011&ref=sr_nr_p_n_g-1002841571111_3&ds=v1%3AoMvGxw8NGNwT1oI0XF9yq8DcLmVP6QhKvifAFs3pSJ4
+                    - checkbox [ref=e3333]
+                    - text: Click-Off Cap
+                - listitem "Popular Shopping Ideas" [ref=e3335]:
+                  - link "Apply Screw Off Cap filter to narrow results" [ref=e3337] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1002841571111%3A23559324011&dc&qid=1792394316&rnid=23559320011&ref=sr_nr_p_n_g-1002841571111_4&ds=v1%3AOELHCkfNyTMEhUVs1pUNe9znv7%2F4Tidf5KQCFg34pY0
+                    - checkbox [ref=e3340]
+                    - text: Screw Off Cap
+            - group "Condition" [ref=e3342]:
+              - heading "Condition" [level=2] [ref=e3343]
+              - list "Condition" [ref=e3344]:
+                - listitem "Popular Shopping Ideas" [ref=e3345]:
+                  - link "Apply New filter to narrow results" [ref=e3347] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_condition-type%3A6358196011&dc&qid=1792394316&rnid=6358194011&ref=sr_nr_p_n_condition-type_1&ds=v1%3AHPLiKNYuoFpQF6h12dZ8FmuqsAUTAESnNwo%2F8OSyAy8
+                    - checkbox [ref=e3350]
+                    - text: New
+                - listitem "Popular Shopping Ideas" [ref=e3352]:
+                  - link "Apply Used filter to narrow results" [ref=e3354] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_condition-type%3A6358198011&dc&qid=1792394316&rnid=6358194011&ref=sr_nr_p_n_condition-type_2&ds=v1%3AB4wHy9zylHSQLmrrhNB7oabtIHXYIGRLb6TrSiOo1Lk
+                    - checkbox [ref=e3357]
+                    - text: Used
+            - group "Material" [ref=e3359]:
+              - heading "Material" [level=2] [ref=e3360]
+              - list "Material" [ref=e3361]:
+                - listitem "Popular Shopping Ideas" [ref=e3362]:
+                  - link "Apply Plastic filter to narrow results" [ref=e3364] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1002956826111%3A23572072011&dc&qid=1792394316&rnid=23572055011&ref=sr_nr_p_n_g-1002956826111_1&ds=v1%3A9Yh0GLF20BT%2BSZR%2B91voazgLjRhx%2F%2FzXQzdZA9dcy2I
+                    - checkbox [ref=e3367]
+                    - text: Plastic
+                - listitem "Popular Shopping Ideas" [ref=e3369]:
+                  - link "Apply Metal filter to narrow results" [ref=e3371] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1002956826111%3A23572074011&dc&qid=1792394316&rnid=23572055011&ref=sr_nr_p_n_g-1002956826111_2&ds=v1%3ADwF94rYhAJm%2BTxoYkQksEWXCc5LHjSPVmEzvw2BgD7c
+                    - checkbox [ref=e3374]
+                    - text: Metal
+                - listitem "Popular Shopping Ideas" [ref=e3376]:
+                  - link "Apply Resin filter to narrow results" [ref=e3378] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1002956826111%3A23572069011&dc&qid=1792394316&rnid=23572055011&ref=sr_nr_p_n_g-1002956826111_3&ds=v1%3ATbeSvctpXr0apxCKNTisgDLNxjGIpaEHblppWrTpd8c
+                    - checkbox [ref=e3381]
+                    - text: Resin
+                - listitem "Popular Shopping Ideas" [ref=e3383]:
+                  - link "Apply Rubber filter to narrow results" [ref=e3385] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1002956826111%3A23572070011&dc&qid=1792394316&rnid=23572055011&ref=sr_nr_p_n_g-1002956826111_4&ds=v1%3AMAjAL7MoN24cB7IHWUSPJ%2F6HEpuQGD7eR7u2jw%2B%2Fx8c
+                    - checkbox [ref=e3388]
+                    - text: Rubber
+                - listitem "Popular Shopping Ideas" [ref=e3390]:
+                  - link "Apply Carbon Fiber filter to narrow results" [ref=e3392] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1002956826111%3A23572071011&dc&qid=1792394316&rnid=23572055011&ref=sr_nr_p_n_g-1002956826111_5&ds=v1%3As4c0ZwtXJfq3c2z7QqtyAj%2FPwvsLFTAus1S18PyBczQ
+                    - checkbox [ref=e3395]
+                    - text: Carbon Fiber
+                - listitem "Popular Shopping Ideas" [ref=e3397]:
+                  - link "Apply Cardboard filter to narrow results" [ref=e3399] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1002956826111%3A23572063011&dc&qid=1792394316&rnid=23572055011&ref=sr_nr_p_n_g-1002956826111_6&ds=v1%3A%2FGia3oqoYqj8hOtdl%2BXOHX9iHTEErRZ%2Bv1Lk5xmVYHM
+                    - checkbox [ref=e3402]
+                    - text: Cardboard
+                - listitem "Popular Shopping Ideas" [ref=e3404]:
+                  - link "Apply Ceramic filter to narrow results" [ref=e3406] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1002956826111%3A23572065011&dc&qid=1792394316&rnid=23572055011&ref=sr_nr_p_n_g-1002956826111_7&ds=v1%3AjklZHKSF2c2W7BFOQ5HMNND9VFoTJAcKPT5ymBygmW4
+                    - checkbox [ref=e3409]
+                    - text: Ceramic
+                - listitem [ref=e3411]:
+                  - button "See more, Material" [ref=e3414] [cursor=pointer]: See more
+            - group "Top Brands" [ref=e3416]:
+              - heading "Top Brands" [level=2] [ref=e3417]
+              - list "Top Brands" [ref=e3418]:
+                - listitem "Popular Shopping Ideas" [ref=e3419]:
+                  - link "Apply Top Brands filter to narrow results" [ref=e3421] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101014971069111%3A119653281011&dc&qid=1792394316&rnid=119653280011&ref=sr_nr_p_n_g-101014971069111_1&ds=v1%3ApiOZkqpj3z9uwOYInTCMQd94H2iAnoDhZpIvYXFmvFA
+                    - checkbox [ref=e3424]
+                    - text: Top Brands
+            - group "Seller" [ref=e3426]:
+              - heading "Seller" [level=2] [ref=e3427]
+              - list "Seller" [ref=e3428]:
+                - listitem "Popular Shopping Ideas" [ref=e3429]:
+                  - link "Apply Amazon.com filter to narrow results" [ref=e3431] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_6%3AATVPDKIKX0DER&dc&qid=1792394316&rnid=331539011&ref=sr_nr_p_6_1&ds=v1%3AyGifTWXDsJ1pxrbZl95bREaMVrZF7cWRVAVZ3XLD3XI
+                    - checkbox [ref=e3434]
+                    - text: Amazon.com
+                - listitem "Popular Shopping Ideas" [ref=e3436]:
+                  - link "Apply Yltefnhdoj filter to narrow results" [ref=e3438] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_6%3AAGRQ7LKBPUHTX&dc&qid=1792394316&rnid=331539011&ref=sr_nr_p_6_2&ds=v1%3A91Hr8y%2FWI8In9aXxQTjRmCdoXqFf8dVUO9ZYBOSg71E
+                    - checkbox [ref=e3441]
+                    - text: Yltefnhdoj
+                - listitem [ref=e3443]:
+                  - button "See more, Seller" [ref=e3446] [cursor=pointer]: See more
+            - group "Inclusions" [ref=e3448]:
+              - heading "Inclusions" [level=2] [ref=e3449]
+              - list "Inclusions" [ref=e3450]:
+                - listitem "Popular Shopping Ideas" [ref=e3451]:
+                  - link "Apply Ink Cartridge filter to narrow results" [ref=e3453] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1003096037111%3A23700396011&dc&qid=1792394316&rnid=23700390011&ref=sr_nr_p_n_g-1003096037111_1&ds=v1%3AbJxfqiXkYTx5HREzGp9cO8ZyXRaw825YEB1gjwFpTuA
+                    - checkbox [ref=e3456]
+                    - text: Ink Cartridge
+                - listitem "Popular Shopping Ideas" [ref=e3458]:
+                  - link "Apply Eraser filter to narrow results" [ref=e3460] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1003096037111%3A23700394011&dc&qid=1792394316&rnid=23700390011&ref=sr_nr_p_n_g-1003096037111_2&ds=v1%3AKniyX6fFhsU6P9M%2FkXaYQVfjEv9634urQ4TB1caWlQY
+                    - checkbox [ref=e3463]
+                    - text: Eraser
+                - listitem "Popular Shopping Ideas" [ref=e3465]:
+                  - link "Apply Lead filter to narrow results" [ref=e3467] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1003096037111%3A23700398011&dc&qid=1792394316&rnid=23700390011&ref=sr_nr_p_n_g-1003096037111_3&ds=v1%3AhLB8HSkrzys3T9h8xCQ3Am%2Bkm1GNvB5co45rEFxxb6w
+                    - checkbox [ref=e3470]
+                    - text: Lead
+                - listitem "Popular Shopping Ideas" [ref=e3472]:
+                  - link "Apply Blending Stump filter to narrow results" [ref=e3474] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1003096037111%3A23700400011&dc&qid=1792394316&rnid=23700390011&ref=sr_nr_p_n_g-1003096037111_4&ds=v1%3AbVV48ld4v7jBkykGxIMMwNkvATRlzDx%2FPomDWWVy1Ds
+                    - checkbox [ref=e3477]
+                    - text: Blending Stump
+                - listitem "Popular Shopping Ideas" [ref=e3479]:
+                  - link "Apply Ink Bottle filter to narrow results" [ref=e3481] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1003096037111%3A23700392011&dc&qid=1792394316&rnid=23700390011&ref=sr_nr_p_n_g-1003096037111_5&ds=v1%3Aok%2BgSMDXpYPj0gZupbREGYpseWFoIqfj95dFoOr%2B8CU
+                    - checkbox [ref=e3484]
+                    - text: Ink Bottle
+                - listitem "Popular Shopping Ideas" [ref=e3486]:
+                  - link "Apply Ink Converter filter to narrow results" [ref=e3488] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1003096037111%3A122424845011&dc&qid=1792394316&rnid=23700390011&ref=sr_nr_p_n_g-1003096037111_6&ds=v1%3A1z1wKEZQCr%2B6i5O%2BCfO%2FpKFKLPF8wBlZqOIBrURQeXk
+                    - checkbox [ref=e3491]
+                    - text: Ink Converter
+                - listitem "Popular Shopping Ideas" [ref=e3493]:
+                  - link "Apply Instruction Guide filter to narrow results" [ref=e3495] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1003096037111%3A23700393011&dc&qid=1792394316&rnid=23700390011&ref=sr_nr_p_n_g-1003096037111_7&ds=v1%3ATKS%2BPd9PrDWBlLqJNYfOKMe3l8t3ol8XsEdLF9cY5nY
+                    - checkbox [ref=e3498]
+                    - text: Instruction Guide
+                - listitem [ref=e3500]:
+                  - button "See more, Inclusions" [ref=e3503] [cursor=pointer]: See more
+            - group "Hand Orientation" [ref=e3505]:
+              - heading "Hand Orientation" [level=2] [ref=e3506]
+              - list "Hand Orientation" [ref=e3507]:
+                - listitem "Popular Shopping Ideas" [ref=e3508]:
+                  - link "Apply Ambidextrous filter to narrow results" [ref=e3510] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1003233218111%3A23869592011&dc&qid=1792394316&rnid=23869574011&ref=sr_nr_p_n_g-1003233218111_1&ds=v1%3AAl4tpzyMFB9jU%2BU3QwnbxVVnL1QgVQ8xhMBXDvfAC20
+                    - checkbox [ref=e3513]
+                    - text: Ambidextrous
+                - listitem "Popular Shopping Ideas" [ref=e3515]:
+                  - link "Apply Left filter to narrow results" [ref=e3517] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1003233218111%3A23869591011&dc&qid=1792394316&rnid=23869574011&ref=sr_nr_p_n_g-1003233218111_2&ds=v1%3A3Xa1tKABtxvOdzlq3ur7Zcs3hoaCrvTiSoexYHo0zIo
+                    - checkbox [ref=e3520]
+                    - text: Left
+                - listitem "Popular Shopping Ideas" [ref=e3522]:
+                  - link "Apply Right filter to narrow results" [ref=e3524] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1003233218111%3A23869593011&dc&qid=1792394316&rnid=23869574011&ref=sr_nr_p_n_g-1003233218111_3&ds=v1%3AMvpWWtyKApyzQsWgLIW4k2RRU%2BJiXvV2ZGZGbNw%2BvYI
+                    - checkbox [ref=e3527]
+                    - text: Right
+            - group "Shape" [ref=e3529]:
+              - heading "Shape" [level=2] [ref=e3530]
+              - list "Shape" [ref=e3531]:
+                - listitem "Popular Shopping Ideas" [ref=e3532]:
+                  - link "Apply Round filter to narrow results" [ref=e3534] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1003142848111%3A23728852011&dc&qid=1792394316&rnid=23728844011&ref=sr_nr_p_n_g-1003142848111_1&ds=v1%3A5gARRsZ7jqTexDOS3WpnHrhr20a%2BqUCTJtkiJn4IPRg
+                    - checkbox [ref=e3537]
+                    - text: Round
+                - listitem "Popular Shopping Ideas" [ref=e3539]:
+                  - link "Apply Triangular filter to narrow results" [ref=e3541] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1003142848111%3A23728849011&dc&qid=1792394316&rnid=23728844011&ref=sr_nr_p_n_g-1003142848111_2&ds=v1%3AEvsR4vBoXBc1jpsPt7AYrysssZ80vOmBA3XgcA63Yhw
+                    - checkbox [ref=e3544]
+                    - text: Triangular
+                - listitem "Popular Shopping Ideas" [ref=e3546]:
+                  - link "Apply Hexagonal filter to narrow results" [ref=e3548] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1003142848111%3A23728853011&dc&qid=1792394316&rnid=23728844011&ref=sr_nr_p_n_g-1003142848111_3&ds=v1%3AUoc8qeZ8BwqheQOJEHN29Z6bu8HNamgsdrRj0Ld7hYw
+                    - checkbox [ref=e3551]
+                    - text: Hexagonal
+                - listitem "Popular Shopping Ideas" [ref=e3553]:
+                  - link "Apply Octagonal filter to narrow results" [ref=e3555] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1003142848111%3A23728854011&dc&qid=1792394316&rnid=23728844011&ref=sr_nr_p_n_g-1003142848111_4&ds=v1%3A6B9mzmjQAq9luV2QgxKvETOPDE02llZg%2FYDA%2FW37PFs
+                    - checkbox [ref=e3558]
+                    - text: Octagonal
+                - listitem "Popular Shopping Ideas" [ref=e3560]:
+                  - link "Apply Oval filter to narrow results" [ref=e3562] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1003142848111%3A23728848011&dc&qid=1792394316&rnid=23728844011&ref=sr_nr_p_n_g-1003142848111_5&ds=v1%3AFzx7T1NoIp8TOUMLNKv43kbUjLIQOaiQDb5eypa5Ggo
+                    - checkbox [ref=e3565]
+                    - text: Oval
+                - listitem "Popular Shopping Ideas" [ref=e3567]:
+                  - link "Apply Rectangular filter to narrow results" [ref=e3569] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1003142848111%3A23728850011&dc&qid=1792394316&rnid=23728844011&ref=sr_nr_p_n_g-1003142848111_6&ds=v1%3AvuTO4aGDyNAD86APCd71yaiggBfiSO1xMpxfBRv70aw
+                    - checkbox [ref=e3572]
+                    - text: Rectangular
+                - listitem "Popular Shopping Ideas" [ref=e3574]:
+                  - link "Apply Square filter to narrow results" [ref=e3576] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1003142848111%3A23728851011&dc&qid=1792394316&rnid=23728844011&ref=sr_nr_p_n_g-1003142848111_7&ds=v1%3A%2FsLAAM%2FVs3nknuTegf9wyZ%2BdOkFKIZNxNflJ33d4CiU
+                    - checkbox [ref=e3579]
+                    - text: Square
+            - group "Length" [ref=e3581]:
+              - heading "Length" [level=2] [ref=e3582]
+              - list "Length" [ref=e3583]:
+                - listitem "Popular Shopping Ideas" [ref=e3584]:
+                  - link "Apply Up to 1.9 in filter to narrow results" [ref=e3586] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101013614010111%3A88109579011&dc&qid=1792394316&rnid=88109573011&ref=sr_nr_p_n_g-101013614010111_1&ds=v1%3Arz0w7t1m3orZFsMFezkFanP2HVTBwsFJv1XIpX%2BEedU
+                    - checkbox [ref=e3589]
+                    - text: Up to 1.9 in
+                - listitem "Popular Shopping Ideas" [ref=e3591]:
+                  - link "Apply 2.0 to 3.9 in filter to narrow results" [ref=e3593] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101013614010111%3A88109583011&dc&qid=1792394316&rnid=88109573011&ref=sr_nr_p_n_g-101013614010111_2&ds=v1%3ABQ%2FXQQ1muOHxngdF9Vre71h0e8R6nG%2BJEEb1XlB3Mlw
+                    - checkbox [ref=e3596]
+                    - text: 2.0 to 3.9 in
+                - listitem "Popular Shopping Ideas" [ref=e3598]:
+                  - link "Apply 4.0 to 5.9 in filter to narrow results" [ref=e3600] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101013614010111%3A88109581011&dc&qid=1792394316&rnid=88109573011&ref=sr_nr_p_n_g-101013614010111_3&ds=v1%3AFeXKqJ5dWXYxooCg19seXeRpeidIpe16YEAW6kUOO9Y
+                    - checkbox [ref=e3603]
+                    - text: 4.0 to 5.9 in
+                - listitem "Popular Shopping Ideas" [ref=e3605]:
+                  - link "Apply 6.0 to 7.9 in filter to narrow results" [ref=e3607] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101013614010111%3A88109582011&dc&qid=1792394316&rnid=88109573011&ref=sr_nr_p_n_g-101013614010111_4&ds=v1%3AxpJtpBMAm4g18wPdktAOgB2zBVSz8D0zUd%2BW2zhRAcA
+                    - checkbox [ref=e3610]
+                    - text: 6.0 to 7.9 in
+                - listitem "Popular Shopping Ideas" [ref=e3612]:
+                  - link "Apply 8.0 in & above filter to narrow results" [ref=e3614] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101013614010111%3A88109574011&dc&qid=1792394316&rnid=88109573011&ref=sr_nr_p_n_g-101013614010111_5&ds=v1%3ArK70ihJQMgZQO%2BbQEBo4Ez7%2BRRd1GrtellB6oDmBYJM
+                    - checkbox [ref=e3617]
+                    - text: 8.0 in & above
+            - group "Interest" [ref=e3619]:
+              - heading "Interest" [level=2] [ref=e3620]
+              - list "Interest" [ref=e3621]:
+                - listitem "Popular Shopping Ideas" [ref=e3622]:
+                  - link "Apply Animals & Nature filter to narrow results" [ref=e3624] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1004235739091%3A373458011&dc&qid=1792394316&rnid=373456011&ref=sr_nr_p_n_g-1004235739091_1&ds=v1%3A9oOpwyJVuYkc9oObUnCdKSc43mI6x6gZx8tbKIryEAQ
+                    - checkbox [ref=e3627]
+                    - text: Animals & Nature
+                - listitem "Popular Shopping Ideas" [ref=e3629]:
+                  - link "Apply Anime & Manga filter to narrow results" [ref=e3631] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1004235739091%3A3233064011&dc&qid=1792394316&rnid=373456011&ref=sr_nr_p_n_g-1004235739091_2&ds=v1%3Aa%2FRuD%2BZ5YaZrYSJo%2FBhtNxd%2BuFqYokx7prMcdaK3jCU
+                    - checkbox [ref=e3634]
+                    - text: Anime & Manga
+                - listitem "Popular Shopping Ideas" [ref=e3636]:
+                  - link "Apply Comics filter to narrow results" [ref=e3638] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1004235739091%3A3233067011&dc&qid=1792394316&rnid=373456011&ref=sr_nr_p_n_g-1004235739091_3&ds=v1%3A5RJzSsZQrXCFlu%2BCmI%2FX5VkFL9Fw%2FVtqqKIC2%2BrqrjM
+                    - checkbox [ref=e3641]
+                    - text: Comics
+                - listitem "Popular Shopping Ideas" [ref=e3643]:
+                  - link "Apply Fantasy & Sci-Fi filter to narrow results" [ref=e3645] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1004235739091%3A378229011&dc&qid=1792394316&rnid=373456011&ref=sr_nr_p_n_g-1004235739091_4&ds=v1%3APld9h0NGPa7KELah%2BopDy6fimM6%2FZ4CmF2RKgrwAc54
+                    - checkbox [ref=e3648]
+                    - text: Fantasy & Sci-Fi
+                - listitem "Popular Shopping Ideas" [ref=e3650]:
+                  - link "Apply Fashion filter to narrow results" [ref=e3652] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1004235739091%3A3233076011&dc&qid=1792394316&rnid=373456011&ref=sr_nr_p_n_g-1004235739091_5&ds=v1%3AEXJpRxpmoVFlEAINBJmOYgP3lbVXnUDAtvbOkrxijT4
+                    - checkbox [ref=e3655]
+                    - text: Fashion
+                - listitem "Popular Shopping Ideas" [ref=e3657]:
+                  - link "Apply Learning filter to narrow results" [ref=e3659] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1004235739091%3A3233080011&dc&qid=1792394316&rnid=373456011&ref=sr_nr_p_n_g-1004235739091_6&ds=v1%3AO4cddEi4WiXzYOjIa0OlkHhLkNVOLE1m0yx%2B2vZJohs
+                    - checkbox [ref=e3662]
+                    - text: Learning
+                - listitem "Popular Shopping Ideas" [ref=e3664]:
+                  - link "Apply Music filter to narrow results" [ref=e3666] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1004235739091%3A373501011&dc&qid=1792394316&rnid=373456011&ref=sr_nr_p_n_g-1004235739091_7&ds=v1%3ACMAOuGnnDoB2HO17Bojh%2FTNVIgkVGi1ncYuThM4RbFk
+                    - checkbox [ref=e3669]
+                    - text: Music
+                - listitem "Popular Shopping Ideas" [ref=e3671]:
+                  - link "Apply Occupations filter to narrow results" [ref=e3673] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1004235739091%3A378230011&dc&qid=1792394316&rnid=373456011&ref=sr_nr_p_n_g-1004235739091_8&ds=v1%3AwDKI5HgSaNhI19ACi6PLdOwBD2xOOpFjKmhvGDShpu0
+                    - checkbox [ref=e3676]
+                    - text: Occupations
+                - listitem "Popular Shopping Ideas" [ref=e3678]:
+                  - link "Apply Sports filter to narrow results" [ref=e3680] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1004235739091%3A373507011&dc&qid=1792394316&rnid=373456011&ref=sr_nr_p_n_g-1004235739091_9&ds=v1%3Ae1UqcfQq3dYlqSEx0z2GJPZzOOZldlISeeliRaFe8y4
+                    - checkbox [ref=e3683]
+                    - text: Sports
+                - listitem "Popular Shopping Ideas" [ref=e3685]:
+                  - link "Apply Transportation filter to narrow results" [ref=e3687] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1004235739091%3A373514011&dc&qid=1792394316&rnid=373456011&ref=sr_nr_p_n_g-1004235739091_10&ds=v1%3Ay8NK%2F4jMoG7MUC9zNtW4DOWUuStJRITjzsr8lcIB32w
+                    - checkbox [ref=e3690]
+                    - text: Transportation
+                - listitem "Popular Shopping Ideas" [ref=e3692]:
+                  - link "Apply Video Games filter to narrow results" [ref=e3694] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1004235739091%3A3233099011&dc&qid=1792394316&rnid=373456011&ref=sr_nr_p_n_g-1004235739091_11&ds=v1%3A3rQUmnB9fp%2BNgF2Ipbdi%2BoaCvh4kHm%2FhspOygo09c8Q
+                    - checkbox [ref=e3697]
+                    - text: Video Games
+            - group "Age Range Description" [ref=e3699]:
+              - heading "Age Range Description" [level=2] [ref=e3700]
+              - list "Age Range Description" [ref=e3701]:
+                - listitem "Popular Shopping Ideas" [ref=e3702]:
+                  - link "Apply Adult filter to narrow results" [ref=e3704] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101015538329111%3A122339525011&dc&qid=1792394316&rnid=122338265011&ref=sr_nr_p_n_g-101015538329111_1&ds=v1%3ApWA1ITB1o965FVb6GCTQ1TjqQQ73nsEKCbF74tVKshw
+                    - checkbox [ref=e3707]
+                    - text: Adult
+                - listitem "Popular Shopping Ideas" [ref=e3709]:
+                  - link "Apply Kid filter to narrow results" [ref=e3711] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101015538329111%3A122339526011&dc&qid=1792394316&rnid=122338265011&ref=sr_nr_p_n_g-101015538329111_2&ds=v1%3AcwjqoTk10PzmAxeETnGyLe9ZRdxkBsBn5NaWuM49xho
+                    - checkbox [ref=e3714]
+                    - text: Kid
+                - listitem "Popular Shopping Ideas" [ref=e3716]:
+                  - link "Apply Teen filter to narrow results" [ref=e3718] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101015538329111%3A122339523011&dc&qid=1792394316&rnid=122338265011&ref=sr_nr_p_n_g-101015538329111_3&ds=v1%3AiI7xdWWmcpaInVZp2eJsfCmdPToQUvSzvqqY%2FtdOe6o
+                    - checkbox [ref=e3721]
+                    - text: Teen
+                - listitem "Popular Shopping Ideas" [ref=e3723]:
+                  - link "Apply Toddler filter to narrow results" [ref=e3725] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101015538329111%3A122339524011&dc&qid=1792394316&rnid=122338265011&ref=sr_nr_p_n_g-101015538329111_4&ds=v1%3AOA5oXD5JPQ6sWfAPoec8tZXzXl3lFzZQF%2F8E6CahEcA
+                    - checkbox [ref=e3728]
+                    - text: Toddler
+            - group "Sustainability Features" [ref=e3730]:
+              - heading "Sustainability Features" [level=2] [ref=e3731]
+              - list "Sustainability Features" [ref=e3732]:
+                - listitem [ref=e3733]:
+                  - link "Any Feature" [ref=e3735] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_cpf_labels%3A121136630011&dc&qid=1792394316&rnid=116845681011&ref=sr_nr_p_n_cpf_labels_1&ds=v1%3ASX2OxrwRC0hfbCGYzOD5DcWhl3D1FgITynR1cGfVB7M
+                - listitem [ref=e3736]:
+                  - link "Forestry Practices" [ref=e3738] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_cpf_labels%3A116845687011&dc&qid=1792394316&rnid=116845681011&ref=sr_nr_p_n_cpf_labels_2&ds=v1%3Aow%2BP1kD%2BMLXpv3qDjgXG3sZe5N5fXG6gEiz5%2FcNAQDs
+                - listitem [ref=e3739]:
+                  - button "See more, Sustainability Features" [ref=e3742] [cursor=pointer]: See more
+            - group "Grip" [ref=e3744]:
+              - heading "Grip" [level=2] [ref=e3745]
+              - list "Grip" [ref=e3746]:
+                - listitem "Popular Shopping Ideas" [ref=e3747]:
+                  - link "Apply Contoured filter to narrow results" [ref=e3749] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101015538533111%3A122339518011&dc&qid=1792394316&rnid=122338263011&ref=sr_nr_p_n_g-101015538533111_1&ds=v1%3Av7jRXd6JGIrgwU20sFr24%2Fk2S8Ya65mXWH2vldRk4z0
+                    - checkbox [ref=e3752]
+                    - text: Contoured
+                - listitem "Popular Shopping Ideas" [ref=e3754]:
+                  - link "Apply Dotted filter to narrow results" [ref=e3756] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101015538533111%3A122339515011&dc&qid=1792394316&rnid=122338263011&ref=sr_nr_p_n_g-101015538533111_2&ds=v1%3AkCLnYR7xIGd%2BNy1t1u%2FcX19vozjdiXDKCW%2Bf30fW7gM
+                    - checkbox [ref=e3759]
+                    - text: Dotted
+                - listitem "Popular Shopping Ideas" [ref=e3761]:
+                  - link "Apply Knurled filter to narrow results" [ref=e3763] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101015538533111%3A122339516011&dc&qid=1792394316&rnid=122338263011&ref=sr_nr_p_n_g-101015538533111_3&ds=v1%3AbXiUXbkrAdQHbAzCLBDO3GcBc4MlyO4jtYoi4JVS2MI
+                    - checkbox [ref=e3766]
+                    - text: Knurled
+                - listitem "Popular Shopping Ideas" [ref=e3768]:
+                  - link "Apply Ribbed filter to narrow results" [ref=e3770] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101015538533111%3A122339517011&dc&qid=1792394316&rnid=122338263011&ref=sr_nr_p_n_g-101015538533111_4&ds=v1%3AU87eL9ZJ%2BXB%2Fl7XE%2FjS3msRK8U9ig5Sv91C0UJsfC4w
+                    - checkbox [ref=e3773]
+                    - text: Ribbed
+            - group "Purpose" [ref=e3775]:
+              - heading "Purpose" [level=2] [ref=e3776]
+              - list "Purpose" [ref=e3777]:
+                - listitem "Popular Shopping Ideas" [ref=e3778]:
+                  - link "Apply Writing filter to narrow results" [ref=e3780] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101016754200111%3A207761060011&dc&qid=1792394316&rnid=207761055011&ref=sr_nr_p_n_g-101016754200111_1&ds=v1%3AW%2FixnbCodHE02CVkK0eSSaB89u6hFzDong3vASYCLpc
+                    - checkbox [ref=e3783]
+                    - text: Writing
+                - listitem "Popular Shopping Ideas" [ref=e3785]:
+                  - link "Apply Journaling filter to narrow results" [ref=e3787] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101016754200111%3A207761061011&dc&qid=1792394316&rnid=207761055011&ref=sr_nr_p_n_g-101016754200111_2&ds=v1%3AILfQ4tswTWMe1c7EuEoO3rZcyjMVKpoSshnyQrtY5Qc
+                    - checkbox [ref=e3790]
+                    - text: Journaling
+                - listitem "Popular Shopping Ideas" [ref=e3792]:
+                  - link "Apply Drawing filter to narrow results" [ref=e3794] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101016754200111%3A207761062011&dc&qid=1792394316&rnid=207761055011&ref=sr_nr_p_n_g-101016754200111_3&ds=v1%3AIniIynPsZabrgBXKmOMgqpiGlfOfB0gRIa9muOFL4kc
+                    - checkbox [ref=e3797]
+                    - text: Drawing
+                - listitem "Popular Shopping Ideas" [ref=e3799]:
+                  - link "Apply Calligraphy filter to narrow results" [ref=e3801] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101016754200111%3A207761063011&dc&qid=1792394316&rnid=207761055011&ref=sr_nr_p_n_g-101016754200111_4&ds=v1%3ALglfRZ7IrXpc7LlVZ%2Fbs%2B438Aazm5xZ1b3F35IQAN%2B4
+                    - checkbox [ref=e3804]
+                    - text: Calligraphy
+                - listitem "Popular Shopping Ideas" [ref=e3806]:
+                  - link "Apply Coloring filter to narrow results" [ref=e3808] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101016754200111%3A207761056011&dc&qid=1792394316&rnid=207761055011&ref=sr_nr_p_n_g-101016754200111_5&ds=v1%3AyvxrMCoTJ%2FDKL1HxVCro25II0BAks2RlQArw0HpdU8Y
+                    - checkbox [ref=e3811]
+                    - text: Coloring
+                - listitem "Popular Shopping Ideas" [ref=e3813]:
+                  - link "Apply Self Defense filter to narrow results" [ref=e3815] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101016754200111%3A207761058011&dc&qid=1792394316&rnid=207761055011&ref=sr_nr_p_n_g-101016754200111_6&ds=v1%3ARpMeHTuJfhZK4Wo2IJz1jFYLk52sgRV6DTmr2e3fObg
+                    - checkbox [ref=e3818]
+                    - text: Self Defense
+                - listitem "Popular Shopping Ideas" [ref=e3820]:
+                  - link "Apply Sketching filter to narrow results" [ref=e3822] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101016754200111%3A207761057011&dc&qid=1792394316&rnid=207761055011&ref=sr_nr_p_n_g-101016754200111_7&ds=v1%3AvqYouWWPgQOFgTrQcyYmy1TXEGsflvRWbwnG0amMD6s
+                    - checkbox [ref=e3825]
+                    - text: Sketching
+            - group "Ink Base" [ref=e3827]:
+              - heading "Ink Base" [level=2] [ref=e3828]
+              - list "Ink Base" [ref=e3829]:
+                - listitem "Popular Shopping Ideas" [ref=e3830]:
+                  - link "Apply Alcohol filter to narrow results" [ref=e3832] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101015538684111%3A122339514011&dc&qid=1792394316&rnid=122338262011&ref=sr_nr_p_n_g-101015538684111_1&ds=v1%3Apm%2B3iSuT%2Bbj5cvgamAEflLm9i9GlQ5BGmIY0%2F0Vo1do
+                    - checkbox [ref=e3835]
+                    - text: Alcohol
+                - listitem "Popular Shopping Ideas" [ref=e3837]:
+                  - link "Apply Hybrid filter to narrow results" [ref=e3839] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101015538684111%3A122339512011&dc&qid=1792394316&rnid=122338262011&ref=sr_nr_p_n_g-101015538684111_2&ds=v1%3AqwR9PEI0ldycEONtB7lPqi73sRboq7zaWWofZsRwERg
+                    - checkbox [ref=e3842]
+                    - text: Hybrid
+                - listitem "Popular Shopping Ideas" [ref=e3844]:
+                  - link "Apply Oil filter to narrow results" [ref=e3846] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101015538684111%3A122339511011&dc&qid=1792394316&rnid=122338262011&ref=sr_nr_p_n_g-101015538684111_3&ds=v1%3AZiJQH3RVc8HLCvoJooW8ZzdZbfrAeA8wv7PG62rMY7s
+                    - checkbox [ref=e3849]
+                    - text: Oil
+                - listitem "Popular Shopping Ideas" [ref=e3851]:
+                  - link "Apply Pigment filter to narrow results" [ref=e3853] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101015538684111%3A213277785011&dc&qid=1792394316&rnid=122338262011&ref=sr_nr_p_n_g-101015538684111_4&ds=v1%3A9DR4AgPIf4TAO3JEDK5XT8%2Fvw%2Fa00SpWuf%2BOpb2xFCM
+                    - checkbox [ref=e3856]
+                    - text: Pigment
+                - listitem "Popular Shopping Ideas" [ref=e3858]:
+                  - link "Apply Water filter to narrow results" [ref=e3860] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101015538684111%3A122339513011&dc&qid=1792394316&rnid=122338262011&ref=sr_nr_p_n_g-101015538684111_5&ds=v1%3APPvBL7qT9pOMnAJ1wyFCQavze6YP20rAs4FR44aYkxE
+                    - checkbox [ref=e3863]
+                    - text: Water
+            - group "Age Range" [ref=e3865]:
+              - heading "Age Range" [level=2] [ref=e3866]
+              - list "Age Range" [ref=e3867]:
+                - listitem "Popular Shopping Ideas" [ref=e3868]:
+                  - link "Apply Birth to 24 Months filter to narrow results" [ref=e3870] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1004151746091%3A165813011&dc&qid=1792394316&rnid=165794011&ref=sr_nr_p_n_g-1004151746091_1&ds=v1%3AY89oKnVafutIu2CXEDU6eZH96G%2FceWEB4TAEj88t2DY
+                    - checkbox [ref=e3873]
+                    - text: Birth to 24 Months
+                - listitem "Popular Shopping Ideas" [ref=e3875]:
+                  - link "Apply 2 to 4 Years filter to narrow results" [ref=e3877] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1004151746091%3A165890011&dc&qid=1792394316&rnid=165794011&ref=sr_nr_p_n_g-1004151746091_2&ds=v1%3ASgtVDeKbwV0yIbm6B09ItPGdHb9A4YEj7bdeXQwlJn8
+                    - checkbox [ref=e3880]
+                    - text: 2 to 4 Years
+                - listitem "Popular Shopping Ideas" [ref=e3882]:
+                  - link "Apply 5 to 7 Years filter to narrow results" [ref=e3884] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1004151746091%3A165936011&dc&qid=1792394316&rnid=165794011&ref=sr_nr_p_n_g-1004151746091_3&ds=v1%3AIw7g%2BQiN9hwqA9Tx6oz8XTBfnAKSqeKjbF2IgtgcEbk
+                    - checkbox [ref=e3887]
+                    - text: 5 to 7 Years
+                - listitem "Popular Shopping Ideas" [ref=e3889]:
+                  - link "Apply 8 to 13 Years filter to narrow results" [ref=e3891] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1004151746091%3A5442387011&dc&qid=1792394316&rnid=165794011&ref=sr_nr_p_n_g-1004151746091_4&ds=v1%3AziJsTKGnElwDiI2Duhr5XLA5fmb1MXbsYkgZjjrlGUc
+                    - checkbox [ref=e3894]
+                    - text: 8 to 13 Years
+                - listitem "Popular Shopping Ideas" [ref=e3896]:
+                  - link "Apply 14 Years & Up filter to narrow results" [ref=e3898] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1004151746091%3A5442388011&dc&qid=1792394316&rnid=165794011&ref=sr_nr_p_n_g-1004151746091_5&ds=v1%3Apovad%2Fz%2FngoNdKIPx14sRkBE0rDovGQWk6uEVoZfezk
+                    - checkbox [ref=e3901]
+                    - text: 14 Years & Up
+            - group "Unit Count" [ref=e3903]:
+              - heading "Unit Count" [level=2] [ref=e3904]
+              - list "Unit Count" [ref=e3905]:
+                - listitem "Popular Shopping Ideas" [ref=e3906]:
+                  - link "Apply 1 filter to narrow results" [ref=e3908] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101015522547111%3A122339508011&dc&qid=1792394316&rnid=122338261011&ref=sr_nr_p_n_g-101015522547111_1&ds=v1%3Ar1U5nvnMK5oHInqzGRG0g67NOm5s%2BKfmxel29ILvmWU
+                    - checkbox [ref=e3911]
+                    - text: "1"
+                - listitem "Popular Shopping Ideas" [ref=e3913]:
+                  - link "Apply 2 filter to narrow results" [ref=e3915] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101015522547111%3A122339509011&dc&qid=1792394316&rnid=122338261011&ref=sr_nr_p_n_g-101015522547111_2&ds=v1%3AtzrgIEfitTfVBOtjrocEoShzvr3p9Arw1%2B46jLTZQB4
+                    - checkbox [ref=e3918]
+                    - text: "2"
+                - listitem "Popular Shopping Ideas" [ref=e3920]:
+                  - link "Apply 3 & above filter to narrow results" [ref=e3922] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101015522547111%3A122339510011&dc&qid=1792394316&rnid=122338261011&ref=sr_nr_p_n_g-101015522547111_3&ds=v1%3AsmhTYej87F%2BoquD2YCCxTIg1eeW9iy%2F07XHxiSiXzFc
+                    - checkbox [ref=e3925]
+                    - text: 3 & above
+            - group "Water Resistance Level" [ref=e3927]:
+              - heading "Water Resistance Level" [level=2] [ref=e3928]
+              - list "Water Resistance Level" [ref=e3929]:
+                - listitem "Popular Shopping Ideas" [ref=e3930]:
+                  - link "Apply Moisture Resistant filter to narrow results" [ref=e3932] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101015558080111%3A211959701011&dc&qid=1792394316&rnid=122347709011&ref=sr_nr_p_n_g-101015558080111_1&ds=v1%3A%2FRplQkWrKH%2BRObuCcIoTKlT7I4LcYwM80y8CjVoj4xI
+                    - checkbox [ref=e3935]
+                    - text: Moisture Resistant
+                - listitem "Popular Shopping Ideas" [ref=e3937]:
+                  - link "Apply Not Water Resistant filter to narrow results" [ref=e3939] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101015558080111%3A122347761011&dc&qid=1792394316&rnid=122347709011&ref=sr_nr_p_n_g-101015558080111_2&ds=v1%3AilobCiAeV558B3NWlbE%2BA6l19LXvStX2nk87LTIWzxs
+                    - checkbox [ref=e3942]
+                    - text: Not Water Resistant
+                - listitem "Popular Shopping Ideas" [ref=e3944]:
+                  - link "Apply Water Repellent filter to narrow results" [ref=e3946] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101015558080111%3A122347763011&dc&qid=1792394316&rnid=122347709011&ref=sr_nr_p_n_g-101015558080111_3&ds=v1%3ARmScmulVM7NTPsm986PYtKEOCWIQ4I12jP7%2BE9viYSw
+                    - checkbox [ref=e3949]
+                    - text: Water Repellent
+                - listitem "Popular Shopping Ideas" [ref=e3951]:
+                  - link "Apply Water Resistant filter to narrow results" [ref=e3953] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101015558080111%3A122347760011&dc&qid=1792394316&rnid=122347709011&ref=sr_nr_p_n_g-101015558080111_4&ds=v1%3AmltgGpytUMyPwsQYLVWGtGGEOZ%2FQxFFQqtjmrGdmWFg
+                    - checkbox [ref=e3956]
+                    - text: Water Resistant
+                - listitem "Popular Shopping Ideas" [ref=e3958]:
+                  - link "Apply Waterproof filter to narrow results" [ref=e3960] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101015558080111%3A122347762011&dc&qid=1792394316&rnid=122347709011&ref=sr_nr_p_n_g-101015558080111_5&ds=v1%3APS6%2FECY7ITrb%2BIxNHLdyhttKpNFI0LdJ9ZxTdGtnMJY
+                    - checkbox [ref=e3963]
+                    - text: Waterproof
+            - group "Pencil Type" [ref=e3965]:
+              - heading "Pencil Type" [level=2] [ref=e3966]
+              - list "Pencil Type" [ref=e3967]:
+                - listitem "Popular Shopping Ideas" [ref=e3968]:
+                  - link "Apply Colored filter to narrow results" [ref=e3970] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1001918142111%3A8111549011&dc&qid=1792394316&rnid=8111547011&ref=sr_nr_p_n_g-1001918142111_1&ds=v1%3AdsbZpZZH7FjAdNntSOckYasFCS8eGwmyv79UKOnj3ls
+                    - checkbox [ref=e3973]
+                    - text: Colored
+                - listitem "Popular Shopping Ideas" [ref=e3975]:
+                  - link "Apply Graphite filter to narrow results" [ref=e3977] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1001918142111%3A8111550011&dc&qid=1792394316&rnid=8111547011&ref=sr_nr_p_n_g-1001918142111_2&ds=v1%3ANOtBfHf9Un054YUGlmnr6IKx9GQpGT9wHj2qqRxqBSU
+                    - checkbox [ref=e3980]
+                    - text: Graphite
+                - listitem "Popular Shopping Ideas" [ref=e3982]:
+                  - link "Apply Watercolor filter to narrow results" [ref=e3984] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1001918142111%3A8111552011&dc&qid=1792394316&rnid=8111547011&ref=sr_nr_p_n_g-1001918142111_3&ds=v1%3AVCnuEMZ6NyLjmsfigPcjvs8bjZ3rKxwAe%2BLAR2oNT1E
+                    - checkbox [ref=e3987]
+                    - text: Watercolor
+            - group "Premium Brands" [ref=e3989]:
+              - heading "Premium Brands" [level=2] [ref=e3990]
+              - list "Premium Brands" [ref=e3991]:
+                - listitem "Popular Shopping Ideas" [ref=e3992]:
+                  - link "Apply Premium Brands filter to narrow results" [ref=e3994] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101015887018111%3A204376014011&dc&qid=1792394316&rnid=204376013011&ref=sr_nr_p_n_g-101015887018111_1&ds=v1%3AGaDEujj9TscQuLXBMjaBG%2FdSoHpmpY5BI0G2xx9IyKQ
+                    - checkbox [ref=e3997]
+                    - text: Premium Brands
+            - group "Writing Instrument Form" [ref=e3999]:
+              - heading "Writing Instrument Form" [level=2] [ref=e4000]
+              - list "Writing Instrument Form" [ref=e4001]:
+                - listitem "Popular Shopping Ideas" [ref=e4002]:
+                  - link "Apply Ballpoint Pen filter to narrow results" [ref=e4004] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101015540824111%3A122341485011&dc&qid=1792394316&rnid=122341465011&ref=sr_nr_p_n_g-101015540824111_1&ds=v1%3AGBpFOIwJDzBN%2Bs2iuTpcYIUbms2k%2FNZ4NqQ2c%2BL0oiY
+                    - checkbox [ref=e4007]
+                    - text: Ballpoint Pen
+                - listitem "Popular Shopping Ideas" [ref=e4009]:
+                  - link "Apply Brush Pen filter to narrow results" [ref=e4011] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101015540824111%3A122341490011&dc&qid=1792394316&rnid=122341465011&ref=sr_nr_p_n_g-101015540824111_2&ds=v1%3A7mf6vM89%2BQTLp7bKpmkkkL6FLHAgiCmjVVgw6vmI%2Bmw
+                    - checkbox [ref=e4014]
+                    - text: Brush Pen
+                - listitem "Popular Shopping Ideas" [ref=e4016]:
+                  - link "Apply Chalk filter to narrow results" [ref=e4018] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101015540824111%3A122341491011&dc&qid=1792394316&rnid=122341465011&ref=sr_nr_p_n_g-101015540824111_3&ds=v1%3AUQXGISna2N0sMPMcM1GdPvc7X%2FW1DHz9PYBHp85hhkQ
+                    - checkbox [ref=e4021]
+                    - text: Chalk
+                - listitem "Popular Shopping Ideas" [ref=e4023]:
+                  - link "Apply Charcoal Stick filter to narrow results" [ref=e4025] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101015540824111%3A122341495011&dc&qid=1792394316&rnid=122341465011&ref=sr_nr_p_n_g-101015540824111_4&ds=v1%3As1048zCQL%2BYEMftl%2BIVB1%2FwDPtOtMPIAWqJeYuaOjJM
+                    - checkbox [ref=e4028]
+                    - text: Charcoal Stick
+                - listitem "Popular Shopping Ideas" [ref=e4030]:
+                  - link "Apply Colored Pencil filter to narrow results" [ref=e4032] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101015540824111%3A122341494011&dc&qid=1792394316&rnid=122341465011&ref=sr_nr_p_n_g-101015540824111_5&ds=v1%3AY80yr%2BZuClcTPO0bAaKk10%2BJDZk9XUFdSoMkAqig9NY
+                    - checkbox [ref=e4035]
+                    - text: Colored Pencil
+                - listitem "Popular Shopping Ideas" [ref=e4037]:
+                  - link "Apply Crayon filter to narrow results" [ref=e4039] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101015540824111%3A122341498011&dc&qid=1792394316&rnid=122341465011&ref=sr_nr_p_n_g-101015540824111_6&ds=v1%3APFtcVrl5HBCxuGCqMJChAFR%2Fx%2FcDA7twLr83l2xhQqg
+                    - checkbox [ref=e4042]
+                    - text: Crayon
+                - listitem "Popular Shopping Ideas" [ref=e4044]:
+                  - link "Apply Dip Pen filter to narrow results" [ref=e4046] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101015540824111%3A122341480011&dc&qid=1792394316&rnid=122341465011&ref=sr_nr_p_n_g-101015540824111_7&ds=v1%3AJoI3Pgj0gkEl77B6dkHbLcfNjN3NTHMPX44iasdgNPc
+                    - checkbox [ref=e4049]
+                    - text: Dip Pen
+                - listitem [ref=e4051]:
+                  - button "See more, Writing Instrument Form" [ref=e4054] [cursor=pointer]: See more
+            - group "Artistic Charcoal Form" [ref=e4056]:
+              - heading "Artistic Charcoal Form" [level=2] [ref=e4057]
+              - list "Artistic Charcoal Form" [ref=e4058]:
+                - listitem "Popular Shopping Ideas" [ref=e4059]:
+                  - link "Apply Compressed Charcoal filter to narrow results" [ref=e4061] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101015538443111%3A122339520011&dc&qid=1792394316&rnid=122338264011&ref=sr_nr_p_n_g-101015538443111_1&ds=v1%3Av25FVlpqwnIyCqhYq4VrqulwZK6OcDcfDe4V7teSCpY
+                    - checkbox [ref=e4064]
+                    - text: Compressed Charcoal
+                - listitem "Popular Shopping Ideas" [ref=e4066]:
+                  - link "Apply Powdered Charcoal filter to narrow results" [ref=e4068] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101015538443111%3A211957473011&dc&qid=1792394316&rnid=122338264011&ref=sr_nr_p_n_g-101015538443111_2&ds=v1%3A98UAKHeuaw%2BAd4u7nj3z61dQVIUnb8CifRzbyEijdJA
+                    - checkbox [ref=e4071]
+                    - text: Powdered Charcoal
+                - listitem "Popular Shopping Ideas" [ref=e4073]:
+                  - link "Apply Vine Charcoal filter to narrow results" [ref=e4075] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101015538443111%3A122339519011&dc&qid=1792394316&rnid=122338264011&ref=sr_nr_p_n_g-101015538443111_3&ds=v1%3AT0CZHisOAoGFJ1VQZo08suGsNzUDl82kR6aKKEWfLqc
+                    - checkbox [ref=e4078]
+                    - text: Vine Charcoal
+                - listitem "Popular Shopping Ideas" [ref=e4080]:
+                  - link "Apply White Charcoal filter to narrow results" [ref=e4082] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101015538443111%3A122339522011&dc&qid=1792394316&rnid=122338264011&ref=sr_nr_p_n_g-101015538443111_4&ds=v1%3A9b6bqf1Pasq91nSXpW1ADvzMkRDL2jcfUkS9sUtIc7M
+                    - checkbox [ref=e4085]
+                    - text: White Charcoal
+                - listitem "Popular Shopping Ideas" [ref=e4087]:
+                  - link "Apply Willow Charcoal filter to narrow results" [ref=e4089] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101015538443111%3A122339521011&dc&qid=1792394316&rnid=122338264011&ref=sr_nr_p_n_g-101015538443111_5&ds=v1%3AvU4dRGz%2F%2BY0hECFwJO0xeN85lDT%2B5DtYdohnBivB39w
+                    - checkbox [ref=e4092]
+                    - text: Willow Charcoal
+            - group "Customizable Products" [ref=e4094]:
+              - heading "Customizable Products" [level=2] [ref=e4095]
+              - list "Customizable Products" [ref=e4096]:
+                - listitem "Popular Shopping Ideas" [ref=e4097]:
+                  - link "Apply Customizable filter to narrow results" [ref=e4099] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_customizable_template_name%3A16031489011&dc&qid=1792394316&rnid=16031488011&ref=sr_nr_p_n_customizable_template_name_1&ds=v1%3A2O9ixjXHQmyZoo%2F2s%2B2TTvs2Igjhtre5ttO%2BAaZOEkw
+                    - checkbox [ref=e4102]
+                    - text: Customizable
+            - group "Charcoal Format" [ref=e4104]:
+              - heading "Charcoal Format" [level=2] [ref=e4105]
+              - list "Charcoal Format" [ref=e4106]:
+                - listitem "Popular Shopping Ideas" [ref=e4107]:
+                  - link "Apply Compressed filter to narrow results" [ref=e4109] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1001918140111%3A6574637011&dc&qid=1792394316&rnid=6574636011&ref=sr_nr_p_n_g-1001918140111_1&ds=v1%3ADLr68Fn1SAuCJjAMfNDhNffpwKTtfEzmFNLIAlncBTU
+                    - checkbox [ref=e4112]
+                    - text: Compressed
+                - listitem "Popular Shopping Ideas" [ref=e4114]:
+                  - link "Apply Pencil filter to narrow results" [ref=e4116] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1001918140111%3A6574638011&dc&qid=1792394316&rnid=6574636011&ref=sr_nr_p_n_g-1001918140111_2&ds=v1%3A9uwkTPFMERqSZZMMMJkTT5AO1tadXp%2BgtKZxtSBQr3M
+                    - checkbox [ref=e4119]
+                    - text: Pencil
+                - listitem "Popular Shopping Ideas" [ref=e4121]:
+                  - link "Apply Powdered filter to narrow results" [ref=e4123] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1001918140111%3A6574639011&dc&qid=1792394316&rnid=6574636011&ref=sr_nr_p_n_g-1001918140111_3&ds=v1%3A4I1qRACDq9Yv7WnTZ0fhpfjRFCKFfGfI6qe9ZbX4ptM
+                    - checkbox [ref=e4126]
+                    - text: Powdered
+                - listitem "Popular Shopping Ideas" [ref=e4128]:
+                  - link "Apply Vine filter to narrow results" [ref=e4130] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-1001918140111%3A6574640011&dc&qid=1792394316&rnid=6574636011&ref=sr_nr_p_n_g-1001918140111_4&ds=v1%3AgmqFkM0QEcDqUSwbuj2WhhCq4yYdg3p8G%2BcI11pN2jA
+                    - checkbox [ref=e4133]
+                    - text: Vine
+            - group "Pattern" [ref=e4135]:
+              - heading "Pattern" [level=2] [ref=e4136]
+              - list "Pattern" [ref=e4137]:
+                - listitem "Popular Shopping Ideas" [ref=e4138]:
+                  - link "Apply Floral filter to narrow results" [ref=e4140] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101015538794111%3A122341503011&dc&qid=1792394316&rnid=122341466011&ref=sr_nr_p_n_g-101015538794111_1&ds=v1%3ABXakHj%2BUa%2BXIIhExSQRKpZVIy0H7ZmU0PnVksIGgqDo
+                    - checkbox [ref=e4143]
+                    - text: Floral
+                - listitem "Popular Shopping Ideas" [ref=e4145]:
+                  - link "Apply Geometric filter to narrow results" [ref=e4147] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101015538794111%3A122341502011&dc&qid=1792394316&rnid=122341466011&ref=sr_nr_p_n_g-101015538794111_2&ds=v1%3AR83187yKMGXVBI%2F24Ytmx18f%2F7XVoQiY5sxA3ZmiClI
+                    - checkbox [ref=e4150]
+                    - text: Geometric
+                - listitem "Popular Shopping Ideas" [ref=e4152]:
+                  - link "Apply Marble filter to narrow results" [ref=e4154] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101015538794111%3A122341504011&dc&qid=1792394316&rnid=122341466011&ref=sr_nr_p_n_g-101015538794111_3&ds=v1%3AQ%2FBqHnShaqZzN8uigKbYMDw7iym5GloLkz2A%2Fp4LDiU
+                    - checkbox [ref=e4157]
+                    - text: Marble
+                - listitem "Popular Shopping Ideas" [ref=e4159]:
+                  - link "Apply Solid filter to narrow results" [ref=e4161] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101015538794111%3A122341500011&dc&qid=1792394316&rnid=122341466011&ref=sr_nr_p_n_g-101015538794111_4&ds=v1%3A04WKNDNARbtgWLFxp0cxs99maeD1EaFMFLleJxCOpYQ
+                    - checkbox [ref=e4164]
+                    - text: Solid
+                - listitem "Popular Shopping Ideas" [ref=e4166]:
+                  - link "Apply Striped filter to narrow results" [ref=e4168] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_g-101015538794111%3A122341501011&dc&qid=1792394316&rnid=122341466011&ref=sr_nr_p_n_g-101015538794111_5&ds=v1%3Aj5sdhjnQnhvGOBx7Csk8%2FvUC2H2T5TjWVcKxpn%2FavhU
+                    - checkbox [ref=e4171]
+                    - text: Striped
+            - group "League & Team" [ref=e4173]:
+              - heading "League & Team" [level=2] [ref=e4174]
+              - list "League & Team" [ref=e4175]:
+                - listitem "Popular Shopping Ideas" [ref=e4176]:
+                  - link "Apply NCAA filter to narrow results" [ref=e4178] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_theme_browse-bin%3A374337011&dc&qid=1792394316&rnid=374240011&ref=sr_nr_p_n_theme_browse-bin_1&ds=v1%3Az60jeEP6oZpaYE4Gal8e6YgZWns2CJOl1fpY%2Fuhrv00
+                    - checkbox [ref=e4181]
+                    - text: NCAA
+            - group "Handmade Products" [ref=e4183]:
+              - heading "Handmade Products" [level=2] [ref=e4184]
+              - list "Handmade Products" [ref=e4185]:
+                - listitem "Popular Shopping Ideas" [ref=e4186]:
+                  - link "Apply Handmade filter to narrow results" [ref=e4188] [cursor=pointer]:
+                    - /url: /s?k=pen&rh=p_n_feature_thirty-four_browse-bin%3A217421938011&dc&qid=1792394316&rnid=217421937011&ref=sr_nr_p_n_feature_thirty-four_browse-bin_1&ds=v1%3AZISub1sJWLQAsRY%2BO%2BPiRUb8tW2Y4gmVma9qfvwrFVA
+                    - checkbox [ref=e4191]
+                    - text: Handmade
+    - complementary "Your recently viewed items and featured recommendations" [ref=e4193]:
+      - generic [ref=e4201]:
+        - heading "See personalized recommendations" [level=2] [ref=e4202]
+        - link "Sign in" [ref=e4205] [cursor=pointer]:
+          - /url: https://www.amazon.com/ap/signin?openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fref%3Drhf_sign_in&openid.assoc_handle=usflex&openid.pape.max_auth_age=0
+        - generic [ref=e4206]:
+          - text: New customer?
+          - link "Start here." [ref=e4207] [cursor=pointer]:
+            - /url: https://www.amazon.com/ap/register?openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fref%3Drhf_sign_in&openid.assoc_handle=usflex
+    - generic [ref=e4208]:
+      - button "Back to top" [ref=e4209] [cursor=pointer]:
+        - generic [ref=e4210]: Back to top
+      - generic [ref=e4211]:
+        - generic [ref=e4212]:
+          - heading "Get to Know Us" [level=6] [ref=e4213]
+          - list [ref=e4214]:
+            - listitem [ref=e4215]:
+              - link "Careers" [ref=e4216] [cursor=pointer]:
+                - /url: https://www.amazon.jobs
+            - listitem [ref=e4217]:
+              - link "Blog" [ref=e4218] [cursor=pointer]:
+                - /url: https://blog.aboutamazon.com/?utm_source=gateway&utm_medium=footer
+            - listitem [ref=e4219]:
+              - link "About Amazon" [ref=e4220] [cursor=pointer]:
+                - /url: https://www.aboutamazon.com/?utm_source=gateway&utm_medium=footer
+            - listitem [ref=e4221]:
+              - link "Investor Relations" [ref=e4222] [cursor=pointer]:
+                - /url: https://www.amazon.com/ir
+            - listitem [ref=e4223]:
+              - link "Amazon Devices" [ref=e4224] [cursor=pointer]:
+                - /url: /gp/browse.html?node=2102313011&ref_=footer_devices
+            - listitem [ref=e4225]:
+              - link "Amazon Science" [ref=e4226] [cursor=pointer]:
+                - /url: https://www.amazon.science
+        - generic [ref=e4228]:
+          - heading "Make Money with Us" [level=6] [ref=e4229]
+          - list [ref=e4230]:
+            - listitem [ref=e4231]:
+              - link "Sell products on Amazon" [ref=e4232] [cursor=pointer]:
+                - /url: https://services.amazon.com/sell.html?ld=AZFSSOA&ref_=footer_soa
+            - listitem [ref=e4233]:
+              - link "Sell on Amazon Business" [ref=e4234] [cursor=pointer]:
+                - /url: https://services.amazon.com/amazon-business.html?ld=usb2bunifooter&ref_=footer_b2b
+            - listitem [ref=e4235]:
+              - link "Sell apps on Amazon" [ref=e4236] [cursor=pointer]:
+                - /url: https://developer.amazon.com
+            - listitem [ref=e4237]:
+              - link "Become an Affiliate" [ref=e4238] [cursor=pointer]:
+                - /url: https://affiliate-program.amazon.com/
+            - listitem [ref=e4239]:
+              - link "Advertise Your Products" [ref=e4240] [cursor=pointer]:
+                - /url: https://advertising.amazon.com/?ref=ext_amzn_ftr
+            - listitem [ref=e4241]:
+              - link "Self-Publish with Us" [ref=e4242] [cursor=pointer]:
+                - /url: /gp/seller-account/mm-summary-page.html?ld=AZFooterSelfPublish&topic=200260520&ref_=footer_publishing
+            - listitem [ref=e4243]:
+              - link "Host an Amazon Hub" [ref=e4244] [cursor=pointer]:
+                - /url: https://go.thehub-amazon.com/amazon-hub-locker
+            - listitem [ref=e4245]:
+              - text: ›
+              - link "See More Make Money with Us" [ref=e4246] [cursor=pointer]:
+                - /url: /b/?node=18190131011&ld=AZUSSOA-seemore&ref_=footer_seemore
+        - generic [ref=e4248]:
+          - heading "Amazon Payment Products" [level=6] [ref=e4249]
+          - list [ref=e4250]:
+            - listitem [ref=e4251]:
+              - link "Amazon Business Card" [ref=e4252] [cursor=pointer]:
+                - /url: /dp/B07984JN3L?plattr=ACOMFO&ie=UTF-8
+            - listitem [ref=e4253]:
+              - link "Shop with Points" [ref=e4254] [cursor=pointer]:
+                - /url: /gp/browse.html?node=16218619011&ref_=footer_swp
+            - listitem [ref=e4255]:
+              - link "Reload Your Balance" [ref=e4256] [cursor=pointer]:
+                - /url: /dp/B0CHTVMXZJ?th=1?ref_=footer_reload_us
+            - listitem [ref=e4257]:
+              - link "Amazon Currency Converter" [ref=e4258] [cursor=pointer]:
+                - /url: /gp/browse.html?node=388305011&ref_=footer_tfx
+        - generic [ref=e4260]:
+          - heading "Let Us Help You" [level=6] [ref=e4261]
+          - list [ref=e4262]:
+            - listitem [ref=e4263]:
+              - link "Your Account" [ref=e4264] [cursor=pointer]:
+                - /url: https://www.amazon.com/gp/css/homepage.html?ref_=footer_ya
+            - listitem [ref=e4265]:
+              - link "Your Orders" [ref=e4266] [cursor=pointer]:
+                - /url: https://www.amazon.com/gp/css/order-history?ref_=footer_yo
+            - listitem [ref=e4267]:
+              - link "Shipping Rates & Policies" [ref=e4268] [cursor=pointer]:
+                - /url: /gp/help/customer/display.html?nodeId=468520&ref_=footer_shiprates
+            - listitem [ref=e4269]:
+              - link "Returns & Replacements" [ref=e4270] [cursor=pointer]:
+                - /url: /gp/css/returns/homepage.html?ref_=footer_hy_f_4
+            - listitem [ref=e4271]:
+              - link "Manage Your Content and Devices" [ref=e4272] [cursor=pointer]:
+                - /url: /gp/digital/fiona/manage?ref_=footer_myk
+            - listitem [ref=e4273]:
+              - link "Help" [ref=e4274] [cursor=pointer]:
+                - /url: /gp/help/customer/display.html?nodeId=508510&ref_=footer_gw_m_b_he
+      - generic [ref=e4276]:
+        - link "Amazon US Home" [ref=e4279] [cursor=pointer]:
+          - /url: /?ref_=footer_logo
+        - generic [ref=e4282]:
+          - generic [ref=e4283]:
+            - link "Choose a language for shopping. Current selection is English." [ref=e4284] [cursor=pointer]:
+              - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=footer_lang
+              - generic [ref=e4286]: English
+            - button "Expand to Change Language or Country" [ref=e4287] [cursor=pointer]
+          - link "₹ INR - Indian Rupee" [ref=e4288] [cursor=pointer]:
+            - /url: /customer-preferences/edit?ie=UTF8&ref_=footer_cop&preferencesReturnUrl=%2Fs%3Fk%3Dpen%26ref%3Dnb_sb_nosss%2Fref%3Dnb_sb_noss
+            - generic [ref=e4289]: ₹
+            - generic [ref=e4290]: INR - Indian Rupee
+          - button "Choose a country/region for shopping. The current selection is United States." [ref=e4291] [cursor=pointer]:
+            - generic [ref=e4293]: United States
+      - navigation "More on Amazon" [ref=e4294]:
+        - generic "More on Amazon" [ref=e4295]:
+          - list [ref=e4296]:
+            - listitem [ref=e4297]:
+              - link "Amazon Music Stream millions of songs" [ref=e4298] [cursor=pointer]:
+                - /url: https://music.amazon.com?ref=dm_aff_amz_com
+                - heading "Amazon Music" [level=5] [ref=e4299]
+                - generic [ref=e4300]:
+                  - text: Stream millions
+                  - text: of songs
+            - listitem [ref=e4301]
+            - listitem [ref=e4302]:
+              - link "Amazon Ads Reach customers wherever they spend their time" [ref=e4303] [cursor=pointer]:
+                - /url: https://advertising.amazon.com/?ref=footer_advtsing_amzn_com
+                - heading "Amazon Ads" [level=5] [ref=e4304]
+                - generic [ref=e4305]:
+                  - text: Reach customers
+                  - text: wherever they
+                  - text: spend their time
+            - listitem [ref=e4306]
+            - listitem [ref=e4307]:
+              - link "6pm Score deals on fashion brands" [ref=e4308] [cursor=pointer]:
+                - /url: https://www.6pm.com
+                - heading "6pm" [level=5] [ref=e4309]
+                - generic [ref=e4310]:
+                  - text: Score deals
+                  - text: on fashion brands
+            - listitem [ref=e4311]
+            - listitem [ref=e4312]:
+              - link "AbeBooks Books, art & collectibles" [ref=e4313] [cursor=pointer]:
+                - /url: https://www.abebooks.com
+                - heading "AbeBooks" [level=5] [ref=e4314]
+                - generic [ref=e4315]:
+                  - text: Books, art
+                  - text: "& collectibles"
+            - listitem [ref=e4316]
+            - listitem [ref=e4317]:
+              - link "ACX Audiobook Publishing Made Easy" [ref=e4318] [cursor=pointer]:
+                - /url: https://www.acx.com/
+                - heading "ACX" [level=5] [ref=e4319]
+                - generic [ref=e4320]:
+                  - text: Audiobook Publishing
+                  - text: Made Easy
+            - listitem [ref=e4321]
+            - listitem [ref=e4322]:
+              - link "Sell on Amazon Start a Selling Account" [ref=e4323] [cursor=pointer]:
+                - /url: https://sell.amazon.com/?ld=AZUSSOA-footer-aff&ref_=footer_sell
+                - heading "Sell on Amazon" [level=5] [ref=e4324]
+                - generic [ref=e4325]: Start a Selling Account
+            - listitem [ref=e4326]
+            - listitem [ref=e4327]:
+              - link "Veeqo Shipping Software Inventory Management" [ref=e4328] [cursor=pointer]:
+                - /url: https://www.veeqo.com/?utm_source=amazon&utm_medium=website&utm_campaign=footer
+                - heading "Veeqo" [level=5] [ref=e4329]
+                - generic [ref=e4330]:
+                  - text: Shipping Software
+                  - text: Inventory Management
+          - list [ref=e4331]:
+            - listitem [ref=e4332]:
+              - link "Amazon Business Everything For Your Business" [ref=e4333] [cursor=pointer]:
+                - /url: /business?ref_=footer_retail_b2b
+                - heading "Amazon Business" [level=5] [ref=e4334]
+                - generic [ref=e4335]:
+                  - text: Everything For
+                  - text: Your Business
+            - listitem [ref=e4336]
+            - listitem [ref=e4337]:
+              - link "AmazonGlobal Ship Orders Internationally" [ref=e4338] [cursor=pointer]:
+                - /url: /gp/browse.html?node=20338496011&ref_=footer_amazonglobal
+                - heading "AmazonGlobal" [level=5] [ref=e4339]
+                - generic [ref=e4340]:
+                  - text: Ship Orders
+                  - text: Internationally
+            - listitem [ref=e4341]
+            - listitem [ref=e4342]:
+              - link "Amazon Web Services Scalable Cloud Computing Services" [ref=e4343] [cursor=pointer]:
+                - /url: https://aws.amazon.com/what-is-cloud-computing/?sc_channel=EL&sc_campaign=amazonfooter
+                - heading "Amazon Web Services" [level=5] [ref=e4344]
+                - generic [ref=e4345]:
+                  - text: Scalable Cloud
+                  - text: Computing Services
+            - listitem [ref=e4346]
+            - listitem [ref=e4347]:
+              - link "Audible Listen to Books & Original Audio Performances" [ref=e4348] [cursor=pointer]:
+                - /url: https://www.audible.com
+                - heading "Audible" [level=5] [ref=e4349]
+                - generic [ref=e4350]:
+                  - text: Listen to Books & Original
+                  - text: Audio Performances
+            - listitem [ref=e4351]
+            - listitem [ref=e4352]:
+              - link "Box Office Mojo Find Movie Box Office Data" [ref=e4353] [cursor=pointer]:
+                - /url: https://www.boxofficemojo.com/?ref_=amzn_nav_ftr
+                - heading "Box Office Mojo" [level=5] [ref=e4354]
+                - generic [ref=e4355]:
+                  - text: Find Movie
+                  - text: Box Office Data
+            - listitem [ref=e4356]
+            - listitem [ref=e4357]:
+              - link "Goodreads Book reviews & recommendations" [ref=e4358] [cursor=pointer]:
+                - /url: https://www.goodreads.com
+                - heading "Goodreads" [level=5] [ref=e4359]
+                - generic [ref=e4360]:
+                  - text: Book reviews
+                  - text: "& recommendations"
+            - listitem [ref=e4361]
+            - listitem [ref=e4362]:
+              - link "IMDb Movies, TV & Celebrities" [ref=e4363] [cursor=pointer]:
+                - /url: https://www.imdb.com
+                - heading "IMDb" [level=5] [ref=e4364]
+                - generic [ref=e4365]:
+                  - text: Movies, TV
+                  - text: "& Celebrities"
+          - list [ref=e4366]:
+            - listitem [ref=e4367]:
+              - link "IMDbPro Get Info Entertainment Professionals Need" [ref=e4368] [cursor=pointer]:
+                - /url: https://pro.imdb.com?ref_=amzn_nav_ftr
+                - heading "IMDbPro" [level=5] [ref=e4369]
+                - generic [ref=e4370]:
+                  - text: Get Info Entertainment
+                  - text: Professionals Need
+            - listitem [ref=e4371]
+            - listitem [ref=e4372]:
+              - link "Kindle Direct Publishing Indie Digital & Print Publishing Made Easy" [ref=e4373] [cursor=pointer]:
+                - /url: https://kdp.amazon.com
+                - heading "Kindle Direct Publishing" [level=5] [ref=e4374]
+                - generic [ref=e4375]:
+                  - text: Indie Digital & Print Publishing
+                  - text: Made Easy
+            - listitem [ref=e4376]
+            - listitem [ref=e4377]:
+              - link "Prime Video Direct Video Distribution Made Easy" [ref=e4378] [cursor=pointer]:
+                - /url: https://videodirect.amazon.com/home/landing
+                - heading "Prime Video Direct" [level=5] [ref=e4379]
+                - generic [ref=e4380]:
+                  - text: Video Distribution
+                  - text: Made Easy
+            - listitem [ref=e4381]
+            - listitem [ref=e4382]:
+              - link "Shopbop Designer Fashion Brands" [ref=e4383] [cursor=pointer]:
+                - /url: https://www.shopbop.com
+                - heading "Shopbop" [level=5] [ref=e4384]
+                - generic [ref=e4385]:
+                  - text: Designer
+                  - text: Fashion Brands
+            - listitem [ref=e4386]
+            - listitem [ref=e4387]:
+              - link "Woot! Deals and Shenanigans" [ref=e4388] [cursor=pointer]:
+                - /url: https://www.woot.com/
+                - heading "Woot!" [level=5] [ref=e4389]
+                - generic [ref=e4390]:
+                  - text: Deals and
+                  - text: Shenanigans
+            - listitem [ref=e4391]
+            - listitem [ref=e4392]:
+              - link "Zappos Shoes & Clothing" [ref=e4393] [cursor=pointer]:
+                - /url: https://www.zappos.com
+                - heading "Zappos" [level=5] [ref=e4394]
+                - generic [ref=e4395]:
+                  - text: Shoes &
+                  - text: Clothing
+            - listitem [ref=e4396]
+            - listitem [ref=e4397]:
+              - link "Ring Smart Home Security Systems" [ref=e4398] [cursor=pointer]:
+                - /url: https://ring.com
+                - heading "Ring" [level=5] [ref=e4399]
+                - generic [ref=e4400]:
+                  - text: Smart Home
+                  - text: Security Systems
+          - list [ref=e4401]:
+            - listitem [ref=e4402]
+            - listitem [ref=e4403]
+            - listitem [ref=e4404]:
+              - link "eero WiFi Stream 4K Video in Every Room" [ref=e4405] [cursor=pointer]:
+                - /url: https://eero.com/
+                - heading "eero WiFi" [level=5] [ref=e4406]
+                - generic [ref=e4407]:
+                  - text: Stream 4K Video
+                  - text: in Every Room
+            - listitem [ref=e4408]
+            - listitem [ref=e4409]:
+              - link "Blink Smart Security for Every Home" [ref=e4410] [cursor=pointer]:
+                - /url: https://blinkforhome.com/?ref=nav_footer
+                - heading "Blink" [level=5] [ref=e4411]
+                - generic [ref=e4412]:
+                  - text: Smart Security
+                  - text: for Every Home
+            - listitem [ref=e4413]
+            - listitem [ref=e4414]:
+              - link "Neighbors App Real-Time Crime & Safety Alerts" [ref=e4415] [cursor=pointer]:
+                - /url: https://shop.ring.com/pages/neighbors-app
+                - heading "Neighbors App" [level=5] [ref=e4416]
+                - generic [ref=e4417]:
+                  - text: Real-Time Crime
+                  - text: "& Safety Alerts"
+            - listitem [ref=e4418]
+            - listitem [ref=e4419]:
+              - link "PillPack Pharmacy Simplified" [ref=e4420] [cursor=pointer]:
+                - /url: https://www.pillpack.com
+                - heading "PillPack" [level=5] [ref=e4421]
+                - generic [ref=e4422]: Pharmacy Simplified
+            - listitem [ref=e4423]
+            - listitem [ref=e4424]
+            - listitem [ref=e4425]
+            - listitem [ref=e4426]
+      - generic [ref=e4427]:
+        - list [ref=e4428]:
+          - listitem [ref=e4429]:
+            - link "Conditions of Use" [ref=e4430] [cursor=pointer]:
+              - /url: /gp/help/customer/display.html?nodeId=508088&ref_=footer_cou
+          - listitem [ref=e4431]:
+            - link "Privacy Notice" [ref=e4432] [cursor=pointer]:
+              - /url: /gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ&ref_=footer_privacy
+          - listitem [ref=e4433]:
+            - link "Consumer Health Data Privacy Disclosure" [ref=e4434] [cursor=pointer]:
+              - /url: /gp/help/customer/display.html?ie=UTF8&nodeId=TnACMrGVghHocjL8KB&ref_=footer_consumer_health_data_privacy
+          - listitem [ref=e4435]:
+            - link "Your Ads Privacy Choices" [ref=e4436] [cursor=pointer]:
+              - /url: /privacyprefs?ref_=footer_iba
+          - listitem [ref=e4437]
+        - generic [ref=e4439]: © 1996-2026, Amazon.com, Inc. or its affiliates
+    - iframe [ref=e4441]:
+      - iframe [ref=f2e2]:
+        - generic [active]:
+          - img [ref=f3e1]
+          - img [ref=f3e2]
+          - img [ref=f3e3]
+          - img [ref=f3e4]
+          - img [ref=f3e5]
+          - img [ref=f3e6]
+          - img [ref=f3e7]
+          - img [ref=f3e8]
+          - img [ref=f3e9]
+          - img [ref=f3e10]
+          - img [ref=f3e11]
+          - img [ref=f3e12]
+          - img [ref=f3e13]
+          - img [ref=f3e14]
+          - img [ref=f3e15]
+          - img [ref=f3e16]
+          - img [ref=f3e17]
+          - img [ref=f3e18]
+          - img [ref=f3e19]
+          - img [ref=f3e20]
+          - img [ref=f3e21]
+          - img [ref=f3e22]
+          - img [ref=f3e23]
+          - img [ref=f3e24]
+          - img [ref=f3e25]
+          - img [ref=f3e26]
+          - img [ref=f3e27]
+          - img [ref=f3e28]
+          - img [ref=f3e29]
+          - img [ref=f3e30]
+          - img [ref=f3e31]
+          - img [ref=f3e32]
+          - img [ref=f3e33]
+          - img [ref=f3e34]
+          - img [ref=f3e35]
+          - img [ref=f3e36]
+          - img [ref=f3e37]
+          - img [ref=f3e38]
+          - img [ref=f3e39]
+          - img [ref=f3e40]
+          - img [ref=f3e41]
+          - img [ref=f3e42]
+          - img [ref=f3e43]
+          - img [ref=f3e44]
+          - img [ref=f3e45]
+          - img [ref=f3e46]
+  - generic: "Test: amzn-nv-flyout-healthy-choice"
+  - generic: "Test: nav-rufus-disc-txt"
+  - generic: "Test: a-truncate-cut"
+  - generic: "Test: sp-cc-wrapper"
+  - generic: "Test: .mo-wp"
+  - generic: "Test: .a-image-container"
+  - generic: "Test: sp-cc"
+  - generic: "Test: .amzn-box-inner"
+  - generic: "Test: .js-order-card"
+  - generic: "Test: pldn-deep-link"
+  - generic: "Test: add-to-cart-btn"
+  - generic: "Test: amzn-nav-app-banner-container"
+  - generic: "Test: .sparkle-container"
+```
+
+# Test source
+
+```ts
+  48  |     console.log(userAray)
+  49  | 
+  50  | 
+  51  |     const firstUser= userAray[0]
+  52  | 
+  53  | 
+  54  |     await page.locator("#user-name").fill(firstUser)
+  55  |     await page.waitForTimeout(2000)
+  56  | })
+  57  | 
+  58  | 
+  59  | test("Flipkart",async ({page})=>{
+  60  | 
+  61  | 
+  62  |     await page.goto("https://www.flipkart.com/")
+  63  | 
+  64  |   
+  65  |     await page.locator("input[name='q']").first().fill("laptop")
+  66  |     await page.keyboard.press("Enter")
+  67  |     await page.waitForTimeout(2000)
+  68  | 
+  69  | 
+  70  |     const PRoductCards= await page.locator(".jIjQ8S")
+  71  | 
+  72  |     const PRoductCount= await PRoductCards.count()
+  73  | 
+  74  |     console.log("Count is:"+ PRoductCount)
+  75  | 
+  76  | 
+  77  | 
+  78  | 
+  79  |   //const Productmap = new Map(String,String);
+  80  |   const Productmap = new Map();
+  81  | 
+  82  | for(let i=0;i<PRoductCount;i++){
+  83  | 
+  84  | const cards= PRoductCards.nth(i)
+  85  | const nameLocatror= cards.locator(".RG5Slk")
+  86  | const price= cards.locator(".hZ3P6w")
+  87  | 
+  88  | const nametext= (await nameLocatror.textContent())?.trim().split(' ')[0]
+  89  | const priceTExt= (await price.textContent())?.trim()
+  90  | 
+  91  | if(nametext && priceTExt)
+  92  | 
+  93  | {
+  94  | Productmap.set(nametext,priceTExt)
+  95  | 
+  96  | }
+  97  | console.log("Product map is:",Productmap)
+  98  | const productName= "Apple"
+  99  | if(Productmap.has(productName)){
+  100 | 
+  101 |     console.log(`${productName} price is ${Productmap.get(productName)}`)
+  102 | }
+  103 | 
+  104 | 
+  105 | for(const [product ,price] of Productmap){
+  106 | 
+  107 |     console.log(`product :${product},price :${price}`)
+  108 | }
+  109 | 
+  110 | }
+  111 | 
+  112 | })
+  113 | 
+  114 | 
+  115 | 
+  116 | 
+  117 | test.only("Flipkart search pen",async ({page})=>{
+  118 | 
+  119 | 
+  120 |     await page.goto("https://www.amazon.com/")
+  121 | 
+  122 |   
+  123 |     await page.locator("//input[@id='twotabsearchtextbox']").fill("pen")
+  124 |     await page.keyboard.press("Enter")
+  125 |     await page.waitForTimeout(5000)
+  126 | 
+  127 |     let pageCount=1
+  128 | 
+  129 |     while (true){
+  130 | 
+  131 |         console.log(`Currently on tha page ${pageCount}`)
+  132 | 
+  133 |         const NextBtn= page.locator("//span[normalize-space()='Next']")
+  134 | 
+  135 |         if(await NextBtn.count() > 0 && await NextBtn.isVisible())
+  136 |         {
+  137 | 
+  138 | const classValue= await NextBtn.getAttribute("class")
+  139 | 
+  140 |             if(classValue.includes("s-pagination-disabled"))
+  141 |             {
+  142 |                 console.log("Nu=ext btn is disabled")
+  143 |             break
+  144 |             }
+  145 |         console.log("Clicking on Next btn")
+  146 |         await NextBtn.scrollIntoViewIfNeeded()
+  147 |         await page.waitForTimeout(3000)
+> 148 |         await NextBtn.click()
+      |                       ^ Error: locator.click: Test timeout of 30000ms exceeded.
+  149 |         await page.waitForLoadState("domcontentloaded")
+  150 |                 await page.waitForTimeout(3000)
+  151 |                 pageCount++;
+  152 | 
+  153 |         }
+  154 |         else{
+  155 |             console.log("next btn is not visible")
+  156 |             break
+  157 |         }
+  158 |     }
+  159 | 
+  160 | })
+```

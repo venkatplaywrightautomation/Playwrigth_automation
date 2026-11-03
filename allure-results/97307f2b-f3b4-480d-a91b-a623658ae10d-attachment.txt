@@ -1,0 +1,6 @@
+Currently on tha page 1
+Clicking on Next btn
+Currently on tha page 2
+Clicking on Next btn
+Currently on tha page 3
+Clicking on Next btn

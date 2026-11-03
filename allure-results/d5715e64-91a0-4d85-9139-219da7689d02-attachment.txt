@@ -1,0 +1,28 @@
+Roe Count:1
+Cless count:6
+Row data12267mumbai central - ahmedabad ac duronto expDurontoM,T,W,T,F,S,S23:2505:55
+Row data12268ahmedabad - mumbai cent ac duronto expDurontoM,T,W,T,F,S,S23:4006:00
+Row data22201kolkata sealdah - puri duronto expressDurontoM,W,F20:0004:00
+Row data22204secunderabad - visakhapatnam ac duronto expressDurontoM,W,S20:1506:35
+Row data22206madurai - chennai central ac duronto expressDurontoTUE,THU22:4007:20
+Row data12426jammu tawi - new delhi rajdhani expressRajdhaniM,T,W,T,F,S,S19:4005:05
+Row data12430new delhi - lucknow ac sf expressRajdhaniM,T,F,S20:5006:40
+Row data12437secunderabad - hazrat nizamuddin rajdhani expressRajdhaniWED12:4510:25
+Row data12951mumbai central - new delhi rajdhani expressRajdhaniM,T,W,T,F,S,S16:3508:35
+Row data12953mumbai cent - hazrat nizamuddin august kranti raj expRajdhaniM,T,W,T,F,S,S17:4010:55
+Row data12019howrah - ranchi shatabdi expressShatabdiM,T,W,T,F,S06:0513:15
+Row data12038ludhiana - new delhi shatabdi expressShatabdiT,W,T,F,S16:4022:10
+Row data12048firozpur - new delhi shatabdi expressShatabdiM,S04:0021:10
+Row data12049agra cantt - delhi h nizamuddin gatimaan expressShatabdiM,T,W,T,S,S17:5019:30
+Row data12050delhi h nizamuddin - agra cantt gatimaan expressShatabdiM,T,W,T,S,S08:1009:50
+Row data11077pune - jammu tawi jhelum expressMAIL EXPRESSM,T,W,T,F,S,S17:2010:10
+Row data12138firozpur cantt - mumbai cst punjab mail sf expSUPERFASTM,T,W,T,F,S,S21:4007:35
+Row data12295bangalore city - danapur sanghamitra sf expSUPERFASTM,T,W,T,F,S,S09:0009:20
+Row data12307howrah - jodhpur sf expressSUPERFASTM,T,W,T,F,S,S23:3008:30
+Row data12424new delhi - dibrugarh town rajdhani expressRAJDHANIM,T,W,T,F,S,S13:5507:00
+Row data12506delhi anand vihar - guwahati north east expressSUPERFASTM,T,W,T,F,S,S06:4516:50
+Row data12801puri - new delhi purushottam sf expressSUPERFASTM,T,W,T,F,S,S21:4504:50
+Row data12802new delhi - puri purushottam sf expressSUPERFASTM,T,W,T,F,S,S22:1505:25
+Row data12833ahmedabad - howrah sf expressSUPERFASTM,T,W,T,F,S,S00:1513:30
+Row data12859mumbai cst - howrah gitanjali sf expressSUPERFASTM,T,W,T,F,S,S06:0012:30
+Row data12864yesvantpur - howrah sf expressSUPERFASTM,T,W,T,F,S,S19:3506:25

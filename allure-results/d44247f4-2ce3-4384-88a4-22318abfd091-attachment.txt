@@ -1,0 +1,52 @@
+Train full dada is :12267
+Train full dada is :Mumbai Central - Ahmedabad Ac Duronto Exp
+Train full dada is :DURONTO
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :23:25
+Train full dada is :05:55
+Train full dada is :12268
+Train full dada is :Ahmedabad - Mumbai Cent Ac Duronto Exp
+Train full dada is :DURONTO
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :23:40
+Train full dada is :06:00
+Train full dada is :22201
+Train full dada is :Kolkata Sealdah - Puri Duronto Express
+Train full dada is :DURONTO
+Train full dada is :M,W,F
+Train full dada is :20:00
+Train full dada is :04:00
+Train full dada is :22204
+Train full dada is :Secunderabad - Visakhapatnam Ac Duronto Express
+Train full dada is :DURONTO
+Train full dada is :M,W,S
+Train full dada is :20:15
+Train full dada is :06:35
+Train full dada is :22206
+Train full dada is :Madurai - Chennai Central Ac Duronto Express
+Train full dada is :DURONTO
+Train full dada is :TUE,THU
+Train full dada is :22:40
+Train full dada is :07:20
+Train full dada is :12426
+Train full dada is :Jammu Tawi - New Delhi Rajdhani Express
+Train full dada is :RAJDHANI
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :19:40
+Train full dada is :05:05
+Train full dada is :12430
+Train full dada is :New Delhi - Lucknow Ac Sf Express
+Train full dada is :RAJDHANI
+Train full dada is :M,T,F,S
+Train full dada is :20:50
+Train full dada is :06:40
+Train full dada is :12437
+Train full dada is :Secunderabad - Hazrat Nizamuddin Rajdhani Express
+Train full dada is :RAJDHANI
+Train full dada is :WED
+Train full dada is :12:45
+Train full dada is :10:25
+Train full dada is :12951
+Train full dada is :Mumbai Central - New Delhi Rajdhani Express
+Train full dada is :RAJDHANI
+Train full dada is :M,T,W,T,F,S,S

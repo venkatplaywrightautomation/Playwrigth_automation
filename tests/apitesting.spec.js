@@ -1,522 +1,824 @@
 
 
-//const {test,expect,request}=request("@playwright/test")
+// //const {test,expect,request}=request("@playwright/test")
 
-import {test,expect,request} from "@playwright/test"
-import { TIMEOUT } from "dns";
-import { on } from "events";
-
-
-import testdata from '../testdata/apidata.json'
-import { userInfo } from "os";
-import { fail } from "assert";
+// import { test, expect, request } from "@playwright/test"
+// import { TIMEOUT } from "dns";
+// import { on } from "events";
 
 
-//    'x-api-key': 'reqres-free-v1'
-test("API testing bascis",async ({request}) =>{
-
-    const response= await request.get("https://reqres.in/api/users?page=2");
-
-     //expect(response.status()).toBe(200)
-
-    const body= await response.json()
-
-    console.log(body)
+// import testdata from '../testdata/apidata.json'
+// import { userInfo } from "os";
+// import { fail } from "assert";
+// import { execPath } from "process";
+// import { runInNewContext } from "vm";
+// import path from "path";
 
 
-})
+// //    'x-api-key': 'reqres-free-v1'
+// test("API testing bascis", async ({ request }) => {
 
-test("API Key value validation",async () =>{
+//     const response = await request.get("https://reqres.in/api/users?page=2");
 
+//     //expect(response.status()).toBe(200)
 
-const apicontext= await request.newContext({
-    extraHTTPHeaders:{
+//     const body = await response.json()
 
-        "x-api-key": "free_user_3G7TebN7wh9gPjhgrmGw57IWyeV"
-
-    }
-});
-
-const response = await apicontext.get('https://reqres.in/api/users?page=2');
-
-  //expect(response.status()).toBe(200);
-
-  const body = await response.json();
-  console.log(body);
-  expect(response.ok()).toBeTruthy()
+//     console.log(body)
 
 
-//   console.log(body);
-
-//   expect(body.total).toBe(12);
-//   expect(body.per_page).toBe(6);
-//   expect(body.page).toBe(2);
-
-//   expect(body.data[0].id).toBe(12);
-//   expect(body.data[0].first_name).toBe("Michael");
-//   expect(body.data[0].last_name).toBe("Lawson");
-  
-
-// body.data.forEach((user) =>{
-
-//     console.log("first name is : "+user.first_name + " last name is : "+user.last_name)
 // })
 
 
-// body.data.forEach((user) =>{
+// test("API testing bascis 1 ", async ({ request }) => {
 
-//     console.log("email is : "+user.email)
+//     const response = await request.get("https://reqres.in/api/users?page=2");
+
+//     //expect(response.status()).toBe(200)
+
+//     const body = await response.json()
+
+//     console.log(body)
+
+
 // })
-})
-
-
-test("Post request",async () =>{
-
-
-    const apicontext= await request.newContext({
-        extraHTTPHeaders:{
-            "x-api-key": "free_user_3G7TebN7wh9gPjhgrmGw57IWyeV"
-        }
-
-});
-
-
-const response = await apicontext.post('https://reqres.in/api/users',{
-
-    data:{
-        name: "Venkat",
-        job: "QA"
-    }
-}
-);
-expect(response.status()).toBe(201);
-
-const body = await response.json();
-
-console.log(body);
-
-
-// expect(body.name).toBe("Venkat");
-// expect(body.job).toBe("QA");
-// expect(body.id).not.toBeNull();
-// expect(body.createdAt).not.toBeNull();
-
-})
-
-
-test("put example",async() =>{
-
-
-const apicontext= await request.newContext({
-    extraHTTPHeaders:{
-        "x-api-key": "free_user_3G7TebN7wh9gPjhgrmGw57IWyeV"
-    }
-
-
-});
-
-const response= await apicontext.put('https://reqres.in/api/users/2',{
-    data:{
-        name: "Venkata reddy",
-        job: "Senior QA"
-    }
-}
-)
-expect(response.status()).toBe(200);
-expect(response.ok()).toBeTruthy();
-
-const body= await response.json();
-console.log(body);
-
-expect(body.name).toBe("Venkata reddy");
-expect(body.job).toBe("Senior QA");
-//expect(body.updatedAt).not.toBeNull();
-
-
-})
 
 
 
 
-test("patch example",async() =>{
+
+// test("API Key value validation", async () => {
 
 
-const apicontext= await request.newContext({
-    extraHTTPHeaders:{
-        "x-api-key": "free_user_3G7TebN7wh9gPjhgrmGw57IWyeV"
-    }
+//     const apicontext = await request.newContext({
+//         extraHTTPHeaders: {
+
+//             "x-api-key": "free_user_3G7TebN7wh9gPjhgrmGw57IWyeV"
+
+//         }
+//     });
+
+//     const response = await apicontext.get('https://reqres.in/api/users?page=2');
+
+//     //expect(response.status()).toBe(200);
+
+//     const body = await response.json();
+//     console.log(body);
+//     expect(response.ok()).toBeTruthy()
 
 
-});
+//     //   console.log(body);
 
-const response= await apicontext.patch('https://reqres.in/api/users/2',{
-    data:{
-        name: "Venkata reddy",
-        //job: "Senior QA"
-    }
-}
-)
-//expect(response.status()).toBe(200);
-//expect(response.ok()).toBeTruthy();
-
-const body= await response.json();
-console.log(body);
-
-expect(response.headers()['content-type']).toBe('application/json; charset=utf-8');
+//     //   expect(body.total).toBe(12);
+//     //   expect(body.per_page).toBe(6);
+//     //   expect(body.page).toBe(2);
 
 
-expect(body.name).toBe("Venkata reddy");
-//expect(body.job).toBe("Senior QA");
-//expect(body.updatedAt).not.toBeNull();
+//     //   expect(body.data[0].id).toBe(12);
+//     //   expect(body.data[0].first_name).toBe("Michael");
+//     //   expect(body.data[0].last_name).toBe("Lawson");
 
 
-})
+//     // body.data.forEach((user) =>{
+
+//     //     console.log("first name is : "+user.first_name + " last name is : "+user.last_name)
+//     // })
 
 
-test("Delete example",async() =>{
+//     // body.data.forEach((user) =>{
 
-
-const apicontext= await request.newContext({
-    extraHTTPHeaders:{
-        "x-api-key": "free_user_3G7TebN7wh9gPjhgrmGw57IWyeV"
-    }
+//     //     console.log("email is : "+user.email)
+//     // })
+// })
 
 
 
-});
 
-const response= await apicontext.delete('https://reqres.in/api/users/2')
 
-expect(response.status()).toBe(204);
+// test("API Key value validation 1", async () => {
 
-console.log(response.headers());
 
-//expect(response.headers()['content-type']).toBe('application/json; charset=utf-8');
 
-//expect(response.ok()).toBeTruthy();
 
-// const body= await response.json();
+//     const apicontext = await request.newContext({
+//         extraHTTPHeaders: {
+
+//             "x-api-key": "free_user_3G7TebN7wh9gPjhgrmGw57IWyeV"
+
+//         }
+//     });
+
+//     const response = await apicontext.get('https://reqres.in/api/users?page=2');
+
+//     //expect(response.status()).toBe(200);
+
+//     const body = await response.json();
+//     console.log(body);
+//     expect(response.ok()).toBeTruthy()
+
+
+//     console.log(body);
+
+
+//     expect(body.data[1].id).toBe(8)
+
+//     expect(body.data[0].first_name).toBe("Michael")
+
+//     expect(body.data[0].last_name).toBe("Lawson")
+
+//     expect(body.data[0].email).toBe("michael.lawson@reqres.in")
+
+
+//     body.data.forEach((user) => {
+
+//         console.log("user names:" + user.email + user.first_name + user.last_name)
+
+//     })
+
+// })
+
+
+// test("Post request", async () => {
+
+
+//     const apicontext = await request.newContext({
+//         extraHTTPHeaders: {
+//             "x-api-key": "free_user_3G7TebN7wh9gPjhgrmGw57IWyeV"
+//         }
+
+//     });
+
+
+//     const response = await apicontext.post('https://reqres.in/api/users', {
+
+//         data: {
+//             name: "Venkat",
+//             job: "QA"
+//         }
+//     }
+//     );
+//     expect(response.status()).toBe(201);
+
+//     const body = await response.json();
+
+//     console.log(body);
+
+
+//     expect(body.name).toBe("Venkat");
+//     expect(body.job).toBe("QA");
+//     expect(body.id).not.toBeNull();
+//     expect(body.createdAt).not.toBeNull();
+
+// })
+
+
+// test("put example", async () => {
+
+
+//     const apicontext = await request.newContext({
+//         extraHTTPHeaders: {
+//             "x-api-key": "free_user_3G7TebN7wh9gPjhgrmGw57IWyeV"
+//         }
+
+
+//     });
+
+//     const response = await apicontext.put('https://reqres.in/api/users/2', {
+//         data: {
+//             name: "Venkata reddy",
+//             job: "Senior QA"
+//         }
+//     }
+//     )
+//     expect(response.status()).toBe(200);
+//     expect(response.ok()).toBeTruthy();
+
+//     const body = await response.json();
+//     console.log(body);
+
+//     expect(body.name).toBe("Venkata reddy");
+//     expect(body.job).toBe("Senior QA");
+//     //expect(body.updatedAt).not.toBeNull();
+
+
+// })
+
+
+
+
+// test("patch example", async () => {
+
+
+//     const apicontext = await request.newContext({
+//         extraHTTPHeaders: {
+//             "x-api-key": "free_user_3G7TebN7wh9gPjhgrmGw57IWyeV"
+//         }
+
+
+//     });
+
+//     const response = await apicontext.patch('https://reqres.in/api/users/2', {
+//         data: {
+//             name: "Venkata reddy",
+//             //job: "Senior QA"
+//         }
+//     }
+//     )
+//     //expect(response.status()).toBe(200);
+//     //expect(response.ok()).toBeTruthy();
+
+//     const body = await response.json();
+//     console.log(body);
+
+
+
+//     expect(response.headers()['content-type']).toBe('application/json; charset=utf-8');
+
+
+//     expect(body.name).toBe("Venkata reddy");
+//     //expect(body.job).toBe("Senior QA");
+//     //expect(body.updatedAt).not.toBeNull();
+
+
+// })
+
+
+// test("Delete example", async () => {
+
+
+//     const apicontext = await request.newContext({
+//         extraHTTPHeaders: {
+//             "x-api-key": "free_user_3G7TebN7wh9gPjhgrmGw57IWyeV"
+//         }
+
+
+
+//     });
+
+//     const response = await apicontext.delete('https://reqres.in/api/users/2')
+
+//     expect(response.status()).toBe(204);
+
+//     console.log(response.headers());
+
+//     //expect(response.headers()['content-type']).toBe('application/json; charset=utf-8');
+
+//     //expect(response.ok()).toBeTruthy();
+
+//     // const body= await response.json();
+//     // console.log(body);
+
+//     //expect(body.name).toBe("Venkata reddy");
+//     //expect(body.job).toBe("Senior QA");
+//     //expect(body.updatedAt).not.toBeNull();
+
+
+// })
+
+
+
+// test("Response Time validation", async () => {
+
+//     const apicontext = await request.newContext({
+//         extraHTTPHeaders: {
+//             "x-api-key": "free_user_3G7TebN7wh9gPjhgrmGw57IWyeV"
+//         }
+//     })
+
+//     const startTime = Date.now();
+//     const response = await apicontext.get('https://reqres.in/api/users?page=2')
+//     const endTime = Date.now();
+//     const responseTime = endTime - startTime;
+//     console.log(`Response time: ${responseTime} ms`);
+//     expect(responseTime).toBeLessThan(2000);
+
+
+//     const responseBody = await response.json();
+//     expect(responseBody).toHaveProperty('data');
+//     expect(responseBody).toHaveProperty('page');
+//     expect(responseBody).toHaveProperty('per_page');
+//     expect(responseBody).toHaveProperty('total');
+//     expect(responseBody).toHaveProperty('total_pages');
+//     expect(responseBody).toHaveProperty('support');
+//     console.log(responseBody);
+//     console.log(response.headers());
+
+
+// })
+
+// test("Login API testing", async () => {
+
+
+
+//     const apicontext = await request.newContext({
+
+//         extraHTTPHeaders: {
+//             "x-api-key": "free_user_3G7TebN7wh9gPjhgrmGw57IWyeV"
+
+//         }
+//     }
+//     );
+
+
+//     const response = await apicontext.post('https://reqres.in/api/login', {
+//         data: {
+
+//             email: "eve.holt@reqres.in",
+//             password: "cityslicka"
+
+//         }
+//     })
+
+//     expect(response.status()).toBe(200);
+
+//     const responseBody = await response.json();
+//     expect(responseBody).toHaveProperty('token');
+//     console.log("Body" + responseBody);
+//     console.log("Token+: " + responseBody.token);
+
+//     expect(responseBody.token).not.toBeNull();
+//     expect(responseBody.token).toBe("QpwL5tke4Pnpja7X4");
+//     expect(responseBody.token).toMatch(/^[A-Za-z0-9]+$/);
+//     expect(responseBody.token.length).toBeGreaterThan(10);
+//     expect(responseBody.token.length).toBeLessThan(20);
+//     expect(responseBody.token.length).toBe(17);
+//     expect(responseBody.token).toContain("QpwL5tke4Pnpja7X4");
+//     expect(responseBody.token).not.toContain("invalid_token");
+
+// })
+
+
+// test("Register user API testing", async () => {
+
+
+
+
+//     const apicontext = await request.newContext({
+//         extraHTTPHeaders: {
+//             "x-api-key": "free_user_3G7TebN7wh9gPjhgrmGw57IWyeV",
+
+
+
+
+//         },
+//         // headers:{
+//         //     'x-api-key': 'reqres-free-v1'
+//         // }
+//     }
+//     );
+
+//     const resopnse = await apicontext.post('https://reqres.in/api/register', {
+//         data: {
+//             email: 'eve.holt@reqres.in',
+
+//             password: "pistol"
+
+//         }
+//     })
+
+
+
+
+
+
+//     expect(resopnse.status()).toBe(200);
+
+//     const responseBody = await resopnse.json();
+
+//     expect(responseBody).toHaveProperty('id');
+//     expect(responseBody).toHaveProperty('token');
+//     console.log(responseBody);
+//     console.log(responseBody.id);
+//     console.log(responseBody.token);
+// })
+
+
+
+
+// // test("Create API context request", async () => {
+
+
+// //     const apicontext = await request.newContext({
+// //         baseURL: 'https://reqres.in/api'
+
+// //     })
+
+// //     console.log("API context is:" + apicontext)
+// // })
+
+
+// test("Get users", async () => {
+
+//     const apicontext = await request.newContext({
+//         // baseURL: 'https://reqres.in/api',
+//         extraHTTPHeaders: {
+//             "x-api-key": "free_user_3G7TebN7wh9gPjhgrmGw57IWyeV"
+
+//         }
+
+//     })
+
+//     const response = await apicontext.get('https://reqres.in/api/users?page=2')
+
+//     expect.soft(response.status()).toBe(200)
+
+//     const body = await response.json();
+
+//     console.log(body);
+
+// })
+
+
+// test("bacis autnebtication", async () => {
+
+
+//     const apicontext = await request.newContext({
+//         baseURL: '',
+
+
+//         // httpCredentials:{
+//         //     username:'admin',
+//         //     password:'admin123'
+//         // },
+//         extraHTTPHeaders: {
+
+
+//         }
+
+//     })
+// })
+
+
+// test("sending params", async () => {
+
+
+//     const response = await request.get('https://reqres.in/api/users', {
+
+
+//         params: {
+//             page: 2
+
+//         }
+
+//     })
+// })
+
+
+// test("timeout", async () => {
+//     const apicontext = await request.newContext({
+
+//         extraHTTPHeaders: {
+//             "x-api-key": "free_user_3G7TebN7wh9gPjhgrmGw57IWyeV"
+//         }
+
+
+//     })
+
+//     const response = await apicontext.get("https://reqres.in/api/users?page=2")
+
+
+
+//     console.log("timeout" + response)
+
+
+//     const body = await response.json()
+
+//     console.log("body" + body)
+//     const header = response.headers()
+
+
+//     expect(header['content-type']).toContain("application/json")
+// })
+
+
+
+// //test("read data from json", async () => {
+
+
+// testdata.forEach((user) => {
+
+
+//     test(`Create user -${user.name}`, async () => {
+//         const apicontext = await request.newContext({
+
+//             extraHTTPHeaders: {
+//                 "x-api-key": "free_user_3G7TebN7wh9gPjhgrmGw57IWyeV",
+
+
+//             },
+
+//         })
+
+//         const response = await apicontext.post("https://reqres.in/api/users", {
+
+//             data: {
+//                 name: user.name,
+//                 job: user.job
+
+//             }
+//         })
+
+//         expect(response.status()).toBe(201)
+//         const body = await response.json()
+//         console.log(body)
+
+
+//         expect(body.name).toBe(user.name)
+//         expect(body.job).toBe(user.job)
+
+//     })
+// })
+
+
+// test("Path Parameter", async ({ request }) => {
+
+//     const userid = "2"
+
+
+//     const response = await request.get(`https://reqres.in/api/users/${userid}`, {
+
+//         headers: {
+
+
+//             "x-api-key": "free_user_3G7TebN7wh9gPjhgrmGw57IWyeV"
+
+
+//         },
+
+
+
+
+//     })
+//     expect(response.status()).toBe(200);
+
+//     const body = await response.json();
+
+//     console.log(body)
+// })
+
+
+
+
+// test("update user", async ({ request }) => {
+
+//     const userid = 2
+
+
+//     const response = await request.put(`https://reqres.in/api/users/${userid}`, {
+//         headers: {
+
+//             "x-api-key": "free_user_3G7TebN7wh9gPjhgrmGw57IWyeV"
+//         },
+//         data: {
+//             name: "venkat",
+//             job: "QA"
+//         },
+
+
+//     })
+//     expect(response.status()).toBe(200);
+
+//     const body = await response.json();
+
+//     console.log(body)
+// })
+
+
+
+
+// test.afterEach(async ({ page }, testInfo) => {
+
+//     if (testInfo === fail) {
+
+//         await page.screenshot({
+//             path: `screenshots/${testInfo.status}.png`
+//         })
+//     }
+
+
+// })
+
+
+
+
+
+// test("API Basics Get Method", async ({ request }) => {
+
+
+
+
+//     const response = await request.get("https://reqres.in/api/users/2")
+
+
+
+//     console.log("Response data is :" + response.status())
+
+//     expect(response.status()).toBe(200)
+
+
+//     const body = await response.json()
+
+
+//     console.log("Body is:" + body)
+
+//     expect(body.data.id).toBe(2)
+
+
+
+
+
+// })
+
+
+// test("POst Method", async ({ request }) => {
+
+
+
+//     const response = await request.post('https://reqres.in/api/users', {
+
+
+//         data: {
+//             name: "venkat",
+//             job: "Automation tester"
+//         }
+//     });
+
+//     expect(response.status()).toBe(201)
+
+//     const body = await response.json()
+
+//     console.log("Body is " + body)
+
+
+//     expect(body.name).toBe("venkat")
+
+//     expect(body.job).toBe("Automation tester")
+
+
+// })
+
+// test("PUT Method", async ({ request }) => {
+
+
+
+//     const response = await request.put('https://reqres.in/api/users/2', {
+
+
+//         data: {
+//             name: "venkat updated",
+//             job: "Senior Automation tester"
+//         }
+//     });
+
+//     expect(response.status()).toBe(200)
+
+//     const body = await response.json()
+
+//     console.log("Body is " + body)
+
+
+
+// })
+
+
+
+// test("Delete Method", async ({ request }) => {
+
+
+
+//     const response = await request.delete('https://reqres.in/api/users/2')
+
+//     expect(response.status()).toBe(204)
+
+
+
+
+// })
+
+
+
+
+
+
+
+
+
+
+// // testdata.forEach((user) => {
+// //     test(`Read data from json -${user.name}`, async () => {
+
+
+
+// //         const apicontext = await request.newContext({
+
+// //             extraHTTPHeaders: {
+// //                 "x-api-key": "free_user_3G7TebN7wh9gPjhgrmGw57IWyeV",
+
+
+// //             },
+// //         });
+
+
+// //         const response = await apicontext.post("https://reqres.in/api/users", {
+
+// //             data: {
+
+// //                 name: user.name,
+// //                 job: user.job
+
+
+// //             }
+// //         })
+
+
+// //         expect(response.status()).toBe(201)
+// //         const body = await response.json()
+// //         console.log(body)
+
+
+// //         expect(body.name).toBe(user.name)
+// //         expect(body.job).toBe(user.job)
+
+
+
+
+// //     })
+
+
+// // }
+
+// // )
+
+
+// test('API context example', async ({request}) => {
+
+//     const apiContext = await request.newContext({
+//         baseURL: 'https://reqres.in/api',
+//         extraHTTPHeaders: {
+
+//             'Content-Type': 'application/json',
+//             "x-api-key": "free_user_3G7TebN7wh9gPjhgrmGw57IWyeV"
+//         },
+
+//     });
+
+//     const response = await apiContext.get('/users')
+
+
+
+// });
+
+// //expect(response.status()).toBe(404);
+
+// const body = await response.json();
+
 // console.log(body);
 
-//expect(body.name).toBe("Venkata reddy");
-//expect(body.job).toBe("Senior QA");
-//expect(body.updatedAt).not.toBeNull();
+//     //await apiContext.dispose();
 
 
-})
 
 
+// // test.use({
 
-test("Response Time validation",async() =>{
+// //     baseURL: 'https://reqres.in/api'
+// // })
 
-    const apicontext= await request.newContext({
-        extraHTTPHeaders:{
-            "x-api-key": "free_user_3G7TebN7wh9gPjhgrmGw57IWyeV"
-        }
-    })
 
-    const startTime = Date.now();
-    const response= await apicontext.get('https://reqres.in/api/users?page=2')
-    const endTime = Date.now();
-    const responseTime = endTime - startTime;
-    console.log(`Response time: ${responseTime} ms`);
-    expect(responseTime).toBeLessThan(2000);
+// // test("BASE URL", async ({ request }) => {
 
+// //     const response = await request.get('/users?page=2')
 
-     const responseBody = await response.json();
-     expect(responseBody).toHaveProperty('data');
-     expect(responseBody).toHaveProperty('page');
-     expect(responseBody).toHaveProperty('per_page');
-     expect(responseBody).toHaveProperty('total');
-     expect(responseBody).toHaveProperty('total_pages');
-     expect(responseBody).toHaveProperty('support');
-    // console.log(responseBody);
-    // console.log(response.headers());
+// //     expect(response.status()).toBe(404);
 
+// //     const body = await response.json();
 
-})
+// //     console.log(body);
 
-test("Login API testing",async() =>{
 
+// // })
 
 
-    const apicontext= await request.newContext({
-        
-        extraHTTPHeaders:{
-            "x-api-key": "free_user_3G7TebN7wh9gPjhgrmGw57IWyeV"
+// // // test.use({
+// // //     baseURL: 'https://reqres.in/api'
+// // // });
 
-        }
-        }
-    );
+// // test.only("BASE URL 1", async ({ request }) => {
 
+// //      const loginResponse = await request.post('https://reqres.in/api/login', {
+// //         data: {
+// //             email: 'test@example.com',
+// //             password: 'password123'
+// //         }
+// //     });
 
-        const response= await apicontext.post('https://reqres.in/api/login',{
-            data:{  
+// //     expect(loginResponse.status()).toBe(200);
 
-                email: "eve.holt@reqres.in",
-                password: "cityslicka"
+// //     const loginBody = await loginResponse.json();
 
-            }
-        })
+// //     const token = loginBody.token;
 
-        expect(response.status()).toBe(200);
+// //     console.log('Token:', token);
+// // });
 
-        const responseBody = await response.json();
-        expect(responseBody).toHaveProperty('token');
-        console.log(responseBody);
-        console.log(responseBody.token);  
 
-        expect(responseBody.token).not.toBeNull();
-        expect(responseBody.token).toBe("QpwL5tke4Pnpja7X4");
-        expect(responseBody.token).toMatch(/^[A-Za-z0-9]+$/);
-        expect(responseBody.token.length).toBeGreaterThan(10);
-        expect(responseBody.token.length).toBeLessThan(20);
-        expect(responseBody.token.length).toBe(17);
-        expect(responseBody.token).toContain("QpwL5tke4Pnpja7X4");
-        expect(responseBody.token).not.toContain("invalid_token");
-
-})
-
-
-test("Register user API testing",async() =>{
-
-
-
-
-    const apicontext= await request.newContext({
-        extraHTTPHeaders:{
-            "x-api-key": "free_user_3G7TebN7wh9gPjhgrmGw57IWyeV",
-
-    
-            
-
-        },
-        // headers:{
-        //     'x-api-key': 'reqres-free-v1'
-        // }
-        }
-    );
-
-const resopnse= await apicontext.post('https://reqres.in/api/register',{
-    data:{
-                    email: 'eve.holt@reqres.in',
-
-                     password: "pistol"
-
-    }
-    })
-
-
-
-expect(resopnse.status()).toBe(200);
-
-const responseBody = await resopnse.json();
-
-expect(responseBody).toHaveProperty('id');
-expect(responseBody).toHaveProperty('token');
-console.log(responseBody);
-console.log(responseBody.id);
-console.log(responseBody.token);        
-})
-
-
-
-
-test("Create API context request",async() =>{
-
-
-    const apicontext= await request.newContext({
-          baseURL: 'https://reqres.in/api'
-
-    })
-
-console.log(apicontext)
-})
-
-
-test("Get users",async () =>{
-
-const apicontext= await request.newContext({
-   // baseURL: 'https://reqres.in/api',
-    extraHTTPHeaders:{
-            "x-api-key": "free_user_3G7TebN7wh9gPjhgrmGw57IWyeV"
-
-        }
-
-})
-
-const response= await apicontext.get('https://reqres.in/api/users?page=2')
-
-expect.soft(response.status()).toBe(200)
-
-  const body = await response.json();
-
-  console.log(body);
-
-})
-
-
-test("bacis autnebtication",async () =>{
-
-
-    const apicontext= await request.newContext({
-         baseURL:'',
-
-        // httpCredentials:{
-        //     username:'admin',
-        //     password:'admin123'
-        // },
-        extraHTTPHeaders:{
-        
-    
-        }
-        
-    })
-})
-
-
-test("sending params",async()=> {
-
-
-    const response= await request.get('https://reqres.in/api/users',{
-
-        params:{
-            page:2
-
-        }
-    
-    })
-})
-
-
-test("timeout",async ()=>{
-const apicontext= await request.newContext({
-  
-    extraHTTPHeaders:{
-        "x-api-key": "free_user_3G7TebN7wh9gPjhgrmGw57IWyeV"
-    }
-})
-
-const response= await apicontext.get("https://reqres.in/api/users?page=2")
-
-    
-
-console.log("timeout"+ response)
-
-
-const body= await response.json()
-
-console.log("body"+ body)
-const header=response.headers()
-
-
-expect(header['content-type']).toContain("application/json")
-})
-
-
-
-//test("read data from json", async () => {
-
-
-    testdata.forEach((user) => {
-
-
-        test(`Create user -${user.name}`, async () => {
-            const apicontext = await request.newContext({
-
-                extraHTTPHeaders: {
-                    "x-api-key": "free_user_3G7TebN7wh9gPjhgrmGw57IWyeV",
-                    
-
-                },
-                
-            })
-
-            const response = await apicontext.post("https://reqres.in/api/users", {
-
-                data: {
-                    name: user.name,
-                    job: user.job
-
-                }
-            })
-
- expect(response.status()).toBe(201)
-    const body= await response.json()
-    console.log(body)
-
-
-    expect(body.name).toBe(user.name)
-    expect(body.job).toBe(user.job)
-
-        })
-    })
-   
-
-test.only("Path Parameter",async ({request}) =>{
-
-const userid="2"
-   
-
-    const response= await request.get(`https://reqres.in/api/users/${userid}`,{
-        
-        headers:{
-        
-
-            "x-api-key": "free_user_3G7TebN7wh9gPjhgrmGw57IWyeV"
-            
-            
-        },
-
-    
-        
-        
-    })
-     expect(response.status()).toBe(200);
-
-  const body = await response.json();
-
-  console.log(body)
-})
-
-
-
-
-test("update user",async ({request}) =>{
-
-const userid=2
-   
-
-    const response= await request.put(`https://reqres.in/api/users/${userid}`,{
-        headers:{
-
-            "x-api-key": "free_user_3G7TebN7wh9gPjhgrmGw57IWyeV"
-        },
-        data:{
-            name: "venkat",
-            job: "QA"
-        },
-        
-
-    })
-     expect(response.status()).toBe(200);
-
-  const body = await response.json();
-
-  console.log(body)
-})
-
-
-
-
-test.afterEach(async ({page},testInfo) =>{
-
-    if(testInfo===fail){
-
-        await page.screenshot({
-            path:`screenshots/${testInfo.status}.png`
-        })
-    }
-
-
-})

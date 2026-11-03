@@ -1,0 +1,365 @@
+Count is:24
+Product map is: Map(1) { 'MOTOROLA' => '₹69,990' }
+product :MOTOROLA,price :₹69,990
+Product map is: Map(2) { 'MOTOROLA' => '₹69,990', 'ASUS' => '₹52,990' }
+product :MOTOROLA,price :₹69,990
+product :ASUS,price :₹52,990
+Product map is: Map(3) {
+  'MOTOROLA' => '₹69,990',
+  'ASUS' => '₹52,990',
+  'Samsung' => '₹72,990'
+}
+product :MOTOROLA,price :₹69,990
+product :ASUS,price :₹52,990
+product :Samsung,price :₹72,990
+Product map is: Map(4) {
+  'MOTOROLA' => '₹69,990',
+  'ASUS' => '₹52,990',
+  'Samsung' => '₹72,990',
+  'Lenovo' => '₹16,120'
+}
+product :MOTOROLA,price :₹69,990
+product :ASUS,price :₹52,990
+product :Samsung,price :₹72,990
+product :Lenovo,price :₹16,120
+Product map is: Map(5) {
+  'MOTOROLA' => '₹69,990',
+  'ASUS' => '₹52,990',
+  'Samsung' => '₹72,990',
+  'Lenovo' => '₹16,120',
+  'Acer' => '₹40,990'
+}
+product :MOTOROLA,price :₹69,990
+product :ASUS,price :₹52,990
+product :Samsung,price :₹72,990
+product :Lenovo,price :₹16,120
+product :Acer,price :₹40,990
+Product map is: Map(5) {
+  'MOTOROLA' => '₹69,990',
+  'ASUS' => '₹70,990',
+  'Samsung' => '₹72,990',
+  'Lenovo' => '₹16,120',
+  'Acer' => '₹40,990'
+}
+product :MOTOROLA,price :₹69,990
+product :ASUS,price :₹70,990
+product :Samsung,price :₹72,990
+product :Lenovo,price :₹16,120
+product :Acer,price :₹40,990
+Product map is: Map(5) {
+  'MOTOROLA' => '₹69,990',
+  'ASUS' => '₹21,499',
+  'Samsung' => '₹72,990',
+  'Lenovo' => '₹16,120',
+  'Acer' => '₹40,990'
+}
+product :MOTOROLA,price :₹69,990
+product :ASUS,price :₹21,499
+product :Samsung,price :₹72,990
+product :Lenovo,price :₹16,120
+product :Acer,price :₹40,990
+Product map is: Map(5) {
+  'MOTOROLA' => '₹69,990',
+  'ASUS' => '₹21,499',
+  'Samsung' => '₹72,990',
+  'Lenovo' => '₹16,120',
+  'Acer' => '₹30,990'
+}
+product :MOTOROLA,price :₹69,990
+product :ASUS,price :₹21,499
+product :Samsung,price :₹72,990
+product :Lenovo,price :₹16,120
+product :Acer,price :₹30,990
+Product map is: Map(6) {
+  'MOTOROLA' => '₹69,990',
+  'ASUS' => '₹21,499',
+  'Samsung' => '₹72,990',
+  'Lenovo' => '₹16,120',
+  'Acer' => '₹30,990',
+  'HP' => '₹66,990'
+}
+product :MOTOROLA,price :₹69,990
+product :ASUS,price :₹21,499
+product :Samsung,price :₹72,990
+product :Lenovo,price :₹16,120
+product :Acer,price :₹30,990
+product :HP,price :₹66,990
+Product map is: Map(7) {
+  'MOTOROLA' => '₹69,990',
+  'ASUS' => '₹21,499',
+  'Samsung' => '₹72,990',
+  'Lenovo' => '₹16,120',
+  'Acer' => '₹30,990',
+  'HP' => '₹66,990',
+  'Apple' => '₹63,990'
+}
+Apple price is ₹63,990
+product :MOTOROLA,price :₹69,990
+product :ASUS,price :₹21,499
+product :Samsung,price :₹72,990
+product :Lenovo,price :₹16,120
+product :Acer,price :₹30,990
+product :HP,price :₹66,990
+product :Apple,price :₹63,990
+Product map is: Map(7) {
+  'MOTOROLA' => '₹69,990',
+  'ASUS' => '₹65,990',
+  'Samsung' => '₹72,990',
+  'Lenovo' => '₹16,120',
+  'Acer' => '₹30,990',
+  'HP' => '₹66,990',
+  'Apple' => '₹63,990'
+}
+Apple price is ₹63,990
+product :MOTOROLA,price :₹69,990
+product :ASUS,price :₹65,990
+product :Samsung,price :₹72,990
+product :Lenovo,price :₹16,120
+product :Acer,price :₹30,990
+product :HP,price :₹66,990
+product :Apple,price :₹63,990
+Product map is: Map(7) {
+  'MOTOROLA' => '₹69,990',
+  'ASUS' => '₹81,990',
+  'Samsung' => '₹72,990',
+  'Lenovo' => '₹16,120',
+  'Acer' => '₹30,990',
+  'HP' => '₹66,990',
+  'Apple' => '₹63,990'
+}
+Apple price is ₹63,990
+product :MOTOROLA,price :₹69,990
+product :ASUS,price :₹81,990
+product :Samsung,price :₹72,990
+product :Lenovo,price :₹16,120
+product :Acer,price :₹30,990
+product :HP,price :₹66,990
+product :Apple,price :₹63,990
+Product map is: Map(8) {
+  'MOTOROLA' => '₹69,990',
+  'ASUS' => '₹81,990',
+  'Samsung' => '₹72,990',
+  'Lenovo' => '₹16,120',
+  'Acer' => '₹30,990',
+  'HP' => '₹66,990',
+  'Apple' => '₹63,990',
+  'MSI' => '₹45,990'
+}
+Apple price is ₹63,990
+product :MOTOROLA,price :₹69,990
+product :ASUS,price :₹81,990
+product :Samsung,price :₹72,990
+product :Lenovo,price :₹16,120
+product :Acer,price :₹30,990
+product :HP,price :₹66,990
+product :Apple,price :₹63,990
+product :MSI,price :₹45,990
+Product map is: Map(8) {
+  'MOTOROLA' => '₹69,990',
+  'ASUS' => '₹81,990',
+  'Samsung' => '₹72,990',
+  'Lenovo' => '₹16,120',
+  'Acer' => '₹34,990',
+  'HP' => '₹66,990',
+  'Apple' => '₹63,990',
+  'MSI' => '₹45,990'
+}
+Apple price is ₹63,990
+product :MOTOROLA,price :₹69,990
+product :ASUS,price :₹81,990
+product :Samsung,price :₹72,990
+product :Lenovo,price :₹16,120
+product :Acer,price :₹34,990
+product :HP,price :₹66,990
+product :Apple,price :₹63,990
+product :MSI,price :₹45,990
+Product map is: Map(8) {
+  'MOTOROLA' => '₹69,990',
+  'ASUS' => '₹81,990',
+  'Samsung' => '₹72,990',
+  'Lenovo' => '₹16,120',
+  'Acer' => '₹33,990',
+  'HP' => '₹66,990',
+  'Apple' => '₹63,990',
+  'MSI' => '₹45,990'
+}
+Apple price is ₹63,990
+product :MOTOROLA,price :₹69,990
+product :ASUS,price :₹81,990
+product :Samsung,price :₹72,990
+product :Lenovo,price :₹16,120
+product :Acer,price :₹33,990
+product :HP,price :₹66,990
+product :Apple,price :₹63,990
+product :MSI,price :₹45,990
+Product map is: Map(8) {
+  'MOTOROLA' => '₹69,990',
+  'ASUS' => '₹81,990',
+  'Samsung' => '₹74,990',
+  'Lenovo' => '₹16,120',
+  'Acer' => '₹33,990',
+  'HP' => '₹66,990',
+  'Apple' => '₹63,990',
+  'MSI' => '₹45,990'
+}
+Apple price is ₹63,990
+product :MOTOROLA,price :₹69,990
+product :ASUS,price :₹81,990
+product :Samsung,price :₹74,990
+product :Lenovo,price :₹16,120
+product :Acer,price :₹33,990
+product :HP,price :₹66,990
+product :Apple,price :₹63,990
+product :MSI,price :₹45,990
+Product map is: Map(8) {
+  'MOTOROLA' => '₹74,990',
+  'ASUS' => '₹81,990',
+  'Samsung' => '₹74,990',
+  'Lenovo' => '₹16,120',
+  'Acer' => '₹33,990',
+  'HP' => '₹66,990',
+  'Apple' => '₹63,990',
+  'MSI' => '₹45,990'
+}
+Apple price is ₹63,990
+product :MOTOROLA,price :₹74,990
+product :ASUS,price :₹81,990
+product :Samsung,price :₹74,990
+product :Lenovo,price :₹16,120
+product :Acer,price :₹33,990
+product :HP,price :₹66,990
+product :Apple,price :₹63,990
+product :MSI,price :₹45,990
+Product map is: Map(8) {
+  'MOTOROLA' => '₹84,990',
+  'ASUS' => '₹81,990',
+  'Samsung' => '₹74,990',
+  'Lenovo' => '₹16,120',
+  'Acer' => '₹33,990',
+  'HP' => '₹66,990',
+  'Apple' => '₹63,990',
+  'MSI' => '₹45,990'
+}
+Apple price is ₹63,990
+product :MOTOROLA,price :₹84,990
+product :ASUS,price :₹81,990
+product :Samsung,price :₹74,990
+product :Lenovo,price :₹16,120
+product :Acer,price :₹33,990
+product :HP,price :₹66,990
+product :Apple,price :₹63,990
+product :MSI,price :₹45,990
+Product map is: Map(8) {
+  'MOTOROLA' => '₹84,990',
+  'ASUS' => '₹94,990',
+  'Samsung' => '₹74,990',
+  'Lenovo' => '₹16,120',
+  'Acer' => '₹33,990',
+  'HP' => '₹66,990',
+  'Apple' => '₹63,990',
+  'MSI' => '₹45,990'
+}
+Apple price is ₹63,990
+product :MOTOROLA,price :₹84,990
+product :ASUS,price :₹94,990
+product :Samsung,price :₹74,990
+product :Lenovo,price :₹16,120
+product :Acer,price :₹33,990
+product :HP,price :₹66,990
+product :Apple,price :₹63,990
+product :MSI,price :₹45,990
+Product map is: Map(8) {
+  'MOTOROLA' => '₹84,990',
+  'ASUS' => '₹94,990',
+  'Samsung' => '₹74,990',
+  'Lenovo' => '₹16,120',
+  'Acer' => '₹33,990',
+  'HP' => '₹81,500',
+  'Apple' => '₹63,990',
+  'MSI' => '₹45,990'
+}
+Apple price is ₹63,990
+product :MOTOROLA,price :₹84,990
+product :ASUS,price :₹94,990
+product :Samsung,price :₹74,990
+product :Lenovo,price :₹16,120
+product :Acer,price :₹33,990
+product :HP,price :₹81,500
+product :Apple,price :₹63,990
+product :MSI,price :₹45,990
+Product map is: Map(8) {
+  'MOTOROLA' => '₹84,990',
+  'ASUS' => '₹86,990',
+  'Samsung' => '₹74,990',
+  'Lenovo' => '₹16,120',
+  'Acer' => '₹33,990',
+  'HP' => '₹81,500',
+  'Apple' => '₹63,990',
+  'MSI' => '₹45,990'
+}
+Apple price is ₹63,990
+product :MOTOROLA,price :₹84,990
+product :ASUS,price :₹86,990
+product :Samsung,price :₹74,990
+product :Lenovo,price :₹16,120
+product :Acer,price :₹33,990
+product :HP,price :₹81,500
+product :Apple,price :₹63,990
+product :MSI,price :₹45,990
+Product map is: Map(8) {
+  'MOTOROLA' => '₹84,990',
+  'ASUS' => '₹81,990',
+  'Samsung' => '₹74,990',
+  'Lenovo' => '₹16,120',
+  'Acer' => '₹33,990',
+  'HP' => '₹81,500',
+  'Apple' => '₹63,990',
+  'MSI' => '₹45,990'
+}
+Apple price is ₹63,990
+product :MOTOROLA,price :₹84,990
+product :ASUS,price :₹81,990
+product :Samsung,price :₹74,990
+product :Lenovo,price :₹16,120
+product :Acer,price :₹33,990
+product :HP,price :₹81,500
+product :Apple,price :₹63,990
+product :MSI,price :₹45,990
+Product map is: Map(8) {
+  'MOTOROLA' => '₹84,990',
+  'ASUS' => '₹81,990',
+  'Samsung' => '₹74,990',
+  'Lenovo' => '₹16,120',
+  'Acer' => '₹33,990',
+  'HP' => '₹83,979',
+  'Apple' => '₹63,990',
+  'MSI' => '₹45,990'
+}
+Apple price is ₹63,990
+product :MOTOROLA,price :₹84,990
+product :ASUS,price :₹81,990
+product :Samsung,price :₹74,990
+product :Lenovo,price :₹16,120
+product :Acer,price :₹33,990
+product :HP,price :₹83,979
+product :Apple,price :₹63,990
+product :MSI,price :₹45,990
+Product map is: Map(8) {
+  'MOTOROLA' => '₹84,990',
+  'ASUS' => '₹1,89,990',
+  'Samsung' => '₹74,990',
+  'Lenovo' => '₹16,120',
+  'Acer' => '₹33,990',
+  'HP' => '₹83,979',
+  'Apple' => '₹63,990',
+  'MSI' => '₹45,990'
+}
+Apple price is ₹63,990
+product :MOTOROLA,price :₹84,990
+product :ASUS,price :₹1,89,990
+product :Samsung,price :₹74,990
+product :Lenovo,price :₹16,120
+product :Acer,price :₹33,990
+product :HP,price :₹83,979
+product :Apple,price :₹63,990
+product :MSI,price :₹45,990

@@ -1,0 +1,450 @@
+Train full dada is :mumbai central - ahmedabad ac duronto exp
+Train full dada is :Duronto
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :23:25
+Train full dada is :05:55
+Train full dada is :12268
+Train full dada is :ahmedabad - mumbai cent ac duronto exp
+Train full dada is :Duronto
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :23:40
+Train full dada is :06:00
+Train full dada is :22201
+Train full dada is :kolkata sealdah - puri duronto express
+Train full dada is :Duronto
+Train full dada is :M,W,F
+Train full dada is :20:00
+Train full dada is :04:00
+Train full dada is :22204
+Train full dada is :secunderabad - visakhapatnam ac duronto express
+Train full dada is :Duronto
+Train full dada is :M,W,S
+Train full dada is :20:15
+Train full dada is :06:35
+Train full dada is :22206
+Train full dada is :madurai - chennai central ac duronto express
+Train full dada is :Duronto
+Train full dada is :TUE,THU
+Train full dada is :22:40
+Train full dada is :07:20
+Train full dada is :12426
+Train full dada is :jammu tawi - new delhi rajdhani express
+Train full dada is :Rajdhani
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :19:40
+Train full dada is :05:05
+Train full dada is :12430
+Train full dada is :new delhi - lucknow ac sf express
+Train full dada is :Rajdhani
+Train full dada is :M,T,F,S
+Train full dada is :20:50
+Train full dada is :06:40
+Train full dada is :12437
+Train full dada is :secunderabad - hazrat nizamuddin rajdhani express
+Train full dada is :Rajdhani
+Train full dada is :WED
+Train full dada is :12:45
+Train full dada is :10:25
+Train full dada is :12951
+Train full dada is :mumbai central - new delhi rajdhani express
+Train full dada is :Rajdhani
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :16:35
+Train full dada is :08:35
+Train full dada is :12953
+Train full dada is :mumbai cent - hazrat nizamuddin august kranti raj exp
+Train full dada is :Rajdhani
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :17:40
+Train full dada is :10:55
+Train full dada is :12019
+Train full dada is :howrah - ranchi shatabdi express
+Train full dada is :Shatabdi
+Train full dada is :M,T,W,T,F,S
+Train full dada is :06:05
+Train full dada is :13:15
+Train full dada is :12038
+Train full dada is :ludhiana - new delhi shatabdi express
+Train full dada is :Shatabdi
+Train full dada is :T,W,T,F,S
+Train full dada is :16:40
+Train full dada is :22:10
+Train full dada is :12048
+Train full dada is :firozpur - new delhi shatabdi express
+Train full dada is :Shatabdi
+Train full dada is :M,S
+Train full dada is :04:00
+Train full dada is :21:10
+Train full dada is :12049
+Train full dada is :agra cantt - delhi h nizamuddin gatimaan express
+Train full dada is :Shatabdi
+Train full dada is :M,T,W,T,S,S
+Train full dada is :17:50
+Train full dada is :19:30
+Train full dada is :12050
+Train full dada is :delhi h nizamuddin - agra cantt gatimaan express
+Train full dada is :Shatabdi
+Train full dada is :M,T,W,T,S,S
+Train full dada is :08:10
+Train full dada is :09:50
+Train full dada is :11077
+Train full dada is :pune - jammu tawi jhelum express
+Train full dada is :MAIL EXPRESS
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :17:20
+Train full dada is :10:10
+Train full dada is :12138
+Train full dada is :firozpur cantt - mumbai cst punjab mail sf exp
+Train full dada is :SUPERFAST
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :21:40
+Train full dada is :07:35
+Train full dada is :12295
+Train full dada is :bangalore city - danapur sanghamitra sf exp
+Train full dada is :SUPERFAST
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :09:00
+Train full dada is :09:20
+Train full dada is :12307
+Train full dada is :howrah - jodhpur sf express
+Train full dada is :SUPERFAST
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :23:30
+Train full dada is :08:30
+Train full dada is :12424
+Train full dada is :new delhi - dibrugarh town rajdhani express
+Train full dada is :RAJDHANI
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :13:55
+Train full dada is :07:00
+Train full dada is :12506
+Train full dada is :delhi anand vihar - guwahati north east express
+Train full dada is :SUPERFAST
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :06:45
+Train full dada is :16:50
+Train full dada is :12801
+Train full dada is :puri - new delhi purushottam sf express
+Train full dada is :SUPERFAST
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :21:45
+Train full dada is :04:50
+Train full dada is :12802
+Train full dada is :new delhi - puri purushottam sf express
+Train full dada is :SUPERFAST
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :22:15
+Train full dada is :05:25
+Train full dada is :12833
+Train full dada is :ahmedabad - howrah sf express
+Train full dada is :SUPERFAST
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :00:15
+Train full dada is :13:30
+Train full dada is :12859
+Train full dada is :mumbai cst - howrah gitanjali sf express
+Train full dada is :SUPERFAST
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :06:00
+Train full dada is :12:30
+Train full dada is :12864
+Train full dada is :yesvantpur - howrah sf express
+Train full dada is :SUPERFAST
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :19:35
+Train full dada is :06:25
+Train full dada is :mumbai central - ahmedabad ac duronto exp
+Train full dada is :Duronto
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :23:25
+Train full dada is :05:55
+Train full dada is :12268
+Train full dada is :ahmedabad - mumbai cent ac duronto exp
+Train full dada is :Duronto
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :23:40
+Train full dada is :06:00
+Train full dada is :22201
+Train full dada is :kolkata sealdah - puri duronto express
+Train full dada is :Duronto
+Train full dada is :M,W,F
+Train full dada is :20:00
+Train full dada is :04:00
+Train full dada is :22204
+Train full dada is :secunderabad - visakhapatnam ac duronto express
+Train full dada is :Duronto
+Train full dada is :M,W,S
+Train full dada is :20:15
+Train full dada is :06:35
+Train full dada is :22206
+Train full dada is :madurai - chennai central ac duronto express
+Train full dada is :Duronto
+Train full dada is :TUE,THU
+Train full dada is :22:40
+Train full dada is :07:20
+Train full dada is :12426
+Train full dada is :jammu tawi - new delhi rajdhani express
+Train full dada is :Rajdhani
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :19:40
+Train full dada is :05:05
+Train full dada is :12430
+Train full dada is :new delhi - lucknow ac sf express
+Train full dada is :Rajdhani
+Train full dada is :M,T,F,S
+Train full dada is :20:50
+Train full dada is :06:40
+Train full dada is :12437
+Train full dada is :secunderabad - hazrat nizamuddin rajdhani express
+Train full dada is :Rajdhani
+Train full dada is :WED
+Train full dada is :12:45
+Train full dada is :10:25
+Train full dada is :12951
+Train full dada is :mumbai central - new delhi rajdhani express
+Train full dada is :Rajdhani
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :16:35
+Train full dada is :08:35
+Train full dada is :12953
+Train full dada is :mumbai cent - hazrat nizamuddin august kranti raj exp
+Train full dada is :Rajdhani
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :17:40
+Train full dada is :10:55
+Train full dada is :12019
+Train full dada is :howrah - ranchi shatabdi express
+Train full dada is :Shatabdi
+Train full dada is :M,T,W,T,F,S
+Train full dada is :06:05
+Train full dada is :13:15
+Train full dada is :12038
+Train full dada is :ludhiana - new delhi shatabdi express
+Train full dada is :Shatabdi
+Train full dada is :T,W,T,F,S
+Train full dada is :16:40
+Train full dada is :22:10
+Train full dada is :12048
+Train full dada is :firozpur - new delhi shatabdi express
+Train full dada is :Shatabdi
+Train full dada is :M,S
+Train full dada is :04:00
+Train full dada is :21:10
+Train full dada is :12049
+Train full dada is :agra cantt - delhi h nizamuddin gatimaan express
+Train full dada is :Shatabdi
+Train full dada is :M,T,W,T,S,S
+Train full dada is :17:50
+Train full dada is :19:30
+Train full dada is :12050
+Train full dada is :delhi h nizamuddin - agra cantt gatimaan express
+Train full dada is :Shatabdi
+Train full dada is :M,T,W,T,S,S
+Train full dada is :08:10
+Train full dada is :09:50
+Train full dada is :11077
+Train full dada is :pune - jammu tawi jhelum express
+Train full dada is :MAIL EXPRESS
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :17:20
+Train full dada is :10:10
+Train full dada is :12138
+Train full dada is :firozpur cantt - mumbai cst punjab mail sf exp
+Train full dada is :SUPERFAST
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :21:40
+Train full dada is :07:35
+Train full dada is :12295
+Train full dada is :bangalore city - danapur sanghamitra sf exp
+Train full dada is :SUPERFAST
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :09:00
+Train full dada is :09:20
+Train full dada is :12307
+Train full dada is :howrah - jodhpur sf express
+Train full dada is :SUPERFAST
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :23:30
+Train full dada is :08:30
+Train full dada is :12424
+Train full dada is :new delhi - dibrugarh town rajdhani express
+Train full dada is :RAJDHANI
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :13:55
+Train full dada is :07:00
+Train full dada is :12506
+Train full dada is :delhi anand vihar - guwahati north east express
+Train full dada is :SUPERFAST
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :06:45
+Train full dada is :16:50
+Train full dada is :12801
+Train full dada is :puri - new delhi purushottam sf express
+Train full dada is :SUPERFAST
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :21:45
+Train full dada is :04:50
+Train full dada is :12802
+Train full dada is :new delhi - puri purushottam sf express
+Train full dada is :SUPERFAST
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :22:15
+Train full dada is :05:25
+Train full dada is :12833
+Train full dada is :ahmedabad - howrah sf express
+Train full dada is :SUPERFAST
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :00:15
+Train full dada is :13:30
+Train full dada is :12859
+Train full dada is :mumbai cst - howrah gitanjali sf express
+Train full dada is :SUPERFAST
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :06:00
+Train full dada is :12:30
+Train full dada is :12864
+Train full dada is :yesvantpur - howrah sf express
+Train full dada is :SUPERFAST
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :19:35
+Train full dada is :06:25
+Train full dada is :mumbai central - ahmedabad ac duronto exp
+Train full dada is :Duronto
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :23:25
+Train full dada is :05:55
+Train full dada is :12268
+Train full dada is :ahmedabad - mumbai cent ac duronto exp
+Train full dada is :Duronto
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :23:40
+Train full dada is :06:00
+Train full dada is :22201
+Train full dada is :kolkata sealdah - puri duronto express
+Train full dada is :Duronto
+Train full dada is :M,W,F
+Train full dada is :20:00
+Train full dada is :04:00
+Train full dada is :22204
+Train full dada is :secunderabad - visakhapatnam ac duronto express
+Train full dada is :Duronto
+Train full dada is :M,W,S
+Train full dada is :20:15
+Train full dada is :06:35
+Train full dada is :22206
+Train full dada is :madurai - chennai central ac duronto express
+Train full dada is :Duronto
+Train full dada is :TUE,THU
+Train full dada is :22:40
+Train full dada is :07:20
+Train full dada is :12426
+Train full dada is :jammu tawi - new delhi rajdhani express
+Train full dada is :Rajdhani
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :19:40
+Train full dada is :05:05
+Train full dada is :12430
+Train full dada is :new delhi - lucknow ac sf express
+Train full dada is :Rajdhani
+Train full dada is :M,T,F,S
+Train full dada is :20:50
+Train full dada is :06:40
+Train full dada is :12437
+Train full dada is :secunderabad - hazrat nizamuddin rajdhani express
+Train full dada is :Rajdhani
+Train full dada is :WED
+Train full dada is :12:45
+Train full dada is :10:25
+Train full dada is :12951
+Train full dada is :mumbai central - new delhi rajdhani express
+Train full dada is :Rajdhani
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :16:35
+Train full dada is :08:35
+Train full dada is :12953
+Train full dada is :mumbai cent - hazrat nizamuddin august kranti raj exp
+Train full dada is :Rajdhani
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :17:40
+Train full dada is :10:55
+Train full dada is :12019
+Train full dada is :howrah - ranchi shatabdi express
+Train full dada is :Shatabdi
+Train full dada is :M,T,W,T,F,S
+Train full dada is :06:05
+Train full dada is :13:15
+Train full dada is :12038
+Train full dada is :ludhiana - new delhi shatabdi express
+Train full dada is :Shatabdi
+Train full dada is :T,W,T,F,S
+Train full dada is :16:40
+Train full dada is :22:10
+Train full dada is :12048
+Train full dada is :firozpur - new delhi shatabdi express
+Train full dada is :Shatabdi
+Train full dada is :M,S
+Train full dada is :04:00
+Train full dada is :21:10
+Train full dada is :12049
+Train full dada is :agra cantt - delhi h nizamuddin gatimaan express
+Train full dada is :Shatabdi
+Train full dada is :M,T,W,T,S,S
+Train full dada is :17:50
+Train full dada is :19:30
+Train full dada is :12050
+Train full dada is :delhi h nizamuddin - agra cantt gatimaan express
+Train full dada is :Shatabdi
+Train full dada is :M,T,W,T,S,S
+Train full dada is :08:10
+Train full dada is :09:50
+Train full dada is :11077
+Train full dada is :pune - jammu tawi jhelum express
+Train full dada is :MAIL EXPRESS
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :17:20
+Train full dada is :10:10
+Train full dada is :12138
+Train full dada is :firozpur cantt - mumbai cst punjab mail sf exp
+Train full dada is :SUPERFAST
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :21:40
+Train full dada is :07:35
+Train full dada is :12295
+Train full dada is :bangalore city - danapur sanghamitra sf exp
+Train full dada is :SUPERFAST
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :09:00
+Train full dada is :09:20
+Train full dada is :12307
+Train full dada is :howrah - jodhpur sf express
+Train full dada is :SUPERFAST
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :23:30
+Train full dada is :08:30
+Train full dada is :12424
+Train full dada is :new delhi - dibrugarh town rajdhani express
+Train full dada is :RAJDHANI
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :13:55
+Train full dada is :07:00
+Train full dada is :12506
+Train full dada is :delhi anand vihar - guwahati north east express
+Train full dada is :SUPERFAST
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :06:45
+Train full dada is :16:50
+Train full dada is :12801
+Train full dada is :puri - new delhi purushottam sf express
+Train full dada is :SUPERFAST
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :21:45
+Train full dada is :04:50
+Train full dada is :12802
+Train full dada is :new delhi - puri purushottam sf express
+Train full dada is :SUPERFAST
+Train full dada is :M,T,W,T,F,S,S
+Train full dada is :22:15
+Train full dada is :05:25
+Train full dada is :12833
+Train full dada is :ahmedabad - howrah sf express
+Train full dada is :SUPERFAST

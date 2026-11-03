@@ -1,0 +1,1532 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Sample4.spec.js >> Flipkart search pen
+- Location: tests\Sample4.spec.js:117:6
+
+# Error details
+
+```
+TypeError: Cannot read properties of null (reading 'includes')
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic [ref=e7]:
+    - generic [ref=e9]:
+      - link "Flipkart" [ref=e10] [cursor=pointer]:
+        - /url: /
+        - img "Flipkart" [ref=e11]
+      - link "Explore Plus" [ref=e12] [cursor=pointer]:
+        - /url: /plus
+        - text: Explore Plus
+        - img [ref=e13]
+    - generic [ref=e16]:
+      - textbox "Search for products, brands and more" [ref=e18]: pen
+      - button [ref=e19] [cursor=pointer]:
+        - img [ref=e20]
+    - link "Login" [ref=e28] [cursor=pointer]:
+      - /url: /login?ret=%2Fsearch%3Fq%3Dpen%26otracker%3Dsearch%26otracker1%3Dsearch%26marketplace%3DFLIPKART%26as-show%3Doff%26as%3Doff
+    - link "Become a Seller" [ref=e30] [cursor=pointer]:
+      - /url: https://seller.flipkart.com/sell-online/?utm_source=fkwebsite&utm_medium=websitedirect
+      - generic [ref=e31]: Become a Seller
+    - generic [ref=e33] [cursor=pointer]:
+      - generic [ref=e36]: More
+      - img [ref=e37]
+    - link "Cart" [ref=e42] [cursor=pointer]:
+      - /url: /viewcart?exploreMode=true&preference=FLIPKART
+      - img [ref=e43]
+      - generic [ref=e45]: Cart
+  - generic [ref=e50]:
+    - generic [ref=e51] [cursor=pointer]:
+      - text: Electronics
+      - img [ref=e52]
+    - generic [ref=e54] [cursor=pointer]:
+      - text: TVs & Appliances
+      - img [ref=e55]
+    - generic [ref=e57] [cursor=pointer]:
+      - text: Men
+      - img [ref=e58]
+    - generic [ref=e60] [cursor=pointer]:
+      - text: Women
+      - img [ref=e61]
+    - generic [ref=e63] [cursor=pointer]:
+      - text: Baby & Kids
+      - img [ref=e64]
+    - generic [ref=e66] [cursor=pointer]:
+      - text: Home & Furniture
+      - img [ref=e67]
+    - generic [ref=e69] [cursor=pointer]:
+      - text: Sports, Books & More
+      - img [ref=e70]
+    - link "Flights" [ref=e72] [cursor=pointer]:
+      - /url: /travel/flights?otracker=nmenu_Flights
+    - link "Offer Zone" [ref=e73] [cursor=pointer]:
+      - /url: /offers-list/top-deals?screen=dynamic&pk=themeViews%3DDT-OMU-A2%3ADT-OMU~widgetType%3DdealCard~contentType%3Dneo&otracker=nmenu_offer-zone
+  - generic [ref=e74]:
+    - generic [ref=e75]:
+      - generic [ref=e79]:
+        - generic [ref=e82]: Filters
+        - generic [ref=e84]:
+          - generic [ref=e85]: CATEGORIES
+          - generic [ref=e86]:
+            - generic [ref=e87]:
+              - img [ref=e89] [cursor=pointer]
+              - link "Pens & Stationery" [ref=e91] [cursor=pointer]:
+                - /url: /pens-stationery/pr?sid=dgv&q=pen&otracker=categorytree
+            - generic [ref=e92]:
+              - link "Calendars" [ref=e93] [cursor=pointer]:
+                - /url: /pens-stationery/calendars/pr?sid=dgv,kao&q=pen&otracker=categorytree
+              - link "Pens" [ref=e94] [cursor=pointer]:
+                - /url: /pens-stationery/pens/pr?sid=dgv,mqm&q=pen&otracker=categorytree
+              - link "Calculators" [ref=e95] [cursor=pointer]:
+                - /url: /pens-stationery/calculators/pr?sid=dgv,qtq&q=pen&otracker=categorytree
+              - link "Diaries & Notebooks" [ref=e96] [cursor=pointer]:
+                - /url: /pens-stationery/diaries-notebooks/pr?sid=dgv,gas&q=pen&otracker=categorytree
+              - link "Art Supplies" [ref=e97] [cursor=pointer]:
+                - /url: /pens-stationery/art-supplies/pr?sid=dgv,j6t&q=pen&otracker=categorytree
+              - generic [ref=e98] [cursor=pointer]: Show 6 more
+        - generic [ref=e99]:
+          - generic [ref=e100] [cursor=pointer]:
+            - generic [ref=e101]: Brand
+            - img [ref=e102]
+          - generic [ref=e104]:
+            - generic [ref=e105]:
+              - generic [ref=e106]:
+                - img [ref=e107]
+                - textbox "Search Brand" [ref=e111]
+              - generic "PARKER" [ref=e112] [cursor=pointer]:
+                - generic [ref=e116]: PARKER
+              - generic "DOMS" [ref=e117] [cursor=pointer]:
+                - generic [ref=e121]: DOMS
+              - generic "PILOT" [ref=e122] [cursor=pointer]:
+                - generic [ref=e126]: PILOT
+              - generic "FLAIR" [ref=e127] [cursor=pointer]:
+                - generic [ref=e131]: FLAIR
+              - generic "Cello" [ref=e132] [cursor=pointer]:
+                - generic [ref=e136]: Cello
+              - generic "Reynolds" [ref=e137] [cursor=pointer]:
+                - generic [ref=e141]: Reynolds
+            - generic [ref=e142] [cursor=pointer]: 4367 MORE
+        - generic [ref=e143]:
+          - generic [ref=e145]: Price
+          - generic [ref=e162]:
+            - generic [ref=e163]: .
+            - generic [ref=e164]: .
+            - generic [ref=e165]: .
+            - generic [ref=e166]: .
+            - generic [ref=e167]: .
+            - generic [ref=e168]: .
+            - generic: .
+          - generic [ref=e169]:
+            - combobox [ref=e171]:
+              - option "Min" [selected]
+              - option "₹250"
+              - option "₹500"
+              - option "₹2000"
+              - option "₹5000"
+              - option "₹10000"
+            - generic [ref=e172]: to
+            - combobox [ref=e174]:
+              - option "₹250"
+              - option "₹500"
+              - option "₹2000"
+              - option "₹5000"
+              - option "₹10000"
+              - option "₹10000+" [selected]
+        - generic [ref=e176] [cursor=pointer]:
+          - generic [ref=e177]: Discount
+          - img [ref=e178]
+        - generic [ref=e180]:
+          - generic [ref=e181] [cursor=pointer]:
+            - generic [ref=e182]: Customer Ratings
+            - img [ref=e183]
+          - generic [ref=e186]:
+            - generic "4★ & above" [ref=e187] [cursor=pointer]:
+              - generic [ref=e191]: 4★ & above
+            - generic "3★ & above" [ref=e192] [cursor=pointer]:
+              - generic [ref=e196]: 3★ & above
+        - generic [ref=e197]:
+          - img [ref=e202] [cursor=pointer]
+          - generic [ref=e204] [cursor=pointer]: "?"
+        - generic [ref=e206] [cursor=pointer]:
+          - generic [ref=e207]: Country Of Origin
+          - img [ref=e208]
+        - generic [ref=e210]:
+          - generic [ref=e211] [cursor=pointer]:
+            - generic [ref=e212]: Offers
+            - img [ref=e213]
+          - generic [ref=e216]:
+            - generic "Buy More, Save More" [ref=e217] [cursor=pointer]:
+              - generic [ref=e221]: Buy More, Save More
+            - generic "Special Price" [ref=e222] [cursor=pointer]:
+              - generic [ref=e226]: Special Price
+        - generic [ref=e228] [cursor=pointer]:
+          - generic [ref=e229]: New Arrivals
+          - img [ref=e230]
+        - generic [ref=e233] [cursor=pointer]:
+          - generic [ref=e234]: Value Packs
+          - img [ref=e235]
+        - generic [ref=e238] [cursor=pointer]:
+          - generic [ref=e239]: GST Invoice Available
+          - img [ref=e240]
+        - generic [ref=e243] [cursor=pointer]:
+          - generic [ref=e244]: Availability
+          - img [ref=e245]
+      - generic [ref=e247]:
+        - generic [ref=e250]:
+          - generic [ref=e251]:
+            - generic [ref=e252]:
+              - link "Home" [ref=e253] [cursor=pointer]:
+                - /url: /
+              - img [ref=e254]
+            - link "Pens & Stationery" [ref=e257] [cursor=pointer]:
+              - /url: /pens-stationery/pr?sid=dgv&marketplace=FLIPKART
+          - generic [ref=e258]: Showing 1 – 40 of 23,789 results for "pen"
+          - generic [ref=e259]:
+            - generic [ref=e260]: Sort By
+            - generic [ref=e261]: Relevance
+            - generic [ref=e262] [cursor=pointer]: Popularity
+            - generic [ref=e263] [cursor=pointer]: Price -- Low to High
+            - generic [ref=e264] [cursor=pointer]: Price -- High to Low
+            - generic [ref=e265] [cursor=pointer]: Newest First
+        - generic [ref=e267]:
+          - generic [ref=e269]:
+            - link "Classmate Fountain Ink Pen - Octane, 1 Numbers Fountain Pen" [ref=e270] [cursor=pointer]:
+              - /url: /classmate-fountain-ink-pen-octane-1-numbers/p/itm36188dc262dd9?pid=PENGTFYSGDX5YB7C&lid=LSTPENGTFYSGDX5YB7CXQYPR6&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_1&otracker=search&otracker1=search&fm=organic&iid=en_K__9zm0_ZHYGGOnQW5ctX_cS_S1GlmD6CY-UHiBpvbJklW7cFnHXT_EZMPVSsX8-ouoGilE_kq9GPKREKxK5iXrh7Xta9HX2gAgZ-Urp50iZdgTmpTVmRi5hNdXN6D9U&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - img "Classmate Fountain Ink Pen - Octane, 1 Numbers Fountain Pen" [ref=e274]
+              - img [ref=e277]
+            - img [ref=e280]
+            - link "Classmate Fountain Ink Pen - Octane, 1 Numbers Fountain..." [ref=e283] [cursor=pointer]:
+              - /url: /classmate-fountain-ink-pen-octane-1-numbers/p/itm36188dc262dd9?pid=PENGTFYSGDX5YB7C&lid=LSTPENGTFYSGDX5YB7CXQYPR6&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_1&otracker=search&otracker1=search&fm=organic&iid=en_K__9zm0_ZHYGGOnQW5ctX_cS_S1GlmD6CY-UHiBpvbJklW7cFnHXT_EZMPVSsX8-ouoGilE_kq9GPKREKxK5iXrh7Xta9HX2gAgZ-Urp50iZdgTmpTVmRi5hNdXN6D9U&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+            - generic [ref=e284]: Ink Color - Blue
+            - generic [ref=e285]:
+              - generic [ref=e287]:
+                - text: "3.8"
+                - img [ref=e288]
+              - text: (483)
+            - link "₹50 ₹120 58% off" [ref=e289] [cursor=pointer]:
+              - /url: /classmate-fountain-ink-pen-octane-1-numbers/p/itm36188dc262dd9?pid=PENGTFYSGDX5YB7C&lid=LSTPENGTFYSGDX5YB7CXQYPR6&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_1&otracker=search&otracker1=search&fm=organic&iid=en_K__9zm0_ZHYGGOnQW5ctX_cS_S1GlmD6CY-UHiBpvbJklW7cFnHXT_EZMPVSsX8-ouoGilE_kq9GPKREKxK5iXrh7Xta9HX2gAgZ-Urp50iZdgTmpTVmRi5hNdXN6D9U&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - generic [ref=e290]:
+                - generic [ref=e291]: ₹50
+                - generic [ref=e292]: ₹120
+                - generic [ref=e293]: 58% off
+            - generic [ref=e296]: Hot Deal
+          - generic [ref=e298]:
+            - link "PIERRE CARDIN Caliber Sleek Titanium Ball Pen" [ref=e299] [cursor=pointer]:
+              - /url: /pierre-cardin-caliber-sleek-titanium-ball-pen/p/itmf0a586721376a?pid=PENGRNJPYPNGU8UG&lid=LSTPENGRNJPYPNGU8UGNPVMEN&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_2&otracker=search&otracker1=search&fm=organic&iid=en_K__9zm0_ZHYGGOnQW5ctX_cS_S1GlmD6CY-UHiBpvbLudp0V2JFmq2A81ksPbTvpQb__Fw115KKlyt6PMEVgZdEvnCWUYVA7CbIx0OyP6CXzH7vOmFKudVDfKZ0UDEp7&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - img "PIERRE CARDIN Caliber Sleek Titanium Ball Pen" [ref=e303]
+              - img [ref=e306]
+            - img [ref=e309]
+            - link "PIERRE CARDIN Caliber Sleek Titanium Ball Pen" [ref=e312] [cursor=pointer]:
+              - /url: /pierre-cardin-caliber-sleek-titanium-ball-pen/p/itmf0a586721376a?pid=PENGRNJPYPNGU8UG&lid=LSTPENGRNJPYPNGU8UGNPVMEN&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_2&otracker=search&otracker1=search&fm=organic&iid=en_K__9zm0_ZHYGGOnQW5ctX_cS_S1GlmD6CY-UHiBpvbLudp0V2JFmq2A81ksPbTvpQb__Fw115KKlyt6PMEVgZdEvnCWUYVA7CbIx0OyP6CXzH7vOmFKudVDfKZ0UDEp7&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+            - generic [ref=e313]: Ink Color - Blue
+            - generic [ref=e314]:
+              - generic [ref=e316]:
+                - text: "4.4"
+                - img [ref=e317]
+              - text: (52)
+            - link "₹270 ₹300 10% off" [ref=e318] [cursor=pointer]:
+              - /url: /pierre-cardin-caliber-sleek-titanium-ball-pen/p/itmf0a586721376a?pid=PENGRNJPYPNGU8UG&lid=LSTPENGRNJPYPNGU8UGNPVMEN&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_2&otracker=search&otracker1=search&fm=organic&iid=en_K__9zm0_ZHYGGOnQW5ctX_cS_S1GlmD6CY-UHiBpvbLudp0V2JFmq2A81ksPbTvpQb__Fw115KKlyt6PMEVgZdEvnCWUYVA7CbIx0OyP6CXzH7vOmFKudVDfKZ0UDEp7&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - generic [ref=e319]:
+                - generic [ref=e320]: ₹270
+                - generic [ref=e321]: ₹300
+                - generic [ref=e322]: 10% off
+          - generic [ref=e324]:
+            - link "Reynolds DFine Ball Pen Bestseller" [ref=e325] [cursor=pointer]:
+              - /url: /reynolds-dfine-ball-pen/p/itma918849227e3e?pid=PENHF4M6NJFBEASG&lid=LSTPENHF4M6NJFBEASGAWFUFU&marketplace=FLIPKART&q=pen&store=dgv&spotlightTagId=default_BestsellerId_dgv&srno=s_1_3&otracker=search&otracker1=search&fm=Search&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENHF4M6NJFBEASG.SEARCH&ppt=sp&ppn=sp&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - img "Reynolds DFine Ball Pen" [ref=e329]
+              - generic [ref=e330]: Bestseller
+              - img [ref=e333]
+            - link "Reynolds DFine Ball Pen" [ref=e335] [cursor=pointer]:
+              - /url: /reynolds-dfine-ball-pen/p/itma918849227e3e?pid=PENHF4M6NJFBEASG&lid=LSTPENHF4M6NJFBEASGAWFUFU&marketplace=FLIPKART&q=pen&store=dgv&spotlightTagId=default_BestsellerId_dgv&srno=s_1_3&otracker=search&otracker1=search&fm=Search&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENHF4M6NJFBEASG.SEARCH&ppt=sp&ppn=sp&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+            - generic [ref=e336]: Pack of 70, Ink Color - Blue
+            - generic [ref=e337]:
+              - generic [ref=e339]:
+                - text: "4.4"
+                - img [ref=e340]
+              - text: (65,279)
+            - img [ref=e342]
+            - link "₹215 ₹700 69% off" [ref=e343] [cursor=pointer]:
+              - /url: /reynolds-dfine-ball-pen/p/itma918849227e3e?pid=PENHF4M6NJFBEASG&lid=LSTPENHF4M6NJFBEASGAWFUFU&marketplace=FLIPKART&q=pen&store=dgv&spotlightTagId=default_BestsellerId_dgv&srno=s_1_3&otracker=search&otracker1=search&fm=Search&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENHF4M6NJFBEASG.SEARCH&ppt=sp&ppn=sp&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - generic [ref=e344]:
+                - generic [ref=e345]: ₹215
+                - generic [ref=e346]: ₹700
+                - generic [ref=e347]: 69% off
+            - generic [ref=e350]: Limited Stock Deal
+          - generic [ref=e352]:
+            - link "VR Creatives Gel Ink Pens 6Pcs Erasable,With Eraser 0.5Mm Fine Point Gel Pen" [ref=e353] [cursor=pointer]:
+              - /url: /vr-creatives-gel-ink-pens-6pcs-erasable-with-eraser-0-5mm-fine-point-pen/p/itm019cfcf30f4c5?pid=PENHAJDGNK78BQTH&lid=LSTPENHAJDGNK78BQTHCKXJLM&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_4&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENHAJDGNK78BQTH.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - img "VR Creatives Gel Ink Pens 6Pcs Erasable,With Eraser 0.5Mm Fine Point Gel Pen" [ref=e357]
+              - img [ref=e360]
+            - link "VR Creatives Gel Ink Pens 6Pcs Erasable,With Eraser 0.5..." [ref=e362] [cursor=pointer]:
+              - /url: /vr-creatives-gel-ink-pens-6pcs-erasable-with-eraser-0-5mm-fine-point-pen/p/itm019cfcf30f4c5?pid=PENHAJDGNK78BQTH&lid=LSTPENHAJDGNK78BQTHCKXJLM&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_4&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENHAJDGNK78BQTH.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+            - generic [ref=e363]: Pack of 6, Ink Color - Blue
+            - generic [ref=e364]:
+              - generic [ref=e366]:
+                - text: "3.9"
+                - img [ref=e367]
+              - text: (413)
+            - link "₹92 ₹349 73% off" [ref=e368] [cursor=pointer]:
+              - /url: /vr-creatives-gel-ink-pens-6pcs-erasable-with-eraser-0-5mm-fine-point-pen/p/itm019cfcf30f4c5?pid=PENHAJDGNK78BQTH&lid=LSTPENHAJDGNK78BQTHCKXJLM&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_4&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENHAJDGNK78BQTH.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - generic [ref=e369]:
+                - generic [ref=e370]: ₹92
+                - generic [ref=e371]: ₹349
+                - generic [ref=e372]: 73% off
+            - generic [ref=e375]: Only few left
+        - generic [ref=e377]:
+          - generic [ref=e379]:
+            - link "LUXOR NOX Assorted Ball Pens | 0.7 mm | Feather-Light | For Home, Office, and School | Ball Pen" [ref=e380] [cursor=pointer]:
+              - /url: /luxor-nox-assorted-ball-pens-0-7-mm-feather-light-home-office-school-pen/p/itmf81e209ccacd8?pid=PENHHQDXD2K8F4KY&lid=LSTPENHHQDXD2K8F4KYIYS5TF&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_5&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENHHQDXD2K8F4KY.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - img "LUXOR NOX Assorted Ball Pens | 0.7 mm | Feather-Light | For Home, Office, and School | Ball Pen" [ref=e384]
+              - img [ref=e387]
+            - link "LUXOR NOX Assorted Ball Pens | 0.7 mm | Feather-Light |..." [ref=e389] [cursor=pointer]:
+              - /url: /luxor-nox-assorted-ball-pens-0-7-mm-feather-light-home-office-school-pen/p/itmf81e209ccacd8?pid=PENHHQDXD2K8F4KY&lid=LSTPENHHQDXD2K8F4KYIYS5TF&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_5&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENHHQDXD2K8F4KY.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+            - generic [ref=e390]: Pack of 50, Ink Color - Blue
+            - generic [ref=e391]:
+              - generic [ref=e393]:
+                - text: "4.5"
+                - img [ref=e394]
+              - text: (337)
+            - img [ref=e396]
+            - link "₹400 ₹500 20% off" [ref=e397] [cursor=pointer]:
+              - /url: /luxor-nox-assorted-ball-pens-0-7-mm-feather-light-home-office-school-pen/p/itmf81e209ccacd8?pid=PENHHQDXD2K8F4KY&lid=LSTPENHHQDXD2K8F4KYIYS5TF&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_5&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENHHQDXD2K8F4KY.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - generic [ref=e398]:
+                - generic [ref=e399]: ₹400
+                - generic [ref=e400]: ₹500
+                - generic [ref=e401]: 20% off
+            - generic [ref=e404]: Hot Deal
+          - generic [ref=e406]:
+            - link "Classmate OCTANE COLOUR BURST GEL PEN | 10 MULTI COLOUR | Gel Pen" [ref=e407] [cursor=pointer]:
+              - /url: /classmate-octane-colour-burst-gel-pen-10-multi/p/itm8b37dc3c082b0?pid=PENFGFACPTG5HJ6S&lid=LSTPENFGFACPTG5HJ6SMDABMZ&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_6&otracker=search&otracker1=search&fm=organic&iid=en_K__9zm0_ZHYGGOnQW5ctX_cS_S1GlmD6CY-UHiBpvbIgOI1s-brV5_SGgKEHmFCZP3BcpyZLD5ZXKRfhPlW1dysDQBk5JjGcVlsgJ3MTcJAL7bKlWYKPvG8Qt--56VNP&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - img "Classmate OCTANE COLOUR BURST GEL PEN | 10 MULTI COLOUR | Gel Pen" [ref=e411]
+              - img [ref=e414]
+            - img [ref=e417]
+            - link "Classmate OCTANE COLOUR BURST GEL PEN | 10 MULTI COLOUR..." [ref=e420] [cursor=pointer]:
+              - /url: /classmate-octane-colour-burst-gel-pen-10-multi/p/itm8b37dc3c082b0?pid=PENFGFACPTG5HJ6S&lid=LSTPENFGFACPTG5HJ6SMDABMZ&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_6&otracker=search&otracker1=search&fm=organic&iid=en_K__9zm0_ZHYGGOnQW5ctX_cS_S1GlmD6CY-UHiBpvbIgOI1s-brV5_SGgKEHmFCZP3BcpyZLD5ZXKRfhPlW1dysDQBk5JjGcVlsgJ3MTcJAL7bKlWYKPvG8Qt--56VNP&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+            - generic [ref=e421]: Pack of 10
+            - generic [ref=e422]:
+              - generic [ref=e424]:
+                - text: "4.5"
+                - img [ref=e425]
+              - text: (60,869)
+            - link "₹81 ₹100 19% off" [ref=e426] [cursor=pointer]:
+              - /url: /classmate-octane-colour-burst-gel-pen-10-multi/p/itm8b37dc3c082b0?pid=PENFGFACPTG5HJ6S&lid=LSTPENFGFACPTG5HJ6SMDABMZ&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_6&otracker=search&otracker1=search&fm=organic&iid=en_K__9zm0_ZHYGGOnQW5ctX_cS_S1GlmD6CY-UHiBpvbIgOI1s-brV5_SGgKEHmFCZP3BcpyZLD5ZXKRfhPlW1dysDQBk5JjGcVlsgJ3MTcJAL7bKlWYKPvG8Qt--56VNP&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - generic [ref=e427]:
+                - generic [ref=e428]: ₹81
+                - generic [ref=e429]: ₹100
+                - generic [ref=e430]: 19% off
+          - generic [ref=e432]:
+            - link "HAUSER Xo Ball Pen" [ref=e433] [cursor=pointer]:
+              - /url: /hauser-xo-ball-pen/p/itm93b6798aa9fd0?pid=PENGN5ANGBNBECXX&lid=LSTPENGN5ANGBNBECXXA1OKK7&marketplace=FLIPKART&q=pen&store=dgv&spotlightTagId=default_BestsellerId_dgv&srno=s_1_7&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENGN5ANGBNBECXX.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - img "HAUSER Xo Ball Pen" [ref=e437]
+              - img [ref=e440]
+            - link "HAUSER Xo Ball Pen" [ref=e442] [cursor=pointer]:
+              - /url: /hauser-xo-ball-pen/p/itm93b6798aa9fd0?pid=PENGN5ANGBNBECXX&lid=LSTPENGN5ANGBNBECXXA1OKK7&marketplace=FLIPKART&q=pen&store=dgv&spotlightTagId=default_BestsellerId_dgv&srno=s_1_7&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENGN5ANGBNBECXX.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+            - generic [ref=e443]: Pack of 100, Ink Color - Blue Black and Red
+            - generic [ref=e444]:
+              - generic [ref=e446]:
+                - text: "4.5"
+                - img [ref=e447]
+              - text: (15,072)
+            - img [ref=e449]
+            - link "₹699 ₹1,000 30% off" [ref=e450] [cursor=pointer]:
+              - /url: /hauser-xo-ball-pen/p/itm93b6798aa9fd0?pid=PENGN5ANGBNBECXX&lid=LSTPENGN5ANGBNBECXXA1OKK7&marketplace=FLIPKART&q=pen&store=dgv&spotlightTagId=default_BestsellerId_dgv&srno=s_1_7&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENGN5ANGBNBECXX.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - generic [ref=e451]:
+                - generic [ref=e452]: ₹699
+                - generic [ref=e453]: ₹1,000
+                - generic [ref=e454]: 30% off
+            - generic [ref=e457]: Buy 2 items, save extra 5%
+          - generic [ref=e459]:
+            - link "FLAIR Ezee Click Jar Of Ball Pen" [ref=e460] [cursor=pointer]:
+              - /url: /flair-ezee-click-jar-ball-pen/p/itm14ea52652f988?pid=PENFRAZSVBTRABHN&lid=LSTPENFRAZSVBTRABHNA2DJYD&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_8&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENFRAZSVBTRABHN.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - img "FLAIR Ezee Click Jar Of Ball Pen" [ref=e464]
+              - img [ref=e467]
+            - link "FLAIR Ezee Click Jar Of Ball Pen" [ref=e469] [cursor=pointer]:
+              - /url: /flair-ezee-click-jar-ball-pen/p/itm14ea52652f988?pid=PENFRAZSVBTRABHN&lid=LSTPENFRAZSVBTRABHNA2DJYD&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_8&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENFRAZSVBTRABHN.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+            - generic [ref=e470]: Pack of 25, Ink Color - Blue
+            - generic [ref=e471]:
+              - generic [ref=e473]:
+                - text: "4.3"
+                - img [ref=e474]
+              - text: (27,014)
+            - img [ref=e476]
+            - link "₹170 ₹200 15% off" [ref=e477] [cursor=pointer]:
+              - /url: /flair-ezee-click-jar-ball-pen/p/itm14ea52652f988?pid=PENFRAZSVBTRABHN&lid=LSTPENFRAZSVBTRABHNA2DJYD&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_8&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENFRAZSVBTRABHN.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - generic [ref=e478]:
+                - generic [ref=e479]: ₹170
+                - generic [ref=e480]: ₹200
+                - generic [ref=e481]: 15% off
+            - generic [ref=e484]: Buy 2 items, save extra 5%
+        - generic [ref=e486]:
+          - generic [ref=e488]:
+            - link "Dwiti Enterprise Solid Body Type Fineliner Pen" [ref=e489] [cursor=pointer]:
+              - /url: /dwiti-enterprise-solid-body-type-fineliner-pen/p/itme3adb8951ec8d?pid=PENH9BFSVWAQMFPY&lid=LSTPENH9BFSVWAQMFPYFCWKJR&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_9&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENH9BFSVWAQMFPY.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - img "Dwiti Enterprise Solid Body Type Fineliner Pen" [ref=e493]
+              - img [ref=e496]
+            - link "Dwiti Enterprise Solid Body Type Fineliner Pen" [ref=e498] [cursor=pointer]:
+              - /url: /dwiti-enterprise-solid-body-type-fineliner-pen/p/itme3adb8951ec8d?pid=PENH9BFSVWAQMFPY&lid=LSTPENH9BFSVWAQMFPYFCWKJR&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_9&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENH9BFSVWAQMFPY.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+            - generic [ref=e499]: Pack of 12, Ink Color - Black
+            - generic [ref=e500]:
+              - generic [ref=e502]:
+                - text: "4.4"
+                - img [ref=e503]
+              - text: (1,610)
+            - img [ref=e505]
+            - link "₹298 ₹1,499 80% off" [ref=e506] [cursor=pointer]:
+              - /url: /dwiti-enterprise-solid-body-type-fineliner-pen/p/itme3adb8951ec8d?pid=PENH9BFSVWAQMFPY&lid=LSTPENH9BFSVWAQMFPYFCWKJR&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_9&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENH9BFSVWAQMFPY.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - generic [ref=e507]:
+                - generic [ref=e508]: ₹298
+                - generic [ref=e509]: ₹1,499
+                - generic [ref=e510]: 80% off
+          - generic [ref=e512]:
+            - link "PARKER BETA PREMIUM CT GOLD Roller Ball Pen" [ref=e513] [cursor=pointer]:
+              - /url: /parker-beta-premium-ct-gold-roller-ball-pen/p/itm7a3c3fd3b29f8?pid=PENF84P5MGSMBMNV&lid=LSTPENF84P5MGSMBMNVZVXO3K&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_10&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENF84P5MGSMBMNV.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - img "PARKER BETA PREMIUM CT GOLD Roller Ball Pen" [ref=e517]
+              - img [ref=e520]
+            - link "PARKER BETA PREMIUM CT GOLD Roller Ball Pen" [ref=e522] [cursor=pointer]:
+              - /url: /parker-beta-premium-ct-gold-roller-ball-pen/p/itm7a3c3fd3b29f8?pid=PENF84P5MGSMBMNV&lid=LSTPENF84P5MGSMBMNVZVXO3K&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_10&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENF84P5MGSMBMNV.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+            - generic [ref=e523]: Ink Color - Blue
+            - generic [ref=e524]:
+              - generic [ref=e526]:
+                - text: "4.2"
+                - img [ref=e527]
+              - text: (3,194)
+            - img [ref=e529]
+            - link "₹139 ₹240 42% off" [ref=e530] [cursor=pointer]:
+              - /url: /parker-beta-premium-ct-gold-roller-ball-pen/p/itm7a3c3fd3b29f8?pid=PENF84P5MGSMBMNV&lid=LSTPENF84P5MGSMBMNVZVXO3K&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_10&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENF84P5MGSMBMNV.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - generic [ref=e531]:
+                - generic [ref=e532]: ₹139
+                - generic [ref=e533]: ₹240
+                - generic [ref=e534]: 42% off
+            - generic [ref=e537]: Limited Stock Deal
+          - generic [ref=e539]:
+            - link "Aachoko Marker Set Painting Pens (Pack of 10 Pcs ) Marker Ink" [ref=e540] [cursor=pointer]:
+              - /url: /aachoko-marker-set-painting-pens-pack-10-pcs-ink/p/itm3bbe5a78eed99?pid=PENH8MU2ESZZ4YQH&lid=LSTPENH8MU2ESZZ4YQHS3C7U7&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_11&otracker=search&otracker1=search&fm=organic&iid=en_K__9zm0_ZHYGGOnQW5ctX_cS_S1GlmD6CY-UHiBpvbKQAy6lZqWSKcCVbOf9GczfGFhf0lfAw2AIDD0pXBtHQQ6P_c6uyC1FU3pw4BO3FHmZdgTmpTVmRi5hNdXN6D9U&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - img "Aachoko Marker Set Painting Pens (Pack of 10 Pcs ) Marker Ink" [ref=e544]
+              - img [ref=e547]
+            - img [ref=e550]
+            - link "Aachoko Marker Set Painting Pens (Pack of 10 Pcs ) Mark..." [ref=e553] [cursor=pointer]:
+              - /url: /aachoko-marker-set-painting-pens-pack-10-pcs-ink/p/itm3bbe5a78eed99?pid=PENH8MU2ESZZ4YQH&lid=LSTPENH8MU2ESZZ4YQHS3C7U7&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_11&otracker=search&otracker1=search&fm=organic&iid=en_K__9zm0_ZHYGGOnQW5ctX_cS_S1GlmD6CY-UHiBpvbKQAy6lZqWSKcCVbOf9GczfGFhf0lfAw2AIDD0pXBtHQQ6P_c6uyC1FU3pw4BO3FHmZdgTmpTVmRi5hNdXN6D9U&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+            - generic [ref=e554]: Ink Color - Multicolor
+            - generic [ref=e555]:
+              - generic [ref=e557]:
+                - text: "3.5"
+                - img [ref=e558]
+              - text: (4)
+            - link "₹154 ₹899 82% off" [ref=e559] [cursor=pointer]:
+              - /url: /aachoko-marker-set-painting-pens-pack-10-pcs-ink/p/itm3bbe5a78eed99?pid=PENH8MU2ESZZ4YQH&lid=LSTPENH8MU2ESZZ4YQHS3C7U7&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_11&otracker=search&otracker1=search&fm=organic&iid=en_K__9zm0_ZHYGGOnQW5ctX_cS_S1GlmD6CY-UHiBpvbKQAy6lZqWSKcCVbOf9GczfGFhf0lfAw2AIDD0pXBtHQQ6P_c6uyC1FU3pw4BO3FHmZdgTmpTVmRi5hNdXN6D9U&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - generic [ref=e560]:
+                - generic [ref=e561]: ₹154
+                - generic [ref=e562]: ₹899
+                - generic [ref=e563]: 82% off
+          - generic [ref=e565]:
+            - link "Classmate HOOK BALL PEN | WARRIOR SERIES | HOOK IT ANYWHERE| 10 PENS | INK - BLUE | Ball Pen" [ref=e566] [cursor=pointer]:
+              - /url: /classmate-hook-ball-pen-warrior-series-anywhere-10-pens-ink-blue/p/itma9485dae2cbaf?pid=PENHF89ZPF9SBAES&lid=LSTPENHF89ZPF9SBAES6T66O2&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_12&otracker=search&otracker1=search&fm=organic&iid=en_K__9zm0_ZHYGGOnQW5ctX_cS_S1GlmD6CY-UHiBpvbKw3DReIBYDlQ9pFlY_AEFDjWAKbh-FPLAYBkiFDk-M00CHtV9gG1kqzUeHx-o4z64L7bKlWYKPvG8Qt--56VNP&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - img "Classmate HOOK BALL PEN | WARRIOR SERIES | HOOK IT ANYWHERE| 10 PENS | INK - BLUE | Ball Pen" [ref=e570]
+              - img [ref=e573]
+            - img [ref=e576]
+            - link "Classmate HOOK BALL PEN | WARRIOR SERIES | HOOK IT ANYW..." [ref=e579] [cursor=pointer]:
+              - /url: /classmate-hook-ball-pen-warrior-series-anywhere-10-pens-ink-blue/p/itma9485dae2cbaf?pid=PENHF89ZPF9SBAES&lid=LSTPENHF89ZPF9SBAES6T66O2&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_12&otracker=search&otracker1=search&fm=organic&iid=en_K__9zm0_ZHYGGOnQW5ctX_cS_S1GlmD6CY-UHiBpvbKw3DReIBYDlQ9pFlY_AEFDjWAKbh-FPLAYBkiFDk-M00CHtV9gG1kqzUeHx-o4z64L7bKlWYKPvG8Qt--56VNP&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+            - generic [ref=e580]: Pack of 10, Ink Color - Blue
+            - generic [ref=e581]:
+              - generic [ref=e583]:
+                - text: "4.3"
+                - img [ref=e584]
+              - text: (150)
+            - link "₹94 ₹100 6% off" [ref=e585] [cursor=pointer]:
+              - /url: /classmate-hook-ball-pen-warrior-series-anywhere-10-pens-ink-blue/p/itma9485dae2cbaf?pid=PENHF89ZPF9SBAES&lid=LSTPENHF89ZPF9SBAES6T66O2&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_12&otracker=search&otracker1=search&fm=organic&iid=en_K__9zm0_ZHYGGOnQW5ctX_cS_S1GlmD6CY-UHiBpvbKw3DReIBYDlQ9pFlY_AEFDjWAKbh-FPLAYBkiFDk-M00CHtV9gG1kqzUeHx-o4z64L7bKlWYKPvG8Qt--56VNP&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - generic [ref=e586]:
+                - generic [ref=e587]: ₹94
+                - generic [ref=e588]: ₹100
+                - generic [ref=e589]: 6% off
+        - generic [ref=e591]:
+          - generic [ref=e593]:
+            - link "Luxor Schneider LX MAX | Needle Tip | 0.5 mm | 1000+ Meters Writing Length | German Technology Roller Ball Pen" [ref=e594] [cursor=pointer]:
+              - /url: /luxor-schneider-lx-max-needle-tip-0-5-mm-1000-meters-writing-length-german-technology-roller-ball-pen/p/itmbd236e891e5eb?pid=PENGS44YGNJC5QQN&lid=LSTPENGS44YGNJC5QQN6DA8Y7&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_13&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENGS44YGNJC5QQN.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - img "Luxor Schneider LX MAX | Needle Tip | 0.5 mm | 1000+ Meters Writing Length | German Technology Roller Ball Pen" [ref=e598]
+              - img [ref=e601]
+            - link "Luxor Schneider LX MAX | Needle Tip | 0.5 mm | 1000+ Me..." [ref=e603] [cursor=pointer]:
+              - /url: /luxor-schneider-lx-max-needle-tip-0-5-mm-1000-meters-writing-length-german-technology-roller-ball-pen/p/itmbd236e891e5eb?pid=PENGS44YGNJC5QQN&lid=LSTPENGS44YGNJC5QQN6DA8Y7&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_13&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENGS44YGNJC5QQN.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+            - generic [ref=e604]: Pack of 4, Ink Color - Multicolor
+            - generic [ref=e605]:
+              - generic [ref=e607]:
+                - text: "4.4"
+                - img [ref=e608]
+              - text: (1,183)
+            - img [ref=e610]
+            - link "₹192 ₹240 20% off" [ref=e611] [cursor=pointer]:
+              - /url: /luxor-schneider-lx-max-needle-tip-0-5-mm-1000-meters-writing-length-german-technology-roller-ball-pen/p/itmbd236e891e5eb?pid=PENGS44YGNJC5QQN&lid=LSTPENGS44YGNJC5QQN6DA8Y7&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_13&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENGS44YGNJC5QQN.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - generic [ref=e612]:
+                - generic [ref=e613]: ₹192
+                - generic [ref=e614]: ₹240
+                - generic [ref=e615]: 20% off
+            - generic [ref=e618]: Hot Deal
+          - generic [ref=e620]:
+            - link "Reynolds Aeroslim Ball Pen" [ref=e621] [cursor=pointer]:
+              - /url: /reynolds-aeroslim-ball-pen/p/itm132244842b5bc?pid=PENHF4MBZBFX37BF&lid=LSTPENHF4MBZBFX37BFNYG6NQ&marketplace=FLIPKART&q=pen&store=dgv&spotlightTagId=default_BestsellerId_dgv&srno=s_1_14&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENHF4MBZBFX37BF.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - img "Reynolds Aeroslim Ball Pen" [ref=e625]
+              - img [ref=e628]
+            - link "Reynolds Aeroslim Ball Pen" [ref=e630] [cursor=pointer]:
+              - /url: /reynolds-aeroslim-ball-pen/p/itm132244842b5bc?pid=PENHF4MBZBFX37BF&lid=LSTPENHF4MBZBFX37BFNYG6NQ&marketplace=FLIPKART&q=pen&store=dgv&spotlightTagId=default_BestsellerId_dgv&srno=s_1_14&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENHF4MBZBFX37BF.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+            - generic [ref=e631]: Pack of 70, Ink Color - Blue, Black, Red
+            - generic [ref=e632]:
+              - generic [ref=e634]:
+                - text: "4.1"
+                - img [ref=e635]
+              - text: (51,766)
+            - img [ref=e637]
+            - link "₹189 ₹420 55% off" [ref=e638] [cursor=pointer]:
+              - /url: /reynolds-aeroslim-ball-pen/p/itm132244842b5bc?pid=PENHF4MBZBFX37BF&lid=LSTPENHF4MBZBFX37BFNYG6NQ&marketplace=FLIPKART&q=pen&store=dgv&spotlightTagId=default_BestsellerId_dgv&srno=s_1_14&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENHF4MBZBFX37BF.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - generic [ref=e639]:
+                - generic [ref=e640]: ₹189
+                - generic [ref=e641]: ₹420
+                - generic [ref=e642]: 55% off
+            - generic [ref=e645]: Limited Stock Deal
+          - generic [ref=e647]:
+            - link "teens Ambition Ball Pen" [ref=e648] [cursor=pointer]:
+              - /url: /teens-ambition-ball-pen/p/itmef249cc90185e?pid=PENHHSE7HVVJTDNM&lid=LSTPENHHSE7HVVJTDNMSDHDBB&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_15&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENHHSE7HVVJTDNM.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - img "teens Ambition Ball Pen" [ref=e652]
+              - img [ref=e655]
+            - link "teens Ambition Ball Pen" [ref=e657] [cursor=pointer]:
+              - /url: /teens-ambition-ball-pen/p/itmef249cc90185e?pid=PENHHSE7HVVJTDNM&lid=LSTPENHHSE7HVVJTDNMSDHDBB&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_15&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENHHSE7HVVJTDNM.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+            - generic [ref=e658]: Pack of 40, Ink Color - Blue, Black
+            - generic [ref=e659]:
+              - generic [ref=e661]:
+                - text: "4.2"
+                - img [ref=e662]
+              - text: (618)
+            - img [ref=e664]
+            - link "₹191 ₹300 36% off" [ref=e665] [cursor=pointer]:
+              - /url: /teens-ambition-ball-pen/p/itmef249cc90185e?pid=PENHHSE7HVVJTDNM&lid=LSTPENHHSE7HVVJTDNMSDHDBB&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_15&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENHHSE7HVVJTDNM.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - generic [ref=e666]:
+                - generic [ref=e667]: ₹191
+                - generic [ref=e668]: ₹300
+                - generic [ref=e669]: 36% off
+          - generic [ref=e671]:
+            - link "TWINZEN Non-Slip Coated Spinning Pen Mod with Weighted for Gaming Student Gel Pen" [ref=e672] [cursor=pointer]:
+              - /url: /twinzen-non-slip-coated-spinning-pen-mod-weighted-gaming-student-gel/p/itm4010f9e42ac9c?pid=PENGTYFZ9BFXMZUT&lid=LSTPENGTYFZ9BFXMZUTSP9I32&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_16&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENGTYFZ9BFXMZUT.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - img "TWINZEN Non-Slip Coated Spinning Pen Mod with Weighted for Gaming Student Gel Pen" [ref=e676]
+              - img [ref=e679]
+            - link "TWINZEN Non-Slip Coated Spinning Pen Mod with Weighted ..." [ref=e681] [cursor=pointer]:
+              - /url: /twinzen-non-slip-coated-spinning-pen-mod-weighted-gaming-student-gel/p/itm4010f9e42ac9c?pid=PENGTYFZ9BFXMZUT&lid=LSTPENGTYFZ9BFXMZUTSP9I32&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_16&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENGTYFZ9BFXMZUT.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+            - generic [ref=e682]: Pack of 4, Ink Color - Black
+            - generic [ref=e683]:
+              - generic [ref=e685]:
+                - text: "3.9"
+                - img [ref=e686]
+              - text: (203)
+            - link "₹154 ₹537 71% off" [ref=e687] [cursor=pointer]:
+              - /url: /twinzen-non-slip-coated-spinning-pen-mod-weighted-gaming-student-gel/p/itm4010f9e42ac9c?pid=PENGTYFZ9BFXMZUT&lid=LSTPENGTYFZ9BFXMZUTSP9I32&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_16&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENGTYFZ9BFXMZUT.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - generic [ref=e688]:
+                - generic [ref=e689]: ₹154
+                - generic [ref=e690]: ₹537
+                - generic [ref=e691]: 71% off
+            - generic [ref=e694]: Only few left
+        - generic [ref=e696]:
+          - generic [ref=e698]:
+            - link "Classmate Octane Gel Pen" [ref=e699] [cursor=pointer]:
+              - /url: /classmate-octane-gel-pen/p/itm7e458f82001ed?pid=PENFRQ5FDBVFFGQW&lid=LSTPENFRQ5FDBVFFGQWM8KEM4&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_17&otracker=search&otracker1=search&fm=organic&iid=en_K__9zm0_ZHYGGOnQW5ctX_cS_S1GlmD6CY-UHiBpvbJx5dAOfiw-ZrogQ4wwBp-0zIFrYkjvJvTmhttrY1_VnpgDgwkqetCFTXoImDR-YcQL7bKlWYKPvG8Qt--56VNP&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - img "Classmate Octane Gel Pen" [ref=e703]
+              - img [ref=e706]
+            - img [ref=e709]
+            - link "Classmate Octane Gel Pen" [ref=e712] [cursor=pointer]:
+              - /url: /classmate-octane-gel-pen/p/itm7e458f82001ed?pid=PENFRQ5FDBVFFGQW&lid=LSTPENFRQ5FDBVFFGQWM8KEM4&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_17&otracker=search&otracker1=search&fm=organic&iid=en_K__9zm0_ZHYGGOnQW5ctX_cS_S1GlmD6CY-UHiBpvbJx5dAOfiw-ZrogQ4wwBp-0zIFrYkjvJvTmhttrY1_VnpgDgwkqetCFTXoImDR-YcQL7bKlWYKPvG8Qt--56VNP&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+            - generic [ref=e713]: Pack of 10, Ink Color - Blue
+            - generic [ref=e714]:
+              - generic [ref=e716]:
+                - text: "4.4"
+                - img [ref=e717]
+              - text: (21,631)
+            - link "₹88 ₹126 30% off" [ref=e718] [cursor=pointer]:
+              - /url: /classmate-octane-gel-pen/p/itm7e458f82001ed?pid=PENFRQ5FDBVFFGQW&lid=LSTPENFRQ5FDBVFFGQWM8KEM4&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_17&otracker=search&otracker1=search&fm=organic&iid=en_K__9zm0_ZHYGGOnQW5ctX_cS_S1GlmD6CY-UHiBpvbJx5dAOfiw-ZrogQ4wwBp-0zIFrYkjvJvTmhttrY1_VnpgDgwkqetCFTXoImDR-YcQL7bKlWYKPvG8Qt--56VNP&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - generic [ref=e719]:
+                - generic [ref=e720]: ₹88
+                - generic [ref=e721]: ₹126
+                - generic [ref=e722]: 30% off
+          - generic [ref=e724]:
+            - link "PIERRE CARDIN Regal Set Ball Pen" [ref=e725] [cursor=pointer]:
+              - /url: /pierre-cardin-regal-set-ball-pen/p/itmab53865fc32e1?pid=PENGRNJPT8HGZJFE&lid=LSTPENGRNJPT8HGZJFEWUKX5V&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_18&otracker=search&otracker1=search&fm=organic&iid=en_K__9zm0_ZHYGGOnQW5ctX_cS_S1GlmD6CY-UHiBpvbKDLJmYs85lW74DbzqdetFrYCSSPlK2dWXKOTEpwZUcxAlIgp98tO_qpq-rwfJ6TNYL7bKlWYKPvG8Qt--56VNP&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - img "PIERRE CARDIN Regal Set Ball Pen" [ref=e729]
+              - img [ref=e732]
+            - img [ref=e735]
+            - link "PIERRE CARDIN Regal Set Ball Pen" [ref=e738] [cursor=pointer]:
+              - /url: /pierre-cardin-regal-set-ball-pen/p/itmab53865fc32e1?pid=PENGRNJPT8HGZJFE&lid=LSTPENGRNJPT8HGZJFEWUKX5V&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_18&otracker=search&otracker1=search&fm=organic&iid=en_K__9zm0_ZHYGGOnQW5ctX_cS_S1GlmD6CY-UHiBpvbKDLJmYs85lW74DbzqdetFrYCSSPlK2dWXKOTEpwZUcxAlIgp98tO_qpq-rwfJ6TNYL7bKlWYKPvG8Qt--56VNP&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+            - generic [ref=e739]: Pack of 2, Ink Color - Blue
+            - generic [ref=e740]:
+              - generic [ref=e742]:
+                - text: "4.1"
+                - img [ref=e743]
+              - text: (241)
+            - link "₹360 ₹400 10% off" [ref=e744] [cursor=pointer]:
+              - /url: /pierre-cardin-regal-set-ball-pen/p/itmab53865fc32e1?pid=PENGRNJPT8HGZJFE&lid=LSTPENGRNJPT8HGZJFEWUKX5V&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_18&otracker=search&otracker1=search&fm=organic&iid=en_K__9zm0_ZHYGGOnQW5ctX_cS_S1GlmD6CY-UHiBpvbKDLJmYs85lW74DbzqdetFrYCSSPlK2dWXKOTEpwZUcxAlIgp98tO_qpq-rwfJ6TNYL7bKlWYKPvG8Qt--56VNP&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - generic [ref=e745]:
+                - generic [ref=e746]: ₹360
+                - generic [ref=e747]: ₹400
+                - generic [ref=e748]: 10% off
+          - generic [ref=e750]:
+            - link "DOMS KIKA R8 | Pack Of 25 | (Jar or 5s Pack)| Pack May differ Basis availability | Ball Pen" [ref=e751] [cursor=pointer]:
+              - /url: /doms-kika-r8-pack-25-jar-5s-pack-may-differ-basis-availability-ball-pen/p/itm82e3c3dea829a?pid=PENHBH3CTUVHXKCE&lid=LSTPENHBH3CTUVHXKCEZHIDKH&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_19&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENHBH3CTUVHXKCE.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - img "DOMS KIKA R8 | Pack Of 25 | (Jar or 5s Pack)| Pack May differ Basis availability | Ball Pen" [ref=e755]
+              - img [ref=e758]
+            - link "DOMS KIKA R8 | Pack Of 25 | (Jar or 5s Pack)| Pack May ..." [ref=e760] [cursor=pointer]:
+              - /url: /doms-kika-r8-pack-25-jar-5s-pack-may-differ-basis-availability-ball-pen/p/itm82e3c3dea829a?pid=PENHBH3CTUVHXKCE&lid=LSTPENHBH3CTUVHXKCEZHIDKH&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_19&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENHBH3CTUVHXKCE.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+            - generic [ref=e761]: Pack of 25, Ink Color - Blue
+            - generic [ref=e762]:
+              - generic [ref=e764]:
+                - text: "4.2"
+                - img [ref=e765]
+              - text: (1,415)
+            - link "₹121 ₹125 3% off" [ref=e766] [cursor=pointer]:
+              - /url: /doms-kika-r8-pack-25-jar-5s-pack-may-differ-basis-availability-ball-pen/p/itm82e3c3dea829a?pid=PENHBH3CTUVHXKCE&lid=LSTPENHBH3CTUVHXKCEZHIDKH&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_19&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENHBH3CTUVHXKCE.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - generic [ref=e767]:
+                - generic [ref=e768]: ₹121
+                - generic [ref=e769]: ₹125
+                - generic [ref=e770]: 3% off
+            - generic [ref=e773]: Only few left
+          - generic [ref=e775]:
+            - link "SERPLEX NA Gel Pen" [ref=e776] [cursor=pointer]:
+              - /url: /serplex-na-gel-pen/p/itm5d2f78aeaeea2?pid=PENHCATYA7DARTZB&lid=LSTPENHCATYA7DARTZBYF4Q6D&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_20&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENHCATYA7DARTZB.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - img "SERPLEX NA Gel Pen" [ref=e780]
+              - img [ref=e783]
+            - link "SERPLEX NA Gel Pen" [ref=e785] [cursor=pointer]:
+              - /url: /serplex-na-gel-pen/p/itm5d2f78aeaeea2?pid=PENHCATYA7DARTZB&lid=LSTPENHCATYA7DARTZBYF4Q6D&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_20&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENHCATYA7DARTZB.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+            - generic [ref=e786]: Pack of 6, Ink Color - Blue
+            - generic [ref=e787]:
+              - generic [ref=e789]:
+                - text: "4.4"
+                - img [ref=e790]
+              - text: (74)
+            - img [ref=e792]
+            - link "₹157 ₹449 65% off" [ref=e793] [cursor=pointer]:
+              - /url: /serplex-na-gel-pen/p/itm5d2f78aeaeea2?pid=PENHCATYA7DARTZB&lid=LSTPENHCATYA7DARTZBYF4Q6D&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_20&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENHCATYA7DARTZB.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - generic [ref=e794]:
+                - generic [ref=e795]: ₹157
+                - generic [ref=e796]: ₹449
+                - generic [ref=e797]: 65% off
+        - generic [ref=e799]:
+          - generic [ref=e801]:
+            - link "Classmate Fountain Ink Pen - Octane Gel Pen" [ref=e802] [cursor=pointer]:
+              - /url: /classmate-fountain-ink-pen-octane-gel/p/itm54dd2894b0008?pid=PENGYPQZEYWAXJUV&lid=LSTPENGYPQZEYWAXJUVCA7GZS&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_21&otracker=search&otracker1=search&fm=organic&iid=en_K__9zm0_ZHYGGOnQW5ctX_cS_S1GlmD6CY-UHiBpvbKF6pwk_727oGxoZVtNo9O-0E_i3DtAXZB8263GyYaDrtRfvgOQNpu3Zz0-uHC7NMcL7bKlWYKPvG8Qt--56VNP&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - img "Classmate Fountain Ink Pen - Octane Gel Pen" [ref=e806]
+              - img [ref=e809]
+            - img [ref=e812]
+            - link "Classmate Fountain Ink Pen - Octane Gel Pen" [ref=e815] [cursor=pointer]:
+              - /url: /classmate-fountain-ink-pen-octane-gel/p/itm54dd2894b0008?pid=PENGYPQZEYWAXJUV&lid=LSTPENGYPQZEYWAXJUVCA7GZS&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_21&otracker=search&otracker1=search&fm=organic&iid=en_K__9zm0_ZHYGGOnQW5ctX_cS_S1GlmD6CY-UHiBpvbKF6pwk_727oGxoZVtNo9O-0E_i3DtAXZB8263GyYaDrtRfvgOQNpu3Zz0-uHC7NMcL7bKlWYKPvG8Qt--56VNP&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+            - generic [ref=e816]: Pack of 2, Ink Color - Blue
+            - generic [ref=e817]:
+              - generic [ref=e819]:
+                - text: "4"
+                - img [ref=e820]
+              - text: (616)
+            - img [ref=e822]
+            - link "₹135 ₹200 32% off" [ref=e823] [cursor=pointer]:
+              - /url: /classmate-fountain-ink-pen-octane-gel/p/itm54dd2894b0008?pid=PENGYPQZEYWAXJUV&lid=LSTPENGYPQZEYWAXJUVCA7GZS&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_21&otracker=search&otracker1=search&fm=organic&iid=en_K__9zm0_ZHYGGOnQW5ctX_cS_S1GlmD6CY-UHiBpvbKF6pwk_727oGxoZVtNo9O-0E_i3DtAXZB8263GyYaDrtRfvgOQNpu3Zz0-uHC7NMcL7bKlWYKPvG8Qt--56VNP&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - generic [ref=e824]:
+                - generic [ref=e825]: ₹135
+                - generic [ref=e826]: ₹200
+                - generic [ref=e827]: 32% off
+          - generic [ref=e829]:
+            - link "Classmate Octane colourburst Gel Pen" [ref=e830] [cursor=pointer]:
+              - /url: /classmate-octane-colourburst-gel-pen/p/itm808e529a5a616?pid=PENFV8ED9RYBXKEU&lid=LSTPENFV8ED9RYBXKEUVUXG9L&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_22&otracker=search&otracker1=search&fm=organic&iid=en_K__9zm0_ZHYGGOnQW5ctX_cS_S1GlmD6CY-UHiBpvbKB0lh_ZAI98YS8hQB7StAZZR62kBm9vtVm9KMnI-lvjatG0k4tEC6Jqh98ZaH2VlUL7bKlWYKPvG8Qt--56VNP&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - img "Classmate Octane colourburst Gel Pen" [ref=e834]
+              - img [ref=e837]
+            - img [ref=e840]
+            - link "Classmate Octane colourburst Gel Pen" [ref=e843] [cursor=pointer]:
+              - /url: /classmate-octane-colourburst-gel-pen/p/itm808e529a5a616?pid=PENFV8ED9RYBXKEU&lid=LSTPENFV8ED9RYBXKEUVUXG9L&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_22&otracker=search&otracker1=search&fm=organic&iid=en_K__9zm0_ZHYGGOnQW5ctX_cS_S1GlmD6CY-UHiBpvbKB0lh_ZAI98YS8hQB7StAZZR62kBm9vtVm9KMnI-lvjatG0k4tEC6Jqh98ZaH2VlUL7bKlWYKPvG8Qt--56VNP&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+            - generic [ref=e844]: Pack of 20, Ink Color - Multicolor
+            - generic [ref=e845]:
+              - generic [ref=e847]:
+                - text: "4.5"
+                - img [ref=e848]
+              - text: (3,505)
+            - link "₹145 ₹250 42% off" [ref=e849] [cursor=pointer]:
+              - /url: /classmate-octane-colourburst-gel-pen/p/itm808e529a5a616?pid=PENFV8ED9RYBXKEU&lid=LSTPENFV8ED9RYBXKEUVUXG9L&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_22&otracker=search&otracker1=search&fm=organic&iid=en_K__9zm0_ZHYGGOnQW5ctX_cS_S1GlmD6CY-UHiBpvbKB0lh_ZAI98YS8hQB7StAZZR62kBm9vtVm9KMnI-lvjatG0k4tEC6Jqh98ZaH2VlUL7bKlWYKPvG8Qt--56VNP&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - generic [ref=e850]:
+                - generic [ref=e851]: ₹145
+                - generic [ref=e852]: ₹250
+                - generic [ref=e853]: 42% off
+          - generic [ref=e855]:
+            - link "Reynolds Jiffy Gel Pen" [ref=e856] [cursor=pointer]:
+              - /url: /reynolds-jiffy-gel-pen/p/itmbcf5dd9489160?pid=PENGCF6JAGXYHYUK&lid=LSTPENGCF6JAGXYHYUKEAMOMD&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_23&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENGCF6JAGXYHYUK.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - img "Reynolds Jiffy Gel Pen" [ref=e860]
+              - img [ref=e863]
+            - link "Reynolds Jiffy Gel Pen" [ref=e865] [cursor=pointer]:
+              - /url: /reynolds-jiffy-gel-pen/p/itmbcf5dd9489160?pid=PENGCF6JAGXYHYUK&lid=LSTPENGCF6JAGXYHYUKEAMOMD&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_23&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENGCF6JAGXYHYUK.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+            - generic [ref=e866]: Pack of 50, Ink Color - Blue
+            - generic [ref=e867]:
+              - generic [ref=e869]:
+                - text: "4.2"
+                - img [ref=e870]
+              - text: (6,118)
+            - img [ref=e872]
+            - link "₹210 ₹350 40% off" [ref=e873] [cursor=pointer]:
+              - /url: /reynolds-jiffy-gel-pen/p/itmbcf5dd9489160?pid=PENGCF6JAGXYHYUK&lid=LSTPENGCF6JAGXYHYUKEAMOMD&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_23&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENGCF6JAGXYHYUK.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - generic [ref=e874]:
+                - generic [ref=e875]: ₹210
+                - generic [ref=e876]: ₹350
+                - generic [ref=e877]: 40% off
+            - generic [ref=e880]: Hot Deal
+          - generic [ref=e882]:
+            - link "HAUSER XO 0.6 mm Ball Pen Tumbler | Sleek Body & Minimalistic Design | Smooth Writing Ball Pen" [ref=e883] [cursor=pointer]:
+              - /url: /hauser-xo-0-6-mm-ball-pen-tumbler-sleek-body-minimalistic-design-smooth-writing/p/itm74466ebf0d130?pid=PENGGHYSWFTHEWPY&lid=LSTPENGGHYSWFTHEWPYXA32CS&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_24&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENGGHYSWFTHEWPY.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - img "HAUSER XO 0.6 mm Ball Pen Tumbler | Sleek Body & Minimalistic Design | Smooth Writing Ball Pen" [ref=e887]
+              - img [ref=e890]
+            - link "HAUSER XO 0.6 mm Ball Pen Tumbler | Sleek Body & Minima..." [ref=e892] [cursor=pointer]:
+              - /url: /hauser-xo-0-6-mm-ball-pen-tumbler-sleek-body-minimalistic-design-smooth-writing/p/itm74466ebf0d130?pid=PENGGHYSWFTHEWPY&lid=LSTPENGGHYSWFTHEWPYXA32CS&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_24&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENGGHYSWFTHEWPY.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+            - generic [ref=e893]: Pack of 100, Ink Color - Blue
+            - generic [ref=e894]:
+              - generic [ref=e896]:
+                - text: "4.5"
+                - img [ref=e897]
+              - text: (647)
+            - link "₹1,000" [ref=e898] [cursor=pointer]:
+              - /url: /hauser-xo-0-6-mm-ball-pen-tumbler-sleek-body-minimalistic-design-smooth-writing/p/itm74466ebf0d130?pid=PENGGHYSWFTHEWPY&lid=LSTPENGGHYSWFTHEWPYXA32CS&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_24&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENGGHYSWFTHEWPY.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - generic [ref=e900]: ₹1,000
+            - generic [ref=e903]: Only 1 left
+        - generic [ref=e905]:
+          - generic [ref=e907]:
+            - link "HAUSER XO Gel Pen" [ref=e908] [cursor=pointer]:
+              - /url: /hauser-xo-gel-pen/p/itm598253a128ea4?pid=PENHFYSYHXWXRVCM&lid=LSTPENHFYSYHXWXRVCM9ENCDS&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_25&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENHFYSYHXWXRVCM.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - img "HAUSER XO Gel Pen" [ref=e912]
+              - img [ref=e915]
+            - link "HAUSER XO Gel Pen" [ref=e917] [cursor=pointer]:
+              - /url: /hauser-xo-gel-pen/p/itm598253a128ea4?pid=PENHFYSYHXWXRVCM&lid=LSTPENHFYSYHXWXRVCM9ENCDS&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_25&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENHFYSYHXWXRVCM.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+            - generic [ref=e918]: Pack of 25, Ink Color - Blue
+            - generic [ref=e919]:
+              - generic [ref=e921]:
+                - text: "4.1"
+                - img [ref=e922]
+              - text: (119)
+            - img [ref=e924]
+            - link "₹221 ₹275 19% off" [ref=e925] [cursor=pointer]:
+              - /url: /hauser-xo-gel-pen/p/itm598253a128ea4?pid=PENHFYSYHXWXRVCM&lid=LSTPENHFYSYHXWXRVCM9ENCDS&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_25&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENHFYSYHXWXRVCM.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - generic [ref=e926]:
+                - generic [ref=e927]: ₹221
+                - generic [ref=e928]: ₹275
+                - generic [ref=e929]: 19% off
+            - generic [ref=e932]: Hot Deal
+          - generic [ref=e934]:
+            - link "HAUSER Xo Ball Pen Box Pack | Tip Size 0.6 Mm | Sleek Body Ball Pen" [ref=e935] [cursor=pointer]:
+              - /url: /hauser-xo-ball-pen-box-pack-tip-size-0-6-mm-sleek-body/p/itm5e01ce50ec4a6?pid=PENGXFY6NPUMJR9D&lid=LSTPENGXFY6NPUMJR9DQECNVK&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_26&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENGXFY6NPUMJR9D.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - img "HAUSER Xo Ball Pen Box Pack | Tip Size 0.6 Mm | Sleek Body Ball Pen" [ref=e939]
+              - img [ref=e942]
+            - link "HAUSER Xo Ball Pen Box Pack | Tip Size 0.6 Mm | Sleek B..." [ref=e944] [cursor=pointer]:
+              - /url: /hauser-xo-ball-pen-box-pack-tip-size-0-6-mm-sleek-body/p/itm5e01ce50ec4a6?pid=PENGXFY6NPUMJR9D&lid=LSTPENGXFY6NPUMJR9DQECNVK&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_26&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENGXFY6NPUMJR9D.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+            - generic [ref=e945]: Pack of 50, Ink Color - Blue
+            - generic [ref=e946]:
+              - generic [ref=e948]:
+                - text: "4.5"
+                - img [ref=e949]
+              - text: (1,05,956)
+            - link "₹276 ₹500 44% off" [ref=e950] [cursor=pointer]:
+              - /url: /hauser-xo-ball-pen-box-pack-tip-size-0-6-mm-sleek-body/p/itm5e01ce50ec4a6?pid=PENGXFY6NPUMJR9D&lid=LSTPENGXFY6NPUMJR9DQECNVK&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_26&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENGXFY6NPUMJR9D.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - generic [ref=e951]:
+                - generic [ref=e952]: ₹276
+                - generic [ref=e953]: ₹500
+                - generic [ref=e954]: 44% off
+            - generic [ref=e957]: Hot Deal
+          - generic [ref=e959]:
+            - link "Stabilo Flow Trendy & Colourful Ball Pen | Black Body | 0.5mm Tip Ball Pen" [ref=e960] [cursor=pointer]:
+              - /url: /stabilo-flow-trendy-colourful-ball-pen-black-body-0-5mm-tip/p/itm9242383802582?pid=PENH8G8BHZJFN9UZ&lid=LSTPENH8G8BHZJFN9UZNIMYHT&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_27&otracker=search&otracker1=search&fm=organic&iid=en_K__9zm0_ZHYGGOnQW5ctX_cS_S1GlmD6CY-UHiBpvbL3ffKKSndRAXy8-7ClIWNL7v3GLIai1aET5jqod_ZDECU17Vi0p78SH9e5GxYNWbs9CXom2lLOe_F-3Jmv80Jc&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - img "Stabilo Flow Trendy & Colourful Ball Pen | Black Body | 0.5mm Tip Ball Pen" [ref=e964]
+              - img [ref=e967]
+            - img [ref=e970]
+            - link "Stabilo Flow Trendy & Colourful Ball Pen | Black Body |..." [ref=e973] [cursor=pointer]:
+              - /url: /stabilo-flow-trendy-colourful-ball-pen-black-body-0-5mm-tip/p/itm9242383802582?pid=PENH8G8BHZJFN9UZ&lid=LSTPENH8G8BHZJFN9UZNIMYHT&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_27&otracker=search&otracker1=search&fm=organic&iid=en_K__9zm0_ZHYGGOnQW5ctX_cS_S1GlmD6CY-UHiBpvbL3ffKKSndRAXy8-7ClIWNL7v3GLIai1aET5jqod_ZDECU17Vi0p78SH9e5GxYNWbs9CXom2lLOe_F-3Jmv80Jc&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+            - generic [ref=e974]: Ink Color - Blue
+            - link "₹1,253 ₹1,255" [ref=e975] [cursor=pointer]:
+              - /url: /stabilo-flow-trendy-colourful-ball-pen-black-body-0-5mm-tip/p/itm9242383802582?pid=PENH8G8BHZJFN9UZ&lid=LSTPENH8G8BHZJFN9UZNIMYHT&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_27&otracker=search&otracker1=search&fm=organic&iid=en_K__9zm0_ZHYGGOnQW5ctX_cS_S1GlmD6CY-UHiBpvbL3ffKKSndRAXy8-7ClIWNL7v3GLIai1aET5jqod_ZDECU17Vi0p78SH9e5GxYNWbs9CXom2lLOe_F-3Jmv80Jc&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - generic [ref=e976]:
+                - generic [ref=e977]: ₹1,253
+                - generic [ref=e978]: ₹1,255
+          - generic [ref=e980]:
+            - link "vipul2004 2 Roller Pen Roller Ball Pen" [ref=e981] [cursor=pointer]:
+              - /url: /vipul2004-2-roller-pen-ball/p/itmdeab9354bcb19?pid=PENHP4WF86HJ2ZHN&lid=LSTPENHP4WF86HJ2ZHNGM9NZU&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_28&otracker=search&otracker1=search&fm=organic&iid=en_K__9zm0_ZHYGGOnQW5ctX_cS_S1GlmD6CY-UHiBpvbIx3eIlodONjykziIzlXux88Dng1mcT0DHyR6-tdtqKW6d2GLjAzwXn1R33k6lahg5hPKr3YyeThIe5KssS7Q9m&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - img "vipul2004 2 Roller Pen Roller Ball Pen" [ref=e985]
+              - img [ref=e988]
+            - img [ref=e991]
+            - link "vipul2004 2 Roller Pen Roller Ball Pen" [ref=e994] [cursor=pointer]:
+              - /url: /vipul2004-2-roller-pen-ball/p/itmdeab9354bcb19?pid=PENHP4WF86HJ2ZHN&lid=LSTPENHP4WF86HJ2ZHNGM9NZU&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_28&otracker=search&otracker1=search&fm=organic&iid=en_K__9zm0_ZHYGGOnQW5ctX_cS_S1GlmD6CY-UHiBpvbIx3eIlodONjykziIzlXux88Dng1mcT0DHyR6-tdtqKW6d2GLjAzwXn1R33k6lahg5hPKr3YyeThIe5KssS7Q9m&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+            - generic [ref=e995]: Pack of 2, Ink Color - Blue
+            - link "₹333 ₹999 66% off" [ref=e996] [cursor=pointer]:
+              - /url: /vipul2004-2-roller-pen-ball/p/itmdeab9354bcb19?pid=PENHP4WF86HJ2ZHN&lid=LSTPENHP4WF86HJ2ZHNGM9NZU&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_28&otracker=search&otracker1=search&fm=organic&iid=en_K__9zm0_ZHYGGOnQW5ctX_cS_S1GlmD6CY-UHiBpvbIx3eIlodONjykziIzlXux88Dng1mcT0DHyR6-tdtqKW6d2GLjAzwXn1R33k6lahg5hPKr3YyeThIe5KssS7Q9m&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - generic [ref=e997]:
+                - generic [ref=e998]: ₹333
+                - generic [ref=e999]: ₹999
+                - generic [ref=e1000]: 66% off
+        - generic [ref=e1002]:
+          - generic [ref=e1004]:
+            - link "FLAIR FIGHTER BALL PEN Ball Pen" [ref=e1005] [cursor=pointer]:
+              - /url: /flair-fighter-ball-pen/p/itmdc0a3a97f416e?pid=PENHZF44EHCEXASJ&lid=LSTPENHZF44EHCEXASJNSGRPU&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_29&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENHZF44EHCEXASJ.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - img "FLAIR FIGHTER BALL PEN Ball Pen" [ref=e1009]
+              - img [ref=e1012]
+            - link "FLAIR FIGHTER BALL PEN Ball Pen" [ref=e1014] [cursor=pointer]:
+              - /url: /flair-fighter-ball-pen/p/itmdc0a3a97f416e?pid=PENHZF44EHCEXASJ&lid=LSTPENHZF44EHCEXASJNSGRPU&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_29&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENHZF44EHCEXASJ.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+            - generic [ref=e1015]: Pack of 10, Ink Color - Blue
+            - generic [ref=e1016]:
+              - generic [ref=e1018]:
+                - text: "4.3"
+                - img [ref=e1019]
+              - text: (129)
+            - img [ref=e1021]
+            - link "₹120 ₹155 22% off" [ref=e1022] [cursor=pointer]:
+              - /url: /flair-fighter-ball-pen/p/itmdc0a3a97f416e?pid=PENHZF44EHCEXASJ&lid=LSTPENHZF44EHCEXASJNSGRPU&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_29&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENHZF44EHCEXASJ.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - generic [ref=e1023]:
+                - generic [ref=e1024]: ₹120
+                - generic [ref=e1025]: ₹155
+                - generic [ref=e1026]: 22% off
+            - generic [ref=e1029]: Only few left
+          - generic [ref=e1031]:
+            - link "HAUSER XO Ball Pen" [ref=e1032] [cursor=pointer]:
+              - /url: /hauser-xo-ball-pen/p/itmfc4e27ef61acd?pid=PENHFYSYDTFRFSXA&lid=LSTPENHFYSYDTFRFSXABTTSGL&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_30&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENHFYSYDTFRFSXA.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - img "HAUSER XO Ball Pen" [ref=e1036]
+              - img [ref=e1039]
+            - link "HAUSER XO Ball Pen" [ref=e1041] [cursor=pointer]:
+              - /url: /hauser-xo-ball-pen/p/itmfc4e27ef61acd?pid=PENHFYSYDTFRFSXA&lid=LSTPENHFYSYDTFRFSXABTTSGL&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_30&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENHFYSYDTFRFSXA.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+            - generic [ref=e1042]: Pack of 25, Ink Color - Blue
+            - generic [ref=e1043]:
+              - generic [ref=e1045]:
+                - text: "4.5"
+                - img [ref=e1046]
+              - text: (1,682)
+            - img [ref=e1048]
+            - link "₹249 ₹275 9% off" [ref=e1049] [cursor=pointer]:
+              - /url: /hauser-xo-ball-pen/p/itmfc4e27ef61acd?pid=PENHFYSYDTFRFSXA&lid=LSTPENHFYSYDTFRFSXABTTSGL&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_30&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENHFYSYDTFRFSXA.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - generic [ref=e1050]:
+                - generic [ref=e1051]: ₹249
+                - generic [ref=e1052]: ₹275
+                - generic [ref=e1053]: 9% off
+            - generic [ref=e1056]: Only few left
+          - generic [ref=e1058]:
+            - link "MD Enterprise GOLD SLIM Ball Pen" [ref=e1059] [cursor=pointer]:
+              - /url: /md-enterprise-gold-slim-ball-pen/p/itmdcdc95108391c?pid=PENHQDRGYP3DRHCY&lid=LSTPENHQDRGYP3DRHCYZDPBGC&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_31&otracker=search&otracker1=search&fm=organic&iid=en_K__9zm0_ZHYGGOnQW5ctX_cS_S1GlmD6CY-UHiBpvbIIB-uihD_len_9MsEWVxKq8wmaD1oRMsoK4uePHmwz29jgKYqHvlknEB9BwAi-j5ZhPKr3YyeThIe5KssS7Q9m&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - img "MD Enterprise GOLD SLIM Ball Pen" [ref=e1063]
+              - img [ref=e1066]
+            - img [ref=e1069]
+            - link "MD Enterprise GOLD SLIM Ball Pen" [ref=e1072] [cursor=pointer]:
+              - /url: /md-enterprise-gold-slim-ball-pen/p/itmdcdc95108391c?pid=PENHQDRGYP3DRHCY&lid=LSTPENHQDRGYP3DRHCYZDPBGC&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_31&otracker=search&otracker1=search&fm=organic&iid=en_K__9zm0_ZHYGGOnQW5ctX_cS_S1GlmD6CY-UHiBpvbIIB-uihD_len_9MsEWVxKq8wmaD1oRMsoK4uePHmwz29jgKYqHvlknEB9BwAi-j5ZhPKr3YyeThIe5KssS7Q9m&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+            - generic [ref=e1073]: Pack of 6, Ink Color - Black
+            - link "₹286 ₹699 59% off" [ref=e1074] [cursor=pointer]:
+              - /url: /md-enterprise-gold-slim-ball-pen/p/itmdcdc95108391c?pid=PENHQDRGYP3DRHCY&lid=LSTPENHQDRGYP3DRHCYZDPBGC&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_31&otracker=search&otracker1=search&fm=organic&iid=en_K__9zm0_ZHYGGOnQW5ctX_cS_S1GlmD6CY-UHiBpvbIIB-uihD_len_9MsEWVxKq8wmaD1oRMsoK4uePHmwz29jgKYqHvlknEB9BwAi-j5ZhPKr3YyeThIe5KssS7Q9m&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - generic [ref=e1075]:
+                - generic [ref=e1076]: ₹286
+                - generic [ref=e1077]: ₹699
+                - generic [ref=e1078]: 59% off
+          - generic [ref=e1080]:
+            - link "Classmate Octane Ball Pen" [ref=e1081] [cursor=pointer]:
+              - /url: /classmate-octane-ball-pen/p/itmez6ykzj7wjrma?pid=PENEZ6YK4DVCGA33&lid=LSTPENEZ6YK4DVCGA33EKIUV3&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_32&otracker=search&otracker1=search&fm=organic&iid=en_K__9zm0_ZHYGGOnQW5ctX_cS_S1GlmD6CY-UHiBpvbL9aGB2JKoLDkUUmLvCDFsG-nn__K8a3QPJWMVrnF4kpt71NgWIwqEgON04n9cQqdcL7bKlWYKPvG8Qt--56VNP&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - img "Classmate Octane Ball Pen" [ref=e1085]
+              - img [ref=e1088]
+            - img [ref=e1091]
+            - link "Classmate Octane Ball Pen" [ref=e1094] [cursor=pointer]:
+              - /url: /classmate-octane-ball-pen/p/itmez6ykzj7wjrma?pid=PENEZ6YK4DVCGA33&lid=LSTPENEZ6YK4DVCGA33EKIUV3&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_32&otracker=search&otracker1=search&fm=organic&iid=en_K__9zm0_ZHYGGOnQW5ctX_cS_S1GlmD6CY-UHiBpvbL9aGB2JKoLDkUUmLvCDFsG-nn__K8a3QPJWMVrnF4kpt71NgWIwqEgON04n9cQqdcL7bKlWYKPvG8Qt--56VNP&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+            - generic [ref=e1095]: Pack of 25, Ink Color - Blue
+            - generic [ref=e1096]:
+              - generic [ref=e1098]:
+                - text: "4.4"
+                - img [ref=e1099]
+              - text: (553)
+            - img [ref=e1101]
+            - link "₹367 ₹450 18% off" [ref=e1102] [cursor=pointer]:
+              - /url: /classmate-octane-ball-pen/p/itmez6ykzj7wjrma?pid=PENEZ6YK4DVCGA33&lid=LSTPENEZ6YK4DVCGA33EKIUV3&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_32&otracker=search&otracker1=search&fm=organic&iid=en_K__9zm0_ZHYGGOnQW5ctX_cS_S1GlmD6CY-UHiBpvbL9aGB2JKoLDkUUmLvCDFsG-nn__K8a3QPJWMVrnF4kpt71NgWIwqEgON04n9cQqdcL7bKlWYKPvG8Qt--56VNP&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - generic [ref=e1103]:
+                - generic [ref=e1104]: ₹367
+                - generic [ref=e1105]: ₹450
+                - generic [ref=e1106]: 18% off
+        - generic [ref=e1108]:
+          - generic [ref=e1110]:
+            - link "FLAIR Woody Ball Pen Pack of 10 Pens Blue Ink Ball Pen" [ref=e1111] [cursor=pointer]:
+              - /url: /flair-woody-ball-pen-pack-10-pens-blue-ink/p/itmc5aa7d9e17751?pid=PENGY9JMAXC7ZZ4Z&lid=LSTPENGY9JMAXC7ZZ4ZSKLUYA&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_33&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENGY9JMAXC7ZZ4Z.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - img "FLAIR Woody Ball Pen Pack of 10 Pens Blue Ink Ball Pen" [ref=e1115]
+              - img [ref=e1118]
+            - link "FLAIR Woody Ball Pen Pack of 10 Pens Blue Ink Ball Pen" [ref=e1120] [cursor=pointer]:
+              - /url: /flair-woody-ball-pen-pack-10-pens-blue-ink/p/itmc5aa7d9e17751?pid=PENGY9JMAXC7ZZ4Z&lid=LSTPENGY9JMAXC7ZZ4ZSKLUYA&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_33&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENGY9JMAXC7ZZ4Z.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+            - generic [ref=e1121]: Pack of 10, Ink Color - Blue
+            - generic [ref=e1122]:
+              - generic [ref=e1124]:
+                - text: "4.4"
+                - img [ref=e1125]
+              - text: (1,960)
+            - link "₹88 ₹100 12% off" [ref=e1126] [cursor=pointer]:
+              - /url: /flair-woody-ball-pen-pack-10-pens-blue-ink/p/itmc5aa7d9e17751?pid=PENGY9JMAXC7ZZ4Z&lid=LSTPENGY9JMAXC7ZZ4ZSKLUYA&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_33&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENGY9JMAXC7ZZ4Z.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - generic [ref=e1127]:
+                - generic [ref=e1128]: ₹88
+                - generic [ref=e1129]: ₹100
+                - generic [ref=e1130]: 12% off
+          - generic [ref=e1132]:
+            - link "PIERRE CARDIN Kriss White Gold Finish Exclusive Metal Body With Crystal Studded Blister Pack Ball Pen" [ref=e1133] [cursor=pointer]:
+              - /url: /pierre-cardin-kriss-white-gold-finish-exclusive-metal-body-crystal-studded-blister-pack-ball-pen/p/itm7a261aa69e83a?pid=PENFA7Y5KD8GWVPA&lid=LSTPENFA7Y5KD8GWVPAOLLMII&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_34&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENFA7Y5KD8GWVPA.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - img "PIERRE CARDIN Kriss White Gold Finish Exclusive Metal Body With Crystal Studded Blister Pack Ball Pen" [ref=e1137]
+              - img [ref=e1140]
+            - link "PIERRE CARDIN Kriss White Gold Finish Exclusive Metal B..." [ref=e1142] [cursor=pointer]:
+              - /url: /pierre-cardin-kriss-white-gold-finish-exclusive-metal-body-crystal-studded-blister-pack-ball-pen/p/itm7a261aa69e83a?pid=PENFA7Y5KD8GWVPA&lid=LSTPENFA7Y5KD8GWVPAOLLMII&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_34&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENFA7Y5KD8GWVPA.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+            - generic [ref=e1143]: Ink Color - Blue
+            - generic [ref=e1144]:
+              - generic [ref=e1146]:
+                - text: "4.3"
+                - img [ref=e1147]
+              - text: (7,176)
+            - link "₹249 ₹275 9% off" [ref=e1148] [cursor=pointer]:
+              - /url: /pierre-cardin-kriss-white-gold-finish-exclusive-metal-body-crystal-studded-blister-pack-ball-pen/p/itm7a261aa69e83a?pid=PENFA7Y5KD8GWVPA&lid=LSTPENFA7Y5KD8GWVPAOLLMII&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_34&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENFA7Y5KD8GWVPA.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - generic [ref=e1149]:
+                - generic [ref=e1150]: ₹249
+                - generic [ref=e1151]: ₹275
+                - generic [ref=e1152]: 9% off
+          - generic [ref=e1154]:
+            - link "DOMS INXON | 0.7mm | ULV Ink Technology| Soft Rubberized Grip | Ball Pen" [ref=e1155] [cursor=pointer]:
+              - /url: /doms-inxon-0-7mm-ulv-ink-technology-soft-rubberized-grip-ball-pen/p/itma1871a609451f?pid=PENH9E8TEW3ZXHUZ&lid=LSTPENH9E8TEW3ZXHUZ45LROZ&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_35&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENH9E8TEW3ZXHUZ.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - img "DOMS INXON | 0.7mm | ULV Ink Technology| Soft Rubberized Grip | Ball Pen" [ref=e1159]
+              - img [ref=e1162]
+            - link "DOMS INXON | 0.7mm | ULV Ink Technology| Soft Rubberize..." [ref=e1164] [cursor=pointer]:
+              - /url: /doms-inxon-0-7mm-ulv-ink-technology-soft-rubberized-grip-ball-pen/p/itma1871a609451f?pid=PENH9E8TEW3ZXHUZ&lid=LSTPENH9E8TEW3ZXHUZ45LROZ&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_35&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENH9E8TEW3ZXHUZ.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+            - generic [ref=e1165]: Pack of 20, Ink Color - Blue
+            - generic [ref=e1166]:
+              - generic [ref=e1168]:
+                - text: "4.5"
+                - img [ref=e1169]
+              - text: (1,002)
+            - link "₹230 ₹260 11% off" [ref=e1170] [cursor=pointer]:
+              - /url: /doms-inxon-0-7mm-ulv-ink-technology-soft-rubberized-grip-ball-pen/p/itma1871a609451f?pid=PENH9E8TEW3ZXHUZ&lid=LSTPENH9E8TEW3ZXHUZ45LROZ&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_35&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENH9E8TEW3ZXHUZ.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - generic [ref=e1171]:
+                - generic [ref=e1172]: ₹230
+                - generic [ref=e1173]: ₹260
+                - generic [ref=e1174]: 11% off
+          - generic [ref=e1176]:
+            - link "Mizi Craft Slim Light Weight Black Metal Body Ball Pen" [ref=e1177] [cursor=pointer]:
+              - /url: /mizi-craft-slim-light-weight-black-metal-body-ball-pen/p/itm7065af1b78d59?pid=PENH5ZGEGCKUWWSH&lid=LSTPENH5ZGEGCKUWWSHCBHQFC&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_36&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENH5ZGEGCKUWWSH.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - img "Mizi Craft Slim Light Weight Black Metal Body Ball Pen" [ref=e1181]
+              - img [ref=e1184]
+            - link "Mizi Craft Slim Light Weight Black Metal Body Ball Pen" [ref=e1186] [cursor=pointer]:
+              - /url: /mizi-craft-slim-light-weight-black-metal-body-ball-pen/p/itm7065af1b78d59?pid=PENH5ZGEGCKUWWSH&lid=LSTPENH5ZGEGCKUWWSHCBHQFC&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_36&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENH5ZGEGCKUWWSH.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+            - generic [ref=e1187]: Ink Color - Blue
+            - generic [ref=e1188]:
+              - generic [ref=e1190]:
+                - text: "4.3"
+                - img [ref=e1191]
+              - text: (422)
+            - img [ref=e1193]
+            - link "₹163 ₹749 78% off" [ref=e1194] [cursor=pointer]:
+              - /url: /mizi-craft-slim-light-weight-black-metal-body-ball-pen/p/itm7065af1b78d59?pid=PENH5ZGEGCKUWWSH&lid=LSTPENH5ZGEGCKUWWSHCBHQFC&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_36&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENH5ZGEGCKUWWSH.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - generic [ref=e1195]:
+                - generic [ref=e1196]: ₹163
+                - generic [ref=e1197]: ₹749
+                - generic [ref=e1198]: 78% off
+            - generic [ref=e1201]: Only few left
+        - generic [ref=e1203]:
+          - generic [ref=e1205]:
+            - link "Classmate CLASSMATE OCTANE SPIN BALL PEN (PACK OF 10* 2 PENS) Ball Pen" [ref=e1206] [cursor=pointer]:
+              - /url: /classmate-octane-spin-ball-pen-pack-10-2-pens/p/itm231761d8532fb?pid=PENH79VFYDKQYBEH&lid=LSTPENH79VFYDKQYBEHUIGSR2&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_37&otracker=search&otracker1=search&fm=organic&iid=en_K__9zm0_ZHYGGOnQW5ctX_cS_S1GlmD6CY-UHiBpvbJ5H_htxOCTG0txbAHDDXN76owtUVJvpdEHUw4VRgSh6E9VUH39stm5TjJV1oScy6QL7bKlWYKPvG8Qt--56VNP&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - img "Classmate CLASSMATE OCTANE SPIN BALL PEN (PACK OF 10* 2 PENS) Ball Pen" [ref=e1210]
+              - img [ref=e1213]
+            - img [ref=e1216]
+            - link "Classmate CLASSMATE OCTANE SPIN BALL PEN (PACK OF 10* 2..." [ref=e1219] [cursor=pointer]:
+              - /url: /classmate-octane-spin-ball-pen-pack-10-2-pens/p/itm231761d8532fb?pid=PENH79VFYDKQYBEH&lid=LSTPENH79VFYDKQYBEHUIGSR2&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_37&otracker=search&otracker1=search&fm=organic&iid=en_K__9zm0_ZHYGGOnQW5ctX_cS_S1GlmD6CY-UHiBpvbJ5H_htxOCTG0txbAHDDXN76owtUVJvpdEHUw4VRgSh6E9VUH39stm5TjJV1oScy6QL7bKlWYKPvG8Qt--56VNP&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+            - generic [ref=e1220]: Pack of 20, Ink Color - Blue
+            - generic [ref=e1221]:
+              - generic [ref=e1223]:
+                - text: "4.2"
+                - img [ref=e1224]
+              - text: (205)
+            - img [ref=e1226]
+            - link "₹333 ₹400 16% off" [ref=e1227] [cursor=pointer]:
+              - /url: /classmate-octane-spin-ball-pen-pack-10-2-pens/p/itm231761d8532fb?pid=PENH79VFYDKQYBEH&lid=LSTPENH79VFYDKQYBEHUIGSR2&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_37&otracker=search&otracker1=search&fm=organic&iid=en_K__9zm0_ZHYGGOnQW5ctX_cS_S1GlmD6CY-UHiBpvbJ5H_htxOCTG0txbAHDDXN76owtUVJvpdEHUw4VRgSh6E9VUH39stm5TjJV1oScy6QL7bKlWYKPvG8Qt--56VNP&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - generic [ref=e1228]:
+                - generic [ref=e1229]: ₹333
+                - generic [ref=e1230]: ₹400
+                - generic [ref=e1231]: 16% off
+          - generic [ref=e1233]:
+            - link "FLAIR Glass Gel Pack of 100 Gel Pen" [ref=e1234] [cursor=pointer]:
+              - /url: /flair-glass-gel-pack-100-pen/p/itmd755cd903be8f?pid=PENGN5ANC36U7K8X&lid=LSTPENGN5ANC36U7K8XRR0K5M&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_38&otracker=search&otracker1=search&fm=organic&iid=en_K__9zm0_ZHYGGOnQW5ctX_cS_S1GlmD6CY-UHiBpvbIpLojJ5azrcK0zRU44cF-24Bz0eBreBLc9IkRfK_J5wUECMRMN6USrAfLssYovOkML7bKlWYKPvG8Qt--56VNP&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - img "FLAIR Glass Gel Pack of 100 Gel Pen" [ref=e1238]
+              - img [ref=e1241]
+            - img [ref=e1244]
+            - link "FLAIR Glass Gel Pack of 100 Gel Pen" [ref=e1247] [cursor=pointer]:
+              - /url: /flair-glass-gel-pack-100-pen/p/itmd755cd903be8f?pid=PENGN5ANC36U7K8X&lid=LSTPENGN5ANC36U7K8XRR0K5M&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_38&otracker=search&otracker1=search&fm=organic&iid=en_K__9zm0_ZHYGGOnQW5ctX_cS_S1GlmD6CY-UHiBpvbIpLojJ5azrcK0zRU44cF-24Bz0eBreBLc9IkRfK_J5wUECMRMN6USrAfLssYovOkML7bKlWYKPvG8Qt--56VNP&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+            - generic [ref=e1248]: Pack of 100, Ink Color - Blue Black and Red
+            - generic [ref=e1249]:
+              - generic [ref=e1251]:
+                - text: "4.4"
+                - img [ref=e1252]
+              - text: (2,401)
+            - img [ref=e1254]
+            - link "₹1,245 ₹1,250" [ref=e1255] [cursor=pointer]:
+              - /url: /flair-glass-gel-pack-100-pen/p/itmd755cd903be8f?pid=PENGN5ANC36U7K8X&lid=LSTPENGN5ANC36U7K8XRR0K5M&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_38&otracker=search&otracker1=search&fm=organic&iid=en_K__9zm0_ZHYGGOnQW5ctX_cS_S1GlmD6CY-UHiBpvbIpLojJ5azrcK0zRU44cF-24Bz0eBreBLc9IkRfK_J5wUECMRMN6USrAfLssYovOkML7bKlWYKPvG8Qt--56VNP&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - generic [ref=e1256]:
+                - generic [ref=e1257]: ₹1,245
+                - generic [ref=e1258]: ₹1,250
+          - generic [ref=e1260]:
+            - link "Mizi Craft Black Metal Pen With Keyring ( MCRAFT-ROL150224001 ) Ball Pen" [ref=e1261] [cursor=pointer]:
+              - /url: /mizi-craft-black-metal-pen-keyring-mcraft-rol150224001-ball/p/itm06fd891aba892?pid=PENGY5FPUXZHSQBD&lid=LSTPENGY5FPUXZHSQBDCQ1AIQ&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_39&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENGY5FPUXZHSQBD.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - img "Mizi Craft Black Metal Pen With Keyring ( MCRAFT-ROL150224001 ) Ball Pen" [ref=e1265]
+              - img [ref=e1268]
+            - link "Mizi Craft Black Metal Pen With Keyring ( MCRAFT-ROL150..." [ref=e1270] [cursor=pointer]:
+              - /url: /mizi-craft-black-metal-pen-keyring-mcraft-rol150224001-ball/p/itm06fd891aba892?pid=PENGY5FPUXZHSQBD&lid=LSTPENGY5FPUXZHSQBDCQ1AIQ&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_39&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENGY5FPUXZHSQBD.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+            - generic [ref=e1271]: Ink Color - Blue
+            - generic [ref=e1272]:
+              - generic [ref=e1274]:
+                - text: "4.4"
+                - img [ref=e1275]
+              - text: (980)
+            - img [ref=e1277]
+            - link "₹233 ₹849 72% off" [ref=e1278] [cursor=pointer]:
+              - /url: /mizi-craft-black-metal-pen-keyring-mcraft-rol150224001-ball/p/itm06fd891aba892?pid=PENGY5FPUXZHSQBD&lid=LSTPENGY5FPUXZHSQBDCQ1AIQ&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_39&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENGY5FPUXZHSQBD.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - generic [ref=e1279]:
+                - generic [ref=e1280]: ₹233
+                - generic [ref=e1281]: ₹849
+                - generic [ref=e1282]: 72% off
+            - generic [ref=e1285]: Only few left
+          - generic [ref=e1287]:
+            - link "PARKER Parker Beta Neo Chrome Trim, Black Body Colour, Ideal For Professionals Ball Pen" [ref=e1288] [cursor=pointer]:
+              - /url: /parker-beta-neo-chrome-trim-black-body-colour-ideal-professionals-ball-pen/p/itm49e095204e052?pid=PENHYVNMGV44HYA3&lid=LSTPENHYVNMGV44HYA3PT4PLS&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_40&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENHYVNMGV44HYA3.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - img "PARKER Parker Beta Neo Chrome Trim, Black Body Colour, Ideal For Professionals Ball Pen" [ref=e1292]
+              - img [ref=e1295]
+            - link "PARKER Parker Beta Neo Chrome Trim, Black Body Colour, ..." [ref=e1297] [cursor=pointer]:
+              - /url: /parker-beta-neo-chrome-trim-black-body-colour-ideal-professionals-ball-pen/p/itm49e095204e052?pid=PENHYVNMGV44HYA3&lid=LSTPENHYVNMGV44HYA3PT4PLS&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_40&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENHYVNMGV44HYA3.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+            - generic [ref=e1298]: Ink Color - Blue
+            - generic [ref=e1299]:
+              - generic [ref=e1301]:
+                - text: "4.2"
+                - img [ref=e1302]
+              - text: (1,087)
+            - img [ref=e1304]
+            - link "₹136 ₹150 9% off" [ref=e1305] [cursor=pointer]:
+              - /url: /parker-beta-neo-chrome-trim-black-body-colour-ideal-professionals-ball-pen/p/itm49e095204e052?pid=PENHYVNMGV44HYA3&lid=LSTPENHYVNMGV44HYA3PT4PLS&marketplace=FLIPKART&q=pen&store=dgv&srno=s_1_40&otracker=search&otracker1=search&fm=organic&iid=411206e2-8cac-41fd-8427-b84d105e7aed.PENHYVNMGV44HYA3.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=x1i3auq6o00000001792393731528&qH=03f00e8e9d0d0847&ov_redirect=true&ov_redirect=true
+              - generic [ref=e1306]:
+                - generic [ref=e1307]: ₹136
+                - generic [ref=e1308]: ₹150
+                - generic [ref=e1309]: 9% off
+        - generic [ref=e1312]:
+          - generic [ref=e1313]: Page 1 of 595
+          - navigation [ref=e1314]:
+            - link "1" [ref=e1315] [cursor=pointer]:
+              - /url: /search?q=pen&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=1
+            - link "2" [ref=e1316] [cursor=pointer]:
+              - /url: /search?q=pen&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=2
+            - link "3" [ref=e1317] [cursor=pointer]:
+              - /url: /search?q=pen&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=3
+            - link "4" [ref=e1318] [cursor=pointer]:
+              - /url: /search?q=pen&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=4
+            - link "5" [ref=e1319] [cursor=pointer]:
+              - /url: /search?q=pen&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=5
+            - link "6" [ref=e1320] [cursor=pointer]:
+              - /url: /search?q=pen&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=6
+            - link "7" [ref=e1321] [cursor=pointer]:
+              - /url: /search?q=pen&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=7
+            - link "8" [ref=e1322] [cursor=pointer]:
+              - /url: /search?q=pen&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=8
+            - link "9" [ref=e1323] [cursor=pointer]:
+              - /url: /search?q=pen&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=9
+            - link "10" [ref=e1324] [cursor=pointer]:
+              - /url: /search?q=pen&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=10
+            - link "Next" [ref=e1325] [cursor=pointer]:
+              - /url: /search?q=pen&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=2
+        - generic [ref=e1327]:
+          - text: Did you find what you were looking for?
+          - generic [ref=e1328]:
+            - generic [ref=e1329] [cursor=pointer]: "Yes"
+            - generic [ref=e1330] [cursor=pointer]: "No"
+    - generic [ref=e1332]:
+      - generic [ref=e1333]: Reviews for Popular Pens & Stationery
+      - generic [ref=e1334]:
+        - generic [ref=e1335]:
+          - generic [ref=e1337]:
+            - img "Luxor Schneider LX MAX | Needle Tip | 0.5 mm | 1000+ Meters Writing Length | German Technology Roller Ball Pen"
+          - generic [ref=e1338]:
+            - link "1. Luxor Schneider LX MAX | Ne... 4.4 1,183 Ratings&64 Reviews ₹192 20% off" [ref=e1339] [cursor=pointer]:
+              - /url: /luxor-schneider-lx-max-needle-tip-0-5-mm-1000-meters-writing-length-german-technology-roller-ball-pen/p/itmbd236e891e5eb?pid=PENGS44YGNJC5QQN&marketplace=FLIPKART&ov_redirect=true
+              - generic [ref=e1341]: 1. Luxor Schneider LX MAX | Ne...
+              - generic [ref=e1342]:
+                - generic [ref=e1343]:
+                  - text: "4.4"
+                  - img [ref=e1344]
+                - generic [ref=e1345]:
+                  - text: 1,183 Ratings
+                  - generic [ref=e1346]: "&64 Reviews"
+              - generic [ref=e1348]:
+                - generic [ref=e1349]: ₹192
+                - generic [ref=e1350]: 20% off
+            - list [ref=e1351]:
+              - listitem [ref=e1352]: "Body Color: Blue, Black"
+              - listitem [ref=e1353]: Made of Plastic
+              - listitem [ref=e1354]: Solid Body Type
+        - generic [ref=e1355]:
+          - generic [ref=e1356]: Most Helpful Review
+          - generic [ref=e1358]:
+            - generic [ref=e1359]:
+              - generic [ref=e1360]:
+                - text: "4"
+                - img [ref=e1361]
+              - paragraph [ref=e1362]: Delightful
+            - generic [ref=e1366]: The good thing with this kind of pen you can use refil of trimax and maxstron pens .
+            - generic [ref=e1368]:
+              - paragraph [ref=e1369]: Flipkart Customer
+              - img [ref=e1370]
+              - paragraph [ref=e1374]: Certified Buyer
+              - paragraph [ref=e1375]: Jul, 2025
+        - generic [ref=e1376]:
+          - generic [ref=e1377]: Recent Review
+          - generic [ref=e1379]:
+            - generic [ref=e1380]:
+              - generic [ref=e1381]:
+                - text: "4"
+                - img [ref=e1382]
+              - paragraph [ref=e1383]: Worth the money
+            - generic [ref=e1387]: Value for money . You can purchase . No problem with this product. Good writing experience with this product.
+            - generic [ref=e1389]:
+              - paragraph [ref=e1390]: amit kumar
+              - img [ref=e1391]
+              - paragraph [ref=e1395]: Certified Buyer
+              - paragraph [ref=e1396]: 15 days ago
+      - generic [ref=e1397]:
+        - generic [ref=e1398]:
+          - generic [ref=e1400]:
+            - img "HAUSER XO Gel Pen"
+          - generic [ref=e1401]:
+            - link "2. HAUSER XO Gel Pen 4.1 119 Ratings&8 Reviews ₹221 19% off" [ref=e1402] [cursor=pointer]:
+              - /url: /hauser-xo-gel-pen/p/itm598253a128ea4?pid=PENHFYSYHXWXRVCM&marketplace=FLIPKART&ov_redirect=true
+              - generic [ref=e1404]: 2. HAUSER XO Gel Pen
+              - generic [ref=e1405]:
+                - generic [ref=e1406]:
+                  - text: "4.1"
+                  - img [ref=e1407]
+                - generic [ref=e1408]:
+                  - text: 119 Ratings
+                  - generic [ref=e1409]: "&8 Reviews"
+              - generic [ref=e1411]:
+                - generic [ref=e1412]: ₹221
+                - generic [ref=e1413]: 19% off
+            - list [ref=e1414]:
+              - listitem [ref=e1415]: "Body Color: Grey"
+              - listitem [ref=e1416]: Made of Plastic
+              - listitem [ref=e1417]: Solid Body Type
+        - generic [ref=e1418]:
+          - generic [ref=e1419]: Most Helpful Review
+          - generic [ref=e1421]:
+            - generic [ref=e1422]:
+              - generic [ref=e1423]:
+                - text: "5"
+                - img [ref=e1424]
+              - paragraph [ref=e1425]: Awesome
+            - generic [ref=e1429]:
+              - text: Smooth to write
+              - text: Perfect to hold
+            - generic [ref=e1431]:
+              - paragraph [ref=e1432]: Pon Sudalai
+              - img [ref=e1433]
+              - paragraph [ref=e1437]: Certified Buyer
+              - paragraph [ref=e1438]: 1 month ago
+        - generic [ref=e1439]:
+          - generic [ref=e1440]: Recent Review
+          - generic [ref=e1442]:
+            - generic [ref=e1443]:
+              - generic [ref=e1444]:
+                - text: "5"
+                - img [ref=e1445]
+              - paragraph [ref=e1446]: Awesome
+            - generic [ref=e1450]:
+              - text: Smooth to write
+              - text: Perfect to hold
+            - generic [ref=e1452]:
+              - paragraph [ref=e1453]: Pon Sudalai
+              - img [ref=e1454]
+              - paragraph [ref=e1458]: Certified Buyer
+              - paragraph [ref=e1459]: 1 month ago
+      - generic [ref=e1460]:
+        - generic [ref=e1461]:
+          - generic [ref=e1463]:
+            - img "Classmate OCTANE COLOUR BURST GEL PEN | 10 MULTI COLOUR | Gel Pen"
+          - generic [ref=e1464]:
+            - link "3. Classmate OCTANE COLOUR BUR... 4.5 60,869 Ratings&6,481 Reviews ₹81 19% off" [ref=e1465] [cursor=pointer]:
+              - /url: /classmate-octane-colour-burst-gel-pen-10-multi/p/itm8b37dc3c082b0?pid=PENFGFACPTG5HJ6S&marketplace=FLIPKART&ov_redirect=true
+              - generic [ref=e1467]: 3. Classmate OCTANE COLOUR BUR...
+              - generic [ref=e1468]:
+                - generic [ref=e1469]:
+                  - text: "4.5"
+                  - img [ref=e1470]
+                - generic [ref=e1471]:
+                  - text: 60,869 Ratings
+                  - generic [ref=e1472]: "&6,481 Reviews"
+              - generic [ref=e1474]:
+                - generic [ref=e1475]: ₹81
+                - generic [ref=e1476]: 19% off
+            - list [ref=e1477]:
+              - listitem [ref=e1478]: "Body Color: Multicolor"
+              - listitem [ref=e1479]: Made of Plastic
+              - listitem [ref=e1480]: Solid Body Type
+        - generic [ref=e1481]:
+          - generic [ref=e1482]: Most Helpful Review
+          - generic [ref=e1484]:
+            - generic [ref=e1485]:
+              - generic [ref=e1486]:
+                - text: "5"
+                - img [ref=e1487]
+              - paragraph [ref=e1488]: Must buy!
+            - generic [ref=e1492]: Nice bright colors, smooth grip, smooth ink that flows well while writing or drawing.
+            - generic [ref=e1494]:
+              - paragraph [ref=e1495]: Megha Roy
+              - img [ref=e1496]
+              - paragraph [ref=e1500]: Certified Buyer
+              - paragraph [ref=e1501]: Jun, 2021
+        - generic [ref=e1502]:
+          - generic [ref=e1503]: Recent Review
+          - generic [ref=e1505]:
+            - generic [ref=e1506]:
+              - generic [ref=e1507]:
+                - text: "5"
+                - img [ref=e1508]
+              - paragraph [ref=e1509]: Perfect product!
+            - generic [ref=e1513]: Excellent quality product and excellent delivery service
+            - generic [ref=e1515]:
+              - paragraph [ref=e1516]: Dr. Prem Swaroop Patra
+              - img [ref=e1517]
+              - paragraph [ref=e1521]: Certified Buyer
+              - paragraph [ref=e1522]: 7 days ago
+      - generic [ref=e1523]:
+        - generic [ref=e1524]:
+          - generic [ref=e1526]:
+            - img "Reynolds Aeroslim Ball Pen"
+          - generic [ref=e1527]:
+            - link "4. Reynolds Aeroslim Ball Pen 4.1 51,766 Ratings&3,919 Reviews ₹189 55% off" [ref=e1528] [cursor=pointer]:
+              - /url: /reynolds-aeroslim-ball-pen/p/itm132244842b5bc?pid=PENHF4MBZBFX37BF&marketplace=FLIPKART&ov_redirect=true
+              - generic [ref=e1530]: 4. Reynolds Aeroslim Ball Pen
+              - generic [ref=e1531]:
+                - generic [ref=e1532]:
+                  - text: "4.1"
+                  - img [ref=e1533]
+                - generic [ref=e1534]:
+                  - text: 51,766 Ratings
+                  - generic [ref=e1535]: "&3,919 Reviews"
+              - generic [ref=e1537]:
+                - generic [ref=e1538]: ₹189
+                - generic [ref=e1539]: 55% off
+            - list [ref=e1540]:
+              - listitem [ref=e1541]: "Body Color: Multicolor"
+              - listitem [ref=e1542]: Made of Plastic
+              - listitem [ref=e1543]: Solid Body Type
+        - generic [ref=e1544]:
+          - generic [ref=e1545]: Most Helpful Review
+          - generic [ref=e1547]:
+            - generic [ref=e1548]:
+              - generic [ref=e1549]:
+                - text: "5"
+                - img [ref=e1550]
+              - paragraph [ref=e1551]: Perfect product!
+            - generic [ref=e1555]: Total 70 pen (60 blue + 5 Red + 5 black)
+            - generic [ref=e1557]:
+              - paragraph [ref=e1558]: Software Project
+              - img [ref=e1559]
+              - paragraph [ref=e1563]: Certified Buyer
+              - paragraph [ref=e1564]: Dec, 2024
+        - generic [ref=e1565]:
+          - generic [ref=e1566]: Recent Review
+          - generic [ref=e1568]:
+            - generic [ref=e1569]:
+              - generic [ref=e1570]:
+                - text: "5"
+                - img [ref=e1571]
+              - paragraph [ref=e1572]: Highly recommended
+            - generic [ref=e1576]: Just go for it 👌🏻📈💙
+            - generic [ref=e1578]:
+              - paragraph [ref=e1579]: Kavar Singh
+              - img [ref=e1580]
+              - paragraph [ref=e1584]: Certified Buyer
+              - paragraph [ref=e1585]: 1 day ago
+      - generic [ref=e1586]:
+        - generic [ref=e1587]:
+          - generic [ref=e1589]:
+            - img "Classmate Octane Gel Pen"
+          - generic [ref=e1590]:
+            - link "5. Classmate Octane Gel Pen 4.4 21,631 Ratings&2,190 Reviews ₹88 30% off" [ref=e1591] [cursor=pointer]:
+              - /url: /classmate-octane-gel-pen/p/itm7e458f82001ed?pid=PENFRQ5FDBVFFGQW&marketplace=FLIPKART&ov_redirect=true
+              - generic [ref=e1593]: 5. Classmate Octane Gel Pen
+              - generic [ref=e1594]:
+                - generic [ref=e1595]:
+                  - text: "4.4"
+                  - img [ref=e1596]
+                - generic [ref=e1597]:
+                  - text: 21,631 Ratings
+                  - generic [ref=e1598]: "&2,190 Reviews"
+              - generic [ref=e1600]:
+                - generic [ref=e1601]: ₹88
+                - generic [ref=e1602]: 30% off
+            - list [ref=e1603]:
+              - listitem [ref=e1604]: "Body Color: Black"
+              - listitem [ref=e1605]: Made of Plastic
+              - listitem [ref=e1606]: Solid Body Type
+        - generic [ref=e1607]:
+          - generic [ref=e1608]: Most Helpful Review
+          - generic [ref=e1610]:
+            - generic [ref=e1611]:
+              - generic [ref=e1612]:
+                - text: "5"
+                - img [ref=e1613]
+              - paragraph [ref=e1614]: Terrific purchase
+            - generic [ref=e1617]:
+              - generic [ref=e1618]: This pen from "classmate"are very good,I like this brand very much😄. You all must try these pen they are super amazing and last but not the least our Flipka...
+              - generic [ref=e1619] [cursor=pointer]: Read full review
+            - generic [ref=e1621]:
+              - paragraph [ref=e1622]: Flipkart Customer
+              - img [ref=e1623]
+              - paragraph [ref=e1627]: Certified Buyer
+              - paragraph [ref=e1628]: Dec, 2020
+        - generic [ref=e1629]:
+          - generic [ref=e1630]: Recent Review
+          - generic [ref=e1632]:
+            - generic [ref=e1633]:
+              - generic [ref=e1634]:
+                - text: "5"
+                - img [ref=e1635]
+              - paragraph [ref=e1636]: Classy product
+            - generic [ref=e1640]: Very good pen for students
+            - generic [ref=e1642]:
+              - paragraph [ref=e1643]: Ritu Kirar
+              - img [ref=e1644]
+              - paragraph [ref=e1648]: Certified Buyer
+              - paragraph [ref=e1649]: 2 months ago
+  - contentinfo [ref=e1650]:
+    - generic [ref=e1652]:
+      - generic [ref=e1653]:
+        - generic [ref=e1654]:
+          - generic [ref=e1655]: ABOUT
+          - link "Contact Us" [ref=e1656] [cursor=pointer]:
+            - /url: /helpcentre?otracker=footer_navlinks
+          - link "About Us" [ref=e1657] [cursor=pointer]:
+            - /url: https://corporate.flipkart.net/corporate-home
+          - link "Careers" [ref=e1658] [cursor=pointer]:
+            - /url: https://www.flipkartcareers.com/?otracker=footer_navlinks
+          - link "Flipkart Stories" [ref=e1659] [cursor=pointer]:
+            - /url: http://stories.flipkart.com/?otracker=footer_navlinks
+          - link "Press" [ref=e1660] [cursor=pointer]:
+            - /url: http://stories.flipkart.com/category/top-stories/news/
+          - link "Corporate Information" [ref=e1661] [cursor=pointer]:
+            - /url: /corporate-information
+        - generic [ref=e1662]:
+          - generic [ref=e1663]: GROUP COMPANIES
+          - link "Myntra" [ref=e1664] [cursor=pointer]:
+            - /url: https://www.myntra.com/
+          - link "Cleartrip" [ref=e1665] [cursor=pointer]:
+            - /url: https://www.cleartrip.com/
+          - link "Shopsy" [ref=e1666] [cursor=pointer]:
+            - /url: https://www.shopsy.in/
+        - generic [ref=e1667]:
+          - generic [ref=e1668]: HELP
+          - link "Payments" [ref=e1669] [cursor=pointer]:
+            - /url: /pages/payments
+          - link "Shipping" [ref=e1670] [cursor=pointer]:
+            - /url: /pages/shipping
+          - link "Cancellation & Returns" [ref=e1671] [cursor=pointer]:
+            - /url: /helpcentre?catalog=55c9c6edb000002e002c1701&view=CATALOG
+          - link "FAQ" [ref=e1672] [cursor=pointer]:
+            - /url: /helpcentre?catalog=55c9c8e2b0000023002c1702&view=CATALOG
+        - generic [ref=e1673]:
+          - generic [ref=e1674]: CONSUMER POLICY
+          - link "Cancellation & Returns" [ref=e1675] [cursor=pointer]:
+            - /url: /pages/returnpolicy?otracker=footer_navlinks
+          - link "Terms Of Use" [ref=e1676] [cursor=pointer]:
+            - /url: /pages/terms?otracker=footer_navlinks
+          - link "Security" [ref=e1677] [cursor=pointer]:
+            - /url: /pages/paymentsecurity?otracker=footer_navlinks
+          - link "Privacy" [ref=e1678] [cursor=pointer]:
+            - /url: /pages/privacypolicy?otracker=footer_navlinks
+          - link "Sitemap" [ref=e1679] [cursor=pointer]:
+            - /url: /sitemap?otracker=footer_navlinks
+          - link "Grievance Redressal" [ref=e1680] [cursor=pointer]:
+            - /url: /pages/grievance-redressal-mechanism?otracker=footer_navlinks
+          - link "EPR Compliance" [ref=e1681] [cursor=pointer]:
+            - /url: /pages/ewaste-compliance-tnc?otracker=footer_navlinks
+          - link "FSSAI Food Safety Connect App" [ref=e1682] [cursor=pointer]:
+            - /url: https://fssai.gov.in/cms/food-safety-connect.php
+        - generic [ref=e1684]:
+          - generic [ref=e1685]: "Mail Us:"
+          - generic [ref=e1688]:
+            - paragraph [ref=e1689]: Flipkart Internet Private Limited,
+            - paragraph [ref=e1690]: Buildings Alyssa, Begonia &
+            - paragraph [ref=e1691]: Clove Embassy Tech Village,
+            - paragraph [ref=e1692]: Outer Ring Road, Devarabeesanahalli Village,
+            - paragraph [ref=e1693]: Bengaluru, 560103,
+            - paragraph [ref=e1694]: Karnataka, India
+          - generic [ref=e1695]: Social
+          - generic [ref=e1696]:
+            - link [ref=e1698] [cursor=pointer]:
+              - /url: https://www.facebook.com/flipkart
+              - img [ref=e1699]
+            - link [ref=e1701] [cursor=pointer]:
+              - /url: https://www.twitter.com/flipkart
+              - img [ref=e1702]
+            - link [ref=e1704] [cursor=pointer]:
+              - /url: https://www.youtube.com/flipkart
+              - img [ref=e1705]
+            - link [ref=e1707] [cursor=pointer]:
+              - /url: https://www.instagram.com/flipkart
+              - img [ref=e1708]
+        - generic [ref=e1710]:
+          - generic [ref=e1711]: "Registered Office Address:"
+          - generic [ref=e1714]:
+            - paragraph [ref=e1715]: Flipkart Internet Private Limited,
+            - paragraph [ref=e1716]: Buildings Alyssa, Begonia &
+            - paragraph [ref=e1717]: Clove Embassy Tech Village,
+            - paragraph [ref=e1718]: Outer Ring Road, Devarabeesanahalli Village,
+            - paragraph [ref=e1719]: Bengaluru, 560103,
+            - paragraph [ref=e1720]: Karnataka, India
+            - paragraph [ref=e1721]: "CIN : U51109KA2012PTC066107"
+            - paragraph [ref=e1722]:
+              - text: "Telephone:"
+              - link "044-45614700" [ref=e1723] [cursor=pointer]:
+                - /url: tel:044-45614700
+              - text: /
+              - link "044-67415800" [ref=e1724] [cursor=pointer]:
+                - /url: tel:044-67415800
+      - generic [ref=e1726]:
+        - generic [ref=e1727]:
+          - img [ref=e1728]
+          - link "Become a Seller" [ref=e1729] [cursor=pointer]:
+            - /url: https://seller.flipkart.com/?utm_source=fkwebsite&utm_medium=websitedirect
+        - generic [ref=e1730]:
+          - img [ref=e1731]
+          - text: Advertise
+        - generic [ref=e1732]:
+          - img [ref=e1733]
+          - link "Gift Cards" [ref=e1734] [cursor=pointer]:
+            - /url: /the-gift-card-store?otracker=footer_navlinks
+        - generic [ref=e1735]:
+          - img [ref=e1736]
+          - link "Help Center" [ref=e1737] [cursor=pointer]:
+            - /url: /helpcentre?otracker=footer_navlinks
+        - generic [ref=e1738]: © 2007-2026 Flipkart.com
+        - img [ref=e1739]
+```
+
+# Test source
+
+```ts
+  40  |     
+  41  |     // const textcontent=await page.locator(".login_credentials").textContent()
+  42  | 
+  43  | 
+  44  |     // console.log("TExt  content isis:"+ textcontent)
+  45  | 
+  46  | 
+  47  |     const userAray= innertext.split("\n").slice(1)
+  48  |     console.log(userAray)
+  49  | 
+  50  | 
+  51  |     const firstUser= userAray[0]
+  52  | 
+  53  | 
+  54  |     await page.locator("#user-name").fill(firstUser)
+  55  |     await page.waitForTimeout(2000)
+  56  | })
+  57  | 
+  58  | 
+  59  | test("Flipkart",async ({page})=>{
+  60  | 
+  61  | 
+  62  |     await page.goto("https://www.flipkart.com/")
+  63  | 
+  64  |   
+  65  |     await page.locator("input[name='q']").first().fill("laptop")
+  66  |     await page.keyboard.press("Enter")
+  67  |     await page.waitForTimeout(2000)
+  68  | 
+  69  | 
+  70  |     const PRoductCards= await page.locator(".jIjQ8S")
+  71  | 
+  72  |     const PRoductCount= await PRoductCards.count()
+  73  | 
+  74  |     console.log("Count is:"+ PRoductCount)
+  75  | 
+  76  | 
+  77  | 
+  78  | 
+  79  |   //const Productmap = new Map(String,String);
+  80  |   const Productmap = new Map();
+  81  | 
+  82  | for(let i=0;i<PRoductCount;i++){
+  83  | 
+  84  | const cards= PRoductCards.nth(i)
+  85  | const nameLocatror= cards.locator(".RG5Slk")
+  86  | const price= cards.locator(".hZ3P6w")
+  87  | 
+  88  | const nametext= (await nameLocatror.textContent())?.trim().split(' ')[0]
+  89  | const priceTExt= (await price.textContent())?.trim()
+  90  | 
+  91  | if(nametext && priceTExt)
+  92  | 
+  93  | {
+  94  | Productmap.set(nametext,priceTExt)
+  95  | 
+  96  | }
+  97  | console.log("Product map is:",Productmap)
+  98  | const productName= "Apple"
+  99  | if(Productmap.has(productName)){
+  100 | 
+  101 |     console.log(`${productName} price is ${Productmap.get(productName)}`)
+  102 | }
+  103 | 
+  104 | 
+  105 | for(const [product ,price] of Productmap){
+  106 | 
+  107 |     console.log(`product :${product},price :${price}`)
+  108 | }
+  109 | 
+  110 | }
+  111 | 
+  112 | })
+  113 | 
+  114 | 
+  115 | 
+  116 | 
+  117 | test.only("Flipkart search pen",async ({page})=>{
+  118 | 
+  119 | 
+  120 |     await page.goto("https://www.flipkart.com/")
+  121 | 
+  122 |   
+  123 |     await page.locator("input[name='q']").first().fill("pen")
+  124 |     await page.keyboard.press("Enter")
+  125 |     await page.waitForTimeout(5000)
+  126 | 
+  127 |     let pageCount=1
+  128 | 
+  129 |     while (true){
+  130 | 
+  131 |         console.log(`Currently on tha page ${pageCount}`)
+  132 | 
+  133 |         const NextBtn= page.locator("//span[normalize-space()='Next']")
+  134 | 
+  135 |         if(await NextBtn.count() > 0 && await NextBtn.isVisible())
+  136 |         {
+  137 | 
+  138 | const classValue= await NextBtn.getAttribute("class")
+  139 | 
+> 140 |             if(classValue.includes("s-pagenation-disabled"))
+      |                           ^ TypeError: Cannot read properties of null (reading 'includes')
+  141 |             {
+  142 |                 console.log("Nu=ext btn is disabled")
+  143 |             break
+  144 |             }
+  145 |         console.log("Clicking on Next btn")
+  146 |         await NextBtn.scrollIntoViewIfNeeded()
+  147 |         await page.waitForTimeout(5000)
+  148 |         await NextBtn.click()
+  149 |         await page.waitForLoadState("domcontentloaded")
+  150 |                 await page.waitForTimeout(5000)
+  151 |                 pageCount++
+  152 | 
+  153 |         }
+  154 |         else{
+  155 |             console.log("next btn is not visible")
+  156 |             break
+  157 |         }
+  158 |     }
+  159 | 
+  160 | })
+```
